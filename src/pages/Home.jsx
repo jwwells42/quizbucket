@@ -21,6 +21,12 @@ const modes = [
     description: '60-second rapid-fire questions',
     accent: 'bg-amber-500',
   },
+  {
+    to: '/memorize',
+    title: 'Text Memorizer',
+    description: 'Progressively memorize famous texts and speeches',
+    accent: 'bg-purple-500',
+  },
 ]
 
 export default function Home() {
@@ -40,7 +46,7 @@ export default function Home() {
       </div>
 
       {/* Study mode cards */}
-      <div className="grid sm:grid-cols-3 gap-4 mb-8">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
         {modes.map(mode => (
           <Link
             key={mode.to}

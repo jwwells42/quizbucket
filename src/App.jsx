@@ -5,6 +5,7 @@ import FlashcardList from './pages/FlashcardList'
 import FlashcardStudy from './pages/FlashcardStudy'
 import Tossup from './pages/Tossup'
 import Lightning from './pages/Lightning'
+import Memorize from './pages/Memorize'
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/flashcards/:category" element={<FlashcardStudy />} />
         <Route path="/tossup" element={<Tossup />} />
         <Route path="/lightning" element={<Lightning />} />
+        <Route path="/memorize" element={<Memorize />} />
       </Routes>
     </Layout>
   )

@@ -6,6 +6,7 @@ const navLinks = [
   { to: '/flashcards', label: 'Flashcards' },
   { to: '/tossup', label: 'Tossup' },
   { to: '/lightning', label: 'Lightning' },
+  { to: '/memorize', label: 'Memorize' },
 ]
 
 export default function Layout({ children }) {
