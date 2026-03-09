@@ -5,6 +5,8 @@ import elements from './flashcards/elements.json'
 import presidents from './flashcards/presidents.json'
 import greekRomanMythology from './flashcards/greek-roman-mythology.json'
 import stateCapitals from './flashcards/state-capitals.json'
+import authorsWorks from './flashcards/authors-works.json'
+import mathVocabulary from './flashcards/math-vocabulary.json'
 import tossups from './tossups.json'
 import lightning from './lightning.json'
 
@@ -16,6 +18,8 @@ export const flashcardDecks = [
   presidents,
   greekRomanMythology,
   stateCapitals,
+  authorsWorks,
+  mathVocabulary,
 ]
 
 export function getDeck(id) {
