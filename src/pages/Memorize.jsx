@@ -2,10 +2,11 @@ import { useState, useRef, useMemo, useCallback, useEffect } from 'react'
 import texts from '../data/texts.json'
 
 const LEVELS = [
-  { label: 'Level 1 — Full Text', removePct: 0 },
-  { label: 'Level 2 — Some Missing', removePct: 0.3 },
-  { label: 'Level 3 — Most Missing', removePct: 0.6 },
-  { label: 'Level 4 — Blank', removePct: 1 },
+  { label: 'Level 1 — Full Text', removePct: 0, hints: false },
+  { label: 'Level 2 — First Letters', removePct: 0.3, hints: true },
+  { label: 'Level 3 — Some Missing', removePct: 0.3, hints: false },
+  { label: 'Level 4 — Most Missing', removePct: 0.6, hints: false },
+  { label: 'Level 5 — Blank', removePct: 1, hints: false },
 ]
 
 function buildMaskedWords(text, removePct, seed) {
@@ -38,6 +39,18 @@ function normalize(str) {
   return str.toLowerCase().replace(/[^a-z0-9]/g, '')
 }
 
+function firstLetter(word) {
+  const match = word.match(/[a-zA-Z0-9]/)
+  return match ? match[0] : ''
+}
+
+const EyeIcon = () => (
+  <svg className="w-3.5 h-3.5" viewBox="0 0 20 20" fill="currentColor">
+    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+    <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+  </svg>
+)
+
 export default function Memorize() {
   const [phase, setPhase] = useState('select') // select | study | check
   const [selectedText, setSelectedText] = useState(null)
@@ -46,17 +59,19 @@ export default function Memorize() {
   const [blankValues, setBlankValues] = useState({})
   const [userInput, setUserInput] = useState('')
   const [checkResult, setCheckResult] = useState(null)
+  const [peekedBlanks, setPeekedBlanks] = useState({}) // index -> true while peeking
   const blankRefs = useRef({})
+  const peekTimers = useRef({})
   const textareaRef = useRef(null)
 
   const textData = texts.find(t => t.id === selectedText)
+  const currentLevel = LEVELS[level]
 
   const maskedWords = useMemo(() => {
     if (!textData) return []
-    return buildMaskedWords(textData.text, LEVELS[level].removePct, seed + level)
-  }, [textData, level, seed])
+    return buildMaskedWords(textData.text, currentLevel.removePct, seed + level)
+  }, [textData, level, seed, currentLevel.removePct])
 
-  // Ordered list of blank indices for tab-through (skip lineBreak items)
   const blankIndices = useMemo(() => {
     return maskedWords.reduce((acc, item, i) => {
       if (item.hidden) acc.push(i)
@@ -64,14 +79,21 @@ export default function Memorize() {
     }, [])
   }, [maskedWords])
 
-  // Auto-focus first blank on level change (levels 2-3)
+  // Auto-focus first blank on level change (blank levels)
   useEffect(() => {
-    if (phase === 'study' && level >= 1 && level <= 2 && blankIndices.length > 0) {
+    if (phase === 'study' && level >= 1 && level <= 3 && blankIndices.length > 0) {
       setTimeout(() => {
         blankRefs.current[blankIndices[0]]?.focus()
       }, 50)
     }
   }, [phase, level, blankIndices])
+
+  // Clean up peek timers on unmount
+  useEffect(() => {
+    return () => {
+      Object.values(peekTimers.current).forEach(clearTimeout)
+    }
+  }, [])
 
   const handleSelectText = useCallback((id) => {
     setSelectedText(id)
@@ -80,6 +102,7 @@ export default function Memorize() {
     setBlankValues({})
     setUserInput('')
     setCheckResult(null)
+    setPeekedBlanks({})
   }, [])
 
   const handleLevelChange = useCallback((newLevel) => {
@@ -88,6 +111,9 @@ export default function Memorize() {
     setUserInput('')
     setCheckResult(null)
     setPhase('study')
+    setPeekedBlanks({})
+    Object.values(peekTimers.current).forEach(clearTimeout)
+    peekTimers.current = {}
   }, [])
 
   const handleBlankChange = useCallback((index, value) => {
@@ -108,6 +134,22 @@ export default function Memorize() {
       }
     }
   }, [blankIndices])
+
+  const handlePeek = useCallback((index) => {
+    // Clear any existing timer for this blank
+    if (peekTimers.current[index]) {
+      clearTimeout(peekTimers.current[index])
+    }
+    setPeekedBlanks(prev => ({ ...prev, [index]: true }))
+    peekTimers.current[index] = setTimeout(() => {
+      setPeekedBlanks(prev => {
+        const next = { ...prev }
+        delete next[index]
+        return next
+      })
+      delete peekTimers.current[index]
+    }, 1500)
+  }, [])
 
   const handleCheckBlanks = useCallback(() => {
     const hiddenWords = maskedWords.filter(item => item.hidden)
@@ -150,9 +192,15 @@ export default function Memorize() {
     setBlankValues({})
     setUserInput('')
     setCheckResult(null)
+    setPeekedBlanks({})
+    Object.values(peekTimers.current).forEach(clearTimeout)
+    peekTimers.current = {}
   }, [])
 
   const hasAnyBlankFilled = Object.values(blankValues).some(v => v.trim())
+
+  // Is this a level with inline blanks?
+  const isBlankLevel = level >= 1 && level <= 3
 
   // --- SELECT PHASE ---
   if (phase === 'select') {
@@ -160,7 +208,7 @@ export default function Memorize() {
       <div>
         <h1 className="text-2xl font-bold mb-6">Text Memorizer</h1>
         <p className="text-gray-400 mb-6">
-          Choose a text to memorize. Words are progressively removed across four levels until you can recite it from memory.
+          Choose a text to memorize. Words are progressively removed across five levels until you can recite it from memory.
         </p>
         <div className="grid sm:grid-cols-2 gap-4">
           {texts.map(t => (
@@ -180,13 +228,52 @@ export default function Memorize() {
     )
   }
 
+  // --- Render a blank input with optional first-letter hint and peek button ---
+  function renderBlank(item, i) {
+    const isPeeking = peekedBlanks[i]
+
+    return (
+      <span key={i} className="inline-flex items-center">
+        {isPeeking ? (
+          <span className="inline-block bg-purple-900/40 text-purple-300 rounded px-1 mx-0.5 text-center font-medium">
+            {item.word}
+          </span>
+        ) : (
+          <span className="relative inline-block">
+            <input
+              ref={el => { blankRefs.current[i] = el }}
+              type="text"
+              value={blankValues[i] || ''}
+              onChange={e => handleBlankChange(i, e.target.value)}
+              onKeyDown={e => handleBlankKeyDown(e, i)}
+              placeholder={currentLevel.hints ? firstLetter(item.word) + '…' : ''}
+              className="inline-block bg-gray-800 border-b-2 border-gray-600 focus:border-purple-500 rounded-sm px-1 mx-0.5 text-center text-gray-100 outline-none transition-colors placeholder:text-gray-600"
+              style={{ width: `${Math.max(item.word.length, 3) * 0.7 + 1}em` }}
+              autoComplete="off"
+            />
+          </span>
+        )}
+        <button
+          type="button"
+          onClick={() => handlePeek(i)}
+          className="ml-0.5 mr-1 text-gray-600 hover:text-purple-400 transition-colors p-0.5 rounded"
+          title="Peek at word"
+          tabIndex={-1}
+        >
+          <EyeIcon />
+        </button>
+        {' '}
+      </span>
+    )
+  }
+
   // --- STUDY & CHECK PHASES ---
   return (
     <div>
       <div className="flex items-center justify-between mb-6">
         <div>
           <h1 className="text-2xl font-bold">{textData.title}</h1>
-          <p className="text-sm text-gray-500 mt-1">{LEVELS[level].label}</p>
+          <p className="text-sm text-gray-500 mt-1">{currentLevel.label}</p>
         </div>
         <button
           onClick={handleReset}
@@ -220,31 +307,14 @@ export default function Memorize() {
         </div>
       )}
 
-      {/* Levels 2-3: inline blanks */}
-      {(level === 1 || level === 2) && phase === 'study' && (
+      {/* Levels 2-4: inline blanks */}
+      {isBlankLevel && phase === 'study' && (
         <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 mb-6">
           <p className="text-lg leading-loose">
             {maskedWords.map((item, i) => {
               if (item.lineBreak) return <br key={i} />
-              return (
-                <span key={i}>
-                  {item.hidden ? (
-                    <input
-                      ref={el => { blankRefs.current[i] = el }}
-                      type="text"
-                      value={blankValues[i] || ''}
-                      onChange={e => handleBlankChange(i, e.target.value)}
-                      onKeyDown={e => handleBlankKeyDown(e, i)}
-                      className="inline-block bg-gray-800 border-b-2 border-gray-600 focus:border-purple-500 rounded-sm px-1 mx-0.5 text-center text-gray-100 outline-none transition-colors"
-                      style={{ width: `${Math.max(item.word.length, 3) * 0.7 + 1}em` }}
-                      autoComplete="off"
-                    />
-                  ) : (
-                    <span>{item.word}</span>
-                  )}
-                  {' '}
-                </span>
-              )
+              if (item.hidden) return renderBlank(item, i)
+              return <span key={i}>{item.word}{' '}</span>
             })}
           </p>
           <div className="flex justify-end mt-4">
@@ -259,8 +329,8 @@ export default function Memorize() {
         </div>
       )}
 
-      {/* Levels 2-3: check results (inline) */}
-      {(level === 1 || level === 2) && phase === 'check' && checkResult && !checkResult.fullText && (
+      {/* Levels 2-4: check results (inline) */}
+      {isBlankLevel && phase === 'check' && checkResult && !checkResult.fullText && (
         <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 mb-6">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-lg font-semibold">
@@ -294,7 +364,7 @@ export default function Memorize() {
           </p>
           <div className="flex justify-end mt-4">
             <button
-              onClick={() => { setPhase('study'); setBlankValues({}); setCheckResult(null) }}
+              onClick={() => { setPhase('study'); setBlankValues({}); setCheckResult(null); setPeekedBlanks({}) }}
               className="px-5 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-medium transition-colors"
             >
               Try Again
@@ -303,8 +373,8 @@ export default function Memorize() {
         </div>
       )}
 
-      {/* Level 4: full textarea */}
-      {level === 3 && phase === 'study' && (
+      {/* Level 5: full textarea */}
+      {level === 4 && phase === 'study' && (
         <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 mb-6">
           <p className="text-gray-500 italic mb-4">
             Recite the full text from memory.
@@ -330,8 +400,8 @@ export default function Memorize() {
         </div>
       )}
 
-      {/* Level 4: check results (full text) */}
-      {level === 3 && phase === 'check' && checkResult && checkResult.fullText && (
+      {/* Level 5: check results (full text) */}
+      {level === 4 && phase === 'check' && checkResult && checkResult.fullText && (
         <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 mb-6">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-lg font-semibold">
