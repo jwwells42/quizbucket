@@ -12,7 +12,17 @@
       { "question": "President who issued the Emancipation Proclamation", "answer": "Abraham Lincoln" },
       { "question": "Youngest person to become president", "answer": "Theodore Roosevelt" },
       { "question": "President during World War II (longest serving)", "answer": "Franklin D. Roosevelt" },
-      { "question": "President who resigned from office", "answer": "Richard Nixon" }
+      { "question": "President who resigned from office", "answer": "Richard Nixon" },
+      { "question": "President who was assassinated in Dallas, Texas", "answer": "John F. Kennedy" },
+      { "question": "President who served two non-consecutive terms", "answer": "Grover Cleveland" },
+      { "question": "First president to be impeached", "answer": "Andrew Johnson" },
+      { "question": "President who signed the Civil Rights Act of 1964", "answer": "Lyndon B. Johnson" },
+      { "question": "President known as 'Honest Abe'", "answer": "Abraham Lincoln" },
+      { "question": "President who led the nation during World War I", "answer": "Woodrow Wilson" },
+      { "question": "President who was a former head of the CIA", "answer": "George H. W. Bush" },
+      { "question": "President associated with the New Deal", "answer": "Franklin D. Roosevelt" },
+      { "question": "President who ordered the dropping of atomic bombs on Japan", "answer": "Harry S. Truman" },
+      { "question": "President who served the shortest term in office", "answer": "William Henry Harrison" }
     ]
   },
   {
@@ -28,7 +38,17 @@
       { "question": "Capital of Germany", "answer": "Berlin" },
       { "question": "Capital of India", "answer": "New Delhi" },
       { "question": "Capital of South Korea", "answer": "Seoul" },
-      { "question": "Capital of Turkey", "answer": "Ankara" }
+      { "question": "Capital of Turkey", "answer": "Ankara" },
+      { "question": "Capital of Russia", "answer": "Moscow" },
+      { "question": "Capital of China", "answer": "Beijing" },
+      { "question": "Capital of Italy", "answer": "Rome" },
+      { "question": "Capital of Spain", "answer": "Madrid" },
+      { "question": "Capital of Mexico", "answer": "Mexico City" },
+      { "question": "Capital of Argentina", "answer": "Buenos Aires" },
+      { "question": "Capital of Thailand", "answer": "Bangkok" },
+      { "question": "Capital of Kenya", "answer": "Nairobi" },
+      { "question": "Capital of Poland", "answer": "Warsaw" },
+      { "question": "Capital of South Africa (executive)", "answer": "Pretoria" }
     ]
   }
 ]

@@ -2,12 +2,24 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import { lightning } from '../data/loader'
 import { useProgress } from '../hooks/useProgress'
 
+const ROUND_SIZE = 10
+
+function shuffle(arr) {
+  const a = [...arr]
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]]
+  }
+  return a
+}
+
 export default function Lightning() {
   const { recordLightning, getLightningStats } = useProgress()
   const lightningStats = getLightningStats()
 
   const [selectedSets, setSelectedSets] = useState(lightning.map(s => s.id))
   const [phase, setPhase] = useState('setup')
+  const [activeSet, setActiveSet] = useState(null) // the chosen topic for this round
   const [questions, setQuestions] = useState([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [answer, setAnswer] = useState('')
@@ -25,15 +37,14 @@ export default function Lightning() {
   }
 
   const startRound = useCallback(() => {
-    const pool = lightning
-      .filter(s => selectedSets.includes(s.id))
-      .flatMap(s => s.questions.map(q => ({ ...q, setId: s.id })))
+    // Pick one random topic from selected sets
+    const eligible = lightning.filter(s => selectedSets.includes(s.id))
+    const chosen = eligible[Math.floor(Math.random() * eligible.length)]
 
-    for (let i = pool.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [pool[i], pool[j]] = [pool[j], pool[i]]
-    }
+    // Pull 10 random questions from its bank
+    const pool = shuffle(chosen.questions).slice(0, ROUND_SIZE)
 
+    setActiveSet(chosen)
     setQuestions(pool)
     setCurrentIndex(0)
     setResults([])
@@ -62,14 +73,10 @@ export default function Lightning() {
   }, [phase])
 
   useEffect(() => {
-    if (phase !== 'done' || results.length === 0) return
-    const setsUsed = [...new Set(results.map(r => r.setId))]
-    setsUsed.forEach(setId => {
-      const setResults = results.filter(r => r.setId === setId)
-      const setCorrect = setResults.filter(r => r.correct).length
-      recordLightning(setId, setCorrect, setResults.length)
-    })
-  }, [phase, results, recordLightning])
+    if (phase !== 'done' || results.length === 0 || !activeSet) return
+    const correct = results.filter(r => r.correct).length
+    recordLightning(activeSet.id, correct, results.length)
+  }, [phase, results, activeSet, recordLightning])
 
   const submitAnswer = useCallback(() => {
     if (feedback) return
@@ -115,14 +122,17 @@ export default function Lightning() {
       }
       inputRef.current?.focus()
     }, 400)
-  }, [currentIndex, questions])
+  }, [currentIndex, questions, feedback])
 
   if (phase === 'setup') {
     return (
       <div>
         <h1 className="text-2xl font-bold mb-6">Lightning Round</h1>
         <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 mb-6">
-          <h2 className="font-semibold mb-3">Select question sets:</h2>
+          <h2 className="font-semibold mb-1">Select topics:</h2>
+          <p className="text-sm text-gray-500 mb-3">
+            One topic will be randomly chosen. 10 questions pulled from its bank.
+          </p>
           <div className="space-y-2">
             {lightning.map(set => {
               const stat = lightningStats[set.id]
@@ -136,10 +146,10 @@ export default function Lightning() {
                   />
                   <div className="flex-1">
                     <span className="font-medium">{set.title}</span>
-                    <span className="text-sm text-gray-500 ml-2">({set.questions.length} questions)</span>
+                    <span className="text-sm text-gray-500 ml-2">({set.questions.length} in bank)</span>
                     {stat && (
                       <span className="text-xs text-gray-600 ml-2">
-                        Best: {stat.bestScore}/{stat.lastTotal}
+                        Best: {stat.bestScore}/{ROUND_SIZE}
                       </span>
                     )}
                   </div>
@@ -166,7 +176,9 @@ export default function Lightning() {
     const correct = results.filter(r => r.correct).length
     return (
       <div>
-        <h1 className="text-2xl font-bold mb-6">Round Complete!</h1>
+        <h1 className="text-2xl font-bold mb-1">Round Complete!</h1>
+        <p className="text-gray-500 text-sm mb-6">{activeSet.title}</p>
+
         <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 mb-6 text-center">
           <div className="text-5xl font-bold text-amber-400 mb-2">
             {correct}/{results.length}
@@ -209,7 +221,7 @@ export default function Lightning() {
             onClick={() => setPhase('setup')}
             className="px-6 py-2 bg-gray-700 text-gray-300 rounded-lg font-medium hover:bg-gray-600 transition-colors"
           >
-            Change Sets
+            Change Topics
           </button>
         </div>
       </div>
@@ -220,7 +232,10 @@ export default function Lightning() {
   return (
     <div>
       <div className="flex items-center justify-between mb-6">
-        <h1 className="text-2xl font-bold">Lightning Round</h1>
+        <div>
+          <h1 className="text-2xl font-bold">Lightning Round</h1>
+          <p className="text-sm text-gray-500">{activeSet.title}</p>
+        </div>
         <div
           className={`text-2xl font-mono font-bold ${timeLeft <= 10 ? 'text-red-400' : 'text-gray-300'}`}
         >
@@ -269,7 +284,7 @@ export default function Lightning() {
         <button
           type="button"
           onClick={skipQuestion}
-          className="px-4 py-3 bg-gray-700 text-gray-400 rounded-lg font-medium hover:bg-gray-600 disabled:opacity-40 transition-colors"
+          className="px-4 py-3 bg-gray-700 text-gray-400 rounded-lg font-medium hover:bg-gray-600 transition-colors"
         >
           Skip
         </button>
