@@ -9,18 +9,29 @@ const LEVELS = [
 ]
 
 function buildMaskedWords(text, removePct, seed) {
-  const words = text.split(/\s+/)
+  const lines = text.split('\n')
   let rng = seed
   function nextRand() {
     rng = (rng * 16807 + 0) % 2147483647
     return rng / 2147483647
   }
 
-  return words.map((word, i) => {
-    if (i === 0 && removePct < 1) return { word, hidden: false }
-    const hidden = removePct >= 1 ? true : nextRand() < removePct
-    return { word, hidden }
+  const result = []
+  let wordIndex = 0
+  lines.forEach((line, lineIdx) => {
+    if (lineIdx > 0) result.push({ lineBreak: true })
+    const words = line.split(/\s+/).filter(Boolean)
+    words.forEach(word => {
+      if (wordIndex === 0 && removePct < 1) {
+        result.push({ word, hidden: false })
+      } else {
+        const hidden = removePct >= 1 ? true : nextRand() < removePct
+        result.push({ word, hidden })
+      }
+      wordIndex++
+    })
   })
+  return result
 }
 
 function normalize(str) {
@@ -32,9 +43,7 @@ export default function Memorize() {
   const [selectedText, setSelectedText] = useState(null)
   const [level, setLevel] = useState(0)
   const [seed] = useState(() => Math.floor(Math.random() * 100000) + 1)
-  // For levels 2-3: one value per hidden blank
   const [blankValues, setBlankValues] = useState({})
-  // For level 4: full textarea
   const [userInput, setUserInput] = useState('')
   const [checkResult, setCheckResult] = useState(null)
   const blankRefs = useRef({})
@@ -47,7 +56,7 @@ export default function Memorize() {
     return buildMaskedWords(textData.text, LEVELS[level].removePct, seed + level)
   }, [textData, level, seed])
 
-  // Ordered list of blank indices for tab-through
+  // Ordered list of blank indices for tab-through (skip lineBreak items)
   const blankIndices = useMemo(() => {
     return maskedWords.reduce((acc, item, i) => {
       if (item.hidden) acc.push(i)
@@ -104,6 +113,7 @@ export default function Memorize() {
     const hiddenWords = maskedWords.filter(item => item.hidden)
     let correctCount = 0
     const results = maskedWords.map((item, i) => {
+      if (item.lineBreak) return { lineBreak: true }
       if (!item.hidden) return { word: item.word, hidden: false, match: true }
       const got = (blankValues[i] || '').trim()
       const match = normalize(got) === normalize(item.word)
@@ -142,7 +152,6 @@ export default function Memorize() {
     setCheckResult(null)
   }, [])
 
-  // Check if any blanks are filled (for enabling Check button)
   const hasAnyBlankFilled = Object.values(blankValues).some(v => v.trim())
 
   // --- SELECT PHASE ---
@@ -207,7 +216,7 @@ export default function Memorize() {
       {/* Level 1: read-only full text */}
       {level === 0 && (
         <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 mb-6">
-          <p className="text-lg leading-relaxed">{textData.text}</p>
+          <p className="text-lg leading-relaxed whitespace-pre-line">{textData.text}</p>
         </div>
       )}
 
@@ -215,25 +224,28 @@ export default function Memorize() {
       {(level === 1 || level === 2) && phase === 'study' && (
         <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 mb-6">
           <p className="text-lg leading-loose">
-            {maskedWords.map((item, i) => (
-              <span key={i}>
-                {item.hidden ? (
-                  <input
-                    ref={el => { blankRefs.current[i] = el }}
-                    type="text"
-                    value={blankValues[i] || ''}
-                    onChange={e => handleBlankChange(i, e.target.value)}
-                    onKeyDown={e => handleBlankKeyDown(e, i)}
-                    className="inline-block bg-gray-800 border-b-2 border-gray-600 focus:border-purple-500 rounded-sm px-1 mx-0.5 text-center text-gray-100 outline-none transition-colors"
-                    style={{ width: `${Math.max(item.word.length, 3) * 0.7 + 1}em` }}
-                    autoComplete="off"
-                  />
-                ) : (
-                  <span>{item.word}</span>
-                )}
-                {' '}
-              </span>
-            ))}
+            {maskedWords.map((item, i) => {
+              if (item.lineBreak) return <br key={i} />
+              return (
+                <span key={i}>
+                  {item.hidden ? (
+                    <input
+                      ref={el => { blankRefs.current[i] = el }}
+                      type="text"
+                      value={blankValues[i] || ''}
+                      onChange={e => handleBlankChange(i, e.target.value)}
+                      onKeyDown={e => handleBlankKeyDown(e, i)}
+                      className="inline-block bg-gray-800 border-b-2 border-gray-600 focus:border-purple-500 rounded-sm px-1 mx-0.5 text-center text-gray-100 outline-none transition-colors"
+                      style={{ width: `${Math.max(item.word.length, 3) * 0.7 + 1}em` }}
+                      autoComplete="off"
+                    />
+                  ) : (
+                    <span>{item.word}</span>
+                  )}
+                  {' '}
+                </span>
+              )
+            })}
           </p>
           <div className="flex justify-end mt-4">
             <button
@@ -259,23 +271,26 @@ export default function Memorize() {
             </span>
           </div>
           <p className="text-lg leading-loose">
-            {checkResult.results.map((r, i) => (
-              <span key={i}>
-                {!r.hidden ? (
-                  <span>{r.word}</span>
-                ) : r.match ? (
-                  <span className="text-emerald-400 font-medium">{r.word}</span>
-                ) : r.got ? (
-                  <span>
-                    <span className="bg-red-900/50 text-red-300 rounded px-0.5 line-through">{r.got}</span>
-                    {' '}<span className="text-emerald-400 font-medium">{r.word}</span>
-                  </span>
-                ) : (
-                  <span className="bg-red-900/50 text-red-300 rounded px-0.5">[{r.word}]</span>
-                )}
-                {' '}
-              </span>
-            ))}
+            {checkResult.results.map((r, i) => {
+              if (r.lineBreak) return <br key={i} />
+              return (
+                <span key={i}>
+                  {!r.hidden ? (
+                    <span>{r.word}</span>
+                  ) : r.match ? (
+                    <span className="text-emerald-400 font-medium">{r.word}</span>
+                  ) : r.got ? (
+                    <span>
+                      <span className="bg-red-900/50 text-red-300 rounded px-0.5 line-through">{r.got}</span>
+                      {' '}<span className="text-emerald-400 font-medium">{r.word}</span>
+                    </span>
+                  ) : (
+                    <span className="bg-red-900/50 text-red-300 rounded px-0.5">[{r.word}]</span>
+                  )}
+                  {' '}
+                </span>
+              )
+            })}
           </p>
           <div className="flex justify-end mt-4">
             <button
@@ -346,7 +361,7 @@ export default function Memorize() {
           </div>
           <div className="mt-4 pt-4 border-t border-gray-800">
             <p className="text-sm text-gray-500 mb-3">Original text:</p>
-            <p className="text-sm text-gray-400 leading-relaxed">{textData.text}</p>
+            <p className="text-sm text-gray-400 leading-relaxed whitespace-pre-line">{textData.text}</p>
           </div>
           <div className="flex justify-end mt-4">
             <button
