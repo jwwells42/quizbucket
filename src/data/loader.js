@@ -7,6 +7,11 @@ import greekRomanMythology from './flashcards/greek-roman-mythology.json'
 import stateCapitals from './flashcards/state-capitals.json'
 import authorsWorks from './flashcards/authors-works.json'
 import mathVocabulary from './flashcards/math-vocabulary.json'
+import worldCapitals from './flashcards/world-capitals.json'
+import scienceTerms from './flashcards/science-terms.json'
+import worldHistory from './flashcards/world-history.json'
+import artMusic from './flashcards/art-music.json'
+import wordRoots from './flashcards/word-roots.json'
 import tossups from './tossups.json'
 import lightning from './lightning.json'
 
@@ -20,6 +25,11 @@ export const flashcardDecks = [
   stateCapitals,
   authorsWorks,
   mathVocabulary,
+  worldCapitals,
+  scienceTerms,
+  worldHistory,
+  artMusic,
+  wordRoots,
 ]
 
 export function getDeck(id) {
