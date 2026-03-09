@@ -53,9 +53,7 @@ export default function Memorize() {
     setLevel(newLevel)
     setUserInput('')
     setCheckResult(null)
-    if (newLevel === 3) {
-      setPhase('study')
-    }
+    setPhase('study')
   }, [])
 
   const handleCheck = useCallback(() => {
@@ -146,7 +144,7 @@ export default function Memorize() {
       </div>
 
       {/* Text display (levels 1-3) */}
-      {level < 3 && (
+      {level < 3 && phase !== 'check' && (
         <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 mb-6">
           <p className="text-lg leading-relaxed">
             {maskedWords.map((item, i) => (
@@ -165,19 +163,21 @@ export default function Memorize() {
         </div>
       )}
 
-      {/* Level 4: blank — just the input */}
-      {level === 3 && phase === 'study' && (
+      {/* Input area (levels 2-4) */}
+      {level >= 1 && phase === 'study' && (
         <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 mb-6">
           <p className="text-gray-500 italic mb-4">
-            Recite the full text from memory.
+            {level === 3
+              ? 'Recite the full text from memory.'
+              : 'Fill in the full text, including the missing words.'}
           </p>
           <textarea
             ref={inputRef}
             value={userInput}
             onChange={e => setUserInput(e.target.value)}
-            rows={8}
+            rows={level === 3 ? 8 : 5}
             className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-gray-100 focus:outline-none focus:border-purple-500 resize-y"
-            placeholder="Type the text from memory..."
+            placeholder="Type the text..."
             autoFocus
           />
           <div className="flex justify-end mt-4">
@@ -236,8 +236,8 @@ export default function Memorize() {
         </div>
       )}
 
-      {/* Hint for levels 1-3 */}
-      {level < 3 && (
+      {/* Hint for level 1 */}
+      {level === 0 && phase === 'study' && (
         <p className="text-sm text-gray-600 text-center">
           Read through the text, then move to the next level when you feel ready.
         </p>
