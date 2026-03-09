@@ -87,9 +87,13 @@ export default function Memorize() {
 
   const handleBlankKeyDown = useCallback((e, index) => {
     const pos = blankIndices.indexOf(index)
-    if (e.key === ' ' || e.key === 'Enter' || e.key === 'Tab') {
+    if (e.key === 'Tab' && e.shiftKey) {
       e.preventDefault()
-      // Move to next blank
+      if (pos > 0) {
+        blankRefs.current[blankIndices[pos - 1]]?.focus()
+      }
+    } else if (e.key === ' ' || e.key === 'Enter' || e.key === 'Tab') {
+      e.preventDefault()
       if (pos < blankIndices.length - 1) {
         blankRefs.current[blankIndices[pos + 1]]?.focus()
       }
@@ -261,13 +265,13 @@ export default function Memorize() {
                   <span>{r.word}</span>
                 ) : r.match ? (
                   <span className="text-emerald-400 font-medium">{r.word}</span>
-                ) : (
-                  <span className="relative">
-                    {r.got ? (
-                      <span className="bg-red-900/50 text-red-300 rounded px-0.5 line-through">{r.got}</span>
-                    ) : null}
-                    <span className="text-emerald-400 font-medium">{r.got ? ' ' : ''}{r.word}</span>
+                ) : r.got ? (
+                  <span>
+                    <span className="bg-red-900/50 text-red-300 rounded px-0.5 line-through">{r.got}</span>
+                    {' '}<span className="text-emerald-400 font-medium">{r.word}</span>
                   </span>
+                ) : (
+                  <span className="bg-red-900/50 text-red-300 rounded px-0.5">[{r.word}]</span>
                 )}
                 {' '}
               </span>
