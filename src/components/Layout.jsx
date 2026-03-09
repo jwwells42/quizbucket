@@ -13,10 +13,10 @@ export default function Layout({ children }) {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-900">
-      <nav className="bg-indigo-600 text-white shadow-lg">
+    <div className="min-h-screen bg-gray-950 text-gray-100">
+      <nav className="bg-gray-900 border-b border-gray-800">
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-          <Link to="/" className="text-xl font-bold tracking-tight">
+          <Link to="/" className="text-xl font-bold tracking-tight text-indigo-400">
             QuizBucket
           </Link>
 
@@ -28,8 +28,8 @@ export default function Layout({ children }) {
                 to={link.to}
                 className={`px-3 py-1.5 rounded text-sm font-medium transition-colors ${
                   location.pathname === link.to || (link.to !== '/' && location.pathname.startsWith(link.to))
-                    ? 'bg-indigo-700 text-white'
-                    : 'text-indigo-100 hover:bg-indigo-500'
+                    ? 'bg-gray-700 text-white'
+                    : 'text-gray-400 hover:bg-gray-800 hover:text-gray-200'
                 }`}
               >
                 {link.label}
@@ -39,7 +39,7 @@ export default function Layout({ children }) {
 
           {/* Mobile hamburger */}
           <button
-            className="sm:hidden p-1"
+            className="sm:hidden p-1 text-gray-400"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
@@ -55,7 +55,7 @@ export default function Layout({ children }) {
 
         {/* Mobile menu */}
         {menuOpen && (
-          <div className="sm:hidden border-t border-indigo-500 px-4 py-2 space-y-1">
+          <div className="sm:hidden border-t border-gray-800 px-4 py-2 space-y-1">
             {navLinks.map(link => (
               <Link
                 key={link.to}
@@ -63,8 +63,8 @@ export default function Layout({ children }) {
                 onClick={() => setMenuOpen(false)}
                 className={`block px-3 py-2 rounded text-sm font-medium ${
                   location.pathname === link.to || (link.to !== '/' && location.pathname.startsWith(link.to))
-                    ? 'bg-indigo-700'
-                    : 'hover:bg-indigo-500'
+                    ? 'bg-gray-700 text-white'
+                    : 'text-gray-400 hover:bg-gray-800'
                 }`}
               >
                 {link.label}

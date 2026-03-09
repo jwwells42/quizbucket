@@ -7,19 +7,19 @@ const modes = [
     to: '/flashcards',
     title: 'Flashcards',
     description: 'Study facts with flip cards and spaced repetition',
-    color: 'bg-blue-500',
+    accent: 'bg-blue-500',
   },
   {
     to: '/tossup',
     title: 'Tossup Practice',
     description: 'Buzz in as clues reveal word by word',
-    color: 'bg-green-500',
+    accent: 'bg-emerald-500',
   },
   {
     to: '/lightning',
     title: 'Lightning Round',
     description: '60-second rapid-fire questions',
-    color: 'bg-amber-500',
+    accent: 'bg-amber-500',
   },
 ]
 
@@ -36,7 +36,7 @@ export default function Home() {
     <div>
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold mb-2">QuizBucket</h1>
-        <p className="text-gray-600">AGQBA Quiz Bowl Study Tool</p>
+        <p className="text-gray-500">AGQBA Quiz Bowl Study Tool</p>
       </div>
 
       {/* Study mode cards */}
@@ -45,10 +45,10 @@ export default function Home() {
           <Link
             key={mode.to}
             to={mode.to}
-            className="block rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden"
+            className="block rounded-lg overflow-hidden bg-gray-900 border border-gray-800 hover:border-gray-700 transition-colors"
           >
-            <div className={`${mode.color} h-2`} />
-            <div className="p-5 bg-white">
+            <div className={`${mode.accent} h-1.5`} />
+            <div className="p-5">
               <h2 className="text-lg font-semibold mb-1">{mode.title}</h2>
               <p className="text-sm text-gray-500">{mode.description}</p>
             </div>
@@ -57,15 +57,15 @@ export default function Home() {
       </div>
 
       {/* Progress summary */}
-      <div className="bg-white rounded-lg shadow p-6">
+      <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
         <h2 className="text-lg font-semibold mb-4">Your Progress</h2>
         <div className="grid grid-cols-3 gap-4 text-center">
           <div>
-            <div className="text-2xl font-bold text-blue-600">{totalCardsStudied}</div>
+            <div className="text-2xl font-bold text-blue-400">{totalCardsStudied}</div>
             <div className="text-xs text-gray-500">Cards Studied</div>
           </div>
           <div>
-            <div className="text-2xl font-bold text-green-600">
+            <div className="text-2xl font-bold text-emerald-400">
               {tossupStats.total > 0
                 ? `${Math.round((tossupStats.correct / tossupStats.total) * 100)}%`
                 : '—'}
@@ -73,7 +73,7 @@ export default function Home() {
             <div className="text-xs text-gray-500">Tossup Accuracy</div>
           </div>
           <div>
-            <div className="text-2xl font-bold text-amber-600">
+            <div className="text-2xl font-bold text-amber-400">
               {Object.keys(lightningStats).length > 0
                 ? Object.values(lightningStats).reduce((sum, s) => sum + s.timesPlayed, 0)
                 : '—'}
@@ -84,7 +84,7 @@ export default function Home() {
       </div>
 
       {/* Deck progress breakdown */}
-      <div className="mt-6 bg-white rounded-lg shadow p-6">
+      <div className="mt-6 bg-gray-900 border border-gray-800 rounded-lg p-6">
         <h2 className="text-lg font-semibold mb-4">Flashcard Decks</h2>
         <div className="space-y-3">
           {flashcardDecks.map(deck => {
@@ -95,7 +95,7 @@ export default function Home() {
               <Link
                 key={deck.id}
                 to={`/flashcards/${deck.id}`}
-                className="block hover:bg-gray-50 rounded p-2 -mx-2 transition-colors"
+                className="block hover:bg-gray-800 rounded p-2 -mx-2 transition-colors"
               >
                 <div className="flex justify-between items-center mb-1">
                   <span className="text-sm font-medium">{deck.title}</span>
@@ -103,7 +103,7 @@ export default function Home() {
                     {stats.known}/{total} mastered
                   </span>
                 </div>
-                <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
+                <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
                   <div
                     className="h-full bg-blue-500 rounded-full transition-all"
                     style={{ width: `${pct}%` }}

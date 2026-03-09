@@ -16,11 +16,11 @@ export default function FlashcardList() {
             <Link
               key={deck.id}
               to={`/flashcards/${deck.id}`}
-              className="block bg-white rounded-lg shadow hover:shadow-md transition-shadow p-5"
+              className="block bg-gray-900 border border-gray-800 rounded-lg hover:border-gray-700 transition-colors p-5"
             >
               <h2 className="text-lg font-semibold mb-1">{deck.title}</h2>
               <p className="text-sm text-gray-500 mb-3">{deck.description}</p>
-              <div className="flex justify-between text-xs text-gray-400">
+              <div className="flex justify-between text-xs text-gray-500">
                 <span>{total} cards</span>
                 <span>
                   {stats.known > 0 && `${stats.known} mastered`}
