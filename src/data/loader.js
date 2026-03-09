@@ -12,6 +12,9 @@ import scienceTerms from './flashcards/science-terms.json'
 import worldHistory from './flashcards/world-history.json'
 import artMusic from './flashcards/art-music.json'
 import wordRoots from './flashcards/word-roots.json'
+import civics from './flashcards/civics.json'
+import shakespeare from './flashcards/shakespeare.json'
+import humanBody from './flashcards/human-body.json'
 import tossups from './tossups.json'
 import lightning from './lightning.json'
 
@@ -30,6 +33,9 @@ export const flashcardDecks = [
   worldHistory,
   artMusic,
   wordRoots,
+  civics,
+  shakespeare,
+  humanBody,
 ]
 
 export function getDeck(id) {

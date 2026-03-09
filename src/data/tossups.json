@@ -48,5 +48,155 @@
     "question": "This artist painted the ceiling of the Sistine Chapel, which includes the famous scene of the Creation of Adam. He also sculpted the statue of David. Born in Caprese, Italy, he was a leading figure of the Renaissance. Name this Italian artist.",
     "answer": "Michelangelo",
     "category": "Fine Arts"
+  },
+  {
+    "question": "This organelle is often called the 'powerhouse of the cell.' It produces ATP through cellular respiration. It has its own DNA, separate from the cell's nucleus. Name this energy-producing organelle found in eukaryotic cells.",
+    "answer": "Mitochondria",
+    "category": "Science"
+  },
+  {
+    "question": "This novel follows a pig named Napoleon who seizes power after animals overthrow their human farmer. It is an allegory for the Russian Revolution and the rise of Stalin. Name this 1945 novel by George Orwell.",
+    "answer": "Animal Farm",
+    "category": "Literature"
+  },
+  {
+    "question": "This document begins with 'We the People' and was drafted in Philadelphia in 1787. It established the framework for the federal government, including three branches. Name this supreme law of the United States.",
+    "answer": "The Constitution",
+    "category": "History"
+  },
+  {
+    "question": "This painter is known for cutting off part of his own ear. He created works such as The Starry Night and Sunflowers while struggling with mental illness. He was a Post-Impressionist who worked primarily in France. Name this Dutch artist.",
+    "answer": "Vincent van Gogh",
+    "category": "Fine Arts"
+  },
+  {
+    "question": "This body of water is the largest ocean on Earth, covering more area than all the land on the planet combined. It was named by Ferdinand Magellan, who found its waters calm during his 1520 voyage. Name this ocean between Asia and the Americas.",
+    "answer": "Pacific Ocean",
+    "category": "Geography"
+  },
+  {
+    "question": "This number is the ratio of a circle's circumference to its diameter. It is an irrational number that begins 3.14159 and continues infinitely without repeating. Name this mathematical constant represented by a Greek letter.",
+    "answer": "Pi",
+    "category": "Math"
+  },
+  {
+    "question": "This play features a prince who sees the ghost of his murdered father and pretends to be mad. It includes the famous soliloquy beginning 'To be, or not to be.' Name this tragedy by William Shakespeare.",
+    "answer": "Hamlet",
+    "category": "Literature"
+  },
+  {
+    "question": "This Greek god ruled over the underworld and the dead. He kidnapped Persephone to be his queen. His brothers were Zeus and Poseidon, with whom he divided the cosmos. Name this god whose Roman equivalent is Pluto.",
+    "answer": "Hades",
+    "category": "Mythology"
+  },
+  {
+    "question": "This process occurs in the chloroplasts of plant cells. It uses sunlight, water, and carbon dioxide to produce glucose and oxygen. Name this process by which plants make their own food.",
+    "answer": "Photosynthesis",
+    "category": "Science"
+  },
+  {
+    "question": "This 1803 Supreme Court case established the principle of judicial review, giving the Court power to declare laws unconstitutional. It was decided under Chief Justice John Marshall. Name this landmark case.",
+    "answer": "Marbury v. Madison",
+    "category": "History"
+  },
+  {
+    "question": "This Italian explorer sailed west from Spain in 1492, seeking a route to Asia. Instead, he reached islands in the Caribbean, beginning an era of European exploration of the Americas. Name this explorer.",
+    "answer": "Christopher Columbus",
+    "category": "History"
+  },
+  {
+    "question": "This Renaissance artist painted the Mona Lisa and The Last Supper. He was also an inventor, scientist, and engineer who kept detailed notebooks written in mirror script. Name this Italian polymath.",
+    "answer": "Leonardo da Vinci",
+    "category": "Fine Arts"
+  },
+  {
+    "question": "This type of bond forms when atoms share electrons. It is common in molecules like water and carbon dioxide. It is different from ionic bonds, where electrons are transferred. Name this type of chemical bond.",
+    "answer": "Covalent bond",
+    "category": "Science"
+  },
+  {
+    "question": "This river is the longest in the United States, flowing from Montana to the Gulf of Mexico. It drains 31 states and two Canadian provinces. It was central to westward expansion and the steamboat era. Name this river that flows through cities like St. Louis and New Orleans.",
+    "answer": "Mississippi River",
+    "category": "Geography"
+  },
+  {
+    "question": "This novel is set in a dystopian future where the government controls all information and Big Brother watches everyone. The protagonist, Winston Smith, works at the Ministry of Truth. Name this 1949 novel by George Orwell.",
+    "answer": "1984",
+    "category": "Literature"
+  },
+  {
+    "question": "This physicist developed the theory of general relativity and the famous equation E equals mc squared. He won the Nobel Prize in Physics in 1921 for his work on the photoelectric effect. Name this German-born scientist.",
+    "answer": "Albert Einstein",
+    "category": "Science"
+  },
+  {
+    "question": "This Greek hero was known for his twelve labors, which included slaying the Nemean Lion and capturing Cerberus. He was the son of Zeus and was known for his incredible strength. Name this hero whose Roman name is Hercules.",
+    "answer": "Heracles",
+    "category": "Mythology"
+  },
+  {
+    "question": "This law of physics states that for every action there is an equal and opposite reaction. It is one of three fundamental laws of motion published in 1687. Name this third law formulated by Isaac Newton.",
+    "answer": "Newton's Third Law",
+    "category": "Science"
+  },
+  {
+    "question": "This speech was delivered by Martin Luther King Jr. on August 28, 1963, during the March on Washington. It called for racial equality and an end to discrimination. Name this famous address delivered on the steps of the Lincoln Memorial.",
+    "answer": "I Have a Dream",
+    "category": "History"
+  },
+  {
+    "question": "This continent is the driest, coldest, and windiest on Earth. It has no permanent human population, though research stations operate year-round. About 70 percent of the world's fresh water is frozen in its ice sheet. Name this southernmost continent.",
+    "answer": "Antarctica",
+    "category": "Geography"
+  },
+  {
+    "question": "This novel follows the journey of Santiago, an Andalusian shepherd boy, who travels to Egypt seeking treasure. Along the way he learns about the Soul of the World and his Personal Legend. Name this 1988 novel by Paulo Coelho.",
+    "answer": "The Alchemist",
+    "category": "Literature"
+  },
+  {
+    "question": "This organ is the largest in the human body by surface area. It serves as a barrier against pathogens, regulates temperature, and provides sensation. Name this organ that makes up the integumentary system.",
+    "answer": "Skin",
+    "category": "Science"
+  },
+  {
+    "question": "This ancient wonder was a massive stone structure built as a tomb for Pharaoh Khufu around 2560 BC. It is the oldest and largest of the three pyramids on the Giza plateau. Name this wonder of the ancient world located near Cairo, Egypt.",
+    "answer": "Great Pyramid of Giza",
+    "category": "History"
+  },
+  {
+    "question": "This Baroque composer wrote The Four Seasons, a set of four violin concertos each representing a season of the year. He was an Italian priest and virtuoso violinist. Name this composer known as 'The Red Priest.'",
+    "answer": "Antonio Vivaldi",
+    "category": "Fine Arts"
+  },
+  {
+    "question": "This French military leader rose to power during the French Revolution and crowned himself Emperor in 1804. He conquered much of Europe before his defeat at the Battle of Waterloo in 1815. Name this French emperor exiled to the island of Saint Helena.",
+    "answer": "Napoleon Bonaparte",
+    "category": "History"
+  },
+  {
+    "question": "This value on the pH scale indicates a neutral substance that is neither acidic nor basic. Pure water has this pH. Name this number on the pH scale.",
+    "answer": "7",
+    "category": "Science"
+  },
+  {
+    "question": "This Shakespeare play tells the story of a Scottish general who murders King Duncan after hearing a prophecy from three witches. His ambitious wife helps drive the plot. Name this tragedy featuring the line 'Out, damned spot.'",
+    "answer": "Macbeth",
+    "category": "Literature"
+  },
+  {
+    "question": "This device invented by Johannes Gutenberg around 1440 used movable metal type to mass-produce books. It is widely credited with helping to spread the Renaissance, Reformation, and Scientific Revolution. Name this invention that revolutionized communication.",
+    "answer": "The printing press",
+    "category": "History"
+  },
+  {
+    "question": "This bone is the longest and strongest in the human body. It extends from the hip to the knee. Name this bone commonly known as the thigh bone.",
+    "answer": "Femur",
+    "category": "Science"
+  },
+  {
+    "question": "This painting by Edvard Munch shows a figure with an agonized expression against a landscape with a tumultuous orange sky. Created in 1893, it has become one of the most iconic images in art. Name this Expressionist masterpiece.",
+    "answer": "The Scream",
+    "category": "Fine Arts"
   }
 ]
