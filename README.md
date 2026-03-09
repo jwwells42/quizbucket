@@ -9,7 +9,7 @@ A study tool for AGQBA-style quiz bowl preparation. Built for students and coach
 - **Flashcards** — Progressive batch learning (5 cards at a time). Drill each batch to zero before moving on. 21 topic decks covering science, history, literature, geography, civics, and more.
 - **Tossup Practice** — Question text reveals word-by-word. Buzz in and type your answer. Tracks accuracy over time.
 - **Lightning Round** — Single topic, 10 questions from a larger bank, 60-second timer. Mirrors the AGQBA Round 3 format.
-- **Text Memorizer** — Memorize speeches and poems across 4 levels: full text, 30% blanked, 60% blanked, then recite from memory. Inline fill-in-the-blank with word-by-word feedback.
+- **Text Memorizer** — Memorize speeches and poems across 5 levels: full text, first-letter hints, blanks, mostly blank, then recite from memory. Inline fill-in-the-blank with peek-to-reveal and word-by-word feedback.
 
 ## Getting Started
 

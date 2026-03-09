@@ -17,7 +17,7 @@ QuizBucket is a study/preparation website for AGQBA-style quiz bowl. It helps st
 - **Flashcards**: Flip cards with progressive batch learning (5 at a time, drill to zero, then next batch). Progress tracked in LocalStorage.
 - **Tossup Practice**: Question text reveals word-by-word, student types answer to buzz in
 - **Lightning Round Practice**: Single topic per round, 10 questions pulled randomly from a larger bank, 60-second timer
-- **Text Memorizer**: Progressively memorize texts across 4 levels (full text → inline blanks → mostly blank → recite from memory). Supports line breaks for poetry.
+- **Text Memorizer**: 5-level progressive memorization (full text → first-letter hints → blanks → mostly blank → recite from memory). Inline fill-in-the-blank with peek-to-reveal eye icon. Supports line breaks for poetry.
 
 ## Tech Stack
 
@@ -41,7 +41,7 @@ npm run preview      # preview production build
 - `src/data/flashcards/` — Flashcard deck JSON files (one per topic)
 - `src/data/tossups.json` — Tossup questions (40 across 7 categories)
 - `src/data/lightning.json` — Lightning round question banks (all topics, 25 Qs each)
-- `src/data/texts.json` — Texts for the memorizer (supports `\n` for line breaks)
+- `src/data/texts.json` — Texts for the memorizer (supports `\n` for line breaks; 5-level system with first-letter hints and peek)
 - `src/data/loader.js` — Imports and exports all data; add new decks here
 - `src/components/` — React components (Layout with nav)
 - `src/pages/` — Page components (Home, FlashcardList, FlashcardStudy, Tossup, Lightning, Memorize)
@@ -62,6 +62,6 @@ npm run preview      # preview production build
 
 Flashcard decks: Amendments, Musical Families, State Nicknames, Elements, Presidents, Greek/Roman Mythology, State Capitals, Authors & Works, Math Vocabulary, World Capitals, Science Terms, World History, Art & Music, Word Roots, U.S. Civics, Shakespeare, Human Body, Grammar & Literary Devices, Physical Geography, Economics, Music Theory
 
-Lightning topics: Presidents, Elements, State Capitals, Greek/Roman Gods, Authors, Math Vocabulary, World Capitals, Science Terms, World History, Art & Music, Word Roots, Civics, Shakespeare, Human Body, Grammar & Literary Devices, Physical Geography, Economics, Music Theory
+Lightning topics: Presidents, Elements, State Capitals, Greek/Roman Gods, Authors, Math Vocabulary, World Capitals, Science Terms, World History, Art & Music, Word Roots, Civics, Shakespeare, Human Body, Grammar & Literary Devices, Physical Geography, Economics, Music Theory (19 topics, 25 Qs each)
 
-Memorizer texts: Preamble, Gettysburg Address, Declaration of Independence (opening), Sonnet 29
+Memorizer texts: Preamble, Gettysburg Address, Declaration of Independence (opening), Shakespeare's Sonnet 29
