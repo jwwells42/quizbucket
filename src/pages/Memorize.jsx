@@ -116,6 +116,15 @@ export default function Memorize() {
     peekTimers.current = {}
   }, [])
 
+  const handleBlankFocus = useCallback(() => {
+    // Clear all peeks when user clicks back into any blank
+    if (Object.keys(peekedBlanks).length > 0) {
+      setPeekedBlanks({})
+      Object.values(peekTimers.current).forEach(clearTimeout)
+      peekTimers.current = {}
+    }
+  }, [peekedBlanks])
+
   const handleBlankChange = useCallback((index, value) => {
     setBlankValues(prev => ({ ...prev, [index]: value }))
   }, [])
@@ -245,6 +254,7 @@ export default function Memorize() {
               type="text"
               value={blankValues[i] || ''}
               onChange={e => handleBlankChange(i, e.target.value)}
+              onFocus={handleBlankFocus}
               onKeyDown={e => handleBlankKeyDown(e, i)}
               placeholder={currentLevel.hints ? firstLetter(item.word) + '…' : ''}
               className="inline-block bg-gray-800 border-b-2 border-gray-600 focus:border-purple-500 rounded-sm px-1 mx-0.5 text-center text-gray-100 outline-none transition-colors placeholder:text-gray-600"
