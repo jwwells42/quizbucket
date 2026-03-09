@@ -59,35 +59,37 @@ export default function FlashcardStudy() {
 
   const flip = useCallback(() => setFlipped(f => !f), [])
 
+  // Load the next batch of unseen cards
+  const loadNextBatch = useCallback(() => {
+    if (!deck) return
+    const next = []
+    for (const i of deck.cards.keys()) {
+      const status = getCardStatus(category, i)
+      if (!status) next.push(i)
+      if (next.length >= BATCH_SIZE) break
+    }
+    setWorkingSet(next)
+    setCurrentPos(0)
+    setFlipped(false)
+  }, [deck, category, getCardStatus])
+
   // After marking a card, figure out what happens next
   const advanceAfterMark = useCallback((markedIndex, known) => {
     setFlipped(false)
 
     if (known) {
-      // Remove from working set — they got it
+      // Remove from working set — they got it, set shrinks
       const newSet = workingSet.filter(i => i !== markedIndex)
-
-      // Pull in a new unseen card to replace it
-      const inSet = new Set(newSet)
-      const nextUnseen = deck.cards.findIndex((_, i) => {
-        const status = getCardStatus(category, i)
-        return !status && !inSet.has(i) && i !== markedIndex
-      })
-
-      if (nextUnseen !== -1) {
-        newSet.push(nextUnseen)
-      }
-
       setWorkingSet(newSet)
-      // Keep position in bounds
+      // Keep position in bounds (stay at same spot to see the next card)
       setCurrentPos(prev => newSet.length === 0 ? 0 : prev >= newSet.length ? 0 : prev)
     } else {
-      // "Still learning" — keep in set, just move to next card
+      // "Still learning" — keep in set, move to next card
       setCurrentPos(prev =>
         workingSet.length <= 1 ? 0 : (prev + 1) % workingSet.length
       )
     }
-  }, [workingSet, deck, category, getCardStatus])
+  }, [workingSet])
 
   const markKnown = useCallback(() => {
     if (currentCardIndex == null) return
@@ -144,7 +146,8 @@ export default function FlashcardStudy() {
   const totalCards = deck.cards.length
   const masteredCount = stats?.known || 0
   const remainingUnseen = unseen.length
-  const allDone = workingSet.length === 0 && initialized
+  const batchDone = workingSet.length === 0 && initialized && remainingUnseen > 0
+  const allDone = workingSet.length === 0 && initialized && remainingUnseen === 0
 
   return (
     <div>
@@ -174,7 +177,20 @@ export default function FlashcardStudy() {
         </div>
       </div>
 
-      {allDone ? (
+      {batchDone ? (
+        <div className="text-center py-16">
+          <h2 className="text-xl font-semibold mb-2">Batch complete!</h2>
+          <p className="text-gray-500 mb-6">
+            {remainingUnseen} cards remaining in this deck.
+          </p>
+          <button
+            onClick={loadNextBatch}
+            className="px-6 py-2 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-500 transition-colors"
+          >
+            Next {Math.min(BATCH_SIZE, remainingUnseen)} Cards
+          </button>
+        </div>
+      ) : allDone ? (
         <div className="text-center py-16">
           <div className="text-4xl mb-3">&#10003;</div>
           <h2 className="text-xl font-semibold mb-2">Deck complete!</h2>
