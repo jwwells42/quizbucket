@@ -72,6 +72,7 @@ export default function Lightning() {
   }, [phase, results, recordLightning])
 
   const submitAnswer = useCallback(() => {
+    if (feedback) return
     const q = questions[currentIndex]
     if (!q) return
 
@@ -94,9 +95,10 @@ export default function Lightning() {
       }
       inputRef.current?.focus()
     }, 400)
-  }, [answer, currentIndex, questions])
+  }, [answer, currentIndex, questions, feedback])
 
   const skipQuestion = useCallback(() => {
+    if (feedback) return
     const q = questions[currentIndex]
     if (!q) return
     setResults(prev => [...prev, { ...q, given: '', correct: false }])
@@ -263,12 +265,10 @@ export default function Lightning() {
           placeholder="Type answer and press Enter..."
           className="flex-1 px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-amber-500 text-lg"
           autoComplete="off"
-          disabled={feedback !== null}
         />
         <button
           type="button"
           onClick={skipQuestion}
-          disabled={feedback !== null}
           className="px-4 py-3 bg-gray-700 text-gray-400 rounded-lg font-medium hover:bg-gray-600 disabled:opacity-40 transition-colors"
         >
           Skip
