@@ -1,0 +1,31 @@
+{
+  "id": "musical-families",
+  "title": "Musical Instrument Families",
+  "description": "Common instruments and their families",
+  "cards": [
+    { "front": "Violin", "back": "Strings" },
+    { "front": "Viola", "back": "Strings" },
+    { "front": "Cello", "back": "Strings" },
+    { "front": "Double Bass", "back": "Strings" },
+    { "front": "Harp", "back": "Strings" },
+    { "front": "Guitar", "back": "Strings" },
+    { "front": "Flute", "back": "Woodwinds" },
+    { "front": "Clarinet", "back": "Woodwinds" },
+    { "front": "Oboe", "back": "Woodwinds" },
+    { "front": "Bassoon", "back": "Woodwinds" },
+    { "front": "Piccolo", "back": "Woodwinds" },
+    { "front": "Saxophone", "back": "Woodwinds" },
+    { "front": "Trumpet", "back": "Brass" },
+    { "front": "French Horn", "back": "Brass" },
+    { "front": "Trombone", "back": "Brass" },
+    { "front": "Tuba", "back": "Brass" },
+    { "front": "Cornet", "back": "Brass" },
+    { "front": "Timpani", "back": "Percussion" },
+    { "front": "Snare Drum", "back": "Percussion" },
+    { "front": "Bass Drum", "back": "Percussion" },
+    { "front": "Xylophone", "back": "Percussion" },
+    { "front": "Triangle", "back": "Percussion" },
+    { "front": "Cymbals", "back": "Percussion" },
+    { "front": "Piano", "back": "Keyboard / Percussion (hammered strings)" }
+  ]
+}

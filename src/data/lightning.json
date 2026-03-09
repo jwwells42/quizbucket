@@ -1,0 +1,34 @@
+[
+  {
+    "id": "presidents",
+    "title": "U.S. Presidents",
+    "questions": [
+      { "question": "First president of the United States", "answer": "George Washington" },
+      { "question": "President during the Civil War", "answer": "Abraham Lincoln" },
+      { "question": "President who purchased the Louisiana Territory", "answer": "Thomas Jefferson" },
+      { "question": "President who gave the Gettysburg Address", "answer": "Abraham Lincoln" },
+      { "question": "First president to live in the White House", "answer": "John Adams" },
+      { "question": "President known as 'Old Hickory'", "answer": "Andrew Jackson" },
+      { "question": "President who issued the Emancipation Proclamation", "answer": "Abraham Lincoln" },
+      { "question": "Youngest person to become president", "answer": "Theodore Roosevelt" },
+      { "question": "President during World War II (longest serving)", "answer": "Franklin D. Roosevelt" },
+      { "question": "President who resigned from office", "answer": "Richard Nixon" }
+    ]
+  },
+  {
+    "id": "world-capitals",
+    "title": "World Capitals",
+    "questions": [
+      { "question": "Capital of France", "answer": "Paris" },
+      { "question": "Capital of Japan", "answer": "Tokyo" },
+      { "question": "Capital of Australia", "answer": "Canberra" },
+      { "question": "Capital of Brazil", "answer": "Brasilia" },
+      { "question": "Capital of Canada", "answer": "Ottawa" },
+      { "question": "Capital of Egypt", "answer": "Cairo" },
+      { "question": "Capital of Germany", "answer": "Berlin" },
+      { "question": "Capital of India", "answer": "New Delhi" },
+      { "question": "Capital of South Korea", "answer": "Seoul" },
+      { "question": "Capital of Turkey", "answer": "Ankara" }
+    ]
+  }
+]
