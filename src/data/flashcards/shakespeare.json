@@ -2,56 +2,212 @@
   "id": "shakespeare",
   "title": "Shakespeare Plays",
   "description": "Major plays — characters, plots, famous quotes, and classifications",
+  "levels": [
+    "3/4",
+    "5/6",
+    "7-9",
+    "9-12"
+  ],
   "cards": [
-    { "front": "Hamlet — genre?", "back": "Tragedy" },
-    { "front": "Hamlet — main character's dilemma?", "back": "Prince of Denmark must avenge his father's murder by his uncle Claudius" },
-    { "front": "'To be, or not to be'", "back": "Hamlet" },
-    { "front": "Hamlet — who is Ophelia?", "back": "Hamlet's love interest who goes mad and drowns" },
-    { "front": "Hamlet — who is Horatio?", "back": "Hamlet's loyal best friend" },
-    { "front": "Hamlet — 'The lady doth protest too much'", "back": "Said by Queen Gertrude" },
-    { "front": "Romeo and Juliet — genre?", "back": "Tragedy" },
-    { "front": "Romeo and Juliet — plot?", "back": "Two young lovers from feuding families (Montagues and Capulets) secretly marry; both die" },
-    { "front": "'Wherefore art thou Romeo?'", "back": "Romeo and Juliet (said by Juliet — means 'why are you Romeo')" },
-    { "front": "Romeo and Juliet — setting?", "back": "Verona, Italy" },
-    { "front": "Macbeth — genre?", "back": "Tragedy" },
-    { "front": "Macbeth — plot?", "back": "Scottish general, spurred by witches' prophecy and his wife, murders King Duncan to take the throne" },
-    { "front": "'Double, double, toil and trouble'", "back": "Macbeth (the three witches)" },
-    { "front": "Macbeth — who is Lady Macbeth?", "back": "Macbeth's ambitious wife who pushes him to murder; later goes mad with guilt" },
-    { "front": "'Out, damned spot!'", "back": "Macbeth (said by Lady Macbeth)" },
-    { "front": "Othello — genre?", "back": "Tragedy" },
-    { "front": "Othello — plot?", "back": "Moorish general is manipulated by Iago into believing his wife Desdemona is unfaithful" },
-    { "front": "Othello — who is the villain?", "back": "Iago" },
-    { "front": "King Lear — genre?", "back": "Tragedy" },
-    { "front": "King Lear — plot?", "back": "Aging king divides his kingdom among his daughters based on flattery; leads to chaos and tragedy" },
-    { "front": "King Lear — which daughter truly loves him?", "back": "Cordelia" },
-    { "front": "A Midsummer Night's Dream — genre?", "back": "Comedy" },
-    { "front": "A Midsummer Night's Dream — plot?", "back": "Lovers and actors get lost in a forest where fairies cause magical mix-ups" },
-    { "front": "A Midsummer Night's Dream — fairy king and queen?", "back": "Oberon and Titania" },
-    { "front": "A Midsummer Night's Dream — who is Puck?", "back": "A mischievous fairy servant of Oberon" },
-    { "front": "The Tempest — genre?", "back": "Romance/Comedy" },
-    { "front": "The Tempest — plot?", "back": "Exiled magician Prospero uses a storm to bring his enemies to his island" },
-    { "front": "The Tempest — who is Ariel?", "back": "A spirit who serves Prospero" },
-    { "front": "The Tempest — who is Caliban?", "back": "A monstrous native of the island, enslaved by Prospero" },
-    { "front": "The Merchant of Venice — genre?", "back": "Comedy" },
-    { "front": "The Merchant of Venice — what is Shylock's demand?", "back": "A pound of flesh as payment for a loan" },
-    { "front": "'If you prick us, do we not bleed?'", "back": "The Merchant of Venice (said by Shylock)" },
-    { "front": "Much Ado About Nothing — genre?", "back": "Comedy" },
-    { "front": "Much Ado About Nothing — central couple?", "back": "Beatrice and Benedick" },
-    { "front": "Twelfth Night — genre?", "back": "Comedy" },
-    { "front": "Twelfth Night — plot?", "back": "Viola disguises herself as a man after a shipwreck; romantic confusion follows" },
-    { "front": "Julius Caesar — genre?", "back": "Tragedy (historical)" },
-    { "front": "'Et tu, Brute?'", "back": "Julius Caesar (said by Caesar to Brutus)" },
-    { "front": "Julius Caesar — who leads the assassination?", "back": "Brutus and Cassius" },
-    { "front": "'Friends, Romans, countrymen, lend me your ears'", "back": "Julius Caesar (said by Mark Antony)" },
-    { "front": "The Taming of the Shrew — genre?", "back": "Comedy" },
-    { "front": "The Taming of the Shrew — plot?", "back": "Petruchio courts and 'tames' the strong-willed Katherine" },
-    { "front": "As You Like It — genre?", "back": "Comedy" },
-    { "front": "'All the world's a stage'", "back": "As You Like It" },
-    { "front": "Richard III — genre?", "back": "History" },
-    { "front": "'A horse, a horse, my kingdom for a horse!'", "back": "Richard III" },
-    { "front": "Shakespeare's four great tragedies?", "back": "Hamlet, Othello, King Lear, Macbeth" },
-    { "front": "Shakespeare — when did he live?", "back": "1564–1616" },
-    { "front": "Shakespeare — where was he from?", "back": "Stratford-upon-Avon, England" },
-    { "front": "Globe Theatre — what is it?", "back": "The London theater where Shakespeare's plays were performed" }
+    {
+      "front": "Hamlet — genre?",
+      "back": "Tragedy"
+    },
+    {
+      "front": "Hamlet — main character's dilemma?",
+      "back": "Prince of Denmark must avenge his father's murder by his uncle Claudius"
+    },
+    {
+      "front": "'To be, or not to be'",
+      "back": "Hamlet"
+    },
+    {
+      "front": "Hamlet — who is Ophelia?",
+      "back": "Hamlet's love interest who goes mad and drowns"
+    },
+    {
+      "front": "Hamlet — who is Horatio?",
+      "back": "Hamlet's loyal best friend"
+    },
+    {
+      "front": "Hamlet — 'The lady doth protest too much'",
+      "back": "Said by Queen Gertrude"
+    },
+    {
+      "front": "Romeo and Juliet — genre?",
+      "back": "Tragedy"
+    },
+    {
+      "front": "Romeo and Juliet — plot?",
+      "back": "Two young lovers from feuding families (Montagues and Capulets) secretly marry; both die"
+    },
+    {
+      "front": "'Wherefore art thou Romeo?'",
+      "back": "Romeo and Juliet (said by Juliet — means 'why are you Romeo')"
+    },
+    {
+      "front": "Romeo and Juliet — setting?",
+      "back": "Verona, Italy"
+    },
+    {
+      "front": "Macbeth — genre?",
+      "back": "Tragedy"
+    },
+    {
+      "front": "Macbeth — plot?",
+      "back": "Scottish general, spurred by witches' prophecy and his wife, murders King Duncan to take the throne"
+    },
+    {
+      "front": "'Double, double, toil and trouble'",
+      "back": "Macbeth (the three witches)"
+    },
+    {
+      "front": "Macbeth — who is Lady Macbeth?",
+      "back": "Macbeth's ambitious wife who pushes him to murder; later goes mad with guilt"
+    },
+    {
+      "front": "'Out, damned spot!'",
+      "back": "Macbeth (said by Lady Macbeth)"
+    },
+    {
+      "front": "Othello — genre?",
+      "back": "Tragedy"
+    },
+    {
+      "front": "Othello — plot?",
+      "back": "Moorish general is manipulated by Iago into believing his wife Desdemona is unfaithful"
+    },
+    {
+      "front": "Othello — who is the villain?",
+      "back": "Iago"
+    },
+    {
+      "front": "King Lear — genre?",
+      "back": "Tragedy"
+    },
+    {
+      "front": "King Lear — plot?",
+      "back": "Aging king divides his kingdom among his daughters based on flattery; leads to chaos and tragedy"
+    },
+    {
+      "front": "King Lear — which daughter truly loves him?",
+      "back": "Cordelia"
+    },
+    {
+      "front": "A Midsummer Night's Dream — genre?",
+      "back": "Comedy"
+    },
+    {
+      "front": "A Midsummer Night's Dream — plot?",
+      "back": "Lovers and actors get lost in a forest where fairies cause magical mix-ups"
+    },
+    {
+      "front": "A Midsummer Night's Dream — fairy king and queen?",
+      "back": "Oberon and Titania"
+    },
+    {
+      "front": "A Midsummer Night's Dream — who is Puck?",
+      "back": "A mischievous fairy servant of Oberon"
+    },
+    {
+      "front": "The Tempest — genre?",
+      "back": "Romance/Comedy"
+    },
+    {
+      "front": "The Tempest — plot?",
+      "back": "Exiled magician Prospero uses a storm to bring his enemies to his island"
+    },
+    {
+      "front": "The Tempest — who is Ariel?",
+      "back": "A spirit who serves Prospero"
+    },
+    {
+      "front": "The Tempest — who is Caliban?",
+      "back": "A monstrous native of the island, enslaved by Prospero"
+    },
+    {
+      "front": "The Merchant of Venice — genre?",
+      "back": "Comedy"
+    },
+    {
+      "front": "The Merchant of Venice — what is Shylock's demand?",
+      "back": "A pound of flesh as payment for a loan"
+    },
+    {
+      "front": "'If you prick us, do we not bleed?'",
+      "back": "The Merchant of Venice (said by Shylock)"
+    },
+    {
+      "front": "Much Ado About Nothing — genre?",
+      "back": "Comedy"
+    },
+    {
+      "front": "Much Ado About Nothing — central couple?",
+      "back": "Beatrice and Benedick"
+    },
+    {
+      "front": "Twelfth Night — genre?",
+      "back": "Comedy"
+    },
+    {
+      "front": "Twelfth Night — plot?",
+      "back": "Viola disguises herself as a man after a shipwreck; romantic confusion follows"
+    },
+    {
+      "front": "Julius Caesar — genre?",
+      "back": "Tragedy (historical)"
+    },
+    {
+      "front": "'Et tu, Brute?'",
+      "back": "Julius Caesar (said by Caesar to Brutus)"
+    },
+    {
+      "front": "Julius Caesar — who leads the assassination?",
+      "back": "Brutus and Cassius"
+    },
+    {
+      "front": "'Friends, Romans, countrymen, lend me your ears'",
+      "back": "Julius Caesar (said by Mark Antony)"
+    },
+    {
+      "front": "The Taming of the Shrew — genre?",
+      "back": "Comedy"
+    },
+    {
+      "front": "The Taming of the Shrew — plot?",
+      "back": "Petruchio courts and 'tames' the strong-willed Katherine"
+    },
+    {
+      "front": "As You Like It — genre?",
+      "back": "Comedy"
+    },
+    {
+      "front": "'All the world's a stage'",
+      "back": "As You Like It"
+    },
+    {
+      "front": "Richard III — genre?",
+      "back": "History"
+    },
+    {
+      "front": "'A horse, a horse, my kingdom for a horse!'",
+      "back": "Richard III"
+    },
+    {
+      "front": "Shakespeare's four great tragedies?",
+      "back": "Hamlet, Othello, King Lear, Macbeth"
+    },
+    {
+      "front": "Shakespeare — when did he live?",
+      "back": "1564–1616"
+    },
+    {
+      "front": "Shakespeare — where was he from?",
+      "back": "Stratford-upon-Avon, England"
+    },
+    {
+      "front": "Globe Theatre — what is it?",
+      "back": "The London theater where Shakespeare's plays were performed"
+    }
   ]
 }

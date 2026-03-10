@@ -2,93 +2,360 @@
   "id": "greek-roman-mythology",
   "title": "Greek & Roman Mythology",
   "description": "Major gods and figures — Greek name, Roman name, and domain",
+  "levels": [
+    "3/4",
+    "5/6",
+    "7-9",
+    "9-12"
+  ],
   "cards": [
-    { "front": "Zeus (Greek) — domain?", "back": "King of the gods, sky, thunder, and lightning" },
-    { "front": "King of the gods / sky / thunder (Greek)", "back": "Zeus" },
-    { "front": "Zeus — Roman equivalent?", "back": "Jupiter" },
-    { "front": "Jupiter — Greek equivalent?", "back": "Zeus" },
-    { "front": "Hera (Greek) — domain?", "back": "Queen of the gods, marriage, and family" },
-    { "front": "Queen of the gods / marriage (Greek)", "back": "Hera" },
-    { "front": "Hera — Roman equivalent?", "back": "Juno" },
-    { "front": "Juno — Greek equivalent?", "back": "Hera" },
-    { "front": "Poseidon (Greek) — domain?", "back": "God of the sea, earthquakes, and horses" },
-    { "front": "God of the sea (Greek)", "back": "Poseidon" },
-    { "front": "Poseidon — Roman equivalent?", "back": "Neptune" },
-    { "front": "Neptune — Greek equivalent?", "back": "Poseidon" },
-    { "front": "Hades (Greek) — domain?", "back": "God of the underworld and the dead" },
-    { "front": "God of the underworld (Greek)", "back": "Hades" },
-    { "front": "Hades — Roman equivalent?", "back": "Pluto" },
-    { "front": "Pluto — Greek equivalent?", "back": "Hades" },
-    { "front": "Athena (Greek) — domain?", "back": "Goddess of wisdom, warfare, and crafts" },
-    { "front": "Goddess of wisdom (Greek)", "back": "Athena" },
-    { "front": "Athena — Roman equivalent?", "back": "Minerva" },
-    { "front": "Minerva — Greek equivalent?", "back": "Athena" },
-    { "front": "Apollo (Greek) — domain?", "back": "God of the sun, music, poetry, and prophecy" },
-    { "front": "God of the sun / music / prophecy (Greek)", "back": "Apollo" },
-    { "front": "Apollo — Roman equivalent?", "back": "Apollo (same name in both)" },
-    { "front": "Artemis (Greek) — domain?", "back": "Goddess of the hunt, the moon, and wilderness" },
-    { "front": "Goddess of the hunt (Greek)", "back": "Artemis" },
-    { "front": "Artemis — Roman equivalent?", "back": "Diana" },
-    { "front": "Diana — Greek equivalent?", "back": "Artemis" },
-    { "front": "Ares (Greek) — domain?", "back": "God of war and bloodshed" },
-    { "front": "God of war (Greek)", "back": "Ares" },
-    { "front": "Ares — Roman equivalent?", "back": "Mars" },
-    { "front": "Mars — Greek equivalent?", "back": "Ares" },
-    { "front": "Aphrodite (Greek) — domain?", "back": "Goddess of love, beauty, and desire" },
-    { "front": "Goddess of love and beauty (Greek)", "back": "Aphrodite" },
-    { "front": "Aphrodite — Roman equivalent?", "back": "Venus" },
-    { "front": "Venus — Greek equivalent?", "back": "Aphrodite" },
-    { "front": "Hermes (Greek) — domain?", "back": "God of messengers, travelers, thieves, and commerce" },
-    { "front": "Messenger of the gods (Greek)", "back": "Hermes" },
-    { "front": "Hermes — Roman equivalent?", "back": "Mercury" },
-    { "front": "Mercury — Greek equivalent?", "back": "Hermes" },
-    { "front": "Hephaestus (Greek) — domain?", "back": "God of fire, metalworking, and the forge" },
-    { "front": "God of the forge / fire (Greek)", "back": "Hephaestus" },
-    { "front": "Hephaestus — Roman equivalent?", "back": "Vulcan" },
-    { "front": "Vulcan — Greek equivalent?", "back": "Hephaestus" },
-    { "front": "Demeter (Greek) — domain?", "back": "Goddess of the harvest, agriculture, and fertility" },
-    { "front": "Goddess of the harvest (Greek)", "back": "Demeter" },
-    { "front": "Demeter — Roman equivalent?", "back": "Ceres" },
-    { "front": "Ceres — Greek equivalent?", "back": "Demeter" },
-    { "front": "Dionysus (Greek) — domain?", "back": "God of wine, festivity, and theater" },
-    { "front": "God of wine (Greek)", "back": "Dionysus" },
-    { "front": "Dionysus — Roman equivalent?", "back": "Bacchus" },
-    { "front": "Bacchus — Greek equivalent?", "back": "Dionysus" },
-    { "front": "Hestia (Greek) — domain?", "back": "Goddess of the hearth, home, and family" },
-    { "front": "Goddess of the hearth (Greek)", "back": "Hestia" },
-    { "front": "Hestia — Roman equivalent?", "back": "Vesta" },
-    { "front": "Vesta — Greek equivalent?", "back": "Hestia" },
-    { "front": "Persephone (Greek) — domain?", "back": "Queen of the underworld, goddess of spring" },
-    { "front": "Queen of the underworld (Greek)", "back": "Persephone" },
-    { "front": "Persephone — Roman equivalent?", "back": "Proserpina" },
-    { "front": "Proserpina — Greek equivalent?", "back": "Persephone" },
-    { "front": "Eros (Greek) — domain?", "back": "God of love and desire" },
-    { "front": "Eros — Roman equivalent?", "back": "Cupid" },
-    { "front": "Cupid — Greek equivalent?", "back": "Eros" },
-    { "front": "Nike (Greek) — domain?", "back": "Goddess of victory" },
-    { "front": "Nike — Roman equivalent?", "back": "Victoria" },
-    { "front": "Victoria — Greek equivalent?", "back": "Nike" },
-    { "front": "Cronus (Greek) — who is he?", "back": "Titan king, father of Zeus; ate his children" },
-    { "front": "Cronus — Roman equivalent?", "back": "Saturn" },
-    { "front": "Saturn — Greek equivalent?", "back": "Cronus" },
-    { "front": "Who are the three Furies (Erinyes)?", "back": "Alecto, Megaera, Tisiphone — avengers of crime" },
-    { "front": "Who are the nine Muses' parents?", "back": "Zeus and Mnemosyne" },
-    { "front": "Who are the three Fates (Moirai)?", "back": "Clotho (spinner), Lachesis (allotter), Atropos (cutter)" },
-    { "front": "What is the river of the dead in the underworld?", "back": "The River Styx" },
-    { "front": "Who ferries souls across the River Styx?", "back": "Charon" },
-    { "front": "Who guards the entrance to the underworld?", "back": "Cerberus, the three-headed dog" },
-    { "front": "Who gave fire to humanity?", "back": "Prometheus" },
-    { "front": "Who opened a box releasing all evils into the world?", "back": "Pandora" },
-    { "front": "Who flew too close to the sun with wax wings?", "back": "Icarus" },
-    { "front": "Who slew Medusa?", "back": "Perseus" },
-    { "front": "Who completed twelve labors as penance?", "back": "Heracles (Hercules)" },
-    { "front": "Who built the labyrinth on Crete?", "back": "Daedalus" },
-    { "front": "What creature lived in the labyrinth?", "back": "The Minotaur" },
-    { "front": "Who killed the Minotaur?", "back": "Theseus" },
-    { "front": "Who was cursed to push a boulder uphill forever?", "back": "Sisyphus" },
-    { "front": "Who was cursed to never eat or drink despite standing in water under fruit trees?", "back": "Tantalus" },
-    { "front": "What was the Trojan War fought over?", "back": "Helen of Troy (and the judgment of Paris)" },
-    { "front": "Who wrote the Iliad and the Odyssey?", "back": "Homer" },
-    { "front": "Who is the hero of the Odyssey?", "back": "Odysseus (Ulysses)" }
+    {
+      "front": "Zeus (Greek) — domain?",
+      "back": "King of the gods, sky, thunder, and lightning"
+    },
+    {
+      "front": "King of the gods / sky / thunder (Greek)",
+      "back": "Zeus"
+    },
+    {
+      "front": "Zeus — Roman equivalent?",
+      "back": "Jupiter"
+    },
+    {
+      "front": "Jupiter — Greek equivalent?",
+      "back": "Zeus"
+    },
+    {
+      "front": "Hera (Greek) — domain?",
+      "back": "Queen of the gods, marriage, and family"
+    },
+    {
+      "front": "Queen of the gods / marriage (Greek)",
+      "back": "Hera"
+    },
+    {
+      "front": "Hera — Roman equivalent?",
+      "back": "Juno"
+    },
+    {
+      "front": "Juno — Greek equivalent?",
+      "back": "Hera"
+    },
+    {
+      "front": "Poseidon (Greek) — domain?",
+      "back": "God of the sea, earthquakes, and horses"
+    },
+    {
+      "front": "God of the sea (Greek)",
+      "back": "Poseidon"
+    },
+    {
+      "front": "Poseidon — Roman equivalent?",
+      "back": "Neptune"
+    },
+    {
+      "front": "Neptune — Greek equivalent?",
+      "back": "Poseidon"
+    },
+    {
+      "front": "Hades (Greek) — domain?",
+      "back": "God of the underworld and the dead"
+    },
+    {
+      "front": "God of the underworld (Greek)",
+      "back": "Hades"
+    },
+    {
+      "front": "Hades — Roman equivalent?",
+      "back": "Pluto"
+    },
+    {
+      "front": "Pluto — Greek equivalent?",
+      "back": "Hades"
+    },
+    {
+      "front": "Athena (Greek) — domain?",
+      "back": "Goddess of wisdom, warfare, and crafts"
+    },
+    {
+      "front": "Goddess of wisdom (Greek)",
+      "back": "Athena"
+    },
+    {
+      "front": "Athena — Roman equivalent?",
+      "back": "Minerva"
+    },
+    {
+      "front": "Minerva — Greek equivalent?",
+      "back": "Athena"
+    },
+    {
+      "front": "Apollo (Greek) — domain?",
+      "back": "God of the sun, music, poetry, and prophecy"
+    },
+    {
+      "front": "God of the sun / music / prophecy (Greek)",
+      "back": "Apollo"
+    },
+    {
+      "front": "Apollo — Roman equivalent?",
+      "back": "Apollo (same name in both)"
+    },
+    {
+      "front": "Artemis (Greek) — domain?",
+      "back": "Goddess of the hunt, the moon, and wilderness"
+    },
+    {
+      "front": "Goddess of the hunt (Greek)",
+      "back": "Artemis"
+    },
+    {
+      "front": "Artemis — Roman equivalent?",
+      "back": "Diana"
+    },
+    {
+      "front": "Diana — Greek equivalent?",
+      "back": "Artemis"
+    },
+    {
+      "front": "Ares (Greek) — domain?",
+      "back": "God of war and bloodshed"
+    },
+    {
+      "front": "God of war (Greek)",
+      "back": "Ares"
+    },
+    {
+      "front": "Ares — Roman equivalent?",
+      "back": "Mars"
+    },
+    {
+      "front": "Mars — Greek equivalent?",
+      "back": "Ares"
+    },
+    {
+      "front": "Aphrodite (Greek) — domain?",
+      "back": "Goddess of love, beauty, and desire"
+    },
+    {
+      "front": "Goddess of love and beauty (Greek)",
+      "back": "Aphrodite"
+    },
+    {
+      "front": "Aphrodite — Roman equivalent?",
+      "back": "Venus"
+    },
+    {
+      "front": "Venus — Greek equivalent?",
+      "back": "Aphrodite"
+    },
+    {
+      "front": "Hermes (Greek) — domain?",
+      "back": "God of messengers, travelers, thieves, and commerce"
+    },
+    {
+      "front": "Messenger of the gods (Greek)",
+      "back": "Hermes"
+    },
+    {
+      "front": "Hermes — Roman equivalent?",
+      "back": "Mercury"
+    },
+    {
+      "front": "Mercury — Greek equivalent?",
+      "back": "Hermes"
+    },
+    {
+      "front": "Hephaestus (Greek) — domain?",
+      "back": "God of fire, metalworking, and the forge"
+    },
+    {
+      "front": "God of the forge / fire (Greek)",
+      "back": "Hephaestus"
+    },
+    {
+      "front": "Hephaestus — Roman equivalent?",
+      "back": "Vulcan"
+    },
+    {
+      "front": "Vulcan — Greek equivalent?",
+      "back": "Hephaestus"
+    },
+    {
+      "front": "Demeter (Greek) — domain?",
+      "back": "Goddess of the harvest, agriculture, and fertility"
+    },
+    {
+      "front": "Goddess of the harvest (Greek)",
+      "back": "Demeter"
+    },
+    {
+      "front": "Demeter — Roman equivalent?",
+      "back": "Ceres"
+    },
+    {
+      "front": "Ceres — Greek equivalent?",
+      "back": "Demeter"
+    },
+    {
+      "front": "Dionysus (Greek) — domain?",
+      "back": "God of wine, festivity, and theater"
+    },
+    {
+      "front": "God of wine (Greek)",
+      "back": "Dionysus"
+    },
+    {
+      "front": "Dionysus — Roman equivalent?",
+      "back": "Bacchus"
+    },
+    {
+      "front": "Bacchus — Greek equivalent?",
+      "back": "Dionysus"
+    },
+    {
+      "front": "Hestia (Greek) — domain?",
+      "back": "Goddess of the hearth, home, and family"
+    },
+    {
+      "front": "Goddess of the hearth (Greek)",
+      "back": "Hestia"
+    },
+    {
+      "front": "Hestia — Roman equivalent?",
+      "back": "Vesta"
+    },
+    {
+      "front": "Vesta — Greek equivalent?",
+      "back": "Hestia"
+    },
+    {
+      "front": "Persephone (Greek) — domain?",
+      "back": "Queen of the underworld, goddess of spring"
+    },
+    {
+      "front": "Queen of the underworld (Greek)",
+      "back": "Persephone"
+    },
+    {
+      "front": "Persephone — Roman equivalent?",
+      "back": "Proserpina"
+    },
+    {
+      "front": "Proserpina — Greek equivalent?",
+      "back": "Persephone"
+    },
+    {
+      "front": "Eros (Greek) — domain?",
+      "back": "God of love and desire"
+    },
+    {
+      "front": "Eros — Roman equivalent?",
+      "back": "Cupid"
+    },
+    {
+      "front": "Cupid — Greek equivalent?",
+      "back": "Eros"
+    },
+    {
+      "front": "Nike (Greek) — domain?",
+      "back": "Goddess of victory"
+    },
+    {
+      "front": "Nike — Roman equivalent?",
+      "back": "Victoria"
+    },
+    {
+      "front": "Victoria — Greek equivalent?",
+      "back": "Nike"
+    },
+    {
+      "front": "Cronus (Greek) — who is he?",
+      "back": "Titan king, father of Zeus; ate his children"
+    },
+    {
+      "front": "Cronus — Roman equivalent?",
+      "back": "Saturn"
+    },
+    {
+      "front": "Saturn — Greek equivalent?",
+      "back": "Cronus"
+    },
+    {
+      "front": "Who are the three Furies (Erinyes)?",
+      "back": "Alecto, Megaera, Tisiphone — avengers of crime"
+    },
+    {
+      "front": "Who are the nine Muses' parents?",
+      "back": "Zeus and Mnemosyne"
+    },
+    {
+      "front": "Who are the three Fates (Moirai)?",
+      "back": "Clotho (spinner), Lachesis (allotter), Atropos (cutter)"
+    },
+    {
+      "front": "What is the river of the dead in the underworld?",
+      "back": "The River Styx"
+    },
+    {
+      "front": "Who ferries souls across the River Styx?",
+      "back": "Charon"
+    },
+    {
+      "front": "Who guards the entrance to the underworld?",
+      "back": "Cerberus, the three-headed dog"
+    },
+    {
+      "front": "Who gave fire to humanity?",
+      "back": "Prometheus"
+    },
+    {
+      "front": "Who opened a box releasing all evils into the world?",
+      "back": "Pandora"
+    },
+    {
+      "front": "Who flew too close to the sun with wax wings?",
+      "back": "Icarus"
+    },
+    {
+      "front": "Who slew Medusa?",
+      "back": "Perseus"
+    },
+    {
+      "front": "Who completed twelve labors as penance?",
+      "back": "Heracles (Hercules)"
+    },
+    {
+      "front": "Who built the labyrinth on Crete?",
+      "back": "Daedalus"
+    },
+    {
+      "front": "What creature lived in the labyrinth?",
+      "back": "The Minotaur"
+    },
+    {
+      "front": "Who killed the Minotaur?",
+      "back": "Theseus"
+    },
+    {
+      "front": "Who was cursed to push a boulder uphill forever?",
+      "back": "Sisyphus"
+    },
+    {
+      "front": "Who was cursed to never eat or drink despite standing in water under fruit trees?",
+      "back": "Tantalus"
+    },
+    {
+      "front": "What was the Trojan War fought over?",
+      "back": "Helen of Troy (and the judgment of Paris)"
+    },
+    {
+      "front": "Who wrote the Iliad and the Odyssey?",
+      "back": "Homer"
+    },
+    {
+      "front": "Who is the hero of the Odyssey?",
+      "back": "Odysseus (Ulysses)"
+    }
   ]
 }

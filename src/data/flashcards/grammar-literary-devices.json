@@ -2,65 +2,248 @@
   "id": "grammar-literary-devices",
   "title": "Grammar & Literary Devices",
   "description": "Parts of speech, sentence structure, figurative language, and literary techniques",
+  "levels": [
+    "3/4",
+    "5/6",
+    "7-9",
+    "9-12"
+  ],
   "cards": [
-    { "front": "Simile", "back": "Comparison using 'like' or 'as' (e.g., 'brave as a lion')" },
-    { "front": "Comparison using 'like' or 'as'", "back": "Simile" },
-    { "front": "Metaphor", "back": "Direct comparison without 'like' or 'as' (e.g., 'time is money')" },
-    { "front": "Direct comparison without 'like' or 'as'", "back": "Metaphor" },
-    { "front": "Personification", "back": "Giving human qualities to non-human things (e.g., 'the wind whispered')" },
-    { "front": "Giving human qualities to non-human things", "back": "Personification" },
-    { "front": "Hyperbole", "back": "Extreme exaggeration for emphasis (e.g., 'I've told you a million times')" },
-    { "front": "Extreme exaggeration for emphasis", "back": "Hyperbole" },
-    { "front": "Onomatopoeia", "back": "A word that imitates a sound (e.g., 'buzz,' 'crash,' 'sizzle')" },
-    { "front": "A word that imitates a sound", "back": "Onomatopoeia" },
-    { "front": "Alliteration", "back": "Repetition of initial consonant sounds (e.g., 'Peter Piper picked')" },
-    { "front": "Repetition of initial consonant sounds", "back": "Alliteration" },
-    { "front": "Assonance", "back": "Repetition of vowel sounds within words (e.g., 'the rain in Spain')" },
-    { "front": "Repetition of vowel sounds within words", "back": "Assonance" },
-    { "front": "Irony", "back": "When the opposite of what is expected happens or is said" },
-    { "front": "Three types of irony", "back": "Verbal (saying the opposite), situational (unexpected outcome), dramatic (audience knows more than characters)" },
-    { "front": "Foreshadowing", "back": "Hints or clues about what will happen later in a story" },
-    { "front": "Hints about what will happen later", "back": "Foreshadowing" },
-    { "front": "Flashback", "back": "A scene that interrupts the present to show events from the past" },
-    { "front": "Allegory", "back": "A story where characters and events represent deeper moral or political meanings (e.g., Animal Farm)" },
-    { "front": "Symbolism", "back": "Using an object, person, or event to represent something beyond its literal meaning" },
-    { "front": "Imagery", "back": "Descriptive language that appeals to the five senses" },
-    { "front": "Tone", "back": "The author's attitude toward the subject or audience" },
-    { "front": "Mood", "back": "The feeling or atmosphere a text creates for the reader" },
-    { "front": "Tone vs. mood", "back": "Tone = author's attitude; Mood = reader's feeling" },
-    { "front": "Theme", "back": "The central message or underlying meaning of a literary work" },
-    { "front": "Protagonist", "back": "The main character of a story" },
-    { "front": "Antagonist", "back": "The character or force that opposes the protagonist" },
-    { "front": "Protagonist vs. antagonist", "back": "Protagonist = main character; Antagonist = opposing force" },
-    { "front": "Point of view — first person", "back": "Narrator is a character in the story, uses 'I' and 'we'" },
-    { "front": "Point of view — third person limited", "back": "Narrator is outside the story but knows one character's thoughts" },
-    { "front": "Point of view — third person omniscient", "back": "Narrator is outside the story and knows all characters' thoughts" },
-    { "front": "Oxymoron", "back": "Two contradictory words placed together (e.g., 'jumbo shrimp,' 'deafening silence')" },
-    { "front": "Two contradictory words together", "back": "Oxymoron" },
-    { "front": "Paradox", "back": "A statement that seems contradictory but reveals a truth (e.g., 'less is more')" },
-    { "front": "Allusion", "back": "A brief reference to a well-known person, event, or work (e.g., 'He was a real Romeo')" },
-    { "front": "Satire", "back": "Using humor, irony, or exaggeration to criticize or mock" },
-    { "front": "Soliloquy", "back": "A speech in a play where a character speaks thoughts aloud, alone on stage" },
-    { "front": "Monologue", "back": "A long speech by one character, directed at others on stage" },
-    { "front": "Soliloquy vs. monologue", "back": "Soliloquy = alone on stage; Monologue = speaking to others" },
-    { "front": "Stanza", "back": "A grouped set of lines in a poem (like a paragraph in prose)" },
-    { "front": "Couplet", "back": "Two consecutive lines of poetry that rhyme" },
-    { "front": "Sonnet", "back": "A 14-line poem, usually in iambic pentameter, with a specific rhyme scheme" },
-    { "front": "Haiku", "back": "A three-line Japanese poem with 5-7-5 syllable pattern" },
-    { "front": "Iambic pentameter", "back": "A line of verse with five metrical feet, each with an unstressed then stressed syllable" },
-    { "front": "Noun", "back": "A word that names a person, place, thing, or idea" },
-    { "front": "Verb", "back": "A word that expresses an action or state of being" },
-    { "front": "Adjective", "back": "A word that describes or modifies a noun" },
-    { "front": "Adverb", "back": "A word that modifies a verb, adjective, or other adverb" },
-    { "front": "Preposition", "back": "A word that shows the relationship between a noun and another word (e.g., in, on, under, between)" },
-    { "front": "Conjunction", "back": "A word that connects words, phrases, or clauses (e.g., and, but, or)" },
-    { "front": "Interjection", "back": "A word or phrase that expresses strong emotion (e.g., 'Wow!' 'Ouch!')" },
-    { "front": "Subject of a sentence", "back": "The person or thing performing the action" },
-    { "front": "Predicate of a sentence", "back": "The part of the sentence that tells what the subject does or is" },
-    { "front": "Clause vs. phrase", "back": "Clause has a subject and verb; phrase does not" },
-    { "front": "Independent clause", "back": "A clause that can stand alone as a complete sentence" },
-    { "front": "Dependent (subordinate) clause", "back": "A clause that cannot stand alone; depends on an independent clause" },
-    { "front": "Anaphora", "back": "Repetition of a word or phrase at the beginning of successive clauses (e.g., 'I have a dream…')" },
-    { "front": "Euphemism", "back": "A mild or indirect word used in place of something harsh or blunt (e.g., 'passed away' for 'died')" }
+    {
+      "front": "Simile",
+      "back": "Comparison using 'like' or 'as' (e.g., 'brave as a lion')"
+    },
+    {
+      "front": "Comparison using 'like' or 'as'",
+      "back": "Simile"
+    },
+    {
+      "front": "Metaphor",
+      "back": "Direct comparison without 'like' or 'as' (e.g., 'time is money')"
+    },
+    {
+      "front": "Direct comparison without 'like' or 'as'",
+      "back": "Metaphor"
+    },
+    {
+      "front": "Personification",
+      "back": "Giving human qualities to non-human things (e.g., 'the wind whispered')"
+    },
+    {
+      "front": "Giving human qualities to non-human things",
+      "back": "Personification"
+    },
+    {
+      "front": "Hyperbole",
+      "back": "Extreme exaggeration for emphasis (e.g., 'I've told you a million times')"
+    },
+    {
+      "front": "Extreme exaggeration for emphasis",
+      "back": "Hyperbole"
+    },
+    {
+      "front": "Onomatopoeia",
+      "back": "A word that imitates a sound (e.g., 'buzz,' 'crash,' 'sizzle')"
+    },
+    {
+      "front": "A word that imitates a sound",
+      "back": "Onomatopoeia"
+    },
+    {
+      "front": "Alliteration",
+      "back": "Repetition of initial consonant sounds (e.g., 'Peter Piper picked')"
+    },
+    {
+      "front": "Repetition of initial consonant sounds",
+      "back": "Alliteration"
+    },
+    {
+      "front": "Assonance",
+      "back": "Repetition of vowel sounds within words (e.g., 'the rain in Spain')"
+    },
+    {
+      "front": "Repetition of vowel sounds within words",
+      "back": "Assonance"
+    },
+    {
+      "front": "Irony",
+      "back": "When the opposite of what is expected happens or is said"
+    },
+    {
+      "front": "Three types of irony",
+      "back": "Verbal (saying the opposite), situational (unexpected outcome), dramatic (audience knows more than characters)"
+    },
+    {
+      "front": "Foreshadowing",
+      "back": "Hints or clues about what will happen later in a story"
+    },
+    {
+      "front": "Hints about what will happen later",
+      "back": "Foreshadowing"
+    },
+    {
+      "front": "Flashback",
+      "back": "A scene that interrupts the present to show events from the past"
+    },
+    {
+      "front": "Allegory",
+      "back": "A story where characters and events represent deeper moral or political meanings (e.g., Animal Farm)"
+    },
+    {
+      "front": "Symbolism",
+      "back": "Using an object, person, or event to represent something beyond its literal meaning"
+    },
+    {
+      "front": "Imagery",
+      "back": "Descriptive language that appeals to the five senses"
+    },
+    {
+      "front": "Tone",
+      "back": "The author's attitude toward the subject or audience"
+    },
+    {
+      "front": "Mood",
+      "back": "The feeling or atmosphere a text creates for the reader"
+    },
+    {
+      "front": "Tone vs. mood",
+      "back": "Tone = author's attitude; Mood = reader's feeling"
+    },
+    {
+      "front": "Theme",
+      "back": "The central message or underlying meaning of a literary work"
+    },
+    {
+      "front": "Protagonist",
+      "back": "The main character of a story"
+    },
+    {
+      "front": "Antagonist",
+      "back": "The character or force that opposes the protagonist"
+    },
+    {
+      "front": "Protagonist vs. antagonist",
+      "back": "Protagonist = main character; Antagonist = opposing force"
+    },
+    {
+      "front": "Point of view — first person",
+      "back": "Narrator is a character in the story, uses 'I' and 'we'"
+    },
+    {
+      "front": "Point of view — third person limited",
+      "back": "Narrator is outside the story but knows one character's thoughts"
+    },
+    {
+      "front": "Point of view — third person omniscient",
+      "back": "Narrator is outside the story and knows all characters' thoughts"
+    },
+    {
+      "front": "Oxymoron",
+      "back": "Two contradictory words placed together (e.g., 'jumbo shrimp,' 'deafening silence')"
+    },
+    {
+      "front": "Two contradictory words together",
+      "back": "Oxymoron"
+    },
+    {
+      "front": "Paradox",
+      "back": "A statement that seems contradictory but reveals a truth (e.g., 'less is more')"
+    },
+    {
+      "front": "Allusion",
+      "back": "A brief reference to a well-known person, event, or work (e.g., 'He was a real Romeo')"
+    },
+    {
+      "front": "Satire",
+      "back": "Using humor, irony, or exaggeration to criticize or mock"
+    },
+    {
+      "front": "Soliloquy",
+      "back": "A speech in a play where a character speaks thoughts aloud, alone on stage"
+    },
+    {
+      "front": "Monologue",
+      "back": "A long speech by one character, directed at others on stage"
+    },
+    {
+      "front": "Soliloquy vs. monologue",
+      "back": "Soliloquy = alone on stage; Monologue = speaking to others"
+    },
+    {
+      "front": "Stanza",
+      "back": "A grouped set of lines in a poem (like a paragraph in prose)"
+    },
+    {
+      "front": "Couplet",
+      "back": "Two consecutive lines of poetry that rhyme"
+    },
+    {
+      "front": "Sonnet",
+      "back": "A 14-line poem, usually in iambic pentameter, with a specific rhyme scheme"
+    },
+    {
+      "front": "Haiku",
+      "back": "A three-line Japanese poem with 5-7-5 syllable pattern"
+    },
+    {
+      "front": "Iambic pentameter",
+      "back": "A line of verse with five metrical feet, each with an unstressed then stressed syllable"
+    },
+    {
+      "front": "Noun",
+      "back": "A word that names a person, place, thing, or idea"
+    },
+    {
+      "front": "Verb",
+      "back": "A word that expresses an action or state of being"
+    },
+    {
+      "front": "Adjective",
+      "back": "A word that describes or modifies a noun"
+    },
+    {
+      "front": "Adverb",
+      "back": "A word that modifies a verb, adjective, or other adverb"
+    },
+    {
+      "front": "Preposition",
+      "back": "A word that shows the relationship between a noun and another word (e.g., in, on, under, between)"
+    },
+    {
+      "front": "Conjunction",
+      "back": "A word that connects words, phrases, or clauses (e.g., and, but, or)"
+    },
+    {
+      "front": "Interjection",
+      "back": "A word or phrase that expresses strong emotion (e.g., 'Wow!' 'Ouch!')"
+    },
+    {
+      "front": "Subject of a sentence",
+      "back": "The person or thing performing the action"
+    },
+    {
+      "front": "Predicate of a sentence",
+      "back": "The part of the sentence that tells what the subject does or is"
+    },
+    {
+      "front": "Clause vs. phrase",
+      "back": "Clause has a subject and verb; phrase does not"
+    },
+    {
+      "front": "Independent clause",
+      "back": "A clause that can stand alone as a complete sentence"
+    },
+    {
+      "front": "Dependent (subordinate) clause",
+      "back": "A clause that cannot stand alone; depends on an independent clause"
+    },
+    {
+      "front": "Anaphora",
+      "back": "Repetition of a word or phrase at the beginning of successive clauses (e.g., 'I have a dream…')"
+    },
+    {
+      "front": "Euphemism",
+      "back": "A mild or indirect word used in place of something harsh or blunt (e.g., 'passed away' for 'died')"
+    }
   ]
 }

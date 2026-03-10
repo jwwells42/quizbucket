@@ -2,106 +2,412 @@
   "id": "state-capitals",
   "title": "U.S. State Capitals",
   "description": "All 50 states — state to capital and capital to state",
+  "levels": [
+    "3/4",
+    "5/6",
+    "7-9",
+    "9-12"
+  ],
   "cards": [
-    { "front": "Alabama — capital?", "back": "Montgomery" },
-    { "front": "Montgomery — which state?", "back": "Alabama" },
-    { "front": "Alaska — capital?", "back": "Juneau" },
-    { "front": "Juneau — which state?", "back": "Alaska" },
-    { "front": "Arizona — capital?", "back": "Phoenix" },
-    { "front": "Phoenix — which state?", "back": "Arizona" },
-    { "front": "Arkansas — capital?", "back": "Little Rock" },
-    { "front": "Little Rock — which state?", "back": "Arkansas" },
-    { "front": "California — capital?", "back": "Sacramento" },
-    { "front": "Sacramento — which state?", "back": "California" },
-    { "front": "Colorado — capital?", "back": "Denver" },
-    { "front": "Denver — which state?", "back": "Colorado" },
-    { "front": "Connecticut — capital?", "back": "Hartford" },
-    { "front": "Hartford — which state?", "back": "Connecticut" },
-    { "front": "Delaware — capital?", "back": "Dover" },
-    { "front": "Dover — which state?", "back": "Delaware" },
-    { "front": "Florida — capital?", "back": "Tallahassee" },
-    { "front": "Tallahassee — which state?", "back": "Florida" },
-    { "front": "Georgia — capital?", "back": "Atlanta" },
-    { "front": "Atlanta — which state?", "back": "Georgia" },
-    { "front": "Hawaii — capital?", "back": "Honolulu" },
-    { "front": "Honolulu — which state?", "back": "Hawaii" },
-    { "front": "Idaho — capital?", "back": "Boise" },
-    { "front": "Boise — which state?", "back": "Idaho" },
-    { "front": "Illinois — capital?", "back": "Springfield" },
-    { "front": "Springfield (state capital) — which state?", "back": "Illinois" },
-    { "front": "Indiana — capital?", "back": "Indianapolis" },
-    { "front": "Indianapolis — which state?", "back": "Indiana" },
-    { "front": "Iowa — capital?", "back": "Des Moines" },
-    { "front": "Des Moines — which state?", "back": "Iowa" },
-    { "front": "Kansas — capital?", "back": "Topeka" },
-    { "front": "Topeka — which state?", "back": "Kansas" },
-    { "front": "Kentucky — capital?", "back": "Frankfort" },
-    { "front": "Frankfort — which state?", "back": "Kentucky" },
-    { "front": "Louisiana — capital?", "back": "Baton Rouge" },
-    { "front": "Baton Rouge — which state?", "back": "Louisiana" },
-    { "front": "Maine — capital?", "back": "Augusta" },
-    { "front": "Augusta — which state?", "back": "Maine" },
-    { "front": "Maryland — capital?", "back": "Annapolis" },
-    { "front": "Annapolis — which state?", "back": "Maryland" },
-    { "front": "Massachusetts — capital?", "back": "Boston" },
-    { "front": "Boston — which state?", "back": "Massachusetts" },
-    { "front": "Michigan — capital?", "back": "Lansing" },
-    { "front": "Lansing — which state?", "back": "Michigan" },
-    { "front": "Minnesota — capital?", "back": "Saint Paul" },
-    { "front": "Saint Paul — which state?", "back": "Minnesota" },
-    { "front": "Mississippi — capital?", "back": "Jackson" },
-    { "front": "Jackson (state capital) — which state?", "back": "Mississippi" },
-    { "front": "Missouri — capital?", "back": "Jefferson City" },
-    { "front": "Jefferson City — which state?", "back": "Missouri" },
-    { "front": "Montana — capital?", "back": "Helena" },
-    { "front": "Helena — which state?", "back": "Montana" },
-    { "front": "Nebraska — capital?", "back": "Lincoln" },
-    { "front": "Lincoln (state capital) — which state?", "back": "Nebraska" },
-    { "front": "Nevada — capital?", "back": "Carson City" },
-    { "front": "Carson City — which state?", "back": "Nevada" },
-    { "front": "New Hampshire — capital?", "back": "Concord" },
-    { "front": "Concord — which state?", "back": "New Hampshire" },
-    { "front": "New Jersey — capital?", "back": "Trenton" },
-    { "front": "Trenton — which state?", "back": "New Jersey" },
-    { "front": "New Mexico — capital?", "back": "Santa Fe" },
-    { "front": "Santa Fe — which state?", "back": "New Mexico" },
-    { "front": "New York — capital?", "back": "Albany" },
-    { "front": "Albany — which state?", "back": "New York" },
-    { "front": "North Carolina — capital?", "back": "Raleigh" },
-    { "front": "Raleigh — which state?", "back": "North Carolina" },
-    { "front": "North Dakota — capital?", "back": "Bismarck" },
-    { "front": "Bismarck — which state?", "back": "North Dakota" },
-    { "front": "Ohio — capital?", "back": "Columbus" },
-    { "front": "Columbus — which state?", "back": "Ohio" },
-    { "front": "Oklahoma — capital?", "back": "Oklahoma City" },
-    { "front": "Oklahoma City — which state?", "back": "Oklahoma" },
-    { "front": "Oregon — capital?", "back": "Salem" },
-    { "front": "Salem (state capital) — which state?", "back": "Oregon" },
-    { "front": "Pennsylvania — capital?", "back": "Harrisburg" },
-    { "front": "Harrisburg — which state?", "back": "Pennsylvania" },
-    { "front": "Rhode Island — capital?", "back": "Providence" },
-    { "front": "Providence — which state?", "back": "Rhode Island" },
-    { "front": "South Carolina — capital?", "back": "Columbia" },
-    { "front": "Columbia (state capital) — which state?", "back": "South Carolina" },
-    { "front": "South Dakota — capital?", "back": "Pierre" },
-    { "front": "Pierre — which state?", "back": "South Dakota" },
-    { "front": "Tennessee — capital?", "back": "Nashville" },
-    { "front": "Nashville — which state?", "back": "Tennessee" },
-    { "front": "Texas — capital?", "back": "Austin" },
-    { "front": "Austin — which state?", "back": "Texas" },
-    { "front": "Utah — capital?", "back": "Salt Lake City" },
-    { "front": "Salt Lake City — which state?", "back": "Utah" },
-    { "front": "Vermont — capital?", "back": "Montpelier" },
-    { "front": "Montpelier — which state?", "back": "Vermont" },
-    { "front": "Virginia — capital?", "back": "Richmond" },
-    { "front": "Richmond — which state?", "back": "Virginia" },
-    { "front": "Washington — capital?", "back": "Olympia" },
-    { "front": "Olympia — which state?", "back": "Washington" },
-    { "front": "West Virginia — capital?", "back": "Charleston" },
-    { "front": "Charleston (state capital) — which state?", "back": "West Virginia" },
-    { "front": "Wisconsin — capital?", "back": "Madison" },
-    { "front": "Madison — which state?", "back": "Wisconsin" },
-    { "front": "Wyoming — capital?", "back": "Cheyenne" },
-    { "front": "Cheyenne — which state?", "back": "Wyoming" }
+    {
+      "front": "Alabama — capital?",
+      "back": "Montgomery"
+    },
+    {
+      "front": "Montgomery — which state?",
+      "back": "Alabama"
+    },
+    {
+      "front": "Alaska — capital?",
+      "back": "Juneau"
+    },
+    {
+      "front": "Juneau — which state?",
+      "back": "Alaska"
+    },
+    {
+      "front": "Arizona — capital?",
+      "back": "Phoenix"
+    },
+    {
+      "front": "Phoenix — which state?",
+      "back": "Arizona"
+    },
+    {
+      "front": "Arkansas — capital?",
+      "back": "Little Rock"
+    },
+    {
+      "front": "Little Rock — which state?",
+      "back": "Arkansas"
+    },
+    {
+      "front": "California — capital?",
+      "back": "Sacramento"
+    },
+    {
+      "front": "Sacramento — which state?",
+      "back": "California"
+    },
+    {
+      "front": "Colorado — capital?",
+      "back": "Denver"
+    },
+    {
+      "front": "Denver — which state?",
+      "back": "Colorado"
+    },
+    {
+      "front": "Connecticut — capital?",
+      "back": "Hartford"
+    },
+    {
+      "front": "Hartford — which state?",
+      "back": "Connecticut"
+    },
+    {
+      "front": "Delaware — capital?",
+      "back": "Dover"
+    },
+    {
+      "front": "Dover — which state?",
+      "back": "Delaware"
+    },
+    {
+      "front": "Florida — capital?",
+      "back": "Tallahassee"
+    },
+    {
+      "front": "Tallahassee — which state?",
+      "back": "Florida"
+    },
+    {
+      "front": "Georgia — capital?",
+      "back": "Atlanta"
+    },
+    {
+      "front": "Atlanta — which state?",
+      "back": "Georgia"
+    },
+    {
+      "front": "Hawaii — capital?",
+      "back": "Honolulu"
+    },
+    {
+      "front": "Honolulu — which state?",
+      "back": "Hawaii"
+    },
+    {
+      "front": "Idaho — capital?",
+      "back": "Boise"
+    },
+    {
+      "front": "Boise — which state?",
+      "back": "Idaho"
+    },
+    {
+      "front": "Illinois — capital?",
+      "back": "Springfield"
+    },
+    {
+      "front": "Springfield (state capital) — which state?",
+      "back": "Illinois"
+    },
+    {
+      "front": "Indiana — capital?",
+      "back": "Indianapolis"
+    },
+    {
+      "front": "Indianapolis — which state?",
+      "back": "Indiana"
+    },
+    {
+      "front": "Iowa — capital?",
+      "back": "Des Moines"
+    },
+    {
+      "front": "Des Moines — which state?",
+      "back": "Iowa"
+    },
+    {
+      "front": "Kansas — capital?",
+      "back": "Topeka"
+    },
+    {
+      "front": "Topeka — which state?",
+      "back": "Kansas"
+    },
+    {
+      "front": "Kentucky — capital?",
+      "back": "Frankfort"
+    },
+    {
+      "front": "Frankfort — which state?",
+      "back": "Kentucky"
+    },
+    {
+      "front": "Louisiana — capital?",
+      "back": "Baton Rouge"
+    },
+    {
+      "front": "Baton Rouge — which state?",
+      "back": "Louisiana"
+    },
+    {
+      "front": "Maine — capital?",
+      "back": "Augusta"
+    },
+    {
+      "front": "Augusta — which state?",
+      "back": "Maine"
+    },
+    {
+      "front": "Maryland — capital?",
+      "back": "Annapolis"
+    },
+    {
+      "front": "Annapolis — which state?",
+      "back": "Maryland"
+    },
+    {
+      "front": "Massachusetts — capital?",
+      "back": "Boston"
+    },
+    {
+      "front": "Boston — which state?",
+      "back": "Massachusetts"
+    },
+    {
+      "front": "Michigan — capital?",
+      "back": "Lansing"
+    },
+    {
+      "front": "Lansing — which state?",
+      "back": "Michigan"
+    },
+    {
+      "front": "Minnesota — capital?",
+      "back": "Saint Paul"
+    },
+    {
+      "front": "Saint Paul — which state?",
+      "back": "Minnesota"
+    },
+    {
+      "front": "Mississippi — capital?",
+      "back": "Jackson"
+    },
+    {
+      "front": "Jackson (state capital) — which state?",
+      "back": "Mississippi"
+    },
+    {
+      "front": "Missouri — capital?",
+      "back": "Jefferson City"
+    },
+    {
+      "front": "Jefferson City — which state?",
+      "back": "Missouri"
+    },
+    {
+      "front": "Montana — capital?",
+      "back": "Helena"
+    },
+    {
+      "front": "Helena — which state?",
+      "back": "Montana"
+    },
+    {
+      "front": "Nebraska — capital?",
+      "back": "Lincoln"
+    },
+    {
+      "front": "Lincoln (state capital) — which state?",
+      "back": "Nebraska"
+    },
+    {
+      "front": "Nevada — capital?",
+      "back": "Carson City"
+    },
+    {
+      "front": "Carson City — which state?",
+      "back": "Nevada"
+    },
+    {
+      "front": "New Hampshire — capital?",
+      "back": "Concord"
+    },
+    {
+      "front": "Concord — which state?",
+      "back": "New Hampshire"
+    },
+    {
+      "front": "New Jersey — capital?",
+      "back": "Trenton"
+    },
+    {
+      "front": "Trenton — which state?",
+      "back": "New Jersey"
+    },
+    {
+      "front": "New Mexico — capital?",
+      "back": "Santa Fe"
+    },
+    {
+      "front": "Santa Fe — which state?",
+      "back": "New Mexico"
+    },
+    {
+      "front": "New York — capital?",
+      "back": "Albany"
+    },
+    {
+      "front": "Albany — which state?",
+      "back": "New York"
+    },
+    {
+      "front": "North Carolina — capital?",
+      "back": "Raleigh"
+    },
+    {
+      "front": "Raleigh — which state?",
+      "back": "North Carolina"
+    },
+    {
+      "front": "North Dakota — capital?",
+      "back": "Bismarck"
+    },
+    {
+      "front": "Bismarck — which state?",
+      "back": "North Dakota"
+    },
+    {
+      "front": "Ohio — capital?",
+      "back": "Columbus"
+    },
+    {
+      "front": "Columbus — which state?",
+      "back": "Ohio"
+    },
+    {
+      "front": "Oklahoma — capital?",
+      "back": "Oklahoma City"
+    },
+    {
+      "front": "Oklahoma City — which state?",
+      "back": "Oklahoma"
+    },
+    {
+      "front": "Oregon — capital?",
+      "back": "Salem"
+    },
+    {
+      "front": "Salem (state capital) — which state?",
+      "back": "Oregon"
+    },
+    {
+      "front": "Pennsylvania — capital?",
+      "back": "Harrisburg"
+    },
+    {
+      "front": "Harrisburg — which state?",
+      "back": "Pennsylvania"
+    },
+    {
+      "front": "Rhode Island — capital?",
+      "back": "Providence"
+    },
+    {
+      "front": "Providence — which state?",
+      "back": "Rhode Island"
+    },
+    {
+      "front": "South Carolina — capital?",
+      "back": "Columbia"
+    },
+    {
+      "front": "Columbia (state capital) — which state?",
+      "back": "South Carolina"
+    },
+    {
+      "front": "South Dakota — capital?",
+      "back": "Pierre"
+    },
+    {
+      "front": "Pierre — which state?",
+      "back": "South Dakota"
+    },
+    {
+      "front": "Tennessee — capital?",
+      "back": "Nashville"
+    },
+    {
+      "front": "Nashville — which state?",
+      "back": "Tennessee"
+    },
+    {
+      "front": "Texas — capital?",
+      "back": "Austin"
+    },
+    {
+      "front": "Austin — which state?",
+      "back": "Texas"
+    },
+    {
+      "front": "Utah — capital?",
+      "back": "Salt Lake City"
+    },
+    {
+      "front": "Salt Lake City — which state?",
+      "back": "Utah"
+    },
+    {
+      "front": "Vermont — capital?",
+      "back": "Montpelier"
+    },
+    {
+      "front": "Montpelier — which state?",
+      "back": "Vermont"
+    },
+    {
+      "front": "Virginia — capital?",
+      "back": "Richmond"
+    },
+    {
+      "front": "Richmond — which state?",
+      "back": "Virginia"
+    },
+    {
+      "front": "Washington — capital?",
+      "back": "Olympia"
+    },
+    {
+      "front": "Olympia — which state?",
+      "back": "Washington"
+    },
+    {
+      "front": "West Virginia — capital?",
+      "back": "Charleston"
+    },
+    {
+      "front": "Charleston (state capital) — which state?",
+      "back": "West Virginia"
+    },
+    {
+      "front": "Wisconsin — capital?",
+      "back": "Madison"
+    },
+    {
+      "front": "Madison — which state?",
+      "back": "Wisconsin"
+    },
+    {
+      "front": "Wyoming — capital?",
+      "back": "Cheyenne"
+    },
+    {
+      "front": "Cheyenne — which state?",
+      "back": "Wyoming"
+    }
   ]
 }

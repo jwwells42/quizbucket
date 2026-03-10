@@ -2,201 +2,1294 @@
   {
     "question": "This process converts glucose into pyruvate and produces a net gain of two ATP molecules. It occurs in the cytoplasm and does not require oxygen. It is the first step in both aerobic and anaerobic respiration. Name this metabolic pathway that breaks down sugar.",
     "answer": "Glycolysis",
-    "category": "Science"
+    "category": "Science",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This man wrote a pamphlet called 'Common Sense' that argued for American independence from Britain. He later wrote 'The Rights of Man' in defense of the French Revolution. Born in England, he emigrated to the colonies in 1774. Name this Founding Era political activist and writer.",
     "answer": "Thomas Paine",
-    "category": "History"
+    "category": "History",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This novel features the characters Atticus Finch and his daughter Scout. Set in the fictional town of Maycomb, Alabama, it deals with themes of racial injustice and moral growth. It won the Pulitzer Prize in 1961. Name this novel by Harper Lee.",
     "answer": "To Kill a Mockingbird",
-    "category": "Literature"
+    "category": "Literature",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This mountain is the tallest in the world, standing at 29,032 feet above sea level. It sits on the border between Nepal and Tibet. Sir Edmund Hillary and Tenzing Norgay were the first confirmed climbers to reach its summit in 1953. Name this peak in the Himalayas.",
     "answer": "Mount Everest",
-    "category": "Geography"
+    "category": "Geography",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This element has the atomic number 79 and the chemical symbol Au. It is a transition metal known for its yellow color and resistance to corrosion. It has been used as currency and in jewelry for thousands of years. Name this precious metal.",
     "answer": "Gold",
-    "category": "Science"
+    "category": "Science",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This composer wrote nine symphonies, the last of which includes the 'Ode to Joy' choral finale. He continued composing even after losing his hearing. Born in Bonn, Germany, he is considered a bridge between the Classical and Romantic eras. Name this German composer.",
     "answer": "Ludwig van Beethoven",
-    "category": "Fine Arts"
+    "category": "Fine Arts",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This theorem states that in a right triangle, the square of the hypotenuse equals the sum of the squares of the other two sides. It is one of the most fundamental results in Euclidean geometry. Name this theorem attributed to an ancient Greek mathematician.",
     "answer": "Pythagorean Theorem",
-    "category": "Math"
+    "category": "Math",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This war lasted from 1861 to 1865 and was fought between the Union and the Confederacy. Key battles include Gettysburg, Antietam, and Bull Run. It resulted in the abolition of slavery and the preservation of the United States. Name this American conflict.",
     "answer": "The Civil War",
-    "category": "History"
+    "category": "History",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This planet is the largest in our solar system, with a mass more than twice that of all other planets combined. It is known for its Great Red Spot, a giant storm. It has at least 95 known moons, including Ganymede and Europa. Name this gas giant.",
     "answer": "Jupiter",
-    "category": "Science"
+    "category": "Science",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This artist painted the ceiling of the Sistine Chapel, which includes the famous scene of the Creation of Adam. He also sculpted the statue of David. Born in Caprese, Italy, he was a leading figure of the Renaissance. Name this Italian artist.",
     "answer": "Michelangelo",
-    "category": "Fine Arts"
+    "category": "Fine Arts",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This organelle is often called the 'powerhouse of the cell.' It produces ATP through cellular respiration. It has its own DNA, separate from the cell's nucleus. Name this energy-producing organelle found in eukaryotic cells.",
     "answer": "Mitochondria",
-    "category": "Science"
+    "category": "Science",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This novel follows a pig named Napoleon who seizes power after animals overthrow their human farmer. It is an allegory for the Russian Revolution and the rise of Stalin. Name this 1945 novel by George Orwell.",
     "answer": "Animal Farm",
-    "category": "Literature"
+    "category": "Literature",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This document begins with 'We the People' and was drafted in Philadelphia in 1787. It established the framework for the federal government, including three branches. Name this supreme law of the United States.",
     "answer": "The Constitution",
-    "category": "History"
+    "category": "History",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This painter is known for cutting off part of his own ear. He created works such as The Starry Night and Sunflowers while struggling with mental illness. He was a Post-Impressionist who worked primarily in France. Name this Dutch artist.",
     "answer": "Vincent van Gogh",
-    "category": "Fine Arts"
+    "category": "Fine Arts",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This body of water is the largest ocean on Earth, covering more area than all the land on the planet combined. It was named by Ferdinand Magellan, who found its waters calm during his 1520 voyage. Name this ocean between Asia and the Americas.",
     "answer": "Pacific Ocean",
-    "category": "Geography"
+    "category": "Geography",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This number is the ratio of a circle's circumference to its diameter. It is an irrational number that begins 3.14159 and continues infinitely without repeating. Name this mathematical constant represented by a Greek letter.",
     "answer": "Pi",
-    "category": "Math"
+    "category": "Math",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This play features a prince who sees the ghost of his murdered father and pretends to be mad. It includes the famous soliloquy beginning 'To be, or not to be.' Name this tragedy by William Shakespeare.",
     "answer": "Hamlet",
-    "category": "Literature"
+    "category": "Literature",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This Greek god ruled over the underworld and the dead. He kidnapped Persephone to be his queen. His brothers were Zeus and Poseidon, with whom he divided the cosmos. Name this god whose Roman equivalent is Pluto.",
     "answer": "Hades",
-    "category": "Mythology"
+    "category": "Mythology",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This process occurs in the chloroplasts of plant cells. It uses sunlight, water, and carbon dioxide to produce glucose and oxygen. Name this process by which plants make their own food.",
     "answer": "Photosynthesis",
-    "category": "Science"
+    "category": "Science",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This 1803 Supreme Court case established the principle of judicial review, giving the Court power to declare laws unconstitutional. It was decided under Chief Justice John Marshall. Name this landmark case.",
     "answer": "Marbury v. Madison",
-    "category": "History"
+    "category": "History",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This Italian explorer sailed west from Spain in 1492, seeking a route to Asia. Instead, he reached islands in the Caribbean, beginning an era of European exploration of the Americas. Name this explorer.",
     "answer": "Christopher Columbus",
-    "category": "History"
+    "category": "History",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This Renaissance artist painted the Mona Lisa and The Last Supper. He was also an inventor, scientist, and engineer who kept detailed notebooks written in mirror script. Name this Italian polymath.",
     "answer": "Leonardo da Vinci",
-    "category": "Fine Arts"
+    "category": "Fine Arts",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This type of bond forms when atoms share electrons. It is common in molecules like water and carbon dioxide. It is different from ionic bonds, where electrons are transferred. Name this type of chemical bond.",
     "answer": "Covalent bond",
-    "category": "Science"
+    "category": "Science",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This river is the longest in the United States, flowing from Montana to the Gulf of Mexico. It drains 31 states and two Canadian provinces. It was central to westward expansion and the steamboat era. Name this river that flows through cities like St. Louis and New Orleans.",
     "answer": "Mississippi River",
-    "category": "Geography"
+    "category": "Geography",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This novel is set in a dystopian future where the government controls all information and Big Brother watches everyone. The protagonist, Winston Smith, works at the Ministry of Truth. Name this 1949 novel by George Orwell.",
     "answer": "1984",
-    "category": "Literature"
+    "category": "Literature",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This physicist developed the theory of general relativity and the famous equation E equals mc squared. He won the Nobel Prize in Physics in 1921 for his work on the photoelectric effect. Name this German-born scientist.",
     "answer": "Albert Einstein",
-    "category": "Science"
+    "category": "Science",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This Greek hero was known for his twelve labors, which included slaying the Nemean Lion and capturing Cerberus. He was the son of Zeus and was known for his incredible strength. Name this hero whose Roman name is Hercules.",
     "answer": "Heracles",
-    "category": "Mythology"
+    "category": "Mythology",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This law of physics states that for every action there is an equal and opposite reaction. It is one of three fundamental laws of motion published in 1687. Name this third law formulated by Isaac Newton.",
     "answer": "Newton's Third Law",
-    "category": "Science"
+    "category": "Science",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This speech was delivered by Martin Luther King Jr. on August 28, 1963, during the March on Washington. It called for racial equality and an end to discrimination. Name this famous address delivered on the steps of the Lincoln Memorial.",
     "answer": "I Have a Dream",
-    "category": "History"
+    "category": "History",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This continent is the driest, coldest, and windiest on Earth. It has no permanent human population, though research stations operate year-round. About 70 percent of the world's fresh water is frozen in its ice sheet. Name this southernmost continent.",
     "answer": "Antarctica",
-    "category": "Geography"
+    "category": "Geography",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This novel follows the journey of Santiago, an Andalusian shepherd boy, who travels to Egypt seeking treasure. Along the way he learns about the Soul of the World and his Personal Legend. Name this 1988 novel by Paulo Coelho.",
     "answer": "The Alchemist",
-    "category": "Literature"
+    "category": "Literature",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This organ is the largest in the human body by surface area. It serves as a barrier against pathogens, regulates temperature, and provides sensation. Name this organ that makes up the integumentary system.",
     "answer": "Skin",
-    "category": "Science"
+    "category": "Science",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This ancient wonder was a massive stone structure built as a tomb for Pharaoh Khufu around 2560 BC. It is the oldest and largest of the three pyramids on the Giza plateau. Name this wonder of the ancient world located near Cairo, Egypt.",
     "answer": "Great Pyramid of Giza",
-    "category": "History"
+    "category": "History",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This Baroque composer wrote The Four Seasons, a set of four violin concertos each representing a season of the year. He was an Italian priest and virtuoso violinist. Name this composer known as 'The Red Priest.'",
     "answer": "Antonio Vivaldi",
-    "category": "Fine Arts"
+    "category": "Fine Arts",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This French military leader rose to power during the French Revolution and crowned himself Emperor in 1804. He conquered much of Europe before his defeat at the Battle of Waterloo in 1815. Name this French emperor exiled to the island of Saint Helena.",
     "answer": "Napoleon Bonaparte",
-    "category": "History"
+    "category": "History",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This value on the pH scale indicates a neutral substance that is neither acidic nor basic. Pure water has this pH. Name this number on the pH scale.",
     "answer": "7",
-    "category": "Science"
+    "category": "Science",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This Shakespeare play tells the story of a Scottish general who murders King Duncan after hearing a prophecy from three witches. His ambitious wife helps drive the plot. Name this tragedy featuring the line 'Out, damned spot.'",
     "answer": "Macbeth",
-    "category": "Literature"
+    "category": "Literature",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This device invented by Johannes Gutenberg around 1440 used movable metal type to mass-produce books. It is widely credited with helping to spread the Renaissance, Reformation, and Scientific Revolution. Name this invention that revolutionized communication.",
     "answer": "The printing press",
-    "category": "History"
+    "category": "History",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This bone is the longest and strongest in the human body. It extends from the hip to the knee. Name this bone commonly known as the thigh bone.",
     "answer": "Femur",
-    "category": "Science"
+    "category": "Science",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   },
   {
     "question": "This painting by Edvard Munch shows a figure with an agonized expression against a landscape with a tumultuous orange sky. Created in 1893, it has become one of the most iconic images in art. Name this Expressionist masterpiece.",
     "answer": "The Scream",
-    "category": "Fine Arts"
+    "category": "Fine Arts",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This element has the atomic number 8 and makes up about 21 percent of Earth's atmosphere. It is essential for aerobic respiration in most living organisms. Plants produce it as a byproduct of photosynthesis. Name this gas that humans breathe.",
+    "answer": "Oxygen",
+    "category": "Science",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This ancient Greek philosopher was sentenced to death by drinking hemlock after being convicted of corrupting the youth of Athens. He never wrote any texts himself; his ideas were recorded by his student Plato. He is known for a method of teaching through questioning. Name this philosopher.",
+    "answer": "Socrates",
+    "category": "History",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This novel tells the story of a boy named Jim Hawkins who finds a treasure map and sets sail on the Hispaniola. He encounters the treacherous one-legged pirate Long John Silver. Name this 1883 adventure novel by Robert Louis Stevenson.",
+    "answer": "Treasure Island",
+    "category": "Literature",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This desert is the largest hot desert in the world, covering much of North Africa. It spans eleven countries and is roughly the size of the United States. Its name comes from the Arabic word for desert. Name this African desert.",
+    "answer": "Sahara Desert",
+    "category": "Geography",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This Austrian composer was a child prodigy who wrote his first symphony at age eight and composed over 600 works before his death at age 35. His operas include The Magic Flute and The Marriage of Figaro. Name this Classical-era composer.",
+    "answer": "Wolfgang Amadeus Mozart",
+    "category": "Fine Arts",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "In mathematics, this is the result of multiplying a number by itself. It can also refer to a four-sided polygon with all equal sides and four right angles. Name this term that describes both the geometric shape and the operation of raising a number to the second power.",
+    "answer": "Square",
+    "category": "Math",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This Greek goddess of wisdom and warfare sprang fully grown and armored from the head of her father, Zeus. She was the patron deity of Athens. Her Roman equivalent is Minerva. Name this goddess often depicted with an owl and a shield.",
+    "answer": "Athena",
+    "category": "Mythology",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This document, adopted on July 4, 1776, announced the American colonies' separation from Great Britain. It was primarily written by Thomas Jefferson. It asserts that all men are created equal with unalienable rights to life, liberty, and the pursuit of happiness. Name this founding document.",
+    "answer": "The Declaration of Independence",
+    "category": "Social Studies",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This river is the longest in the world, stretching over 4,100 miles through northeastern Africa. Ancient Egyptian civilization developed along its banks. It flows northward into the Mediterranean Sea. Name this river that passes through Cairo and Khartoum.",
+    "answer": "Nile River",
+    "category": "Geography",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This force pulls objects toward each other and gives weight to physical objects. Isaac Newton famously described it after observing a falling apple. It keeps planets in orbit around the Sun. Name this fundamental force of attraction between masses.",
+    "answer": "Gravity",
+    "category": "Science",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This novel follows a group of boys stranded on an uninhabited island after a plane crash. Led initially by Ralph, the boys descend into savagery under the influence of Jack. Name this 1954 novel by William Golding.",
+    "answer": "Lord of the Flies",
+    "category": "Literature",
+    "levels": [
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This Spanish artist co-founded Cubism and painted Guernica, a response to the bombing of a Basque town during the Spanish Civil War. He worked in many styles over a career spanning more than seven decades. Name this prolific 20th-century painter.",
+    "answer": "Pablo Picasso",
+    "category": "Fine Arts",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "In a right triangle, this trigonometric ratio is defined as the length of the opposite side divided by the length of the hypotenuse. It is abbreviated as 'sin.' Name this basic trigonometric function.",
+    "answer": "Sine",
+    "category": "Math",
+    "levels": [
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This Greek hero led the Greek forces during the Trojan War and was king of Ithaca. After the war, he spent ten years trying to return home, facing monsters and divine obstacles. Name this hero whose journey is told in Homer's Odyssey.",
+    "answer": "Odysseus",
+    "category": "Mythology",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This wall was built beginning in 122 AD on the orders of a Roman emperor to mark the northern boundary of Roman Britain. Stretching 73 miles across northern England, it was built to keep out the Picts and other northern tribes. Name this Roman fortification.",
+    "answer": "Hadrian's Wall",
+    "category": "History",
+    "levels": [
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This South American country is the largest in both area and population on its continent. Its largest city is Sao Paulo, and it is home to most of the Amazon Rainforest. Its official language is Portuguese. Name this country whose capital is Brasilia.",
+    "answer": "Brazil",
+    "category": "Geography",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This system of the human body includes the heart, blood vessels, and blood. It is responsible for transporting oxygen and nutrients throughout the body. Name this system also known as the cardiovascular system.",
+    "answer": "Circulatory system",
+    "category": "Science",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This mathematical sequence begins 0, 1, 1, 2, 3, 5, 8, 13, where each number is the sum of the two preceding ones. It appears frequently in nature, including in the spirals of sunflower seeds and pinecones. Name this sequence named after an Italian mathematician.",
+    "answer": "Fibonacci sequence",
+    "category": "Math",
+    "levels": [
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This Greek god of the sea wielded a trident and could cause earthquakes. He was one of the three sons of Kronos, along with Zeus and Hades. His Roman equivalent is Neptune. Name this god who competed with Athena for patronage of Athens.",
+    "answer": "Poseidon",
+    "category": "Mythology",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This amendment to the U.S. Constitution guarantees freedom of speech, religion, the press, assembly, and the right to petition the government. It is part of the Bill of Rights, ratified in 1791. Name this amendment.",
+    "answer": "First Amendment",
+    "category": "Social Studies",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This country is both a continent and a nation, surrounded by the Indian and Pacific Oceans. It is home to unique animals like the kangaroo and platypus. Its largest city is Sydney, though its capital is Canberra. Name this country located in the Southern Hemisphere.",
+    "answer": "Australia",
+    "category": "Geography",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This painting depicts a woman with an enigmatic smile, believed to be Lisa Gherardini. It was painted by Leonardo da Vinci beginning around 1503 and now hangs in the Louvre Museum in Paris. Name this famous portrait.",
+    "answer": "Mona Lisa",
+    "category": "Fine Arts",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This novella follows Ebenezer Scrooge, a miserly old man who is visited by three ghosts on Christmas Eve. The spirits show him visions of his past, present, and future. Name this 1843 work by Charles Dickens.",
+    "answer": "A Christmas Carol",
+    "category": "Literature",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This number system uses only two digits, 0 and 1. It is the foundation of all modern computer processing. Each digit in this system is called a bit. Name this base-2 number system.",
+    "answer": "Binary",
+    "category": "Math",
+    "levels": [
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This ancient Greek mathematician wrote the Elements, a textbook that organized geometry into axioms, postulates, and proofs. It remained the standard geometry textbook for over two thousand years. Name this 'Father of Geometry.'",
+    "answer": "Euclid",
+    "category": "Math",
+    "levels": [
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This Titan in Greek mythology was punished by Zeus for stealing fire and giving it to humanity. He was chained to a rock where an eagle ate his liver each day, only for it to regenerate each night. Name this Titan who defied the gods to help mankind.",
+    "answer": "Prometheus",
+    "category": "Mythology",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This 1954 Supreme Court decision ruled that racial segregation in public schools was unconstitutional, overturning the 'separate but equal' doctrine from Plessy v. Ferguson. It was argued by Thurgood Marshall. Name this landmark case.",
+    "answer": "Brown v. Board of Education",
+    "category": "Social Studies",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This subatomic particle carries a negative electric charge and orbits the nucleus of an atom. It was discovered by J.J. Thomson in 1897 using cathode ray tubes. Its mass is much smaller than that of a proton or neutron. Name this negatively charged particle.",
+    "answer": "Electron",
+    "category": "Science",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This empire, centered in modern-day Peru, was the largest in pre-Columbian America. It built Machu Picchu and an extensive road system through the Andes Mountains. It was conquered by Francisco Pizarro in the 1530s. Name this South American empire.",
+    "answer": "Inca Empire",
+    "category": "History",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This novel tells the story of a whale hunter named Captain Ahab, who obsessively pursues a great white whale. The narrator, Ishmael, is a sailor aboard the whaling ship Pequod. Name this 1851 novel by Herman Melville.",
+    "answer": "Moby-Dick",
+    "category": "Literature",
+    "levels": [
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This mountain range stretches about 4,500 miles along the western coast of South America. It passes through seven countries and contains many peaks over 20,000 feet. Name this longest continental mountain range in the world.",
+    "answer": "Andes Mountains",
+    "category": "Geography",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This Impressionist painter is known for his series of Water Lilies paintings and his garden at Giverny, France. He helped launch the Impressionist movement, which took its name from his painting Impression, Sunrise. Name this French artist.",
+    "answer": "Claude Monet",
+    "category": "Fine Arts",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This property of a triangle states that the sum of its interior angles always equals 180 degrees. It applies to all triangles in Euclidean geometry, regardless of their shape or size. Name this fundamental fact about angles in a triangle.",
+    "answer": "Triangle Angle Sum",
+    "category": "Math",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This Greek god was the messenger of the Olympians and the god of travelers, thieves, and commerce. He wore winged sandals and a winged hat. His Roman equivalent is Mercury. Name this swift god who guided souls to the underworld.",
+    "answer": "Hermes",
+    "category": "Mythology",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This type of government is ruled by a single person who holds absolute power and typically inherits the position. Examples include kings, queens, and emperors. England and Japan still have this form of government in a constitutional version. Name this form of government.",
+    "answer": "Monarchy",
+    "category": "Social Studies",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This structure in China stretches over 13,000 miles and was built over many centuries to protect against invasions from the north. It is one of the most famous landmarks in the world. Name this massive fortification visible from high altitude.",
+    "answer": "Great Wall of China",
+    "category": "Geography",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This process describes the continuous movement of water through evaporation, condensation, precipitation, and collection. It is driven by solar energy and gravity. Name this cycle that distributes fresh water around the planet.",
+    "answer": "Water cycle",
+    "category": "Science",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This civil rights leader refused to give up her seat on a Montgomery, Alabama bus on December 1, 1955. Her arrest sparked the Montgomery Bus Boycott, a pivotal event in the civil rights movement. Name this woman known as the 'Mother of the Civil Rights Movement.'",
+    "answer": "Rosa Parks",
+    "category": "History",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This novel by F. Scott Fitzgerald is set during the Roaring Twenties and follows the mysterious millionaire Jay Gatsby and his obsession with Daisy Buchanan. It is narrated by Nick Carraway. Name this classic of American literature.",
+    "answer": "The Great Gatsby",
+    "category": "Literature",
+    "levels": [
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This German-born composer moved to England and wrote the oratorio Messiah, which includes the famous 'Hallelujah' chorus. He was a leading figure of the Baroque era. Name this composer of Water Music and Music for the Royal Fireworks.",
+    "answer": "George Frideric Handel",
+    "category": "Fine Arts",
+    "levels": [
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This formula gives the area of a circle as pi times the radius squared. It is one of the most widely used formulas in geometry. Name this formula written as A equals pi r squared.",
+    "answer": "Area of a circle",
+    "category": "Math",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This Greek hero killed the Minotaur in the Labyrinth on the island of Crete, using a ball of thread given to him by Ariadne to find his way back out. He was the legendary king of Athens. Name this hero who sailed with a black-sailed ship.",
+    "answer": "Theseus",
+    "category": "Mythology",
+    "levels": [
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This economic system is based on private ownership of the means of production and the creation of goods for profit. Supply and demand determine prices in its markets. Name this economic system that contrasts with socialism and communism.",
+    "answer": "Capitalism",
+    "category": "Social Studies",
+    "levels": [
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This island nation in the Indian Ocean is the fourth-largest island in the world. It is home to many species found nowhere else, including lemurs and baobab trees. It lies off the southeastern coast of Africa. Name this island country.",
+    "answer": "Madagascar",
+    "category": "Geography",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This table organizes all known chemical elements by their atomic number. It was first developed by Dmitri Mendeleev in 1869 and arranges elements into rows called periods and columns called groups. Name this chart found in every chemistry classroom.",
+    "answer": "Periodic table",
+    "category": "Science",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This 16th president of the United States led the nation through the Civil War and issued the Emancipation Proclamation. He was assassinated by John Wilkes Booth at Ford's Theatre in 1865. Name this president born in a log cabin in Kentucky.",
+    "answer": "Abraham Lincoln",
+    "category": "History",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This novel by Charlotte Bronte follows a young orphan girl who becomes a governess at Thornfield Hall and falls in love with her mysterious employer, Mr. Rochester. It was published in 1847. Name this classic English novel.",
+    "answer": "Jane Eyre",
+    "category": "Literature",
+    "levels": [
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This term describes the distance around the outside of a circle. It can be calculated by multiplying the diameter by pi. Name this measurement of a circle's outer boundary.",
+    "answer": "Circumference",
+    "category": "Math",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This plague devastated Europe in the mid-14th century, killing an estimated one-third to one-half of Europe's population. It was caused by the bacterium Yersinia pestis and spread by fleas on rats. Name this catastrophic medieval pandemic.",
+    "answer": "The Black Death",
+    "category": "History",
+    "levels": [
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This Japanese art form involves folding paper into decorative shapes without cutting or gluing. Common designs include cranes, frogs, and flowers. Name this traditional craft whose name means 'folding paper' in Japanese.",
+    "answer": "Origami",
+    "category": "Fine Arts",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This Shakespeare play tells of two feuding families in Verona, the Montagues and the Capulets, whose children fall in love. The young lovers' tragic deaths ultimately reconcile the families. Name this famous romantic tragedy.",
+    "answer": "Romeo and Juliet",
+    "category": "Literature",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This Greek goddess of the hunt was the twin sister of Apollo. She was associated with the moon, wild animals, and the wilderness. Her Roman equivalent is Diana. Name this virgin goddess who carried a silver bow.",
+    "answer": "Artemis",
+    "category": "Mythology",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This term in economics describes the total value of all goods and services produced within a country in one year. It is one of the primary indicators used to measure a nation's economic health. Name this economic measurement abbreviated GDP.",
+    "answer": "Gross Domestic Product",
+    "category": "Social Studies",
+    "levels": [
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This part of the human brain is the largest and is responsible for higher functions like reasoning, memory, and voluntary movement. It is divided into two hemispheres connected by the corpus callosum. Name this part of the brain.",
+    "answer": "Cerebrum",
+    "category": "Science",
+    "levels": [
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This explorer led the first expedition to successfully circumnavigate the globe, though he was killed in the Philippines in 1521. His remaining crew completed the voyage in 1522. Name this Portuguese navigator who sailed for Spain.",
+    "answer": "Ferdinand Magellan",
+    "category": "History",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This novel by Mark Twain follows a boy who fakes his own death and rafts down the Mississippi River with an escaped slave named Jim. It is considered one of the great American novels. Name this sequel to The Adventures of Tom Sawyer.",
+    "answer": "Adventures of Huckleberry Finn",
+    "category": "Literature",
+    "levels": [
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This is the name for a polygon with exactly five sides and five angles. The U.S. Department of Defense is headquartered in a building shaped like one. Name this five-sided polygon.",
+    "answer": "Pentagon",
+    "category": "Math",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This sculpture, carved from marble between 1501 and 1504, stands over 17 feet tall and depicts a biblical hero about to face the giant Goliath. It was created by Michelangelo and is housed in the Galleria dell'Accademia in Florence. Name this famous statue.",
+    "answer": "David",
+    "category": "Fine Arts",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This inland body of water between Europe and Asia is the largest enclosed body of water on Earth, despite being called a sea. It borders five countries, including Russia, Iran, and Kazakhstan. Name this body of water that is actually a lake.",
+    "answer": "Caspian Sea",
+    "category": "Geography",
+    "levels": [
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This muscular organ pumps blood throughout the body through a network of arteries and veins. In humans, it has four chambers: two atria and two ventricles. It beats roughly 100,000 times per day. Name this vital organ in the chest.",
+    "answer": "Heart",
+    "category": "Science",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This event on June 6, 1944, was the largest seaborne invasion in history. Allied forces landed on five beaches in Normandy, France, beginning the liberation of Western Europe from Nazi Germany. Name this pivotal World War II operation also called Operation Overlord.",
+    "answer": "D-Day",
+    "category": "History",
+    "levels": [
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This novel by Louisa May Alcott follows the four March sisters \u2014 Meg, Jo, Beth, and Amy \u2014 as they grow up during the Civil War. Jo, the tomboyish aspiring writer, is the central character. Name this beloved 1868 novel.",
+    "answer": "Little Women",
+    "category": "Literature",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This branch of the U.S. government includes the Senate and the House of Representatives. Its primary role is to make laws. Name this branch of government outlined in Article I of the Constitution.",
+    "answer": "Legislative branch",
+    "category": "Social Studies",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This type of rock forms when molten magma or lava cools and solidifies. Granite and basalt are common examples. Name this one of the three main rock types, whose name comes from the Latin word for fire.",
+    "answer": "Igneous rock",
+    "category": "Science",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This mathematical operation is the inverse of exponentiation. Finding this value of 64 with an index of 2 gives 8. The symbol for this operation looks like a checkmark with a horizontal line. Name this operation that asks 'what number multiplied by itself gives this value.'",
+    "answer": "Square root",
+    "category": "Math",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This half-man, half-bull creature from Greek mythology lived in the Labyrinth on Crete, built by the inventor Daedalus. It was eventually slain by Theseus with the help of Ariadne's thread. Name this monstrous offspring of Queen Pasiphae.",
+    "answer": "Minotaur",
+    "category": "Mythology",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This Italian astronomer was one of the first to use a telescope for astronomical observation. He discovered four moons of Jupiter and supported the heliocentric model of the solar system, which led to his trial by the Inquisition. Name this scientist sometimes called the 'Father of Modern Science.'",
+    "answer": "Galileo Galilei",
+    "category": "Science",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This ancient civilization built a vast empire in Mesoamerica with its capital at Tenochtitlan, on the site of present-day Mexico City. It was conquered by Hernan Cortes and the Spanish in 1521. Name this empire known for its pyramids and sun stone.",
+    "answer": "Aztec Empire",
+    "category": "History",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This country in East Africa straddles the equator and is home to Mount Kilimanjaro, the tallest peak in Africa. The Serengeti plains and Ngorongoro Crater are famous wildlife areas within its borders. Name this country whose largest city is Dar es Salaam.",
+    "answer": "Tanzania",
+    "category": "Geography",
+    "levels": [
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This concept in economics states that as the price of a good increases, the quantity demanded generally decreases, and vice versa. It is one of the most fundamental principles in economics. Name this law.",
+    "answer": "Law of demand",
+    "category": "Social Studies",
+    "levels": [
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This Polish-born scientist was the first woman to win a Nobel Prize and remains the only person to win Nobel Prizes in two different sciences: physics and chemistry. She discovered the elements polonium and radium. Name this pioneering researcher of radioactivity.",
+    "answer": "Marie Curie",
+    "category": "Science",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This ancient empire was governed from Rome and at its height controlled the entire Mediterranean world, much of Europe, North Africa, and the Middle East. It fell in 476 AD when its last western emperor was deposed. Name this classical civilization.",
+    "answer": "Roman Empire",
+    "category": "History",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This Greek god was the king of the Olympian gods and ruled over the sky and thunder. He wielded a lightning bolt as his weapon. His Roman equivalent is Jupiter. Name this chief god who overthrew his father Kronos.",
+    "answer": "Zeus",
+    "category": "Mythology",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This waterfall on the border of Zambia and Zimbabwe is one of the largest in the world, with a width of over 5,600 feet. The indigenous Tonga people call it Mosi-oa-Tunya, meaning 'The Smoke That Thunders.' Name this famous African waterfall.",
+    "answer": "Victoria Falls",
+    "category": "Geography",
+    "levels": [
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This layer of Earth's atmosphere contains the ozone layer, which absorbs most of the Sun's harmful ultraviolet radiation. It extends from about 6 to 31 miles above the surface and is the layer in which jet aircraft typically fly. Name this second layer of the atmosphere.",
+    "answer": "Stratosphere",
+    "category": "Science",
+    "levels": [
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This 32nd president of the United States served four terms and led the country through most of the Great Depression and World War II. He introduced the New Deal, a series of programs to provide relief and recovery. Name this president who used a wheelchair due to polio.",
+    "answer": "Franklin D. Roosevelt",
+    "category": "History",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This novel by Ray Bradbury depicts a future society where firefighters burn books instead of putting out fires. The protagonist, Guy Montag, begins to question his role. The title refers to the temperature at which paper supposedly ignites. Name this dystopian novel.",
+    "answer": "Fahrenheit 451",
+    "category": "Literature",
+    "levels": [
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This Dutch artist was known for his mathematically inspired woodcuts and lithographs featuring impossible constructions, tessellations, and visual paradoxes. Works like Relativity and Drawing Hands play with perspective and infinity. Name this graphic artist.",
+    "answer": "M.C. Escher",
+    "category": "Fine Arts",
+    "levels": [
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This winged horse from Greek mythology sprang from the blood of Medusa after she was slain by Perseus. It was later tamed by the hero Bellerophon, who rode it into battle against the Chimera. Name this famous mythological flying horse.",
+    "answer": "Pegasus",
+    "category": "Mythology",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
+  },
+  {
+    "question": "This term describes the principle that governmental power is divided among different branches so that no one branch becomes too powerful. It is a key feature of the U.S. Constitution. Name this system in which each branch can limit the powers of the others.",
+    "answer": "Checks and balances",
+    "category": "Social Studies",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ]
   }
 ]

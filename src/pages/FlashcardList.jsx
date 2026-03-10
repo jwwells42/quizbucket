@@ -1,15 +1,18 @@
 import { Link } from 'react-router-dom'
 import { flashcardDecks } from '../data/loader'
 import { useProgress } from '../hooks/useProgress'
+import { useLevel } from '../context/LevelContext'
 
 export default function FlashcardList() {
   const { getDeckStats } = useProgress()
+  const { filterByLevel } = useLevel()
+  const decks = filterByLevel(flashcardDecks)
 
   return (
     <div>
       <h1 className="text-2xl font-bold mb-6">Flashcard Decks</h1>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {flashcardDecks.map(deck => {
+        {decks.map(deck => {
           const stats = getDeckStats(deck.id)
           const total = deck.cards.length
           return (

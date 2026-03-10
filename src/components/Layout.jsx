@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useState } from 'react'
+import { useLevel, ALL_LEVELS, LEVEL_LABELS } from '../context/LevelContext'
 
 const navLinks = [
   { to: '/', label: 'Home' },
@@ -7,11 +8,13 @@ const navLinks = [
   { to: '/tossup', label: 'Tossup' },
   { to: '/lightning', label: 'Lightning' },
   { to: '/memorize', label: 'Memorize' },
+  { to: '/computation', label: 'Computation' },
 ]
 
 export default function Layout({ children }) {
   const location = useLocation()
   const [menuOpen, setMenuOpen] = useState(false)
+  const { level, setLevel } = useLevel()
 
   return (
     <div className="min-h-screen bg-gray-950 text-gray-100">
@@ -22,7 +25,7 @@ export default function Layout({ children }) {
           </Link>
 
           {/* Desktop nav */}
-          <div className="hidden sm:flex gap-1">
+          <div className="hidden sm:flex items-center gap-1">
             {navLinks.map(link => (
               <Link
                 key={link.to}
@@ -36,6 +39,18 @@ export default function Layout({ children }) {
                 {link.label}
               </Link>
             ))}
+            <div className="ml-2 pl-2 border-l border-gray-700">
+              <select
+                value={level || ''}
+                onChange={e => setLevel(e.target.value || null)}
+                className="bg-gray-800 text-gray-300 text-sm rounded px-2 py-1.5 border border-gray-700 focus:outline-none focus:border-indigo-500 cursor-pointer"
+              >
+                <option value="">All Levels</option>
+                {ALL_LEVELS.map(l => (
+                  <option key={l} value={l}>{LEVEL_LABELS[l]}</option>
+                ))}
+              </select>
+            </div>
           </div>
 
           {/* Mobile hamburger */}
@@ -71,6 +86,18 @@ export default function Layout({ children }) {
                 {link.label}
               </Link>
             ))}
+            <div className="px-3 py-2">
+              <select
+                value={level || ''}
+                onChange={e => { setLevel(e.target.value || null); setMenuOpen(false) }}
+                className="w-full bg-gray-800 text-gray-300 text-sm rounded px-2 py-1.5 border border-gray-700 focus:outline-none focus:border-indigo-500"
+              >
+                <option value="">All Levels</option>
+                {ALL_LEVELS.map(l => (
+                  <option key={l} value={l}>{LEVEL_LABELS[l]}</option>
+                ))}
+              </select>
+            </div>
           </div>
         )}
       </nav>

@@ -2,114 +2,444 @@
   "id": "authors-works",
   "title": "Famous Authors & Works",
   "description": "Major literary works and their authors — both directions",
+  "levels": [
+    "3/4",
+    "5/6",
+    "7-9",
+    "9-12"
+  ],
   "cards": [
-    { "front": "William Shakespeare", "back": "Hamlet, Romeo and Juliet, Macbeth, Othello, A Midsummer Night's Dream" },
-    { "front": "Hamlet", "back": "William Shakespeare" },
-    { "front": "Romeo and Juliet", "back": "William Shakespeare" },
-    { "front": "Macbeth", "back": "William Shakespeare" },
-    { "front": "Othello", "back": "William Shakespeare" },
-    { "front": "A Midsummer Night's Dream", "back": "William Shakespeare" },
-    { "front": "Homer", "back": "The Iliad, The Odyssey" },
-    { "front": "The Iliad", "back": "Homer" },
-    { "front": "The Odyssey", "back": "Homer" },
-    { "front": "Harper Lee", "back": "To Kill a Mockingbird" },
-    { "front": "To Kill a Mockingbird", "back": "Harper Lee" },
-    { "front": "F. Scott Fitzgerald", "back": "The Great Gatsby" },
-    { "front": "The Great Gatsby", "back": "F. Scott Fitzgerald" },
-    { "front": "Mark Twain", "back": "Adventures of Huckleberry Finn, The Adventures of Tom Sawyer" },
-    { "front": "Adventures of Huckleberry Finn", "back": "Mark Twain" },
-    { "front": "The Adventures of Tom Sawyer", "back": "Mark Twain" },
-    { "front": "Jane Austen", "back": "Pride and Prejudice, Sense and Sensibility, Emma" },
-    { "front": "Pride and Prejudice", "back": "Jane Austen" },
-    { "front": "Emma (novel)", "back": "Jane Austen" },
-    { "front": "Charles Dickens", "back": "A Tale of Two Cities, Great Expectations, Oliver Twist, A Christmas Carol" },
-    { "front": "A Tale of Two Cities", "back": "Charles Dickens" },
-    { "front": "Great Expectations", "back": "Charles Dickens" },
-    { "front": "Oliver Twist", "back": "Charles Dickens" },
-    { "front": "A Christmas Carol", "back": "Charles Dickens" },
-    { "front": "George Orwell", "back": "1984, Animal Farm" },
-    { "front": "1984 (novel)", "back": "George Orwell" },
-    { "front": "Animal Farm", "back": "George Orwell" },
-    { "front": "J.D. Salinger", "back": "The Catcher in the Rye" },
-    { "front": "The Catcher in the Rye", "back": "J.D. Salinger" },
-    { "front": "Herman Melville", "back": "Moby-Dick" },
-    { "front": "Moby-Dick", "back": "Herman Melville" },
-    { "front": "Ernest Hemingway", "back": "The Old Man and the Sea, A Farewell to Arms, The Sun Also Rises" },
-    { "front": "The Old Man and the Sea", "back": "Ernest Hemingway" },
-    { "front": "A Farewell to Arms", "back": "Ernest Hemingway" },
-    { "front": "Ralph Ellison", "back": "Invisible Man" },
-    { "front": "Invisible Man", "back": "Ralph Ellison" },
-    { "front": "Nathaniel Hawthorne", "back": "The Scarlet Letter, The House of the Seven Gables" },
-    { "front": "The Scarlet Letter", "back": "Nathaniel Hawthorne" },
-    { "front": "Emily Bront\u00eb", "back": "Wuthering Heights" },
-    { "front": "Wuthering Heights", "back": "Emily Bront\u00eb" },
-    { "front": "Charlotte Bront\u00eb", "back": "Jane Eyre" },
-    { "front": "Jane Eyre", "back": "Charlotte Bront\u00eb" },
-    { "front": "Leo Tolstoy", "back": "War and Peace, Anna Karenina" },
-    { "front": "War and Peace", "back": "Leo Tolstoy" },
-    { "front": "Anna Karenina", "back": "Leo Tolstoy" },
-    { "front": "Fyodor Dostoevsky", "back": "Crime and Punishment, The Brothers Karamazov" },
-    { "front": "Crime and Punishment", "back": "Fyodor Dostoevsky" },
-    { "front": "The Brothers Karamazov", "back": "Fyodor Dostoevsky" },
-    { "front": "John Steinbeck", "back": "The Grapes of Wrath, Of Mice and Men, East of Eden" },
-    { "front": "The Grapes of Wrath", "back": "John Steinbeck" },
-    { "front": "Of Mice and Men", "back": "John Steinbeck" },
-    { "front": "Ray Bradbury", "back": "Fahrenheit 451, The Martian Chronicles" },
-    { "front": "Fahrenheit 451", "back": "Ray Bradbury" },
-    { "front": "Aldous Huxley", "back": "Brave New World" },
-    { "front": "Brave New World", "back": "Aldous Huxley" },
-    { "front": "Mary Shelley", "back": "Frankenstein" },
-    { "front": "Frankenstein", "back": "Mary Shelley" },
-    { "front": "Bram Stoker", "back": "Dracula" },
-    { "front": "Dracula", "back": "Bram Stoker" },
-    { "front": "Edgar Allan Poe", "back": "The Raven, The Tell-Tale Heart, The Fall of the House of Usher" },
-    { "front": "The Raven (poem)", "back": "Edgar Allan Poe" },
-    { "front": "The Tell-Tale Heart", "back": "Edgar Allan Poe" },
-    { "front": "Robert Frost", "back": "The Road Not Taken, Stopping by Woods on a Snowy Evening" },
-    { "front": "The Road Not Taken", "back": "Robert Frost" },
-    { "front": "Walt Whitman", "back": "Leaves of Grass, O Captain! My Captain!" },
-    { "front": "Leaves of Grass", "back": "Walt Whitman" },
-    { "front": "Emily Dickinson", "back": "Because I could not stop for Death, I'm Nobody! Who are you?" },
-    { "front": "Because I could not stop for Death", "back": "Emily Dickinson" },
-    { "front": "Langston Hughes", "back": "Harlem (A Dream Deferred), The Weary Blues" },
-    { "front": "Harlem (A Dream Deferred)", "back": "Langston Hughes" },
-    { "front": "Maya Angelou", "back": "I Know Why the Caged Bird Sings" },
-    { "front": "I Know Why the Caged Bird Sings", "back": "Maya Angelou" },
-    { "front": "Toni Morrison", "back": "Beloved, Song of Solomon, The Bluest Eye" },
-    { "front": "Beloved (novel)", "back": "Toni Morrison" },
-    { "front": "Zora Neale Hurston", "back": "Their Eyes Were Watching God" },
-    { "front": "Their Eyes Were Watching God", "back": "Zora Neale Hurston" },
-    { "front": "Arthur Miller", "back": "Death of a Salesman, The Crucible" },
-    { "front": "Death of a Salesman", "back": "Arthur Miller" },
-    { "front": "The Crucible", "back": "Arthur Miller" },
-    { "front": "Tennessee Williams", "back": "A Streetcar Named Desire, The Glass Menagerie" },
-    { "front": "A Streetcar Named Desire", "back": "Tennessee Williams" },
-    { "front": "Lorraine Hansberry", "back": "A Raisin in the Sun" },
-    { "front": "A Raisin in the Sun", "back": "Lorraine Hansberry" },
-    { "front": "Victor Hugo", "back": "Les Mis\u00e9rables, The Hunchback of Notre-Dame" },
-    { "front": "Les Mis\u00e9rables", "back": "Victor Hugo" },
-    { "front": "Alexandre Dumas", "back": "The Three Musketeers, The Count of Monte Cristo" },
-    { "front": "The Count of Monte Cristo", "back": "Alexandre Dumas" },
-    { "front": "Miguel de Cervantes", "back": "Don Quixote" },
-    { "front": "Don Quixote", "back": "Miguel de Cervantes" },
-    { "front": "Dante Alighieri", "back": "The Divine Comedy (Inferno)" },
-    { "front": "The Divine Comedy", "back": "Dante Alighieri" },
-    { "front": "Virgil", "back": "The Aeneid" },
-    { "front": "The Aeneid", "back": "Virgil" },
-    { "front": "Sophocles", "back": "Oedipus Rex, Antigone" },
-    { "front": "Oedipus Rex", "back": "Sophocles" },
-    { "front": "Antigone (play)", "back": "Sophocles" },
-    { "front": "William Golding", "back": "Lord of the Flies" },
-    { "front": "Lord of the Flies", "back": "William Golding" },
-    { "front": "Joseph Heller", "back": "Catch-22" },
-    { "front": "Catch-22", "back": "Joseph Heller" },
-    { "front": "Kurt Vonnegut", "back": "Slaughterhouse-Five, Cat's Cradle" },
-    { "front": "Slaughterhouse-Five", "back": "Kurt Vonnegut" },
-    { "front": "Alice Walker", "back": "The Color Purple" },
-    { "front": "The Color Purple", "back": "Alice Walker" },
-    { "front": "Gabriel Garc\u00eda M\u00e1rquez", "back": "One Hundred Years of Solitude" },
-    { "front": "One Hundred Years of Solitude", "back": "Gabriel Garc\u00eda M\u00e1rquez" },
-    { "front": "Franz Kafka", "back": "The Metamorphosis, The Trial" },
-    { "front": "The Metamorphosis", "back": "Franz Kafka" }
+    {
+      "front": "William Shakespeare",
+      "back": "Hamlet, Romeo and Juliet, Macbeth, Othello, A Midsummer Night's Dream"
+    },
+    {
+      "front": "Hamlet",
+      "back": "William Shakespeare"
+    },
+    {
+      "front": "Romeo and Juliet",
+      "back": "William Shakespeare"
+    },
+    {
+      "front": "Macbeth",
+      "back": "William Shakespeare"
+    },
+    {
+      "front": "Othello",
+      "back": "William Shakespeare"
+    },
+    {
+      "front": "A Midsummer Night's Dream",
+      "back": "William Shakespeare"
+    },
+    {
+      "front": "Homer",
+      "back": "The Iliad, The Odyssey"
+    },
+    {
+      "front": "The Iliad",
+      "back": "Homer"
+    },
+    {
+      "front": "The Odyssey",
+      "back": "Homer"
+    },
+    {
+      "front": "Harper Lee",
+      "back": "To Kill a Mockingbird"
+    },
+    {
+      "front": "To Kill a Mockingbird",
+      "back": "Harper Lee"
+    },
+    {
+      "front": "F. Scott Fitzgerald",
+      "back": "The Great Gatsby"
+    },
+    {
+      "front": "The Great Gatsby",
+      "back": "F. Scott Fitzgerald"
+    },
+    {
+      "front": "Mark Twain",
+      "back": "Adventures of Huckleberry Finn, The Adventures of Tom Sawyer"
+    },
+    {
+      "front": "Adventures of Huckleberry Finn",
+      "back": "Mark Twain"
+    },
+    {
+      "front": "The Adventures of Tom Sawyer",
+      "back": "Mark Twain"
+    },
+    {
+      "front": "Jane Austen",
+      "back": "Pride and Prejudice, Sense and Sensibility, Emma"
+    },
+    {
+      "front": "Pride and Prejudice",
+      "back": "Jane Austen"
+    },
+    {
+      "front": "Emma (novel)",
+      "back": "Jane Austen"
+    },
+    {
+      "front": "Charles Dickens",
+      "back": "A Tale of Two Cities, Great Expectations, Oliver Twist, A Christmas Carol"
+    },
+    {
+      "front": "A Tale of Two Cities",
+      "back": "Charles Dickens"
+    },
+    {
+      "front": "Great Expectations",
+      "back": "Charles Dickens"
+    },
+    {
+      "front": "Oliver Twist",
+      "back": "Charles Dickens"
+    },
+    {
+      "front": "A Christmas Carol",
+      "back": "Charles Dickens"
+    },
+    {
+      "front": "George Orwell",
+      "back": "1984, Animal Farm"
+    },
+    {
+      "front": "1984 (novel)",
+      "back": "George Orwell"
+    },
+    {
+      "front": "Animal Farm",
+      "back": "George Orwell"
+    },
+    {
+      "front": "J.D. Salinger",
+      "back": "The Catcher in the Rye"
+    },
+    {
+      "front": "The Catcher in the Rye",
+      "back": "J.D. Salinger"
+    },
+    {
+      "front": "Herman Melville",
+      "back": "Moby-Dick"
+    },
+    {
+      "front": "Moby-Dick",
+      "back": "Herman Melville"
+    },
+    {
+      "front": "Ernest Hemingway",
+      "back": "The Old Man and the Sea, A Farewell to Arms, The Sun Also Rises"
+    },
+    {
+      "front": "The Old Man and the Sea",
+      "back": "Ernest Hemingway"
+    },
+    {
+      "front": "A Farewell to Arms",
+      "back": "Ernest Hemingway"
+    },
+    {
+      "front": "Ralph Ellison",
+      "back": "Invisible Man"
+    },
+    {
+      "front": "Invisible Man",
+      "back": "Ralph Ellison"
+    },
+    {
+      "front": "Nathaniel Hawthorne",
+      "back": "The Scarlet Letter, The House of the Seven Gables"
+    },
+    {
+      "front": "The Scarlet Letter",
+      "back": "Nathaniel Hawthorne"
+    },
+    {
+      "front": "Emily Brontë",
+      "back": "Wuthering Heights"
+    },
+    {
+      "front": "Wuthering Heights",
+      "back": "Emily Brontë"
+    },
+    {
+      "front": "Charlotte Brontë",
+      "back": "Jane Eyre"
+    },
+    {
+      "front": "Jane Eyre",
+      "back": "Charlotte Brontë"
+    },
+    {
+      "front": "Leo Tolstoy",
+      "back": "War and Peace, Anna Karenina"
+    },
+    {
+      "front": "War and Peace",
+      "back": "Leo Tolstoy"
+    },
+    {
+      "front": "Anna Karenina",
+      "back": "Leo Tolstoy"
+    },
+    {
+      "front": "Fyodor Dostoevsky",
+      "back": "Crime and Punishment, The Brothers Karamazov"
+    },
+    {
+      "front": "Crime and Punishment",
+      "back": "Fyodor Dostoevsky"
+    },
+    {
+      "front": "The Brothers Karamazov",
+      "back": "Fyodor Dostoevsky"
+    },
+    {
+      "front": "John Steinbeck",
+      "back": "The Grapes of Wrath, Of Mice and Men, East of Eden"
+    },
+    {
+      "front": "The Grapes of Wrath",
+      "back": "John Steinbeck"
+    },
+    {
+      "front": "Of Mice and Men",
+      "back": "John Steinbeck"
+    },
+    {
+      "front": "Ray Bradbury",
+      "back": "Fahrenheit 451, The Martian Chronicles"
+    },
+    {
+      "front": "Fahrenheit 451",
+      "back": "Ray Bradbury"
+    },
+    {
+      "front": "Aldous Huxley",
+      "back": "Brave New World"
+    },
+    {
+      "front": "Brave New World",
+      "back": "Aldous Huxley"
+    },
+    {
+      "front": "Mary Shelley",
+      "back": "Frankenstein"
+    },
+    {
+      "front": "Frankenstein",
+      "back": "Mary Shelley"
+    },
+    {
+      "front": "Bram Stoker",
+      "back": "Dracula"
+    },
+    {
+      "front": "Dracula",
+      "back": "Bram Stoker"
+    },
+    {
+      "front": "Edgar Allan Poe",
+      "back": "The Raven, The Tell-Tale Heart, The Fall of the House of Usher"
+    },
+    {
+      "front": "The Raven (poem)",
+      "back": "Edgar Allan Poe"
+    },
+    {
+      "front": "The Tell-Tale Heart",
+      "back": "Edgar Allan Poe"
+    },
+    {
+      "front": "Robert Frost",
+      "back": "The Road Not Taken, Stopping by Woods on a Snowy Evening"
+    },
+    {
+      "front": "The Road Not Taken",
+      "back": "Robert Frost"
+    },
+    {
+      "front": "Walt Whitman",
+      "back": "Leaves of Grass, O Captain! My Captain!"
+    },
+    {
+      "front": "Leaves of Grass",
+      "back": "Walt Whitman"
+    },
+    {
+      "front": "Emily Dickinson",
+      "back": "Because I could not stop for Death, I'm Nobody! Who are you?"
+    },
+    {
+      "front": "Because I could not stop for Death",
+      "back": "Emily Dickinson"
+    },
+    {
+      "front": "Langston Hughes",
+      "back": "Harlem (A Dream Deferred), The Weary Blues"
+    },
+    {
+      "front": "Harlem (A Dream Deferred)",
+      "back": "Langston Hughes"
+    },
+    {
+      "front": "Maya Angelou",
+      "back": "I Know Why the Caged Bird Sings"
+    },
+    {
+      "front": "I Know Why the Caged Bird Sings",
+      "back": "Maya Angelou"
+    },
+    {
+      "front": "Toni Morrison",
+      "back": "Beloved, Song of Solomon, The Bluest Eye"
+    },
+    {
+      "front": "Beloved (novel)",
+      "back": "Toni Morrison"
+    },
+    {
+      "front": "Zora Neale Hurston",
+      "back": "Their Eyes Were Watching God"
+    },
+    {
+      "front": "Their Eyes Were Watching God",
+      "back": "Zora Neale Hurston"
+    },
+    {
+      "front": "Arthur Miller",
+      "back": "Death of a Salesman, The Crucible"
+    },
+    {
+      "front": "Death of a Salesman",
+      "back": "Arthur Miller"
+    },
+    {
+      "front": "The Crucible",
+      "back": "Arthur Miller"
+    },
+    {
+      "front": "Tennessee Williams",
+      "back": "A Streetcar Named Desire, The Glass Menagerie"
+    },
+    {
+      "front": "A Streetcar Named Desire",
+      "back": "Tennessee Williams"
+    },
+    {
+      "front": "Lorraine Hansberry",
+      "back": "A Raisin in the Sun"
+    },
+    {
+      "front": "A Raisin in the Sun",
+      "back": "Lorraine Hansberry"
+    },
+    {
+      "front": "Victor Hugo",
+      "back": "Les Misérables, The Hunchback of Notre-Dame"
+    },
+    {
+      "front": "Les Misérables",
+      "back": "Victor Hugo"
+    },
+    {
+      "front": "Alexandre Dumas",
+      "back": "The Three Musketeers, The Count of Monte Cristo"
+    },
+    {
+      "front": "The Count of Monte Cristo",
+      "back": "Alexandre Dumas"
+    },
+    {
+      "front": "Miguel de Cervantes",
+      "back": "Don Quixote"
+    },
+    {
+      "front": "Don Quixote",
+      "back": "Miguel de Cervantes"
+    },
+    {
+      "front": "Dante Alighieri",
+      "back": "The Divine Comedy (Inferno)"
+    },
+    {
+      "front": "The Divine Comedy",
+      "back": "Dante Alighieri"
+    },
+    {
+      "front": "Virgil",
+      "back": "The Aeneid"
+    },
+    {
+      "front": "The Aeneid",
+      "back": "Virgil"
+    },
+    {
+      "front": "Sophocles",
+      "back": "Oedipus Rex, Antigone"
+    },
+    {
+      "front": "Oedipus Rex",
+      "back": "Sophocles"
+    },
+    {
+      "front": "Antigone (play)",
+      "back": "Sophocles"
+    },
+    {
+      "front": "William Golding",
+      "back": "Lord of the Flies"
+    },
+    {
+      "front": "Lord of the Flies",
+      "back": "William Golding"
+    },
+    {
+      "front": "Joseph Heller",
+      "back": "Catch-22"
+    },
+    {
+      "front": "Catch-22",
+      "back": "Joseph Heller"
+    },
+    {
+      "front": "Kurt Vonnegut",
+      "back": "Slaughterhouse-Five, Cat's Cradle"
+    },
+    {
+      "front": "Slaughterhouse-Five",
+      "back": "Kurt Vonnegut"
+    },
+    {
+      "front": "Alice Walker",
+      "back": "The Color Purple"
+    },
+    {
+      "front": "The Color Purple",
+      "back": "Alice Walker"
+    },
+    {
+      "front": "Gabriel García Márquez",
+      "back": "One Hundred Years of Solitude"
+    },
+    {
+      "front": "One Hundred Years of Solitude",
+      "back": "Gabriel García Márquez"
+    },
+    {
+      "front": "Franz Kafka",
+      "back": "The Metamorphosis, The Trial"
+    },
+    {
+      "front": "The Metamorphosis",
+      "back": "Franz Kafka"
+    }
   ]
 }

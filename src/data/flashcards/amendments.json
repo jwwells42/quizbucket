@@ -2,33 +2,120 @@
   "id": "amendments",
   "title": "Constitutional Amendments",
   "description": "All 27 amendments to the U.S. Constitution",
+  "levels": [
+    "3/4",
+    "5/6",
+    "7-9",
+    "9-12"
+  ],
   "cards": [
-    { "front": "1st Amendment", "back": "Freedom of religion, speech, press, assembly, and petition" },
-    { "front": "2nd Amendment", "back": "Right to keep and bear arms" },
-    { "front": "3rd Amendment", "back": "No quartering of soldiers in private homes without consent" },
-    { "front": "4th Amendment", "back": "Protection against unreasonable searches and seizures" },
-    { "front": "5th Amendment", "back": "Right to due process, protection against double jeopardy and self-incrimination" },
-    { "front": "6th Amendment", "back": "Right to a speedy and public trial, impartial jury, and legal counsel" },
-    { "front": "7th Amendment", "back": "Right to jury trial in civil cases exceeding $20" },
-    { "front": "8th Amendment", "back": "Protection against excessive bail, fines, and cruel and unusual punishment" },
-    { "front": "9th Amendment", "back": "Rights not listed in the Constitution are retained by the people" },
-    { "front": "10th Amendment", "back": "Powers not delegated to the federal government are reserved to the states or the people" },
-    { "front": "11th Amendment", "back": "States cannot be sued in federal court by citizens of another state or foreign country" },
-    { "front": "12th Amendment", "back": "Separate Electoral College votes for President and Vice President" },
-    { "front": "13th Amendment", "back": "Abolition of slavery" },
-    { "front": "14th Amendment", "back": "Citizenship, due process, and equal protection under the law" },
-    { "front": "15th Amendment", "back": "Right to vote cannot be denied based on race, color, or previous servitude" },
-    { "front": "16th Amendment", "back": "Congress can levy an income tax" },
-    { "front": "17th Amendment", "back": "Direct election of U.S. Senators by popular vote" },
-    { "front": "18th Amendment", "back": "Prohibition of alcohol (later repealed by 21st Amendment)" },
-    { "front": "19th Amendment", "back": "Women's right to vote" },
-    { "front": "20th Amendment", "back": "Changed inauguration date to January 20; lame duck amendment" },
-    { "front": "21st Amendment", "back": "Repeal of Prohibition (18th Amendment)" },
-    { "front": "22nd Amendment", "back": "Presidents limited to two terms in office" },
-    { "front": "23rd Amendment", "back": "Washington D.C. granted Electoral College votes" },
-    { "front": "24th Amendment", "back": "Abolition of poll taxes in federal elections" },
-    { "front": "25th Amendment", "back": "Presidential succession and disability procedures" },
-    { "front": "26th Amendment", "back": "Voting age lowered to 18" },
-    { "front": "27th Amendment", "back": "Congressional pay changes take effect after the next election" }
+    {
+      "front": "1st Amendment",
+      "back": "Freedom of religion, speech, press, assembly, and petition"
+    },
+    {
+      "front": "2nd Amendment",
+      "back": "Right to keep and bear arms"
+    },
+    {
+      "front": "3rd Amendment",
+      "back": "No quartering of soldiers in private homes without consent"
+    },
+    {
+      "front": "4th Amendment",
+      "back": "Protection against unreasonable searches and seizures"
+    },
+    {
+      "front": "5th Amendment",
+      "back": "Right to due process, protection against double jeopardy and self-incrimination"
+    },
+    {
+      "front": "6th Amendment",
+      "back": "Right to a speedy and public trial, impartial jury, and legal counsel"
+    },
+    {
+      "front": "7th Amendment",
+      "back": "Right to jury trial in civil cases exceeding $20"
+    },
+    {
+      "front": "8th Amendment",
+      "back": "Protection against excessive bail, fines, and cruel and unusual punishment"
+    },
+    {
+      "front": "9th Amendment",
+      "back": "Rights not listed in the Constitution are retained by the people"
+    },
+    {
+      "front": "10th Amendment",
+      "back": "Powers not delegated to the federal government are reserved to the states or the people"
+    },
+    {
+      "front": "11th Amendment",
+      "back": "States cannot be sued in federal court by citizens of another state or foreign country"
+    },
+    {
+      "front": "12th Amendment",
+      "back": "Separate Electoral College votes for President and Vice President"
+    },
+    {
+      "front": "13th Amendment",
+      "back": "Abolition of slavery"
+    },
+    {
+      "front": "14th Amendment",
+      "back": "Citizenship, due process, and equal protection under the law"
+    },
+    {
+      "front": "15th Amendment",
+      "back": "Right to vote cannot be denied based on race, color, or previous servitude"
+    },
+    {
+      "front": "16th Amendment",
+      "back": "Congress can levy an income tax"
+    },
+    {
+      "front": "17th Amendment",
+      "back": "Direct election of U.S. Senators by popular vote"
+    },
+    {
+      "front": "18th Amendment",
+      "back": "Prohibition of alcohol (later repealed by 21st Amendment)"
+    },
+    {
+      "front": "19th Amendment",
+      "back": "Women's right to vote"
+    },
+    {
+      "front": "20th Amendment",
+      "back": "Changed inauguration date to January 20; lame duck amendment"
+    },
+    {
+      "front": "21st Amendment",
+      "back": "Repeal of Prohibition (18th Amendment)"
+    },
+    {
+      "front": "22nd Amendment",
+      "back": "Presidents limited to two terms in office"
+    },
+    {
+      "front": "23rd Amendment",
+      "back": "Washington D.C. granted Electoral College votes"
+    },
+    {
+      "front": "24th Amendment",
+      "back": "Abolition of poll taxes in federal elections"
+    },
+    {
+      "front": "25th Amendment",
+      "back": "Presidential succession and disability procedures"
+    },
+    {
+      "front": "26th Amendment",
+      "back": "Voting age lowered to 18"
+    },
+    {
+      "front": "27th Amendment",
+      "back": "Congressional pay changes take effect after the next election"
+    }
   ]
 }

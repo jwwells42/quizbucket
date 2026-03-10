@@ -2,223 +2,880 @@
   "id": "world-capitals",
   "title": "World Countries & Capitals",
   "description": "Countries and their capital cities — both directions",
+  "levels": [
+    "3/4",
+    "5/6",
+    "7-9",
+    "9-12"
+  ],
   "cards": [
-    { "front": "Afghanistan — capital?", "back": "Kabul" },
-    { "front": "Kabul — which country?", "back": "Afghanistan" },
-    { "front": "Albania — capital?", "back": "Tirana" },
-    { "front": "Tirana — which country?", "back": "Albania" },
-    { "front": "Algeria — capital?", "back": "Algiers" },
-    { "front": "Algiers — which country?", "back": "Algeria" },
-    { "front": "Andorra — capital?", "back": "Andorra la Vella" },
-    { "front": "Angola — capital?", "back": "Luanda" },
-    { "front": "Argentina — capital?", "back": "Buenos Aires" },
-    { "front": "Buenos Aires — which country?", "back": "Argentina" },
-    { "front": "Armenia — capital?", "back": "Yerevan" },
-    { "front": "Australia — capital?", "back": "Canberra" },
-    { "front": "Canberra — which country?", "back": "Australia" },
-    { "front": "Austria — capital?", "back": "Vienna" },
-    { "front": "Vienna — which country?", "back": "Austria" },
-    { "front": "Azerbaijan — capital?", "back": "Baku" },
-    { "front": "Bahamas — capital?", "back": "Nassau" },
-    { "front": "Bangladesh — capital?", "back": "Dhaka" },
-    { "front": "Dhaka — which country?", "back": "Bangladesh" },
-    { "front": "Belarus — capital?", "back": "Minsk" },
-    { "front": "Minsk — which country?", "back": "Belarus" },
-    { "front": "Belgium — capital?", "back": "Brussels" },
-    { "front": "Brussels — which country?", "back": "Belgium" },
-    { "front": "Belize — capital?", "back": "Belmopan" },
-    { "front": "Benin — capital?", "back": "Porto-Novo" },
-    { "front": "Bhutan — capital?", "back": "Thimphu" },
-    { "front": "Bolivia — capital?", "back": "Sucre (constitutional) / La Paz (seat of government)" },
-    { "front": "Bosnia and Herzegovina — capital?", "back": "Sarajevo" },
-    { "front": "Sarajevo — which country?", "back": "Bosnia and Herzegovina" },
-    { "front": "Botswana — capital?", "back": "Gaborone" },
-    { "front": "Brazil — capital?", "back": "Brasilia" },
-    { "front": "Brasilia — which country?", "back": "Brazil" },
-    { "front": "Brunei — capital?", "back": "Bandar Seri Begawan" },
-    { "front": "Bulgaria — capital?", "back": "Sofia" },
-    { "front": "Sofia — which country?", "back": "Bulgaria" },
-    { "front": "Burkina Faso — capital?", "back": "Ouagadougou" },
-    { "front": "Ouagadougou — which country?", "back": "Burkina Faso" },
-    { "front": "Cambodia — capital?", "back": "Phnom Penh" },
-    { "front": "Phnom Penh — which country?", "back": "Cambodia" },
-    { "front": "Cameroon — capital?", "back": "Yaound\u00e9" },
-    { "front": "Canada — capital?", "back": "Ottawa" },
-    { "front": "Ottawa — which country?", "back": "Canada" },
-    { "front": "Chad — capital?", "back": "N'Djamena" },
-    { "front": "Chile — capital?", "back": "Santiago" },
-    { "front": "Santiago — which country?", "back": "Chile" },
-    { "front": "China — capital?", "back": "Beijing" },
-    { "front": "Beijing — which country?", "back": "China" },
-    { "front": "Colombia — capital?", "back": "Bogot\u00e1" },
-    { "front": "Bogot\u00e1 — which country?", "back": "Colombia" },
-    { "front": "Costa Rica — capital?", "back": "San Jos\u00e9" },
-    { "front": "Croatia — capital?", "back": "Zagreb" },
-    { "front": "Zagreb — which country?", "back": "Croatia" },
-    { "front": "Cuba — capital?", "back": "Havana" },
-    { "front": "Havana — which country?", "back": "Cuba" },
-    { "front": "Cyprus — capital?", "back": "Nicosia" },
-    { "front": "Czech Republic — capital?", "back": "Prague" },
-    { "front": "Prague — which country?", "back": "Czech Republic" },
-    { "front": "Democratic Republic of the Congo — capital?", "back": "Kinshasa" },
-    { "front": "Kinshasa — which country?", "back": "Democratic Republic of the Congo" },
-    { "front": "Denmark — capital?", "back": "Copenhagen" },
-    { "front": "Copenhagen — which country?", "back": "Denmark" },
-    { "front": "Dominican Republic — capital?", "back": "Santo Domingo" },
-    { "front": "Ecuador — capital?", "back": "Quito" },
-    { "front": "Quito — which country?", "back": "Ecuador" },
-    { "front": "Egypt — capital?", "back": "Cairo" },
-    { "front": "Cairo — which country?", "back": "Egypt" },
-    { "front": "El Salvador — capital?", "back": "San Salvador" },
-    { "front": "Estonia — capital?", "back": "Tallinn" },
-    { "front": "Ethiopia — capital?", "back": "Addis Ababa" },
-    { "front": "Addis Ababa — which country?", "back": "Ethiopia" },
-    { "front": "Fiji — capital?", "back": "Suva" },
-    { "front": "Finland — capital?", "back": "Helsinki" },
-    { "front": "Helsinki — which country?", "back": "Finland" },
-    { "front": "France — capital?", "back": "Paris" },
-    { "front": "Paris — which country?", "back": "France" },
-    { "front": "Gabon — capital?", "back": "Libreville" },
-    { "front": "Georgia (country) — capital?", "back": "Tbilisi" },
-    { "front": "Germany — capital?", "back": "Berlin" },
-    { "front": "Berlin — which country?", "back": "Germany" },
-    { "front": "Ghana — capital?", "back": "Accra" },
-    { "front": "Accra — which country?", "back": "Ghana" },
-    { "front": "Greece — capital?", "back": "Athens" },
-    { "front": "Athens — which country?", "back": "Greece" },
-    { "front": "Guatemala — capital?", "back": "Guatemala City" },
-    { "front": "Guinea — capital?", "back": "Conakry" },
-    { "front": "Haiti — capital?", "back": "Port-au-Prince" },
-    { "front": "Honduras — capital?", "back": "Tegucigalpa" },
-    { "front": "Hungary — capital?", "back": "Budapest" },
-    { "front": "Budapest — which country?", "back": "Hungary" },
-    { "front": "Iceland — capital?", "back": "Reykjavik" },
-    { "front": "Reykjavik — which country?", "back": "Iceland" },
-    { "front": "India — capital?", "back": "New Delhi" },
-    { "front": "New Delhi — which country?", "back": "India" },
-    { "front": "Indonesia — capital?", "back": "Jakarta" },
-    { "front": "Jakarta — which country?", "back": "Indonesia" },
-    { "front": "Iran — capital?", "back": "Tehran" },
-    { "front": "Tehran — which country?", "back": "Iran" },
-    { "front": "Iraq — capital?", "back": "Baghdad" },
-    { "front": "Baghdad — which country?", "back": "Iraq" },
-    { "front": "Ireland — capital?", "back": "Dublin" },
-    { "front": "Dublin — which country?", "back": "Ireland" },
-    { "front": "Israel — capital?", "back": "Jerusalem" },
-    { "front": "Italy — capital?", "back": "Rome" },
-    { "front": "Rome — which country?", "back": "Italy" },
-    { "front": "Jamaica — capital?", "back": "Kingston" },
-    { "front": "Japan — capital?", "back": "Tokyo" },
-    { "front": "Tokyo — which country?", "back": "Japan" },
-    { "front": "Jordan — capital?", "back": "Amman" },
-    { "front": "Kazakhstan — capital?", "back": "Astana" },
-    { "front": "Astana — which country?", "back": "Kazakhstan" },
-    { "front": "Kenya — capital?", "back": "Nairobi" },
-    { "front": "Nairobi — which country?", "back": "Kenya" },
-    { "front": "Kuwait — capital?", "back": "Kuwait City" },
-    { "front": "Kyrgyzstan — capital?", "back": "Bishkek" },
-    { "front": "Laos — capital?", "back": "Vientiane" },
-    { "front": "Latvia — capital?", "back": "Riga" },
-    { "front": "Riga — which country?", "back": "Latvia" },
-    { "front": "Lebanon — capital?", "back": "Beirut" },
-    { "front": "Beirut — which country?", "back": "Lebanon" },
-    { "front": "Libya — capital?", "back": "Tripoli" },
-    { "front": "Lithuania — capital?", "back": "Vilnius" },
-    { "front": "Luxembourg — capital?", "back": "Luxembourg City" },
-    { "front": "Madagascar — capital?", "back": "Antananarivo" },
-    { "front": "Malaysia — capital?", "back": "Kuala Lumpur" },
-    { "front": "Kuala Lumpur — which country?", "back": "Malaysia" },
-    { "front": "Mali — capital?", "back": "Bamako" },
-    { "front": "Mexico — capital?", "back": "Mexico City" },
-    { "front": "Mexico City — which country?", "back": "Mexico" },
-    { "front": "Mongolia — capital?", "back": "Ulaanbaatar" },
-    { "front": "Ulaanbaatar — which country?", "back": "Mongolia" },
-    { "front": "Morocco — capital?", "back": "Rabat" },
-    { "front": "Rabat — which country?", "back": "Morocco" },
-    { "front": "Mozambique — capital?", "back": "Maputo" },
-    { "front": "Myanmar — capital?", "back": "Naypyidaw" },
-    { "front": "Nepal — capital?", "back": "Kathmandu" },
-    { "front": "Kathmandu — which country?", "back": "Nepal" },
-    { "front": "Netherlands — capital?", "back": "Amsterdam" },
-    { "front": "Amsterdam — which country?", "back": "Netherlands" },
-    { "front": "New Zealand — capital?", "back": "Wellington" },
-    { "front": "Wellington — which country?", "back": "New Zealand" },
-    { "front": "Nicaragua — capital?", "back": "Managua" },
-    { "front": "Niger — capital?", "back": "Niamey" },
-    { "front": "Nigeria — capital?", "back": "Abuja" },
-    { "front": "Abuja — which country?", "back": "Nigeria" },
-    { "front": "North Korea — capital?", "back": "Pyongyang" },
-    { "front": "Pyongyang — which country?", "back": "North Korea" },
-    { "front": "North Macedonia — capital?", "back": "Skopje" },
-    { "front": "Norway — capital?", "back": "Oslo" },
-    { "front": "Oslo — which country?", "back": "Norway" },
-    { "front": "Pakistan — capital?", "back": "Islamabad" },
-    { "front": "Islamabad — which country?", "back": "Pakistan" },
-    { "front": "Panama — capital?", "back": "Panama City" },
-    { "front": "Papua New Guinea — capital?", "back": "Port Moresby" },
-    { "front": "Paraguay — capital?", "back": "Asunci\u00f3n" },
-    { "front": "Peru — capital?", "back": "Lima" },
-    { "front": "Lima — which country?", "back": "Peru" },
-    { "front": "Philippines — capital?", "back": "Manila" },
-    { "front": "Manila — which country?", "back": "Philippines" },
-    { "front": "Poland — capital?", "back": "Warsaw" },
-    { "front": "Warsaw — which country?", "back": "Poland" },
-    { "front": "Portugal — capital?", "back": "Lisbon" },
-    { "front": "Lisbon — which country?", "back": "Portugal" },
-    { "front": "Qatar — capital?", "back": "Doha" },
-    { "front": "Romania — capital?", "back": "Bucharest" },
-    { "front": "Bucharest — which country?", "back": "Romania" },
-    { "front": "Russia — capital?", "back": "Moscow" },
-    { "front": "Moscow — which country?", "back": "Russia" },
-    { "front": "Rwanda — capital?", "back": "Kigali" },
-    { "front": "Saudi Arabia — capital?", "back": "Riyadh" },
-    { "front": "Riyadh — which country?", "back": "Saudi Arabia" },
-    { "front": "Senegal — capital?", "back": "Dakar" },
-    { "front": "Dakar — which country?", "back": "Senegal" },
-    { "front": "Serbia — capital?", "back": "Belgrade" },
-    { "front": "Belgrade — which country?", "back": "Serbia" },
-    { "front": "Singapore — capital?", "back": "Singapore" },
-    { "front": "Slovakia — capital?", "back": "Bratislava" },
-    { "front": "Slovenia — capital?", "back": "Ljubljana" },
-    { "front": "Somalia — capital?", "back": "Mogadishu" },
-    { "front": "South Africa — capital (executive)?", "back": "Pretoria" },
-    { "front": "Pretoria — which country?", "back": "South Africa" },
-    { "front": "South Korea — capital?", "back": "Seoul" },
-    { "front": "Seoul — which country?", "back": "South Korea" },
-    { "front": "Spain — capital?", "back": "Madrid" },
-    { "front": "Madrid — which country?", "back": "Spain" },
-    { "front": "Sri Lanka — capital?", "back": "Sri Jayawardenepura Kotte" },
-    { "front": "Sudan — capital?", "back": "Khartoum" },
-    { "front": "Sweden — capital?", "back": "Stockholm" },
-    { "front": "Stockholm — which country?", "back": "Sweden" },
-    { "front": "Switzerland — capital?", "back": "Bern" },
-    { "front": "Bern — which country?", "back": "Switzerland" },
-    { "front": "Syria — capital?", "back": "Damascus" },
-    { "front": "Damascus — which country?", "back": "Syria" },
-    { "front": "Taiwan — capital?", "back": "Taipei" },
-    { "front": "Taipei — which country/territory?", "back": "Taiwan" },
-    { "front": "Tanzania — capital?", "back": "Dodoma" },
-    { "front": "Thailand — capital?", "back": "Bangkok" },
-    { "front": "Bangkok — which country?", "back": "Thailand" },
-    { "front": "Tunisia — capital?", "back": "Tunis" },
-    { "front": "Turkey — capital?", "back": "Ankara" },
-    { "front": "Ankara — which country?", "back": "Turkey" },
-    { "front": "Uganda — capital?", "back": "Kampala" },
-    { "front": "Ukraine — capital?", "back": "Kyiv" },
-    { "front": "Kyiv — which country?", "back": "Ukraine" },
-    { "front": "United Arab Emirates — capital?", "back": "Abu Dhabi" },
-    { "front": "Abu Dhabi — which country?", "back": "United Arab Emirates" },
-    { "front": "United Kingdom — capital?", "back": "London" },
-    { "front": "London — which country?", "back": "United Kingdom" },
-    { "front": "Uruguay — capital?", "back": "Montevideo" },
-    { "front": "Montevideo — which country?", "back": "Uruguay" },
-    { "front": "Uzbekistan — capital?", "back": "Tashkent" },
-    { "front": "Venezuela — capital?", "back": "Caracas" },
-    { "front": "Caracas — which country?", "back": "Venezuela" },
-    { "front": "Vietnam — capital?", "back": "Hanoi" },
-    { "front": "Hanoi — which country?", "back": "Vietnam" },
-    { "front": "Yemen — capital?", "back": "Sana'a" },
-    { "front": "Zambia — capital?", "back": "Lusaka" },
-    { "front": "Zimbabwe — capital?", "back": "Harare" }
+    {
+      "front": "Afghanistan — capital?",
+      "back": "Kabul"
+    },
+    {
+      "front": "Kabul — which country?",
+      "back": "Afghanistan"
+    },
+    {
+      "front": "Albania — capital?",
+      "back": "Tirana"
+    },
+    {
+      "front": "Tirana — which country?",
+      "back": "Albania"
+    },
+    {
+      "front": "Algeria — capital?",
+      "back": "Algiers"
+    },
+    {
+      "front": "Algiers — which country?",
+      "back": "Algeria"
+    },
+    {
+      "front": "Andorra — capital?",
+      "back": "Andorra la Vella"
+    },
+    {
+      "front": "Angola — capital?",
+      "back": "Luanda"
+    },
+    {
+      "front": "Argentina — capital?",
+      "back": "Buenos Aires"
+    },
+    {
+      "front": "Buenos Aires — which country?",
+      "back": "Argentina"
+    },
+    {
+      "front": "Armenia — capital?",
+      "back": "Yerevan"
+    },
+    {
+      "front": "Australia — capital?",
+      "back": "Canberra"
+    },
+    {
+      "front": "Canberra — which country?",
+      "back": "Australia"
+    },
+    {
+      "front": "Austria — capital?",
+      "back": "Vienna"
+    },
+    {
+      "front": "Vienna — which country?",
+      "back": "Austria"
+    },
+    {
+      "front": "Azerbaijan — capital?",
+      "back": "Baku"
+    },
+    {
+      "front": "Bahamas — capital?",
+      "back": "Nassau"
+    },
+    {
+      "front": "Bangladesh — capital?",
+      "back": "Dhaka"
+    },
+    {
+      "front": "Dhaka — which country?",
+      "back": "Bangladesh"
+    },
+    {
+      "front": "Belarus — capital?",
+      "back": "Minsk"
+    },
+    {
+      "front": "Minsk — which country?",
+      "back": "Belarus"
+    },
+    {
+      "front": "Belgium — capital?",
+      "back": "Brussels"
+    },
+    {
+      "front": "Brussels — which country?",
+      "back": "Belgium"
+    },
+    {
+      "front": "Belize — capital?",
+      "back": "Belmopan"
+    },
+    {
+      "front": "Benin — capital?",
+      "back": "Porto-Novo"
+    },
+    {
+      "front": "Bhutan — capital?",
+      "back": "Thimphu"
+    },
+    {
+      "front": "Bolivia — capital?",
+      "back": "Sucre (constitutional) / La Paz (seat of government)"
+    },
+    {
+      "front": "Bosnia and Herzegovina — capital?",
+      "back": "Sarajevo"
+    },
+    {
+      "front": "Sarajevo — which country?",
+      "back": "Bosnia and Herzegovina"
+    },
+    {
+      "front": "Botswana — capital?",
+      "back": "Gaborone"
+    },
+    {
+      "front": "Brazil — capital?",
+      "back": "Brasilia"
+    },
+    {
+      "front": "Brasilia — which country?",
+      "back": "Brazil"
+    },
+    {
+      "front": "Brunei — capital?",
+      "back": "Bandar Seri Begawan"
+    },
+    {
+      "front": "Bulgaria — capital?",
+      "back": "Sofia"
+    },
+    {
+      "front": "Sofia — which country?",
+      "back": "Bulgaria"
+    },
+    {
+      "front": "Burkina Faso — capital?",
+      "back": "Ouagadougou"
+    },
+    {
+      "front": "Ouagadougou — which country?",
+      "back": "Burkina Faso"
+    },
+    {
+      "front": "Cambodia — capital?",
+      "back": "Phnom Penh"
+    },
+    {
+      "front": "Phnom Penh — which country?",
+      "back": "Cambodia"
+    },
+    {
+      "front": "Cameroon — capital?",
+      "back": "Yaoundé"
+    },
+    {
+      "front": "Canada — capital?",
+      "back": "Ottawa"
+    },
+    {
+      "front": "Ottawa — which country?",
+      "back": "Canada"
+    },
+    {
+      "front": "Chad — capital?",
+      "back": "N'Djamena"
+    },
+    {
+      "front": "Chile — capital?",
+      "back": "Santiago"
+    },
+    {
+      "front": "Santiago — which country?",
+      "back": "Chile"
+    },
+    {
+      "front": "China — capital?",
+      "back": "Beijing"
+    },
+    {
+      "front": "Beijing — which country?",
+      "back": "China"
+    },
+    {
+      "front": "Colombia — capital?",
+      "back": "Bogotá"
+    },
+    {
+      "front": "Bogotá — which country?",
+      "back": "Colombia"
+    },
+    {
+      "front": "Costa Rica — capital?",
+      "back": "San José"
+    },
+    {
+      "front": "Croatia — capital?",
+      "back": "Zagreb"
+    },
+    {
+      "front": "Zagreb — which country?",
+      "back": "Croatia"
+    },
+    {
+      "front": "Cuba — capital?",
+      "back": "Havana"
+    },
+    {
+      "front": "Havana — which country?",
+      "back": "Cuba"
+    },
+    {
+      "front": "Cyprus — capital?",
+      "back": "Nicosia"
+    },
+    {
+      "front": "Czech Republic — capital?",
+      "back": "Prague"
+    },
+    {
+      "front": "Prague — which country?",
+      "back": "Czech Republic"
+    },
+    {
+      "front": "Democratic Republic of the Congo — capital?",
+      "back": "Kinshasa"
+    },
+    {
+      "front": "Kinshasa — which country?",
+      "back": "Democratic Republic of the Congo"
+    },
+    {
+      "front": "Denmark — capital?",
+      "back": "Copenhagen"
+    },
+    {
+      "front": "Copenhagen — which country?",
+      "back": "Denmark"
+    },
+    {
+      "front": "Dominican Republic — capital?",
+      "back": "Santo Domingo"
+    },
+    {
+      "front": "Ecuador — capital?",
+      "back": "Quito"
+    },
+    {
+      "front": "Quito — which country?",
+      "back": "Ecuador"
+    },
+    {
+      "front": "Egypt — capital?",
+      "back": "Cairo"
+    },
+    {
+      "front": "Cairo — which country?",
+      "back": "Egypt"
+    },
+    {
+      "front": "El Salvador — capital?",
+      "back": "San Salvador"
+    },
+    {
+      "front": "Estonia — capital?",
+      "back": "Tallinn"
+    },
+    {
+      "front": "Ethiopia — capital?",
+      "back": "Addis Ababa"
+    },
+    {
+      "front": "Addis Ababa — which country?",
+      "back": "Ethiopia"
+    },
+    {
+      "front": "Fiji — capital?",
+      "back": "Suva"
+    },
+    {
+      "front": "Finland — capital?",
+      "back": "Helsinki"
+    },
+    {
+      "front": "Helsinki — which country?",
+      "back": "Finland"
+    },
+    {
+      "front": "France — capital?",
+      "back": "Paris"
+    },
+    {
+      "front": "Paris — which country?",
+      "back": "France"
+    },
+    {
+      "front": "Gabon — capital?",
+      "back": "Libreville"
+    },
+    {
+      "front": "Georgia (country) — capital?",
+      "back": "Tbilisi"
+    },
+    {
+      "front": "Germany — capital?",
+      "back": "Berlin"
+    },
+    {
+      "front": "Berlin — which country?",
+      "back": "Germany"
+    },
+    {
+      "front": "Ghana — capital?",
+      "back": "Accra"
+    },
+    {
+      "front": "Accra — which country?",
+      "back": "Ghana"
+    },
+    {
+      "front": "Greece — capital?",
+      "back": "Athens"
+    },
+    {
+      "front": "Athens — which country?",
+      "back": "Greece"
+    },
+    {
+      "front": "Guatemala — capital?",
+      "back": "Guatemala City"
+    },
+    {
+      "front": "Guinea — capital?",
+      "back": "Conakry"
+    },
+    {
+      "front": "Haiti — capital?",
+      "back": "Port-au-Prince"
+    },
+    {
+      "front": "Honduras — capital?",
+      "back": "Tegucigalpa"
+    },
+    {
+      "front": "Hungary — capital?",
+      "back": "Budapest"
+    },
+    {
+      "front": "Budapest — which country?",
+      "back": "Hungary"
+    },
+    {
+      "front": "Iceland — capital?",
+      "back": "Reykjavik"
+    },
+    {
+      "front": "Reykjavik — which country?",
+      "back": "Iceland"
+    },
+    {
+      "front": "India — capital?",
+      "back": "New Delhi"
+    },
+    {
+      "front": "New Delhi — which country?",
+      "back": "India"
+    },
+    {
+      "front": "Indonesia — capital?",
+      "back": "Jakarta"
+    },
+    {
+      "front": "Jakarta — which country?",
+      "back": "Indonesia"
+    },
+    {
+      "front": "Iran — capital?",
+      "back": "Tehran"
+    },
+    {
+      "front": "Tehran — which country?",
+      "back": "Iran"
+    },
+    {
+      "front": "Iraq — capital?",
+      "back": "Baghdad"
+    },
+    {
+      "front": "Baghdad — which country?",
+      "back": "Iraq"
+    },
+    {
+      "front": "Ireland — capital?",
+      "back": "Dublin"
+    },
+    {
+      "front": "Dublin — which country?",
+      "back": "Ireland"
+    },
+    {
+      "front": "Israel — capital?",
+      "back": "Jerusalem"
+    },
+    {
+      "front": "Italy — capital?",
+      "back": "Rome"
+    },
+    {
+      "front": "Rome — which country?",
+      "back": "Italy"
+    },
+    {
+      "front": "Jamaica — capital?",
+      "back": "Kingston"
+    },
+    {
+      "front": "Japan — capital?",
+      "back": "Tokyo"
+    },
+    {
+      "front": "Tokyo — which country?",
+      "back": "Japan"
+    },
+    {
+      "front": "Jordan — capital?",
+      "back": "Amman"
+    },
+    {
+      "front": "Kazakhstan — capital?",
+      "back": "Astana"
+    },
+    {
+      "front": "Astana — which country?",
+      "back": "Kazakhstan"
+    },
+    {
+      "front": "Kenya — capital?",
+      "back": "Nairobi"
+    },
+    {
+      "front": "Nairobi — which country?",
+      "back": "Kenya"
+    },
+    {
+      "front": "Kuwait — capital?",
+      "back": "Kuwait City"
+    },
+    {
+      "front": "Kyrgyzstan — capital?",
+      "back": "Bishkek"
+    },
+    {
+      "front": "Laos — capital?",
+      "back": "Vientiane"
+    },
+    {
+      "front": "Latvia — capital?",
+      "back": "Riga"
+    },
+    {
+      "front": "Riga — which country?",
+      "back": "Latvia"
+    },
+    {
+      "front": "Lebanon — capital?",
+      "back": "Beirut"
+    },
+    {
+      "front": "Beirut — which country?",
+      "back": "Lebanon"
+    },
+    {
+      "front": "Libya — capital?",
+      "back": "Tripoli"
+    },
+    {
+      "front": "Lithuania — capital?",
+      "back": "Vilnius"
+    },
+    {
+      "front": "Luxembourg — capital?",
+      "back": "Luxembourg City"
+    },
+    {
+      "front": "Madagascar — capital?",
+      "back": "Antananarivo"
+    },
+    {
+      "front": "Malaysia — capital?",
+      "back": "Kuala Lumpur"
+    },
+    {
+      "front": "Kuala Lumpur — which country?",
+      "back": "Malaysia"
+    },
+    {
+      "front": "Mali — capital?",
+      "back": "Bamako"
+    },
+    {
+      "front": "Mexico — capital?",
+      "back": "Mexico City"
+    },
+    {
+      "front": "Mexico City — which country?",
+      "back": "Mexico"
+    },
+    {
+      "front": "Mongolia — capital?",
+      "back": "Ulaanbaatar"
+    },
+    {
+      "front": "Ulaanbaatar — which country?",
+      "back": "Mongolia"
+    },
+    {
+      "front": "Morocco — capital?",
+      "back": "Rabat"
+    },
+    {
+      "front": "Rabat — which country?",
+      "back": "Morocco"
+    },
+    {
+      "front": "Mozambique — capital?",
+      "back": "Maputo"
+    },
+    {
+      "front": "Myanmar — capital?",
+      "back": "Naypyidaw"
+    },
+    {
+      "front": "Nepal — capital?",
+      "back": "Kathmandu"
+    },
+    {
+      "front": "Kathmandu — which country?",
+      "back": "Nepal"
+    },
+    {
+      "front": "Netherlands — capital?",
+      "back": "Amsterdam"
+    },
+    {
+      "front": "Amsterdam — which country?",
+      "back": "Netherlands"
+    },
+    {
+      "front": "New Zealand — capital?",
+      "back": "Wellington"
+    },
+    {
+      "front": "Wellington — which country?",
+      "back": "New Zealand"
+    },
+    {
+      "front": "Nicaragua — capital?",
+      "back": "Managua"
+    },
+    {
+      "front": "Niger — capital?",
+      "back": "Niamey"
+    },
+    {
+      "front": "Nigeria — capital?",
+      "back": "Abuja"
+    },
+    {
+      "front": "Abuja — which country?",
+      "back": "Nigeria"
+    },
+    {
+      "front": "North Korea — capital?",
+      "back": "Pyongyang"
+    },
+    {
+      "front": "Pyongyang — which country?",
+      "back": "North Korea"
+    },
+    {
+      "front": "North Macedonia — capital?",
+      "back": "Skopje"
+    },
+    {
+      "front": "Norway — capital?",
+      "back": "Oslo"
+    },
+    {
+      "front": "Oslo — which country?",
+      "back": "Norway"
+    },
+    {
+      "front": "Pakistan — capital?",
+      "back": "Islamabad"
+    },
+    {
+      "front": "Islamabad — which country?",
+      "back": "Pakistan"
+    },
+    {
+      "front": "Panama — capital?",
+      "back": "Panama City"
+    },
+    {
+      "front": "Papua New Guinea — capital?",
+      "back": "Port Moresby"
+    },
+    {
+      "front": "Paraguay — capital?",
+      "back": "Asunción"
+    },
+    {
+      "front": "Peru — capital?",
+      "back": "Lima"
+    },
+    {
+      "front": "Lima — which country?",
+      "back": "Peru"
+    },
+    {
+      "front": "Philippines — capital?",
+      "back": "Manila"
+    },
+    {
+      "front": "Manila — which country?",
+      "back": "Philippines"
+    },
+    {
+      "front": "Poland — capital?",
+      "back": "Warsaw"
+    },
+    {
+      "front": "Warsaw — which country?",
+      "back": "Poland"
+    },
+    {
+      "front": "Portugal — capital?",
+      "back": "Lisbon"
+    },
+    {
+      "front": "Lisbon — which country?",
+      "back": "Portugal"
+    },
+    {
+      "front": "Qatar — capital?",
+      "back": "Doha"
+    },
+    {
+      "front": "Romania — capital?",
+      "back": "Bucharest"
+    },
+    {
+      "front": "Bucharest — which country?",
+      "back": "Romania"
+    },
+    {
+      "front": "Russia — capital?",
+      "back": "Moscow"
+    },
+    {
+      "front": "Moscow — which country?",
+      "back": "Russia"
+    },
+    {
+      "front": "Rwanda — capital?",
+      "back": "Kigali"
+    },
+    {
+      "front": "Saudi Arabia — capital?",
+      "back": "Riyadh"
+    },
+    {
+      "front": "Riyadh — which country?",
+      "back": "Saudi Arabia"
+    },
+    {
+      "front": "Senegal — capital?",
+      "back": "Dakar"
+    },
+    {
+      "front": "Dakar — which country?",
+      "back": "Senegal"
+    },
+    {
+      "front": "Serbia — capital?",
+      "back": "Belgrade"
+    },
+    {
+      "front": "Belgrade — which country?",
+      "back": "Serbia"
+    },
+    {
+      "front": "Singapore — capital?",
+      "back": "Singapore"
+    },
+    {
+      "front": "Slovakia — capital?",
+      "back": "Bratislava"
+    },
+    {
+      "front": "Slovenia — capital?",
+      "back": "Ljubljana"
+    },
+    {
+      "front": "Somalia — capital?",
+      "back": "Mogadishu"
+    },
+    {
+      "front": "South Africa — capital (executive)?",
+      "back": "Pretoria"
+    },
+    {
+      "front": "Pretoria — which country?",
+      "back": "South Africa"
+    },
+    {
+      "front": "South Korea — capital?",
+      "back": "Seoul"
+    },
+    {
+      "front": "Seoul — which country?",
+      "back": "South Korea"
+    },
+    {
+      "front": "Spain — capital?",
+      "back": "Madrid"
+    },
+    {
+      "front": "Madrid — which country?",
+      "back": "Spain"
+    },
+    {
+      "front": "Sri Lanka — capital?",
+      "back": "Sri Jayawardenepura Kotte"
+    },
+    {
+      "front": "Sudan — capital?",
+      "back": "Khartoum"
+    },
+    {
+      "front": "Sweden — capital?",
+      "back": "Stockholm"
+    },
+    {
+      "front": "Stockholm — which country?",
+      "back": "Sweden"
+    },
+    {
+      "front": "Switzerland — capital?",
+      "back": "Bern"
+    },
+    {
+      "front": "Bern — which country?",
+      "back": "Switzerland"
+    },
+    {
+      "front": "Syria — capital?",
+      "back": "Damascus"
+    },
+    {
+      "front": "Damascus — which country?",
+      "back": "Syria"
+    },
+    {
+      "front": "Taiwan — capital?",
+      "back": "Taipei"
+    },
+    {
+      "front": "Taipei — which country/territory?",
+      "back": "Taiwan"
+    },
+    {
+      "front": "Tanzania — capital?",
+      "back": "Dodoma"
+    },
+    {
+      "front": "Thailand — capital?",
+      "back": "Bangkok"
+    },
+    {
+      "front": "Bangkok — which country?",
+      "back": "Thailand"
+    },
+    {
+      "front": "Tunisia — capital?",
+      "back": "Tunis"
+    },
+    {
+      "front": "Turkey — capital?",
+      "back": "Ankara"
+    },
+    {
+      "front": "Ankara — which country?",
+      "back": "Turkey"
+    },
+    {
+      "front": "Uganda — capital?",
+      "back": "Kampala"
+    },
+    {
+      "front": "Ukraine — capital?",
+      "back": "Kyiv"
+    },
+    {
+      "front": "Kyiv — which country?",
+      "back": "Ukraine"
+    },
+    {
+      "front": "United Arab Emirates — capital?",
+      "back": "Abu Dhabi"
+    },
+    {
+      "front": "Abu Dhabi — which country?",
+      "back": "United Arab Emirates"
+    },
+    {
+      "front": "United Kingdom — capital?",
+      "back": "London"
+    },
+    {
+      "front": "London — which country?",
+      "back": "United Kingdom"
+    },
+    {
+      "front": "Uruguay — capital?",
+      "back": "Montevideo"
+    },
+    {
+      "front": "Montevideo — which country?",
+      "back": "Uruguay"
+    },
+    {
+      "front": "Uzbekistan — capital?",
+      "back": "Tashkent"
+    },
+    {
+      "front": "Venezuela — capital?",
+      "back": "Caracas"
+    },
+    {
+      "front": "Caracas — which country?",
+      "back": "Venezuela"
+    },
+    {
+      "front": "Vietnam — capital?",
+      "back": "Hanoi"
+    },
+    {
+      "front": "Hanoi — which country?",
+      "back": "Vietnam"
+    },
+    {
+      "front": "Yemen — capital?",
+      "back": "Sana'a"
+    },
+    {
+      "front": "Zambia — capital?",
+      "back": "Lusaka"
+    },
+    {
+      "front": "Zimbabwe — capital?",
+      "back": "Harare"
+    }
   ]
 }

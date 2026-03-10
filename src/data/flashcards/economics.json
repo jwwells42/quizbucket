@@ -2,55 +2,208 @@
   "id": "economics",
   "title": "Economics Vocabulary",
   "description": "Key economic terms, concepts, and principles",
+  "levels": [
+    "3/4",
+    "5/6",
+    "7-9",
+    "9-12"
+  ],
   "cards": [
-    { "front": "Supply", "back": "The amount of a good or service that producers are willing to sell at various prices" },
-    { "front": "Demand", "back": "The amount of a good or service that consumers are willing to buy at various prices" },
-    { "front": "Law of supply and demand", "back": "When demand increases and supply stays the same, prices rise; when supply increases and demand stays the same, prices fall" },
-    { "front": "Equilibrium price", "back": "The price at which supply equals demand" },
-    { "front": "Price where supply equals demand", "back": "Equilibrium price" },
-    { "front": "Scarcity", "back": "The fundamental economic problem: unlimited wants but limited resources" },
-    { "front": "Unlimited wants, limited resources", "back": "Scarcity" },
-    { "front": "Opportunity cost", "back": "The value of the next-best alternative you give up when making a choice" },
-    { "front": "GDP (Gross Domestic Product)", "back": "The total value of all goods and services produced in a country in a given period" },
-    { "front": "Total value of goods and services in a country", "back": "GDP (Gross Domestic Product)" },
-    { "front": "Inflation", "back": "A general increase in prices and decrease in the purchasing power of money" },
-    { "front": "General rise in prices over time", "back": "Inflation" },
-    { "front": "Deflation", "back": "A general decrease in prices (opposite of inflation)" },
-    { "front": "Recession", "back": "A period of declining economic activity, typically defined as two consecutive quarters of falling GDP" },
-    { "front": "Two consecutive quarters of falling GDP", "back": "Recession" },
-    { "front": "Depression", "back": "A severe, prolonged recession with high unemployment and falling output" },
-    { "front": "Monopoly", "back": "A market with only one seller who controls the supply of a good or service" },
-    { "front": "Market with only one seller", "back": "Monopoly" },
-    { "front": "Oligopoly", "back": "A market dominated by a few large sellers" },
-    { "front": "Market dominated by a few large sellers", "back": "Oligopoly" },
-    { "front": "Perfect competition", "back": "A market with many sellers offering identical products; no single seller can influence prices" },
-    { "front": "Fiscal policy", "back": "Government decisions about spending and taxation to influence the economy" },
-    { "front": "Government spending and taxation policy", "back": "Fiscal policy" },
-    { "front": "Monetary policy", "back": "Central bank actions (like changing interest rates) to control the money supply" },
-    { "front": "Central bank controlling the money supply", "back": "Monetary policy" },
-    { "front": "The Federal Reserve (the Fed)", "back": "The central bank of the United States; controls monetary policy" },
-    { "front": "Central bank of the United States", "back": "The Federal Reserve (the Fed)" },
-    { "front": "Interest rate", "back": "The cost of borrowing money, expressed as a percentage" },
-    { "front": "Tariff", "back": "A tax on imported goods" },
-    { "front": "Tax on imported goods", "back": "Tariff" },
-    { "front": "Free trade", "back": "Trade between countries without tariffs, quotas, or other restrictions" },
-    { "front": "Capitalism", "back": "Economic system where private individuals own the means of production and operate for profit" },
-    { "front": "Socialism", "back": "Economic system where the government or community owns the means of production" },
-    { "front": "Communism", "back": "System where all property is publicly owned and each person works and is paid according to their needs (based on Marx)" },
-    { "front": "Adam Smith", "back": "Father of modern economics; wrote The Wealth of Nations (1776); advocated free markets and the 'invisible hand'" },
-    { "front": "The Wealth of Nations — who wrote it?", "back": "Adam Smith (1776)" },
-    { "front": "Invisible hand", "back": "Adam Smith's idea that individual self-interest in a free market benefits society as a whole" },
-    { "front": "Entrepreneur", "back": "A person who starts and runs a business, taking on financial risk for profit" },
-    { "front": "Four factors of production", "back": "Land, labor, capital, entrepreneurship" },
-    { "front": "Unemployment rate", "back": "The percentage of the labor force that is jobless and actively seeking work" },
-    { "front": "Consumer Price Index (CPI)", "back": "Measures the average change in prices paid by consumers for goods and services; used to track inflation" },
-    { "front": "Measures changes in consumer prices", "back": "Consumer Price Index (CPI)" },
-    { "front": "Budget deficit", "back": "When government spending exceeds revenue (taxes) in a given period" },
-    { "front": "National debt", "back": "The total amount of money a government owes from accumulated deficits" },
-    { "front": "Trade deficit", "back": "When a country imports more than it exports" },
-    { "front": "Imports more than exports", "back": "Trade deficit" },
-    { "front": "Stock", "back": "A share of ownership in a company" },
-    { "front": "Bond", "back": "A loan an investor makes to a government or corporation, which pays back with interest" },
-    { "front": "Stock vs. bond", "back": "Stock = ownership in a company; Bond = a loan you make to a company/government" }
+    {
+      "front": "Supply",
+      "back": "The amount of a good or service that producers are willing to sell at various prices"
+    },
+    {
+      "front": "Demand",
+      "back": "The amount of a good or service that consumers are willing to buy at various prices"
+    },
+    {
+      "front": "Law of supply and demand",
+      "back": "When demand increases and supply stays the same, prices rise; when supply increases and demand stays the same, prices fall"
+    },
+    {
+      "front": "Equilibrium price",
+      "back": "The price at which supply equals demand"
+    },
+    {
+      "front": "Price where supply equals demand",
+      "back": "Equilibrium price"
+    },
+    {
+      "front": "Scarcity",
+      "back": "The fundamental economic problem: unlimited wants but limited resources"
+    },
+    {
+      "front": "Unlimited wants, limited resources",
+      "back": "Scarcity"
+    },
+    {
+      "front": "Opportunity cost",
+      "back": "The value of the next-best alternative you give up when making a choice"
+    },
+    {
+      "front": "GDP (Gross Domestic Product)",
+      "back": "The total value of all goods and services produced in a country in a given period"
+    },
+    {
+      "front": "Total value of goods and services in a country",
+      "back": "GDP (Gross Domestic Product)"
+    },
+    {
+      "front": "Inflation",
+      "back": "A general increase in prices and decrease in the purchasing power of money"
+    },
+    {
+      "front": "General rise in prices over time",
+      "back": "Inflation"
+    },
+    {
+      "front": "Deflation",
+      "back": "A general decrease in prices (opposite of inflation)"
+    },
+    {
+      "front": "Recession",
+      "back": "A period of declining economic activity, typically defined as two consecutive quarters of falling GDP"
+    },
+    {
+      "front": "Two consecutive quarters of falling GDP",
+      "back": "Recession"
+    },
+    {
+      "front": "Depression",
+      "back": "A severe, prolonged recession with high unemployment and falling output"
+    },
+    {
+      "front": "Monopoly",
+      "back": "A market with only one seller who controls the supply of a good or service"
+    },
+    {
+      "front": "Market with only one seller",
+      "back": "Monopoly"
+    },
+    {
+      "front": "Oligopoly",
+      "back": "A market dominated by a few large sellers"
+    },
+    {
+      "front": "Market dominated by a few large sellers",
+      "back": "Oligopoly"
+    },
+    {
+      "front": "Perfect competition",
+      "back": "A market with many sellers offering identical products; no single seller can influence prices"
+    },
+    {
+      "front": "Fiscal policy",
+      "back": "Government decisions about spending and taxation to influence the economy"
+    },
+    {
+      "front": "Government spending and taxation policy",
+      "back": "Fiscal policy"
+    },
+    {
+      "front": "Monetary policy",
+      "back": "Central bank actions (like changing interest rates) to control the money supply"
+    },
+    {
+      "front": "Central bank controlling the money supply",
+      "back": "Monetary policy"
+    },
+    {
+      "front": "The Federal Reserve (the Fed)",
+      "back": "The central bank of the United States; controls monetary policy"
+    },
+    {
+      "front": "Central bank of the United States",
+      "back": "The Federal Reserve (the Fed)"
+    },
+    {
+      "front": "Interest rate",
+      "back": "The cost of borrowing money, expressed as a percentage"
+    },
+    {
+      "front": "Tariff",
+      "back": "A tax on imported goods"
+    },
+    {
+      "front": "Tax on imported goods",
+      "back": "Tariff"
+    },
+    {
+      "front": "Free trade",
+      "back": "Trade between countries without tariffs, quotas, or other restrictions"
+    },
+    {
+      "front": "Capitalism",
+      "back": "Economic system where private individuals own the means of production and operate for profit"
+    },
+    {
+      "front": "Socialism",
+      "back": "Economic system where the government or community owns the means of production"
+    },
+    {
+      "front": "Communism",
+      "back": "System where all property is publicly owned and each person works and is paid according to their needs (based on Marx)"
+    },
+    {
+      "front": "Adam Smith",
+      "back": "Father of modern economics; wrote The Wealth of Nations (1776); advocated free markets and the 'invisible hand'"
+    },
+    {
+      "front": "The Wealth of Nations — who wrote it?",
+      "back": "Adam Smith (1776)"
+    },
+    {
+      "front": "Invisible hand",
+      "back": "Adam Smith's idea that individual self-interest in a free market benefits society as a whole"
+    },
+    {
+      "front": "Entrepreneur",
+      "back": "A person who starts and runs a business, taking on financial risk for profit"
+    },
+    {
+      "front": "Four factors of production",
+      "back": "Land, labor, capital, entrepreneurship"
+    },
+    {
+      "front": "Unemployment rate",
+      "back": "The percentage of the labor force that is jobless and actively seeking work"
+    },
+    {
+      "front": "Consumer Price Index (CPI)",
+      "back": "Measures the average change in prices paid by consumers for goods and services; used to track inflation"
+    },
+    {
+      "front": "Measures changes in consumer prices",
+      "back": "Consumer Price Index (CPI)"
+    },
+    {
+      "front": "Budget deficit",
+      "back": "When government spending exceeds revenue (taxes) in a given period"
+    },
+    {
+      "front": "National debt",
+      "back": "The total amount of money a government owes from accumulated deficits"
+    },
+    {
+      "front": "Trade deficit",
+      "back": "When a country imports more than it exports"
+    },
+    {
+      "front": "Imports more than exports",
+      "back": "Trade deficit"
+    },
+    {
+      "front": "Stock",
+      "back": "A share of ownership in a company"
+    },
+    {
+      "front": "Bond",
+      "back": "A loan an investor makes to a government or corporation, which pays back with interest"
+    },
+    {
+      "front": "Stock vs. bond",
+      "back": "Stock = ownership in a company; Bond = a loan you make to a company/government"
+    }
   ]
 }

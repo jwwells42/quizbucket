@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { lightning } from '../data/loader'
 import { useProgress } from '../hooks/useProgress'
+import { useLevel } from '../context/LevelContext'
 
 const ROUND_SIZE = 10
 
@@ -15,9 +16,11 @@ function shuffle(arr) {
 
 export default function Lightning() {
   const { recordLightning, getLightningStats } = useProgress()
+  const { filterByLevel } = useLevel()
+  const topics = filterByLevel(lightning)
   const lightningStats = getLightningStats()
 
-  const [selectedSets, setSelectedSets] = useState(lightning.map(s => s.id))
+  const [selectedSets, setSelectedSets] = useState(topics.map(s => s.id))
   const [phase, setPhase] = useState('setup')
   const [activeSet, setActiveSet] = useState(null) // the chosen topic for this round
   const [questions, setQuestions] = useState([])
@@ -38,7 +41,7 @@ export default function Lightning() {
 
   const startRound = useCallback(() => {
     // Pick one random topic from selected sets
-    const eligible = lightning.filter(s => selectedSets.includes(s.id))
+    const eligible = topics.filter(s => selectedSets.includes(s.id))
     const chosen = eligible[Math.floor(Math.random() * eligible.length)]
 
     // Pull 10 random questions from its bank
@@ -53,7 +56,7 @@ export default function Lightning() {
     setAnswer('')
     setFeedback(null)
     setTimeout(() => inputRef.current?.focus(), 0)
-  }, [selectedSets])
+  }, [selectedSets, topics])
 
   useEffect(() => {
     if (phase !== 'playing') return
@@ -134,7 +137,7 @@ export default function Lightning() {
             One topic will be randomly chosen. 10 questions pulled from its bank.
           </p>
           <div className="space-y-2">
-            {lightning.map(set => {
+            {topics.map(set => {
               const stat = lightningStats[set.id]
               return (
                 <label key={set.id} className="flex items-center gap-3 cursor-pointer">

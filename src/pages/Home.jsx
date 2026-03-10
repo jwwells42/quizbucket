@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useProgress } from '../hooks/useProgress'
 import { flashcardDecks } from '../data/loader'
+import { useLevel } from '../context/LevelContext'
 
 const modes = [
   {
@@ -27,14 +28,23 @@ const modes = [
     description: 'Progressively memorize famous texts and speeches',
     accent: 'bg-purple-500',
   },
+  {
+    to: '/computation',
+    title: 'Math Computation',
+    description: 'Solve problems with a 20-second timer',
+    accent: 'bg-cyan-500',
+  },
 ]
 
 export default function Home() {
-  const { getDeckStats, getTossupStats, getLightningStats } = useProgress()
+  const { getDeckStats, getTossupStats, getLightningStats, getComputationStats } = useProgress()
+  const { filterByLevel } = useLevel()
+  const decks = filterByLevel(flashcardDecks)
   const tossupStats = getTossupStats()
   const lightningStats = getLightningStats()
+  const computationStats = getComputationStats()
 
-  const totalCardsStudied = flashcardDecks.reduce((sum, deck) => {
+  const totalCardsStudied = decks.reduce((sum, deck) => {
     return sum + getDeckStats(deck.id).total
   }, 0)
 
@@ -46,7 +56,7 @@ export default function Home() {
       </div>
 
       {/* Study mode cards */}
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
         {modes.map(mode => (
           <Link
             key={mode.to}
@@ -65,7 +75,7 @@ export default function Home() {
       {/* Progress summary */}
       <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
         <h2 className="text-lg font-semibold mb-4">Your Progress</h2>
-        <div className="grid grid-cols-3 gap-4 text-center">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
           <div>
             <div className="text-2xl font-bold text-blue-400">{totalCardsStudied}</div>
             <div className="text-xs text-gray-500">Cards Studied</div>
@@ -86,6 +96,14 @@ export default function Home() {
             </div>
             <div className="text-xs text-gray-500">Lightning Rounds</div>
           </div>
+          <div>
+            <div className="text-2xl font-bold text-cyan-400">
+              {computationStats.total > 0
+                ? `${Math.round((computationStats.correct / computationStats.total) * 100)}%`
+                : '—'}
+            </div>
+            <div className="text-xs text-gray-500">Computation</div>
+          </div>
         </div>
       </div>
 
@@ -93,7 +111,7 @@ export default function Home() {
       <div className="mt-6 bg-gray-900 border border-gray-800 rounded-lg p-6">
         <h2 className="text-lg font-semibold mb-4">Flashcard Decks</h2>
         <div className="space-y-3">
-          {flashcardDecks.map(deck => {
+          {decks.map(deck => {
             const stats = getDeckStats(deck.id)
             const total = deck.cards.length
             const pct = total > 0 ? Math.round((stats.known / total) * 100) : 0

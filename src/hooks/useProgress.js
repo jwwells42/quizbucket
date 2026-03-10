@@ -83,6 +83,24 @@ export function useProgress() {
     return progress._lightning || {}
   }, [progress])
 
+  const recordComputation = useCallback((correct, total) => {
+    setProgress(prev => {
+      const next = { ...prev }
+      if (!next._computation) next._computation = { correct: 0, total: 0, rounds: 0 }
+      next._computation = {
+        correct: next._computation.correct + correct,
+        total: next._computation.total + total,
+        rounds: next._computation.rounds + 1,
+      }
+      saveProgress(next)
+      return next
+    })
+  }, [])
+
+  const getComputationStats = useCallback(() => {
+    return progress._computation || { correct: 0, total: 0, rounds: 0 }
+  }, [progress])
+
   const getRecentActivity = useCallback(() => {
     const activity = []
 
@@ -118,6 +136,8 @@ export function useProgress() {
     getTossupStats,
     recordLightning,
     getLightningStats,
+    recordComputation,
+    getComputationStats,
     getRecentActivity,
   }
 }

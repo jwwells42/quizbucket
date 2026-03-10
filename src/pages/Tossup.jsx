@@ -1,11 +1,24 @@
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { tossups } from '../data/loader'
 import { useProgress } from '../hooks/useProgress'
+import { useLevel } from '../context/LevelContext'
+
+function shuffle(arr) {
+  const a = [...arr]
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]]
+  }
+  return a
+}
 
 export default function Tossup() {
   const { recordTossup, getTossupStats } = useProgress()
+  const { filterByLevel } = useLevel()
+  const filteredTossups = filterByLevel(tossups)
   const stats = getTossupStats()
 
+  const [shuffled, setShuffled] = useState(() => shuffle(filteredTossups))
   const [questionIndex, setQuestionIndex] = useState(0)
   const [revealedWords, setRevealedWords] = useState(0)
   const [answer, setAnswer] = useState('')
@@ -16,7 +29,19 @@ export default function Tossup() {
   const inputRef = useRef(null)
   const timerRef = useRef(null)
 
-  const question = tossups[questionIndex]
+  // Reshuffle when the filtered set changes (level switch)
+  const filteredKey = useMemo(() => filteredTossups.map(t => t.question).join('|'), [filteredTossups])
+  useEffect(() => {
+    setShuffled(shuffle(filteredTossups))
+    setQuestionIndex(0)
+    setRevealedWords(0)
+    setAnswer('')
+    setResult(null)
+    setBuzzed(false)
+    setPaused(true)
+  }, [filteredKey])
+
+  const question = shuffled[questionIndex] || shuffled[0]
   const words = question.question.split(' ')
 
   const startReveal = useCallback(() => {
@@ -62,13 +87,19 @@ export default function Tossup() {
   }, [answer, question.answer, recordTossup])
 
   const nextQuestion = useCallback(() => {
-    setQuestionIndex(i => (i + 1) % tossups.length)
+    if (questionIndex + 1 >= shuffled.length) {
+      // All questions seen — reshuffle and start over
+      setShuffled(shuffle(filteredTossups))
+      setQuestionIndex(0)
+    } else {
+      setQuestionIndex(i => i + 1)
+    }
     setRevealedWords(0)
     setAnswer('')
     setResult(null)
     setBuzzed(false)
     setPaused(true)
-  }, [])
+  }, [questionIndex, shuffled.length, filteredTossups])
 
   useEffect(() => {
     function handleKey(e) {
@@ -100,7 +131,7 @@ export default function Tossup() {
           {question.category}
         </span>
         <span className="text-xs text-gray-600 ml-2">
-          Question {questionIndex + 1} of {tossups.length}
+          Question {questionIndex + 1} of {shuffled.length}
         </span>
       </div>
 

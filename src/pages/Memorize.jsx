@@ -1,5 +1,6 @@
 import { useState, useRef, useMemo, useCallback, useEffect } from 'react'
 import texts from '../data/texts.json'
+import { useLevel } from '../context/LevelContext'
 
 const LEVELS = [
   { label: 'Level 1 — Full Text', removePct: 0, hints: false },
@@ -52,6 +53,9 @@ const EyeIcon = () => (
 )
 
 export default function Memorize() {
+  const { filterByLevel } = useLevel()
+  const filteredTexts = filterByLevel(texts)
+
   const [phase, setPhase] = useState('select') // select | study | check
   const [selectedText, setSelectedText] = useState(null)
   const [level, setLevel] = useState(0)
@@ -220,7 +224,7 @@ export default function Memorize() {
           Choose a text to memorize. Words are progressively removed across five levels until you can recite it from memory.
         </p>
         <div className="grid sm:grid-cols-2 gap-4">
-          {texts.map(t => (
+          {filteredTexts.map(t => (
             <button
               key={t.id}
               onClick={() => handleSelectText(t.id)}
