@@ -3,6 +3,8 @@ import { tossups } from '../data/loader'
 import { useProgress } from '../hooks/useProgress'
 import { useLevel } from '../context/LevelContext'
 
+const ROUND_SIZE = 20
+
 function shuffle(arr) {
   const a = [...arr]
   for (let i = a.length - 1; i > 0; i--) {
@@ -19,12 +21,14 @@ export default function Tossup() {
   const stats = getTossupStats()
 
   const [shuffled, setShuffled] = useState(() => shuffle(filteredTossups))
+  const [phase, setPhase] = useState('setup') // setup | playing | done
   const [questionIndex, setQuestionIndex] = useState(0)
   const [revealedWords, setRevealedWords] = useState(0)
   const [answer, setAnswer] = useState('')
   const [result, setResult] = useState(null)
   const [buzzed, setBuzzed] = useState(false)
   const [paused, setPaused] = useState(true)
+  const [roundResults, setRoundResults] = useState([])
 
   const inputRef = useRef(null)
   const timerRef = useRef(null)
@@ -39,10 +43,25 @@ export default function Tossup() {
     setResult(null)
     setBuzzed(false)
     setPaused(true)
+    setPhase('setup')
+    setRoundResults([])
   }, [filteredKey])
 
-  const question = shuffled[questionIndex] || shuffled[0]
-  const words = question.question.split(' ')
+  const roundQuestions = shuffled.slice(0, ROUND_SIZE)
+  const question = roundQuestions[questionIndex]
+  const words = question ? question.question.split(' ') : []
+
+  const startRound = useCallback(() => {
+    setShuffled(shuffle(filteredTossups))
+    setQuestionIndex(0)
+    setRoundResults([])
+    setRevealedWords(0)
+    setAnswer('')
+    setResult(null)
+    setBuzzed(false)
+    setPaused(true)
+    setPhase('playing')
+  }, [filteredTossups])
 
   const startReveal = useCallback(() => {
     setPaused(false)
@@ -50,7 +69,7 @@ export default function Tossup() {
   }, [])
 
   useEffect(() => {
-    if (paused || buzzed || result) return
+    if (phase !== 'playing' || paused || buzzed || result) return
 
     timerRef.current = setInterval(() => {
       setRevealedWords(prev => {
@@ -63,7 +82,7 @@ export default function Tossup() {
     }, 300)
 
     return () => clearInterval(timerRef.current)
-  }, [paused, buzzed, result, words.length])
+  }, [phase, paused, buzzed, result, words.length])
 
   const buzz = useCallback(() => {
     if (buzzed || result) return
@@ -83,26 +102,32 @@ export default function Tossup() {
       given.includes(correct)
 
     setResult(isCorrect ? 'correct' : 'incorrect')
+    setRoundResults(prev => [...prev, {
+      question: question.question,
+      answer: question.answer,
+      category: question.category,
+      given: answer,
+      correct: isCorrect,
+    }])
     recordTossup(isCorrect)
-  }, [answer, question.answer, recordTossup])
+  }, [answer, question, recordTossup])
 
   const nextQuestion = useCallback(() => {
-    if (questionIndex + 1 >= shuffled.length) {
-      // All questions seen — reshuffle and start over
-      setShuffled(shuffle(filteredTossups))
-      setQuestionIndex(0)
-    } else {
-      setQuestionIndex(i => i + 1)
+    if (questionIndex + 1 >= roundQuestions.length) {
+      setPhase('done')
+      return
     }
+    setQuestionIndex(i => i + 1)
     setRevealedWords(0)
     setAnswer('')
     setResult(null)
     setBuzzed(false)
     setPaused(true)
-  }, [questionIndex, shuffled.length, filteredTossups])
+  }, [questionIndex, roundQuestions.length])
 
   useEffect(() => {
     function handleKey(e) {
+      if (phase !== 'playing') return
       if (e.key === 'Enter' && !buzzed && !paused && !result) {
         e.preventDefault()
         buzz()
@@ -110,29 +135,111 @@ export default function Tossup() {
     }
     window.addEventListener('keydown', handleKey)
     return () => window.removeEventListener('keydown', handleKey)
-  }, [buzz, buzzed, paused, result])
+  }, [buzz, buzzed, paused, result, phase])
 
   const revealedText = words.slice(0, revealedWords).join(' ')
 
+  // ─── Setup phase ───
+  if (phase === 'setup') {
+    return (
+      <div>
+        <h1 className="text-2xl font-bold mb-6">Tossup Practice</h1>
+        <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 mb-6">
+          <h2 className="font-semibold mb-1">How it works:</h2>
+          <p className="text-sm text-gray-400 mb-4">
+            A round of {ROUND_SIZE} tossup questions — just like AGQBA Rounds 1 and 4. Each question reveals word by word. Buzz in when you know the answer.
+          </p>
+          {stats.total > 0 && (
+            <p className="text-sm text-gray-500">
+              Your stats: {stats.correct}/{stats.total} correct ({Math.round((stats.correct / stats.total) * 100)}%) across all rounds
+            </p>
+          )}
+        </div>
+        <div className="text-center">
+          <button
+            onClick={startRound}
+            className="px-8 py-3 bg-emerald-600 text-white rounded-lg font-bold text-lg hover:bg-emerald-500 transition-colors"
+          >
+            Start Round ({ROUND_SIZE} questions)
+          </button>
+        </div>
+      </div>
+    )
+  }
+
+  // ─── Done phase ───
+  if (phase === 'done') {
+    const correct = roundResults.filter(r => r.correct).length
+    return (
+      <div>
+        <h1 className="text-2xl font-bold mb-1">Round Complete!</h1>
+        <p className="text-gray-500 text-sm mb-6">Tossup Practice</p>
+
+        <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 mb-6 text-center">
+          <div className="text-5xl font-bold text-emerald-400 mb-2">
+            {correct}/{roundResults.length}
+          </div>
+          <p className="text-gray-500">
+            {correct * 10} points earned
+          </p>
+        </div>
+
+        <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 mb-6">
+          <h2 className="font-semibold mb-3">Results</h2>
+          <div className="space-y-2">
+            {roundResults.map((r, i) => (
+              <div
+                key={i}
+                className={`p-3 rounded text-sm ${
+                  r.correct ? 'bg-emerald-500/10' : 'bg-red-500/10'
+                }`}
+              >
+                <div className="flex justify-between items-start">
+                  <div className="flex-1">
+                    <span className="text-xs text-gray-500 mr-2">{i + 1}.</span>
+                    <span className="font-medium">{r.answer}</span>
+                    <span className="text-xs text-gray-600 ml-2">{r.category}</span>
+                  </div>
+                  <span className={`font-medium shrink-0 ml-4 ${r.correct ? 'text-emerald-400' : 'text-red-400'}`}>
+                    {r.correct ? '+10' : '0'}
+                  </span>
+                </div>
+                {!r.correct && r.given && (
+                  <p className="text-red-400 text-xs mt-1 ml-5">You said: {r.given}</p>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="flex justify-center gap-4">
+          <button
+            onClick={startRound}
+            className="px-6 py-2 bg-emerald-600 text-white rounded-lg font-medium hover:bg-emerald-500 transition-colors"
+          >
+            New Round
+          </button>
+        </div>
+      </div>
+    )
+  }
+
+  // ─── Playing phase ───
   return (
     <div>
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-2xl font-bold">Tossup Practice</h1>
         <div className="text-sm text-gray-500">
-          {stats.total > 0
-            ? `${stats.correct}/${stats.total} (${Math.round((stats.correct / stats.total) * 100)}%)`
-            : 'No attempts yet'}
+          {roundResults.filter(r => r.correct).length * 10} pts
         </div>
       </div>
 
-      {/* Category badge */}
-      <div className="mb-4">
-        <span className="inline-block px-2 py-0.5 rounded text-xs font-medium bg-indigo-500/20 text-indigo-300">
-          {question.category}
+      <div className="mb-4 text-sm text-gray-500">
+        <span className="text-emerald-400 font-medium">
+          {roundResults.filter(r => r.correct).length} correct
         </span>
-        <span className="text-xs text-gray-600 ml-2">
-          Question {questionIndex + 1} of {shuffled.length}
-        </span>
+        <span className="mx-1">·</span>
+        <span>Question {questionIndex + 1} of {roundQuestions.length}</span>
       </div>
 
       {/* Question text */}
@@ -207,11 +314,12 @@ export default function Tossup() {
             }`}
           >
             <p className={`font-semibold ${result === 'correct' ? 'text-emerald-400' : 'text-red-400'}`}>
-              {result === 'correct' ? 'Correct!' : 'Incorrect'}
+              {result === 'correct' ? 'Correct! +10 points' : 'Incorrect'}
             </p>
             <p className="text-sm mt-1">
               <span className="text-gray-500">Answer: </span>
               <span className="font-medium">{question.answer}</span>
+              <span className="text-xs text-gray-600 ml-2">{question.category}</span>
             </p>
             {result === 'incorrect' && (
               <p className="text-sm mt-1">
@@ -232,7 +340,7 @@ export default function Tossup() {
               onClick={nextQuestion}
               className="px-6 py-2 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-500 transition-colors"
             >
-              Next Question
+              {questionIndex + 1 >= roundQuestions.length ? 'See Results' : 'Next Question'}
             </button>
           </div>
         </div>
