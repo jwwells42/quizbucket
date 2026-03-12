@@ -62,10 +62,10 @@ npm run preview      # preview production build
 - **Grade levels**: Every content item has a `levels` array with one or more of: `"3/4"`, `"5/6"`, `"7-9"`, `"9-12"`. Content is filtered by the selected level in the nav dropdown. Use all four levels for content appropriate to all grades.
 - Bidirectional flashcards are preferred (e.g. "Gold → Au" and "Au → Gold" as separate cards)
 
-## Current Content (21 decks, 19 lightning topics, 120 tossups, 4 texts)
+## Current Content (29 decks, 26 lightning topics, 120 tossups, 4 texts)
 
-Flashcard decks: Amendments, Musical Families, State Nicknames, Elements, Presidents, Greek/Roman Mythology, State Capitals, Authors & Works, Math Vocabulary, World Capitals, Science Terms, World History, Art & Music, Word Roots, U.S. Civics, Shakespeare, Human Body, Grammar & Literary Devices, Physical Geography, Economics, Music Theory
+Flashcard decks: Amendments, Musical Families, State Nicknames, Elements, Presidents, Greek/Roman Mythology, State Capitals, Authors & Works, Math Vocabulary, World Capitals, Science Terms, World History, Art & Music, Word Roots, U.S. Civics, Shakespeare, Human Body, Grammar & Literary Devices, Physical Geography, Economics, Music Theory, Supreme Court Cases, American Literature, Famous Paintings, Classical Composers, Norse Mythology, Famous Battles, Astronomy & Space, World Religions
 
-Lightning topics: Presidents, Elements, State Capitals, Greek/Roman Gods, Authors, Math Vocabulary, World Capitals, Science Terms, World History, Art & Music, Word Roots, Civics, Shakespeare, Human Body, Grammar & Literary Devices, Physical Geography, Economics, Music Theory (19 topics, 25 Qs each)
+Lightning topics: Presidents, Elements, State Capitals, Greek/Roman Gods, Authors, Math Vocabulary, World Capitals, Science Terms, World History, Art & Music, Word Roots, Civics, Shakespeare, Human Body, Grammar & Literary Devices, Physical Geography, Economics, Music Theory, Supreme Court Cases, American Literature, Famous Paintings, Classical Composers, Norse Mythology, Famous Battles, Astronomy & Space, World Religions (26 topics, 25 Qs each)
 
 Memorizer texts: Preamble, Gettysburg Address, Declaration of Independence (opening), Shakespeare's Sonnet 29

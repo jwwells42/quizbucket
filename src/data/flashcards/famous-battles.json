@@ -1,0 +1,248 @@
+{
+  "id": "famous-battles",
+  "title": "Famous Battles",
+  "description": "Major battles from American and world history",
+  "levels": ["3/4", "5/6", "7-9", "9-12"],
+  "cards": [
+    {
+      "front": "Battle of Lexington & Concord (1775)",
+      "back": "First battles of the American Revolution; \"shot heard round the world\""
+    },
+    {
+      "front": "What were the first battles of the American Revolution?",
+      "back": "Battle of Lexington & Concord (1775)"
+    },
+    {
+      "front": "Battle of Bunker Hill (1775)",
+      "back": "Early Revolutionary War battle near Boston; British won but suffered heavy casualties, boosting American morale"
+    },
+    {
+      "front": "Which Revolutionary War battle near Boston gave the Americans confidence despite being a British victory?",
+      "back": "Battle of Bunker Hill (1775)"
+    },
+    {
+      "front": "Battle of Trenton (1776)",
+      "back": "Washington crossed the Delaware River on Christmas night to surprise Hessian troops; key morale boost for the Continental Army"
+    },
+    {
+      "front": "In which battle did Washington cross the Delaware River on Christmas night?",
+      "back": "Battle of Trenton (1776)"
+    },
+    {
+      "front": "Battle of Saratoga (1777)",
+      "back": "Turning point of the American Revolution; American victory convinced France to ally with the United States"
+    },
+    {
+      "front": "What was the turning point of the American Revolution that brought France into the war?",
+      "back": "Battle of Saratoga (1777)"
+    },
+    {
+      "front": "Battle of Yorktown (1781)",
+      "back": "Last major battle of the American Revolution; British General Cornwallis surrendered to Washington, ending the war"
+    },
+    {
+      "front": "What was the last major battle of the American Revolution?",
+      "back": "Battle of Yorktown (1781)"
+    },
+    {
+      "front": "Battle of Fort Sumter (1861)",
+      "back": "First battle of the Civil War; Confederate forces fired on the Union fort in Charleston, South Carolina"
+    },
+    {
+      "front": "What was the first battle of the Civil War?",
+      "back": "Battle of Fort Sumter (1861)"
+    },
+    {
+      "front": "First Battle of Bull Run / Manassas (1861)",
+      "back": "First major land battle of the Civil War; Confederate victory in Virginia showed the war would not end quickly"
+    },
+    {
+      "front": "What was the first major land battle of the Civil War?",
+      "back": "First Battle of Bull Run / Manassas (1861)"
+    },
+    {
+      "front": "Battle of Shiloh (1862)",
+      "back": "Bloody Civil War battle in Tennessee; Union victory under Ulysses S. Grant; one of the war's costliest battles"
+    },
+    {
+      "front": "Which bloody 1862 Civil War battle in Tennessee was a Union victory under Grant?",
+      "back": "Battle of Shiloh"
+    },
+    {
+      "front": "Battle of Antietam (1862)",
+      "back": "Bloodiest single day in American history; Union strategic victory in Maryland that led Lincoln to issue the Emancipation Proclamation"
+    },
+    {
+      "front": "What was the bloodiest single day in American history?",
+      "back": "Battle of Antietam (September 17, 1862)"
+    },
+    {
+      "front": "Battle of Gettysburg (1863)",
+      "back": "Turning point of the Civil War; Union victory in Pennsylvania that ended Lee's invasion of the North"
+    },
+    {
+      "front": "What was the turning point battle of the Civil War?",
+      "back": "Battle of Gettysburg (1863)"
+    },
+    {
+      "front": "Battle of Vicksburg (1863)",
+      "back": "Union siege victory that gave the North control of the Mississippi River, splitting the Confederacy in two"
+    },
+    {
+      "front": "Which Civil War battle gave the Union control of the Mississippi River?",
+      "back": "Battle of Vicksburg (1863)"
+    },
+    {
+      "front": "Battle of Appomattox Court House (1865)",
+      "back": "Site where Confederate General Robert E. Lee surrendered to Union General Ulysses S. Grant, effectively ending the Civil War"
+    },
+    {
+      "front": "Where did Robert E. Lee surrender to Ulysses S. Grant to end the Civil War?",
+      "back": "Appomattox Court House, Virginia (1865)"
+    },
+    {
+      "front": "First Battle of the Marne (1914)",
+      "back": "World War I battle where French and British forces stopped the German advance on Paris, leading to trench warfare on the Western Front"
+    },
+    {
+      "front": "Which World War I battle stopped the German advance on Paris and led to trench warfare?",
+      "back": "First Battle of the Marne (1914)"
+    },
+    {
+      "front": "Battle of Gallipoli (1915-1916)",
+      "back": "Failed Allied campaign to capture the Ottoman capital of Constantinople; major defeat for Britain, France, and ANZAC forces"
+    },
+    {
+      "front": "Which World War I campaign was a failed Allied attempt to capture Constantinople from the Ottoman Empire?",
+      "back": "Battle of Gallipoli (1915-1916)"
+    },
+    {
+      "front": "Battle of Verdun (1916)",
+      "back": "Longest single battle of World War I; ten-month German offensive against France with massive casualties on both sides"
+    },
+    {
+      "front": "What was the longest single battle of World War I?",
+      "back": "Battle of Verdun (1916)"
+    },
+    {
+      "front": "Battle of the Somme (1916)",
+      "back": "One of the bloodiest battles in history; British and French offensive against Germany on the Western Front in World War I"
+    },
+    {
+      "front": "Which World War I battle on the Western Front was one of the bloodiest in history, with over one million casualties?",
+      "back": "Battle of the Somme (1916)"
+    },
+    {
+      "front": "Attack on Pearl Harbor (1941)",
+      "back": "Surprise Japanese attack on the U.S. naval base in Hawaii on December 7; brought the United States into World War II"
+    },
+    {
+      "front": "What event on December 7, 1941, brought the United States into World War II?",
+      "back": "Attack on Pearl Harbor"
+    },
+    {
+      "front": "Battle of Midway (1942)",
+      "back": "Turning point of the Pacific Theater in World War II; U.S. Navy destroyed four Japanese aircraft carriers"
+    },
+    {
+      "front": "What was the turning point battle of the Pacific Theater in World War II?",
+      "back": "Battle of Midway (1942)"
+    },
+    {
+      "front": "Battle of El Alamein (1942)",
+      "back": "British victory in North Africa that stopped the German advance toward the Suez Canal; turning point of the North African campaign"
+    },
+    {
+      "front": "Which World War II battle in North Africa stopped Rommel's advance toward the Suez Canal?",
+      "back": "Battle of El Alamein (1942)"
+    },
+    {
+      "front": "Battle of Stalingrad (1942-1943)",
+      "back": "Turning point of the Eastern Front in World War II; Soviet victory over Germany in one of the deadliest battles in history"
+    },
+    {
+      "front": "What was the turning point battle of the Eastern Front in World War II?",
+      "back": "Battle of Stalingrad (1942-1943)"
+    },
+    {
+      "front": "D-Day / Battle of Normandy (June 6, 1944)",
+      "back": "Allied invasion of Nazi-occupied France; largest seaborne invasion in history that began the liberation of Western Europe"
+    },
+    {
+      "front": "What was the largest seaborne invasion in history, launching the Allied liberation of Western Europe?",
+      "back": "D-Day / Battle of Normandy (June 6, 1944)"
+    },
+    {
+      "front": "Battle of the Bulge (1944-1945)",
+      "back": "Last major German offensive on the Western Front in World War II; Allied victory in the Ardennes forest region"
+    },
+    {
+      "front": "What was the last major German offensive of World War II?",
+      "back": "Battle of the Bulge (1944-1945)"
+    },
+    {
+      "front": "Battle of Iwo Jima (1945)",
+      "back": "Fierce World War II battle where U.S. Marines captured the island from Japan; famous flag-raising photograph on Mount Suribachi"
+    },
+    {
+      "front": "On which Pacific island did U.S. Marines raise the famous flag on Mount Suribachi?",
+      "back": "Iwo Jima (1945)"
+    },
+    {
+      "front": "Battle of Thermopylae (480 BC)",
+      "back": "Ancient battle where 300 Spartans and Greek allies held off a massive Persian army under Xerxes at a narrow pass"
+    },
+    {
+      "front": "At which ancient battle did 300 Spartans make a famous last stand against the Persian army?",
+      "back": "Battle of Thermopylae (480 BC)"
+    },
+    {
+      "front": "Battle of Marathon (490 BC)",
+      "back": "Ancient Greek victory over Persia; inspired the legend of Pheidippides running to Athens to announce the victory"
+    },
+    {
+      "front": "Which ancient battle inspired the modern marathon race?",
+      "back": "Battle of Marathon (490 BC)"
+    },
+    {
+      "front": "Battle of Hastings (1066)",
+      "back": "Norman victory over Anglo-Saxons in England; William the Conqueror defeated King Harold II, beginning Norman rule of England"
+    },
+    {
+      "front": "In which 1066 battle did William the Conqueror defeat King Harold II to take control of England?",
+      "back": "Battle of Hastings"
+    },
+    {
+      "front": "Battle of the Alamo (1836)",
+      "back": "Famous defeat during the Texas Revolution; Texan defenders held the Alamo mission in San Antonio against the Mexican army for 13 days"
+    },
+    {
+      "front": "Which 1836 battle became a rallying cry (\"Remember the Alamo!\") during the Texas Revolution?",
+      "back": "Battle of the Alamo"
+    },
+    {
+      "front": "Battle of San Jacinto (1836)",
+      "back": "Decisive battle of the Texas Revolution; Sam Houston's Texan forces defeated Santa Anna's Mexican army, winning Texas independence"
+    },
+    {
+      "front": "Which battle won Texas its independence from Mexico?",
+      "back": "Battle of San Jacinto (1836)"
+    },
+    {
+      "front": "Battle of Waterloo (1815)",
+      "back": "Final defeat of Napoleon Bonaparte; British and Prussian forces ended his rule in present-day Belgium"
+    },
+    {
+      "front": "In which battle was Napoleon Bonaparte finally defeated for good?",
+      "back": "Battle of Waterloo (1815)"
+    },
+    {
+      "front": "Battle of Little Bighorn (1876)",
+      "back": "Lakota, Northern Cheyenne, and Arapaho forces defeated U.S. Army troops under Lt. Col. George Custer; also called Custer's Last Stand"
+    },
+    {
+      "front": "What battle is also known as Custer's Last Stand?",
+      "back": "Battle of Little Bighorn (1876)"
+    }
+  ]
+}

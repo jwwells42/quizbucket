@@ -1,0 +1,269 @@
+{
+  "id": "norse-mythology",
+  "title": "Norse Mythology",
+  "description": "Gods, creatures, and legends of Norse mythology",
+  "levels": [
+    "3/4",
+    "5/6",
+    "7-9",
+    "9-12"
+  ],
+  "cards": [
+    {
+      "front": "Odin — what is he known for?",
+      "back": "King of the Norse gods (the Allfather), associated with wisdom, war, death, and poetry"
+    },
+    {
+      "front": "Which Norse god is called the Allfather and rules over Asgard?",
+      "back": "Odin"
+    },
+    {
+      "front": "Which Norse god sacrificed an eye to drink from Mimir's well of wisdom?",
+      "back": "Odin"
+    },
+    {
+      "front": "Thor — what is he known for?",
+      "back": "Norse god of thunder, lightning, storms, and the protector of humanity"
+    },
+    {
+      "front": "Which Norse god wields the hammer Mjolnir?",
+      "back": "Thor"
+    },
+    {
+      "front": "Mjolnir — what is it?",
+      "back": "Thor's magical hammer, which always returns to his hand after being thrown"
+    },
+    {
+      "front": "What is the name of Thor's hammer?",
+      "back": "Mjolnir"
+    },
+    {
+      "front": "Loki — what is he known for?",
+      "back": "Norse trickster god, a shape-shifter who is both helper and enemy of the gods"
+    },
+    {
+      "front": "Which Norse figure is known as the trickster god and shape-shifter?",
+      "back": "Loki"
+    },
+    {
+      "front": "Freyja — what is she known for?",
+      "back": "Norse goddess of love, beauty, fertility, war, and seidr (magic)"
+    },
+    {
+      "front": "Which Norse goddess rides a chariot pulled by two cats?",
+      "back": "Freyja"
+    },
+    {
+      "front": "Frigg — what is she known for?",
+      "back": "Queen of the Aesir, Norse goddess of marriage, motherhood, and foreknowledge; wife of Odin"
+    },
+    {
+      "front": "Who is Odin's wife and queen of Asgard?",
+      "back": "Frigg"
+    },
+    {
+      "front": "Balder — what is he known for?",
+      "back": "Norse god of light, joy, and beauty; his death is a key event leading to Ragnarok"
+    },
+    {
+      "front": "Which Norse god was killed by a mistletoe dart arranged by Loki?",
+      "back": "Balder"
+    },
+    {
+      "front": "Tyr — what is he known for?",
+      "back": "Norse god of war, justice, and law; sacrificed his hand to bind the wolf Fenrir"
+    },
+    {
+      "front": "Which Norse god lost his hand in the binding of Fenrir?",
+      "back": "Tyr"
+    },
+    {
+      "front": "Heimdall — what is he known for?",
+      "back": "Watchman of the gods who guards the Bifrost bridge; possesses keen eyesight and hearing"
+    },
+    {
+      "front": "Which Norse god guards the rainbow bridge Bifrost and will sound the Gjallarhorn at Ragnarok?",
+      "back": "Heimdall"
+    },
+    {
+      "front": "Hel — what is she known for?",
+      "back": "Ruler of the Norse underworld (also called Hel), where those who die of illness or old age go"
+    },
+    {
+      "front": "Who rules the Norse realm of the dead?",
+      "back": "Hel, daughter of Loki"
+    },
+    {
+      "front": "Fenrir — what is it?",
+      "back": "A monstrous wolf, son of Loki, bound by the gods; destined to swallow Odin at Ragnarok"
+    },
+    {
+      "front": "Which creature is destined to swallow Odin during Ragnarok?",
+      "back": "Fenrir (the great wolf)"
+    },
+    {
+      "front": "Jormungandr — what is it?",
+      "back": "The Midgard Serpent, a giant sea serpent encircling the world; son of Loki and enemy of Thor"
+    },
+    {
+      "front": "What is another name for the Midgard Serpent?",
+      "back": "Jormungandr"
+    },
+    {
+      "front": "Sleipnir — what is it?",
+      "back": "Odin's eight-legged horse, offspring of Loki (in mare form) and the stallion Svadilfari"
+    },
+    {
+      "front": "What is the name of Odin's eight-legged horse?",
+      "back": "Sleipnir"
+    },
+    {
+      "front": "Gungnir — what is it?",
+      "back": "Odin's magical spear, which never misses its target"
+    },
+    {
+      "front": "What is the name of Odin's spear?",
+      "back": "Gungnir"
+    },
+    {
+      "front": "Yggdrasil — what is it?",
+      "back": "The great ash tree (World Tree) that connects and supports the Nine Worlds of Norse cosmology"
+    },
+    {
+      "front": "What is the name of the World Tree in Norse mythology?",
+      "back": "Yggdrasil"
+    },
+    {
+      "front": "Ragnarok — what is it?",
+      "back": "The prophesied end of the world in Norse mythology — a final battle between gods and giants resulting in destruction and rebirth"
+    },
+    {
+      "front": "What is the name for the apocalyptic final battle in Norse mythology?",
+      "back": "Ragnarok"
+    },
+    {
+      "front": "Valhalla — what is it?",
+      "back": "Odin's great hall in Asgard where warriors slain in battle feast and prepare for Ragnarok"
+    },
+    {
+      "front": "Where do fallen Norse warriors go if chosen by the Valkyries?",
+      "back": "Valhalla"
+    },
+    {
+      "front": "Asgard — what is it?",
+      "back": "The realm of the Aesir gods in Norse mythology, connected to Midgard by the Bifrost"
+    },
+    {
+      "front": "What is the name of the realm where the Norse gods live?",
+      "back": "Asgard"
+    },
+    {
+      "front": "Midgard — what is it?",
+      "back": "The realm of humans in Norse mythology, located in the middle of the Nine Worlds"
+    },
+    {
+      "front": "What is the Norse name for the world of humans?",
+      "back": "Midgard"
+    },
+    {
+      "front": "Bifrost — what is it?",
+      "back": "The burning rainbow bridge that connects Midgard (human world) to Asgard (realm of the gods)"
+    },
+    {
+      "front": "What is the name of the rainbow bridge connecting Asgard and Midgard?",
+      "back": "Bifrost"
+    },
+    {
+      "front": "Valkyries — who are they?",
+      "back": "Female warrior spirits who choose which fallen warriors are taken to Valhalla"
+    },
+    {
+      "front": "What are the female spirits called who select slain warriors for Valhalla?",
+      "back": "Valkyries"
+    },
+    {
+      "front": "Norns — who are they?",
+      "back": "Three beings (Urd, Verdandi, Skuld) who control the destiny of gods and humans at the base of Yggdrasil"
+    },
+    {
+      "front": "What are the three Norse figures of fate called?",
+      "back": "The Norns (Urd, Verdandi, and Skuld)"
+    },
+    {
+      "front": "Huginn and Muninn — what are they?",
+      "back": "Odin's two ravens; Huginn means 'thought' and Muninn means 'memory' — they fly over the world and report back to him"
+    },
+    {
+      "front": "What are the names of Odin's two ravens?",
+      "back": "Huginn (thought) and Muninn (memory)"
+    },
+    {
+      "front": "Skadi — what is she known for?",
+      "back": "Norse goddess (or giantess) associated with skiing, winter, mountains, and hunting"
+    },
+    {
+      "front": "Which Norse figure is associated with skiing, winter, and mountains?",
+      "back": "Skadi"
+    },
+    {
+      "front": "Njord — what is he known for?",
+      "back": "Norse god of the sea, wind, fishing, and wealth; father of Freyr and Freyja"
+    },
+    {
+      "front": "Which Norse god is associated with the sea and is father of Freyr and Freyja?",
+      "back": "Njord"
+    },
+    {
+      "front": "Freyr — what is he known for?",
+      "back": "Norse god of fertility, prosperity, sunshine, and fair weather; twin brother of Freyja"
+    },
+    {
+      "front": "Which Norse god is the twin brother of Freyja and associated with fertility and sunshine?",
+      "back": "Freyr"
+    },
+    {
+      "front": "Who are Brokk and Sindri (Eitri)?",
+      "back": "Dwarf brothers who forged three of the gods' greatest treasures: Mjolnir, Gullinbursti, and Draupnir"
+    },
+    {
+      "front": "Which dwarf brothers forged Thor's hammer Mjolnir?",
+      "back": "Brokk and Sindri (Eitri)"
+    },
+    {
+      "front": "Surtr — what is he known for?",
+      "back": "A fire giant who wields a flaming sword and will set the world ablaze during Ragnarok"
+    },
+    {
+      "front": "Which fire giant will destroy the world with flames at Ragnarok?",
+      "back": "Surtr"
+    },
+    {
+      "front": "What are the Jotnar?",
+      "back": "Giants in Norse mythology — ancient, powerful beings often in conflict with the Aesir gods"
+    },
+    {
+      "front": "What is the Norse term for the race of giants?",
+      "back": "Jotnar (singular: Jotunn)"
+    },
+    {
+      "front": "How many worlds exist in Norse cosmology?",
+      "back": "Nine, all connected by the World Tree Yggdrasil"
+    },
+    {
+      "front": "Name three of the Nine Worlds besides Asgard and Midgard.",
+      "back": "Jotunheim (giants), Niflheim (ice/mist), Muspelheim (fire), Vanaheim (Vanir gods), Alfheim (elves), Svartalfheim (dwarves), Hel (the dead)"
+    },
+    {
+      "front": "What are the two groups of Norse gods called?",
+      "back": "The Aesir (led by Odin, based in Asgard) and the Vanir (nature gods, based in Vanaheim)"
+    },
+    {
+      "front": "Alfheim — what is it?",
+      "back": "The realm of the light elves in Norse cosmology"
+    },
+    {
+      "front": "What is the Norse realm of the light elves called?",
+      "back": "Alfheim"
+    }
+  ]
+}

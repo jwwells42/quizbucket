@@ -1,0 +1,213 @@
+{
+  "id": "famous-paintings",
+  "title": "Famous Paintings & Artists",
+  "description": "Iconic paintings and the artists who created them",
+  "levels": [
+    "3/4",
+    "5/6",
+    "7-9",
+    "9-12"
+  ],
+  "cards": [
+    {
+      "front": "Mona Lisa",
+      "back": "Leonardo da Vinci (c. 1503–1519; Renaissance)"
+    },
+    {
+      "front": "Leonardo da Vinci's portrait famous for her mysterious smile",
+      "back": "Mona Lisa"
+    },
+    {
+      "front": "The Last Supper",
+      "back": "Leonardo da Vinci (c. 1495–1498; Renaissance)"
+    },
+    {
+      "front": "Leonardo da Vinci's mural depicting Jesus and the twelve apostles at their final meal",
+      "back": "The Last Supper"
+    },
+    {
+      "front": "The Starry Night",
+      "back": "Vincent van Gogh (1889; Post-Impressionism)"
+    },
+    {
+      "front": "Vincent van Gogh's painting of a swirling night sky over a village",
+      "back": "The Starry Night"
+    },
+    {
+      "front": "Sunflowers (series)",
+      "back": "Vincent van Gogh (1888–1889; Post-Impressionism)"
+    },
+    {
+      "front": "Vincent van Gogh's still-life series of yellow flowers in a vase",
+      "back": "Sunflowers"
+    },
+    {
+      "front": "The Scream",
+      "back": "Edvard Munch (1893; Expressionism)"
+    },
+    {
+      "front": "Edvard Munch's painting of an agonized figure on a bridge under an orange sky",
+      "back": "The Scream"
+    },
+    {
+      "front": "Guernica",
+      "back": "Pablo Picasso (1937; Cubism)"
+    },
+    {
+      "front": "Pablo Picasso's large anti-war mural painted in response to the bombing of a Spanish town",
+      "back": "Guernica"
+    },
+    {
+      "front": "Girl with a Pearl Earring",
+      "back": "Johannes Vermeer (c. 1665; Dutch Golden Age)"
+    },
+    {
+      "front": "Johannes Vermeer's portrait of a girl in a blue and gold turban, sometimes called the 'Mona Lisa of the North'",
+      "back": "Girl with a Pearl Earring"
+    },
+    {
+      "front": "The Persistence of Memory",
+      "back": "Salvador Dalí (1931; Surrealism)"
+    },
+    {
+      "front": "Salvador Dalí's painting featuring melting clocks in a dreamlike landscape",
+      "back": "The Persistence of Memory"
+    },
+    {
+      "front": "The Night Watch",
+      "back": "Rembrandt van Rijn (1642; Dutch Golden Age)"
+    },
+    {
+      "front": "Rembrandt's large group portrait of a militia company emerging from shadow into light",
+      "back": "The Night Watch"
+    },
+    {
+      "front": "Water Lilies (series)",
+      "back": "Claude Monet (1896–1926; Impressionism)"
+    },
+    {
+      "front": "Claude Monet's series of about 250 paintings of his flower garden at Giverny",
+      "back": "Water Lilies"
+    },
+    {
+      "front": "The Birth of Venus",
+      "back": "Sandro Botticelli (c. 1485; Renaissance)"
+    },
+    {
+      "front": "Sandro Botticelli's painting of a goddess emerging from the sea on a shell",
+      "back": "The Birth of Venus"
+    },
+    {
+      "front": "The Creation of Adam",
+      "back": "Michelangelo (c. 1512; Renaissance; Sistine Chapel ceiling)"
+    },
+    {
+      "front": "Michelangelo's fresco on the Sistine Chapel ceiling showing God reaching out to touch Adam's finger",
+      "back": "The Creation of Adam"
+    },
+    {
+      "front": "American Gothic",
+      "back": "Grant Wood (1930; Regionalism)"
+    },
+    {
+      "front": "Grant Wood's painting of a stern farmer holding a pitchfork beside a woman in front of a house with a Gothic window",
+      "back": "American Gothic"
+    },
+    {
+      "front": "Whistler's Mother (Arrangement in Grey and Black No. 1)",
+      "back": "James Abbott McNeill Whistler (1871)"
+    },
+    {
+      "front": "James McNeill Whistler's painting of an elderly woman seated in profile against a gray wall",
+      "back": "Whistler's Mother"
+    },
+    {
+      "front": "A Sunday Afternoon on the Island of La Grande Jatte",
+      "back": "Georges Seurat (1884–1886; Pointillism)"
+    },
+    {
+      "front": "Georges Seurat's large painting of Parisians relaxing by the Seine, composed entirely of tiny dots of color",
+      "back": "A Sunday Afternoon on the Island of La Grande Jatte"
+    },
+    {
+      "front": "The Kiss",
+      "back": "Gustav Klimt (1907–1908; Art Nouveau / Symbolism)"
+    },
+    {
+      "front": "Gustav Klimt's gold-leaf painting of a couple embracing",
+      "back": "The Kiss"
+    },
+    {
+      "front": "Las Meninas",
+      "back": "Diego Velázquez (1656; Spanish Golden Age)"
+    },
+    {
+      "front": "Diego Velázquez's painting of the young Spanish princess Margarita surrounded by attendants, with the artist painting himself in the scene",
+      "back": "Las Meninas"
+    },
+    {
+      "front": "The School of Athens",
+      "back": "Raphael (1509–1511; Renaissance)"
+    },
+    {
+      "front": "Raphael's fresco depicting ancient Greek philosophers gathered in a grand hall, with Plato and Aristotle at center",
+      "back": "The School of Athens"
+    },
+    {
+      "front": "Liberty Leading the People",
+      "back": "Eugène Delacroix (1830; Romanticism)"
+    },
+    {
+      "front": "Eugène Delacroix's painting of a woman holding the French tricolor flag atop a barricade during the July Revolution",
+      "back": "Liberty Leading the People"
+    },
+    {
+      "front": "Nighthawks",
+      "back": "Edward Hopper (1942; American Realism)"
+    },
+    {
+      "front": "Edward Hopper's painting of four people in a brightly lit downtown diner late at night",
+      "back": "Nighthawks"
+    },
+    {
+      "front": "Christina's World",
+      "back": "Andrew Wyeth (1948; American Realism)"
+    },
+    {
+      "front": "Andrew Wyeth's painting of a woman lying in a grassy field, reaching toward a farmhouse on the horizon",
+      "back": "Christina's World"
+    },
+    {
+      "front": "The Great Wave off Kanagawa",
+      "back": "Katsushika Hokusai (c. 1831; Japanese woodblock print)"
+    },
+    {
+      "front": "Katsushika Hokusai's woodblock print of a towering wave about to crash, with Mount Fuji in the background",
+      "back": "The Great Wave off Kanagawa"
+    },
+    {
+      "front": "Campbell's Soup Cans",
+      "back": "Andy Warhol (1962; Pop Art)"
+    },
+    {
+      "front": "Andy Warhol's series of 32 canvases each depicting a different flavor of canned soup",
+      "back": "Campbell's Soup Cans"
+    },
+    {
+      "front": "Washington Crossing the Delaware",
+      "back": "Emanuel Leutze (1851)"
+    },
+    {
+      "front": "Emanuel Leutze's painting of a general standing in a boat crossing an icy river on Christmas night, 1776",
+      "back": "Washington Crossing the Delaware"
+    },
+    {
+      "front": "The Two Fridas",
+      "back": "Frida Kahlo (1939; Surrealism)"
+    },
+    {
+      "front": "Frida Kahlo's double self-portrait showing two versions of herself with exposed hearts connected by a vein",
+      "back": "The Two Fridas"
+    }
+  ]
+}

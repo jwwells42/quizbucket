@@ -3074,5 +3074,900 @@
         "answer": "Notes played smoothly and connected"
       }
     ]
+  },
+  {
+    "id": "supreme-court",
+    "title": "Supreme Court Cases",
+    "levels": [
+      "5/6",
+      "7-9",
+      "9-12"
+    ],
+    "questions": [
+      {
+        "question": "What Supreme Court case established judicial review?",
+        "answer": "Marbury v. Madison"
+      },
+      {
+        "question": "In what year was Marbury v. Madison decided?",
+        "answer": "1803"
+      },
+      {
+        "question": "What case declared segregation in public schools unconstitutional?",
+        "answer": "Brown v. Board of Education"
+      },
+      {
+        "question": "What doctrine did Plessy v. Ferguson establish?",
+        "answer": "Separate but equal"
+      },
+      {
+        "question": "What case requires police to inform suspects of their rights before interrogation?",
+        "answer": "Miranda v. Arizona"
+      },
+      {
+        "question": "What case guaranteed the right to a court-appointed attorney?",
+        "answer": "Gideon v. Wainwright"
+      },
+      {
+        "question": "What case ruled that students do not lose free speech rights at school?",
+        "answer": "Tinker v. Des Moines"
+      },
+      {
+        "question": "What case banned government-directed prayer in public schools?",
+        "answer": "Engel v. Vitale"
+      },
+      {
+        "question": "What case ruled that illegally obtained evidence cannot be used in state courts?",
+        "answer": "Mapp v. Ohio"
+      },
+      {
+        "question": "What case upheld the internment of Japanese Americans during World War II?",
+        "answer": "Korematsu v. United States"
+      },
+      {
+        "question": "What case ruled that executive privilege is not absolute?",
+        "answer": "United States v. Nixon"
+      },
+      {
+        "question": "What case established that Congress has implied powers under the Necessary and Proper Clause?",
+        "answer": "McCulloch v. Maryland"
+      },
+      {
+        "question": "What case ruled that flag burning is protected speech?",
+        "answer": "Texas v. Johnson"
+      },
+      {
+        "question": "What case allowed publication of the Pentagon Papers?",
+        "answer": "New York Times Co. v. United States"
+      },
+      {
+        "question": "What case established the actual malice standard for defamation of public officials?",
+        "answer": "New York Times Co. v. Sullivan"
+      },
+      {
+        "question": "What case broadly defined Congress power over interstate commerce?",
+        "answer": "Gibbons v. Ogden"
+      },
+      {
+        "question": "What case ruled that states have no authority over Native American lands?",
+        "answer": "Worcester v. Georgia"
+      },
+      {
+        "question": "What case ruled that corporate political spending is protected free speech?",
+        "answer": "Citizens United v. FEC"
+      },
+      {
+        "question": "What case established same-sex marriage as a constitutional right?",
+        "answer": "Obergefell v. Hodges"
+      },
+      {
+        "question": "What 2022 case overturned Roe v. Wade?",
+        "answer": "Dobbs v. Jackson Women's Health Organization"
+      },
+      {
+        "question": "What case ruled that school officials need only reasonable suspicion to search students?",
+        "answer": "New Jersey v. T.L.O."
+      },
+      {
+        "question": "What case ruled that racial quotas in college admissions are unconstitutional?",
+        "answer": "Regents of the University of California v. Bakke"
+      },
+      {
+        "question": "What case ruled that enslaved people were not citizens and could not sue in federal court?",
+        "answer": "Dred Scott v. Sandford"
+      },
+      {
+        "question": "What case established the clear and present danger test for free speech?",
+        "answer": "Schenck v. United States"
+      },
+      {
+        "question": "Brown v. Board of Education overturned what earlier Supreme Court decision?",
+        "answer": "Plessy v. Ferguson"
+      }
+    ]
+  },
+  {
+    "id": "american-literature",
+    "title": "American Literature Canon",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ],
+    "questions": [
+      {
+        "question": "Who wrote The Great Gatsby?",
+        "answer": "F. Scott Fitzgerald"
+      },
+      {
+        "question": "Who wrote To Kill a Mockingbird?",
+        "answer": "Harper Lee"
+      },
+      {
+        "question": "Who wrote The Scarlet Letter?",
+        "answer": "Nathaniel Hawthorne"
+      },
+      {
+        "question": "Who wrote Moby-Dick?",
+        "answer": "Herman Melville"
+      },
+      {
+        "question": "Who wrote Adventures of Huckleberry Finn?",
+        "answer": "Mark Twain"
+      },
+      {
+        "question": "Who wrote The Grapes of Wrath?",
+        "answer": "John Steinbeck"
+      },
+      {
+        "question": "Who wrote Fahrenheit 451?",
+        "answer": "Ray Bradbury"
+      },
+      {
+        "question": "Who wrote The Catcher in the Rye?",
+        "answer": "J.D. Salinger"
+      },
+      {
+        "question": "Who wrote Death of a Salesman?",
+        "answer": "Arthur Miller"
+      },
+      {
+        "question": "Who wrote A Streetcar Named Desire?",
+        "answer": "Tennessee Williams"
+      },
+      {
+        "question": "Who wrote Beloved?",
+        "answer": "Toni Morrison"
+      },
+      {
+        "question": "Who wrote Invisible Man?",
+        "answer": "Ralph Ellison"
+      },
+      {
+        "question": "Who wrote The Old Man and the Sea?",
+        "answer": "Ernest Hemingway"
+      },
+      {
+        "question": "Who wrote Their Eyes Were Watching God?",
+        "answer": "Zora Neale Hurston"
+      },
+      {
+        "question": "Who wrote Slaughterhouse-Five?",
+        "answer": "Kurt Vonnegut"
+      },
+      {
+        "question": "Who wrote The Color Purple?",
+        "answer": "Alice Walker"
+      },
+      {
+        "question": "Who wrote Catch-22?",
+        "answer": "Joseph Heller"
+      },
+      {
+        "question": "Who wrote Our Town?",
+        "answer": "Thornton Wilder"
+      },
+      {
+        "question": "Who wrote The Crucible?",
+        "answer": "Arthur Miller"
+      },
+      {
+        "question": "Who wrote A Raisin in the Sun?",
+        "answer": "Lorraine Hansberry"
+      },
+      {
+        "question": "Who wrote I Know Why the Caged Bird Sings?",
+        "answer": "Maya Angelou"
+      },
+      {
+        "question": "Who wrote Of Mice and Men?",
+        "answer": "John Steinbeck"
+      },
+      {
+        "question": "Who wrote The Glass Menagerie?",
+        "answer": "Tennessee Williams"
+      },
+      {
+        "question": "Who wrote A Farewell to Arms?",
+        "answer": "Ernest Hemingway"
+      },
+      {
+        "question": "Who wrote East of Eden?",
+        "answer": "John Steinbeck"
+      }
+    ]
+  },
+  {
+    "id": "famous-paintings",
+    "title": "Famous Paintings & Artists",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ],
+    "questions": [
+      {
+        "question": "Who painted the Mona Lisa?",
+        "answer": "Leonardo da Vinci"
+      },
+      {
+        "question": "Who painted The Starry Night?",
+        "answer": "Vincent van Gogh"
+      },
+      {
+        "question": "Who painted The Scream?",
+        "answer": "Edvard Munch"
+      },
+      {
+        "question": "Who painted Guernica?",
+        "answer": "Pablo Picasso"
+      },
+      {
+        "question": "Who painted Girl with a Pearl Earring?",
+        "answer": "Johannes Vermeer"
+      },
+      {
+        "question": "Who painted The Persistence of Memory, which features melting clocks?",
+        "answer": "Salvador Dali"
+      },
+      {
+        "question": "Who painted The Night Watch?",
+        "answer": "Rembrandt van Rijn"
+      },
+      {
+        "question": "Who painted the Water Lilies series?",
+        "answer": "Claude Monet"
+      },
+      {
+        "question": "Who painted The Birth of Venus?",
+        "answer": "Sandro Botticelli"
+      },
+      {
+        "question": "Who painted The Creation of Adam on the Sistine Chapel ceiling?",
+        "answer": "Michelangelo"
+      },
+      {
+        "question": "Who painted The Last Supper?",
+        "answer": "Leonardo da Vinci"
+      },
+      {
+        "question": "Who painted American Gothic?",
+        "answer": "Grant Wood"
+      },
+      {
+        "question": "Who painted Nighthawks?",
+        "answer": "Edward Hopper"
+      },
+      {
+        "question": "Who painted The Kiss, using gold leaf?",
+        "answer": "Gustav Klimt"
+      },
+      {
+        "question": "Who painted Las Meninas?",
+        "answer": "Diego Velazquez"
+      },
+      {
+        "question": "Who painted The School of Athens?",
+        "answer": "Raphael"
+      },
+      {
+        "question": "Who painted Liberty Leading the People?",
+        "answer": "Eugene Delacroix"
+      },
+      {
+        "question": "Who painted Christina's World?",
+        "answer": "Andrew Wyeth"
+      },
+      {
+        "question": "Who created The Great Wave off Kanagawa?",
+        "answer": "Katsushika Hokusai"
+      },
+      {
+        "question": "Who created the Campbell's Soup Cans series?",
+        "answer": "Andy Warhol"
+      },
+      {
+        "question": "Who painted Washington Crossing the Delaware?",
+        "answer": "Emanuel Leutze"
+      },
+      {
+        "question": "Who painted A Sunday Afternoon on the Island of La Grande Jatte using tiny dots of color?",
+        "answer": "Georges Seurat"
+      },
+      {
+        "question": "What painting technique, using small dots of pure color, was pioneered by Georges Seurat?",
+        "answer": "Pointillism"
+      },
+      {
+        "question": "In what museum does the Mona Lisa hang?",
+        "answer": "The Louvre"
+      },
+      {
+        "question": "Who painted The Two Fridas?",
+        "answer": "Frida Kahlo"
+      }
+    ]
+  },
+  {
+    "id": "classical-composers",
+    "title": "Classical Composers & Works",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ],
+    "questions": [
+      {
+        "question": "Who composed the oratorio Messiah, which includes the Hallelujah Chorus?",
+        "answer": "George Frideric Handel"
+      },
+      {
+        "question": "Who composed The Four Seasons?",
+        "answer": "Antonio Vivaldi"
+      },
+      {
+        "question": "Who composed the ballets The Nutcracker, Swan Lake, and Sleeping Beauty?",
+        "answer": "Pyotr Ilyich Tchaikovsky"
+      },
+      {
+        "question": "Who composed The Magic Flute and The Marriage of Figaro?",
+        "answer": "Wolfgang Amadeus Mozart"
+      },
+      {
+        "question": "Who composed Fur Elise and the Moonlight Sonata?",
+        "answer": "Ludwig van Beethoven"
+      },
+      {
+        "question": "Name the Beethoven symphony that features the choral finale Ode to Joy.",
+        "answer": "Symphony No. 9"
+      },
+      {
+        "question": "Who composed The Rite of Spring, which caused a riot at its 1913 premiere?",
+        "answer": "Igor Stravinsky"
+      },
+      {
+        "question": "Who composed the opera Carmen?",
+        "answer": "Georges Bizet"
+      },
+      {
+        "question": "Who composed Rhapsody in Blue?",
+        "answer": "George Gershwin"
+      },
+      {
+        "question": "Who composed Bolero?",
+        "answer": "Maurice Ravel"
+      },
+      {
+        "question": "Who composed the orchestral suite The Planets?",
+        "answer": "Gustav Holst"
+      },
+      {
+        "question": "Who composed the William Tell Overture?",
+        "answer": "Gioachino Rossini"
+      },
+      {
+        "question": "Who composed Ride of the Valkyries?",
+        "answer": "Richard Wagner"
+      },
+      {
+        "question": "Who composed Canon in D?",
+        "answer": "Johann Pachelbel"
+      },
+      {
+        "question": "Who composed The Well-Tempered Clavier and Toccata and Fugue in D Minor?",
+        "answer": "Johann Sebastian Bach"
+      },
+      {
+        "question": "Name the Beethoven symphony famous for its four-note da-da-da-DUM opening.",
+        "answer": "Symphony No. 5"
+      },
+      {
+        "question": "Who composed the New World Symphony?",
+        "answer": "Antonin Dvorak"
+      },
+      {
+        "question": "Who composed Clair de Lune?",
+        "answer": "Claude Debussy"
+      },
+      {
+        "question": "Name Mozart serenade whose title translates to A Little Night Music.",
+        "answer": "Eine kleine Nachtmusik"
+      },
+      {
+        "question": "Who composed the operas Aida and La traviata?",
+        "answer": "Giuseppe Verdi"
+      },
+      {
+        "question": "Who composed Hungarian Rhapsody No. 2?",
+        "answer": "Franz Liszt"
+      },
+      {
+        "question": "Name the Haydn symphony nicknamed Surprise for its sudden loud chord.",
+        "answer": "Symphony No. 94"
+      },
+      {
+        "question": "Who composed the Peer Gynt Suite, including In the Hall of the Mountain King?",
+        "answer": "Edvard Grieg"
+      },
+      {
+        "question": "Who composed the 1812 Overture, famous for its use of real cannons?",
+        "answer": "Pyotr Ilyich Tchaikovsky"
+      },
+      {
+        "question": "Name the orchestral suites Handel composed for a royal party on the River Thames.",
+        "answer": "Water Music"
+      }
+    ]
+  },
+  {
+    "id": "norse-mythology",
+    "title": "Norse Mythology",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ],
+    "questions": [
+      {
+        "question": "What is the name of Thor's hammer?",
+        "answer": "Mjolnir"
+      },
+      {
+        "question": "Who is the king of the Norse gods?",
+        "answer": "Odin"
+      },
+      {
+        "question": "What is the name of the rainbow bridge connecting Asgard and Midgard?",
+        "answer": "Bifrost"
+      },
+      {
+        "question": "What is the great ash tree that connects the Nine Worlds?",
+        "answer": "Yggdrasil"
+      },
+      {
+        "question": "Who is the Norse trickster god?",
+        "answer": "Loki"
+      },
+      {
+        "question": "What is the hall where fallen warriors feast with Odin?",
+        "answer": "Valhalla"
+      },
+      {
+        "question": "What is the name of Odin's eight-legged horse?",
+        "answer": "Sleipnir"
+      },
+      {
+        "question": "What is the Norse term for the apocalyptic final battle of the gods?",
+        "answer": "Ragnarok"
+      },
+      {
+        "question": "What monstrous wolf is destined to swallow Odin at Ragnarok?",
+        "answer": "Fenrir"
+      },
+      {
+        "question": "What is the Norse name for the realm of the gods?",
+        "answer": "Asgard"
+      },
+      {
+        "question": "What is the Midgard Serpent's other name?",
+        "answer": "Jormungandr"
+      },
+      {
+        "question": "Which Norse god lost his hand binding the wolf Fenrir?",
+        "answer": "Tyr"
+      },
+      {
+        "question": "What are the names of Odin's two ravens?",
+        "answer": "Huginn and Muninn"
+      },
+      {
+        "question": "Who guards the Bifrost bridge?",
+        "answer": "Heimdall"
+      },
+      {
+        "question": "What is the Norse name for the world of humans?",
+        "answer": "Midgard"
+      },
+      {
+        "question": "Which Norse goddess is associated with love, beauty, and fertility?",
+        "answer": "Freyja"
+      },
+      {
+        "question": "Who is Odin's wife and queen of Asgard?",
+        "answer": "Frigg"
+      },
+      {
+        "question": "Which Norse god was killed by a mistletoe dart?",
+        "answer": "Balder"
+      },
+      {
+        "question": "What is the name of Odin's spear that never misses?",
+        "answer": "Gungnir"
+      },
+      {
+        "question": "Which fire giant will set the world ablaze at Ragnarok?",
+        "answer": "Surtr"
+      },
+      {
+        "question": "Who rules the Norse realm of the dead?",
+        "answer": "Hel"
+      },
+      {
+        "question": "What female spirits choose which warriors go to Valhalla?",
+        "answer": "Valkyries"
+      },
+      {
+        "question": "How many worlds are connected by Yggdrasil?",
+        "answer": "Nine"
+      },
+      {
+        "question": "Which dwarf brothers forged Mjolnir?",
+        "answer": "Brokk and Sindri"
+      },
+      {
+        "question": "Which Norse figure is the goddess of skiing, winter, and mountains?",
+        "answer": "Skadi"
+      }
+    ]
+  },
+  {
+    "id": "famous-battles",
+    "title": "Famous Battles",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ],
+    "questions": [
+      {
+        "question": "What 1775 battles were the first of the American Revolution, known for the shot heard round the world?",
+        "answer": "Lexington and Concord"
+      },
+      {
+        "question": "In what 1777 battle did an American victory convince France to enter the Revolutionary War?",
+        "answer": "Battle of Saratoga"
+      },
+      {
+        "question": "What was the last major battle of the American Revolution, where Cornwallis surrendered in 1781?",
+        "answer": "Battle of Yorktown"
+      },
+      {
+        "question": "In what 1776 battle did Washington cross the Delaware River on Christmas night?",
+        "answer": "Battle of Trenton"
+      },
+      {
+        "question": "What 1861 event in Charleston, South Carolina, was the first battle of the Civil War?",
+        "answer": "Battle of Fort Sumter"
+      },
+      {
+        "question": "What 1863 battle in Pennsylvania was the turning point of the Civil War?",
+        "answer": "Battle of Gettysburg"
+      },
+      {
+        "question": "What 1862 battle was the bloodiest single day in American history?",
+        "answer": "Battle of Antietam"
+      },
+      {
+        "question": "What 1863 siege gave the Union control of the Mississippi River?",
+        "answer": "Battle of Vicksburg"
+      },
+      {
+        "question": "Where did Robert E. Lee surrender to Ulysses S. Grant in 1865, ending the Civil War?",
+        "answer": "Appomattox Court House"
+      },
+      {
+        "question": "What was the first major land battle of the Civil War, fought in Virginia in 1861?",
+        "answer": "First Battle of Bull Run"
+      },
+      {
+        "question": "What December 7, 1941, event brought the United States into World War II?",
+        "answer": "Attack on Pearl Harbor"
+      },
+      {
+        "question": "What 1942 naval battle was the turning point of the Pacific Theater in World War II?",
+        "answer": "Battle of Midway"
+      },
+      {
+        "question": "What June 6, 1944, invasion was the largest seaborne invasion in history?",
+        "answer": "D-Day"
+      },
+      {
+        "question": "What 1942-1943 battle was the turning point of the Eastern Front in World War II?",
+        "answer": "Battle of Stalingrad"
+      },
+      {
+        "question": "What was the last major German offensive of World War II, fought in the Ardennes?",
+        "answer": "Battle of the Bulge"
+      },
+      {
+        "question": "On what Pacific island did U.S. Marines raise the famous flag on Mount Suribachi in 1945?",
+        "answer": "Iwo Jima"
+      },
+      {
+        "question": "What 1942 British victory in North Africa stopped Rommel's advance toward the Suez Canal?",
+        "answer": "Battle of El Alamein"
+      },
+      {
+        "question": "At what 480 BC battle did 300 Spartans make a famous last stand against the Persians?",
+        "answer": "Battle of Thermopylae"
+      },
+      {
+        "question": "What ancient Greek battle inspired the modern long-distance running event?",
+        "answer": "Battle of Marathon"
+      },
+      {
+        "question": "In what 1066 battle did William the Conqueror defeat King Harold II to take control of England?",
+        "answer": "Battle of Hastings"
+      },
+      {
+        "question": "In what 1815 battle was Napoleon Bonaparte finally defeated?",
+        "answer": "Battle of Waterloo"
+      },
+      {
+        "question": "What 1836 battle in San Antonio became a rallying cry for the Texas Revolution?",
+        "answer": "Battle of the Alamo"
+      },
+      {
+        "question": "What 1836 battle won Texas its independence from Mexico?",
+        "answer": "Battle of San Jacinto"
+      },
+      {
+        "question": "What 1876 battle is also known as Custer's Last Stand?",
+        "answer": "Battle of Little Bighorn"
+      },
+      {
+        "question": "What 1916 battle was the longest single battle of World War I, lasting ten months?",
+        "answer": "Battle of Verdun"
+      }
+    ]
+  },
+  {
+    "id": "astronomy",
+    "title": "Astronomy & Space",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ],
+    "questions": [
+      {
+        "question": "What is the largest planet in our solar system?",
+        "answer": "Jupiter"
+      },
+      {
+        "question": "What planet is known for its prominent ring system?",
+        "answer": "Saturn"
+      },
+      {
+        "question": "What is the 4th planet from the Sun?",
+        "answer": "Mars"
+      },
+      {
+        "question": "What planet rotates on its side?",
+        "answer": "Uranus"
+      },
+      {
+        "question": "What is the closest planet to the Sun?",
+        "answer": "Mercury"
+      },
+      {
+        "question": "Which moon of Jupiter is the most volcanically active body in the solar system?",
+        "answer": "Io"
+      },
+      {
+        "question": "What is the largest moon in the solar system?",
+        "answer": "Ganymede"
+      },
+      {
+        "question": "In what year was Pluto reclassified as a dwarf planet?",
+        "answer": "2006"
+      },
+      {
+        "question": "Who was the first person to walk on the Moon?",
+        "answer": "Neil Armstrong"
+      },
+      {
+        "question": "Who was the first human in space?",
+        "answer": "Yuri Gagarin"
+      },
+      {
+        "question": "Who was the first American woman in space?",
+        "answer": "Sally Ride"
+      },
+      {
+        "question": "Who was the first American to orbit the Earth?",
+        "answer": "John Glenn"
+      },
+      {
+        "question": "What was the first artificial satellite launched into orbit?",
+        "answer": "Sputnik"
+      },
+      {
+        "question": "What space shuttle broke apart 73 seconds after launch in 1986?",
+        "answer": "Challenger"
+      },
+      {
+        "question": "What is the farthest human-made object from Earth?",
+        "answer": "Voyager 1"
+      },
+      {
+        "question": "What NASA Mars rover landed in 2021 and carried the Ingenuity helicopter?",
+        "answer": "Perseverance"
+      },
+      {
+        "question": "What astronomer proposed the heliocentric model of the solar system?",
+        "answer": "Nicolaus Copernicus"
+      },
+      {
+        "question": "What Italian astronomer used a telescope to discover Jupiter's four largest moons?",
+        "answer": "Galileo Galilei"
+      },
+      {
+        "question": "What constellation is known as The Hunter?",
+        "answer": "Orion"
+      },
+      {
+        "question": "What is the North Star called?",
+        "answer": "Polaris"
+      },
+      {
+        "question": "What constellation contains the Big Dipper?",
+        "answer": "Ursa Major"
+      },
+      {
+        "question": "What do we call a region of space where gravity is so strong that not even light can escape?",
+        "answer": "Black hole"
+      },
+      {
+        "question": "What term describes the explosion of a massive star at the end of its life?",
+        "answer": "Supernova"
+      },
+      {
+        "question": "What does a light year measure?",
+        "answer": "Distance"
+      },
+      {
+        "question": "What is the prevailing theory for the origin of the universe?",
+        "answer": "Big Bang"
+      }
+    ]
+  },
+  {
+    "id": "world-religions",
+    "title": "World Religions",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ],
+    "questions": [
+      {
+        "question": "What is the sacred text of Islam?",
+        "answer": "The Quran"
+      },
+      {
+        "question": "What is the sacred text of Christianity?",
+        "answer": "The Bible"
+      },
+      {
+        "question": "What is the sacred text of Judaism?",
+        "answer": "The Torah"
+      },
+      {
+        "question": "Who founded Buddhism?",
+        "answer": "Siddhartha Gautama"
+      },
+      {
+        "question": "Who is the founder and chief prophet of Islam?",
+        "answer": "Muhammad"
+      },
+      {
+        "question": "What is the holiest city of Islam?",
+        "answer": "Mecca"
+      },
+      {
+        "question": "What is a Jewish place of worship called?",
+        "answer": "Synagogue"
+      },
+      {
+        "question": "What is an Islamic place of worship called?",
+        "answer": "Mosque"
+      },
+      {
+        "question": "What is the Hindu festival of lights?",
+        "answer": "Diwali"
+      },
+      {
+        "question": "Name the three gods of the Hindu Trimurti.",
+        "answer": "Brahma, Vishnu, and Shiva"
+      },
+      {
+        "question": "What are the Five Pillars of Islam?",
+        "answer": "Shahada, Salat, Zakat, Sawm, and Hajj"
+      },
+      {
+        "question": "Who founded Sikhism?",
+        "answer": "Guru Nanak"
+      },
+      {
+        "question": "What is the sacred scripture of Sikhism?",
+        "answer": "Guru Granth Sahib"
+      },
+      {
+        "question": "Who founded Confucianism?",
+        "answer": "Confucius"
+      },
+      {
+        "question": "What is the foundational text of Taoism?",
+        "answer": "Tao Te Ching"
+      },
+      {
+        "question": "What is the annual Islamic pilgrimage to Mecca called?",
+        "answer": "Hajj"
+      },
+      {
+        "question": "What Islamic month is observed with fasting?",
+        "answer": "Ramadan"
+      },
+      {
+        "question": "Who led the Israelites out of Egypt?",
+        "answer": "Moses"
+      },
+      {
+        "question": "What is the ultimate goal of Buddhism, ending the cycle of rebirth?",
+        "answer": "Nirvana"
+      },
+      {
+        "question": "What Jewish holiday commemorates the liberation from slavery in Egypt?",
+        "answer": "Passover"
+      },
+      {
+        "question": "What is the largest religion in the world by number of followers?",
+        "answer": "Christianity"
+      },
+      {
+        "question": "What principle says your actions determine your fate in future lives?",
+        "answer": "Karma"
+      },
+      {
+        "question": "What term describes Judaism, Christianity, and Islam as a group?",
+        "answer": "Abrahamic religions"
+      },
+      {
+        "question": "What is the central text of Confucianism?",
+        "answer": "The Analects"
+      },
+      {
+        "question": "What eight-day Jewish festival commemorates the rededication of the Second Temple?",
+        "answer": "Hanukkah"
+      }
+    ]
   }
 ]

@@ -1,0 +1,248 @@
+{
+  "id": "world-religions",
+  "title": "World Religions",
+  "description": "Major world religions, sacred texts, key figures, and practices",
+  "levels": ["3/4", "5/6", "7-9", "9-12"],
+  "cards": [
+    {
+      "front": "What is the sacred text of Christianity?",
+      "back": "The Bible"
+    },
+    {
+      "front": "The Bible",
+      "back": "Sacred text of Christianity"
+    },
+    {
+      "front": "Who is the central figure of Christianity?",
+      "back": "Jesus Christ"
+    },
+    {
+      "front": "What are the Ten Commandments?",
+      "back": "A set of biblical laws given to Moses on Mount Sinai, central to Judaism and Christianity"
+    },
+    {
+      "front": "What is the Christian doctrine of the Trinity?",
+      "back": "The belief that God exists as three persons: the Father, the Son, and the Holy Spirit"
+    },
+    {
+      "front": "What are the three major branches of Christianity?",
+      "back": "Roman Catholic, Eastern Orthodox, and Protestant"
+    },
+    {
+      "front": "What is baptism?",
+      "back": "A Christian sacrament of admission into the faith, using water"
+    },
+    {
+      "front": "What Christian holiday celebrates the resurrection of Jesus?",
+      "back": "Easter"
+    },
+    {
+      "front": "What is the sacred text of Islam?",
+      "back": "The Quran"
+    },
+    {
+      "front": "The Quran",
+      "back": "Sacred text of Islam"
+    },
+    {
+      "front": "Who is the founder and chief prophet of Islam?",
+      "back": "Muhammad"
+    },
+    {
+      "front": "Muhammad",
+      "back": "Founder and chief prophet of Islam"
+    },
+    {
+      "front": "What are the Five Pillars of Islam?",
+      "back": "Shahada (faith), Salat (prayer), Zakat (charity), Sawm (fasting), and Hajj (pilgrimage)"
+    },
+    {
+      "front": "What is Mecca?",
+      "back": "The holiest city in Islam, located in Saudi Arabia; birthplace of Muhammad"
+    },
+    {
+      "front": "What is a mosque?",
+      "back": "An Islamic place of worship"
+    },
+    {
+      "front": "What is Ramadan?",
+      "back": "The ninth month of the Islamic calendar, observed by Muslims as a month of fasting and prayer"
+    },
+    {
+      "front": "What is the Hajj?",
+      "back": "The annual Islamic pilgrimage to Mecca, one of the Five Pillars of Islam"
+    },
+    {
+      "front": "What is the sacred text of Judaism?",
+      "back": "The Torah"
+    },
+    {
+      "front": "The Torah",
+      "back": "Sacred text of Judaism (the first five books of the Hebrew Bible)"
+    },
+    {
+      "front": "What is the Talmud?",
+      "back": "A central text of Judaism containing rabbinical discussions on law, ethics, and customs"
+    },
+    {
+      "front": "What is a synagogue?",
+      "back": "A Jewish place of worship"
+    },
+    {
+      "front": "Who is Abraham?",
+      "back": "A patriarch considered the founding father of Judaism, Christianity, and Islam"
+    },
+    {
+      "front": "Patriarch considered the founding father of Judaism, Christianity, and Islam",
+      "back": "Abraham"
+    },
+    {
+      "front": "Who is Moses?",
+      "back": "The prophet who led the Israelites out of Egypt and received the Ten Commandments"
+    },
+    {
+      "front": "Prophet who led the Israelites out of Egypt",
+      "back": "Moses"
+    },
+    {
+      "front": "What is Passover?",
+      "back": "A Jewish holiday commemorating the Israelites' liberation from slavery in Egypt"
+    },
+    {
+      "front": "What is Hanukkah?",
+      "back": "An eight-day Jewish festival commemorating the rededication of the Second Temple in Jerusalem"
+    },
+    {
+      "front": "What is a Bar Mitzvah (or Bat Mitzvah)?",
+      "back": "A Jewish coming-of-age ceremony at age 13 (boys) or 12–13 (girls)"
+    },
+    {
+      "front": "What are the Vedas?",
+      "back": "The oldest and most sacred scriptures of Hinduism"
+    },
+    {
+      "front": "The Vedas",
+      "back": "The oldest and most sacred scriptures of Hinduism"
+    },
+    {
+      "front": "What is the Bhagavad Gita?",
+      "back": "A sacred Hindu scripture that is a dialogue between Prince Arjuna and the god Krishna"
+    },
+    {
+      "front": "The Bhagavad Gita",
+      "back": "A sacred Hindu scripture; a dialogue between Prince Arjuna and the god Krishna"
+    },
+    {
+      "front": "Brahma (Hinduism)",
+      "back": "The Hindu god of creation, part of the Trimurti"
+    },
+    {
+      "front": "Vishnu (Hinduism)",
+      "back": "The Hindu god of preservation, part of the Trimurti"
+    },
+    {
+      "front": "Shiva (Hinduism)",
+      "back": "The Hindu god of destruction and transformation, part of the Trimurti"
+    },
+    {
+      "front": "What is the Hindu Trimurti?",
+      "back": "The three main gods of Hinduism: Brahma (creator), Vishnu (preserver), and Shiva (destroyer)"
+    },
+    {
+      "front": "What is karma?",
+      "back": "The principle that a person's actions in this life determine their fate in future lives (Hinduism and Buddhism)"
+    },
+    {
+      "front": "What is dharma in Hinduism?",
+      "back": "One's moral duty or righteous path in life"
+    },
+    {
+      "front": "What is reincarnation?",
+      "back": "The belief that the soul is reborn into a new body after death (central to Hinduism and Buddhism)"
+    },
+    {
+      "front": "What is Diwali?",
+      "back": "The Hindu festival of lights, celebrating the victory of light over darkness"
+    },
+    {
+      "front": "Who founded Buddhism?",
+      "back": "Siddhartha Gautama (the Buddha)"
+    },
+    {
+      "front": "Siddhartha Gautama",
+      "back": "The founder of Buddhism, known as the Buddha (the Enlightened One)"
+    },
+    {
+      "front": "What are the Four Noble Truths of Buddhism?",
+      "back": "Life involves suffering; suffering is caused by desire; suffering can end; the way to end it is the Eightfold Path"
+    },
+    {
+      "front": "What is the Eightfold Path?",
+      "back": "The Buddhist path to end suffering: right view, intention, speech, action, livelihood, effort, mindfulness, and concentration"
+    },
+    {
+      "front": "What is nirvana in Buddhism?",
+      "back": "The ultimate goal of Buddhism — liberation from the cycle of death and rebirth, and the end of suffering"
+    },
+    {
+      "front": "What is the sangha in Buddhism?",
+      "back": "The community of Buddhist monks, nuns, and practitioners"
+    },
+    {
+      "front": "Who founded Sikhism?",
+      "back": "Guru Nanak"
+    },
+    {
+      "front": "Guru Nanak",
+      "back": "The founder of Sikhism (born 1469)"
+    },
+    {
+      "front": "What is the Guru Granth Sahib?",
+      "back": "The sacred scripture of Sikhism, treated as a living guru"
+    },
+    {
+      "front": "The Guru Granth Sahib",
+      "back": "The sacred scripture of Sikhism"
+    },
+    {
+      "front": "Who founded Confucianism?",
+      "back": "Confucius (Kong Qiu)"
+    },
+    {
+      "front": "Confucius",
+      "back": "Chinese philosopher and founder of Confucianism (551–479 BCE)"
+    },
+    {
+      "front": "What is the central text of Confucianism?",
+      "back": "The Analects"
+    },
+    {
+      "front": "The Analects",
+      "back": "The central text of Confucianism, a collection of sayings by Confucius"
+    },
+    {
+      "front": "Who is the traditional founder of Taoism?",
+      "back": "Laozi (Lao Tzu)"
+    },
+    {
+      "front": "Laozi (Lao Tzu)",
+      "back": "Traditional founder of Taoism and author of the Tao Te Ching"
+    },
+    {
+      "front": "What is the Tao Te Ching?",
+      "back": "The foundational text of Taoism, attributed to Laozi"
+    },
+    {
+      "front": "What is the largest religion in the world by number of followers?",
+      "back": "Christianity"
+    },
+    {
+      "front": "What is the second-largest religion in the world by number of followers?",
+      "back": "Islam"
+    },
+    {
+      "front": "What term describes Judaism, Christianity, and Islam as a group?",
+      "back": "Abrahamic religions (they share Abraham as a common patriarch)"
+    }
+  ]
+}

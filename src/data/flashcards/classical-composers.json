@@ -1,0 +1,336 @@
+{
+  "id": "classical-composers",
+  "title": "Classical Composers & Works",
+  "description": "Famous classical music compositions and their composers",
+  "levels": ["3/4", "5/6", "7-9", "9-12"],
+  "cards": [
+    {
+      "front": "Messiah (oratorio featuring the 'Hallelujah Chorus')",
+      "back": "George Frideric Handel"
+    },
+    {
+      "front": "Handel's most famous oratorio featuring the 'Hallelujah Chorus'",
+      "back": "Messiah"
+    },
+    {
+      "front": "The Four Seasons (set of violin concertos)",
+      "back": "Antonio Vivaldi"
+    },
+    {
+      "front": "Vivaldi's most famous set of four violin concertos representing spring, summer, autumn, and winter",
+      "back": "The Four Seasons"
+    },
+    {
+      "front": "The Nutcracker (ballet)",
+      "back": "Pyotr Ilyich Tchaikovsky"
+    },
+    {
+      "front": "Tchaikovsky's Christmas ballet featuring the Sugar Plum Fairy and the Dance of the Snowflakes",
+      "back": "The Nutcracker"
+    },
+    {
+      "front": "Swan Lake (ballet)",
+      "back": "Pyotr Ilyich Tchaikovsky"
+    },
+    {
+      "front": "Tchaikovsky's ballet about a princess turned into a swan by an evil sorcerer",
+      "back": "Swan Lake"
+    },
+    {
+      "front": "The Magic Flute (opera)",
+      "back": "Wolfgang Amadeus Mozart"
+    },
+    {
+      "front": "Mozart's fairy-tale opera featuring the Queen of the Night aria",
+      "back": "The Magic Flute"
+    },
+    {
+      "front": "The Marriage of Figaro (opera)",
+      "back": "Wolfgang Amadeus Mozart"
+    },
+    {
+      "front": "Mozart's comic opera based on a play by Beaumarchais about a servant outwitting his master",
+      "back": "The Marriage of Figaro"
+    },
+    {
+      "front": "1812 Overture",
+      "back": "Pyotr Ilyich Tchaikovsky"
+    },
+    {
+      "front": "Tchaikovsky's overture commemorating Russia's defense against Napoleon, famous for its use of real cannons",
+      "back": "1812 Overture"
+    },
+    {
+      "front": "Moonlight Sonata (Piano Sonata No. 14)",
+      "back": "Ludwig van Beethoven"
+    },
+    {
+      "front": "Beethoven's piano sonata nicknamed for its dreamy, moonlit first movement",
+      "back": "Moonlight Sonata"
+    },
+    {
+      "front": "Für Elise",
+      "back": "Ludwig van Beethoven"
+    },
+    {
+      "front": "Beethoven's short piano piece, one of the most recognized classical melodies in the world",
+      "back": "Für Elise"
+    },
+    {
+      "front": "Symphony No. 9 (featuring 'Ode to Joy')",
+      "back": "Ludwig van Beethoven"
+    },
+    {
+      "front": "Beethoven's final symphony, the first major symphony to include a choral finale ('Ode to Joy')",
+      "back": "Symphony No. 9"
+    },
+    {
+      "front": "The Rite of Spring (ballet)",
+      "back": "Igor Stravinsky"
+    },
+    {
+      "front": "Stravinsky's revolutionary ballet that caused a riot at its 1913 Paris premiere",
+      "back": "The Rite of Spring"
+    },
+    {
+      "front": "Carmen (opera)",
+      "back": "Georges Bizet"
+    },
+    {
+      "front": "Bizet's opera set in Seville about a fiery gypsy woman and a soldier",
+      "back": "Carmen"
+    },
+    {
+      "front": "Rhapsody in Blue",
+      "back": "George Gershwin"
+    },
+    {
+      "front": "Gershwin's jazz-influenced orchestral work that opens with a famous clarinet glissando",
+      "back": "Rhapsody in Blue"
+    },
+    {
+      "front": "Boléro",
+      "back": "Maurice Ravel"
+    },
+    {
+      "front": "Ravel's orchestral piece built on a single repeating melody that grows gradually louder",
+      "back": "Boléro"
+    },
+    {
+      "front": "The Planets (orchestral suite)",
+      "back": "Gustav Holst"
+    },
+    {
+      "front": "Holst's seven-movement orchestral suite with movements like 'Mars, the Bringer of War' and 'Jupiter, the Bringer of Jollity'",
+      "back": "The Planets"
+    },
+    {
+      "front": "William Tell Overture",
+      "back": "Gioachino Rossini"
+    },
+    {
+      "front": "Rossini's overture famous for its finale used as the theme of The Lone Ranger",
+      "back": "William Tell Overture"
+    },
+    {
+      "front": "Ride of the Valkyries",
+      "back": "Richard Wagner"
+    },
+    {
+      "front": "Wagner's dramatic orchestral passage from the opera Die Walküre, often associated with helicopters in film",
+      "back": "Ride of the Valkyries"
+    },
+    {
+      "front": "Canon in D",
+      "back": "Johann Pachelbel"
+    },
+    {
+      "front": "Pachelbel's most famous composition, commonly played at weddings",
+      "back": "Canon in D"
+    },
+    {
+      "front": "Water Music (orchestral suites)",
+      "back": "George Frideric Handel"
+    },
+    {
+      "front": "Handel's orchestral suites composed for King George I's barge party on the River Thames",
+      "back": "Water Music"
+    },
+    {
+      "front": "The Well-Tempered Clavier",
+      "back": "Johann Sebastian Bach"
+    },
+    {
+      "front": "Bach's collection of preludes and fugues in all 24 major and minor keys",
+      "back": "The Well-Tempered Clavier"
+    },
+    {
+      "front": "Symphony No. 5 (famous four-note opening: da-da-da-DUM)",
+      "back": "Ludwig van Beethoven"
+    },
+    {
+      "front": "Beethoven's symphony famous for its four-note 'fate knocking at the door' opening motif",
+      "back": "Symphony No. 5"
+    },
+    {
+      "front": "New World Symphony (Symphony No. 9)",
+      "back": "Antonín Dvořák"
+    },
+    {
+      "front": "Dvořák's symphony inspired by his time in America, incorporating Native American and African American musical themes",
+      "back": "New World Symphony"
+    },
+    {
+      "front": "Clair de Lune",
+      "back": "Claude Debussy"
+    },
+    {
+      "front": "Debussy's dreamy piano piece whose title means 'moonlight' in French",
+      "back": "Clair de Lune"
+    },
+    {
+      "front": "Eine kleine Nachtmusik (A Little Night Music)",
+      "back": "Wolfgang Amadeus Mozart"
+    },
+    {
+      "front": "Mozart's popular serenade whose German title translates to 'A Little Night Music'",
+      "back": "Eine kleine Nachtmusik"
+    },
+    {
+      "front": "The Barber of Seville (opera)",
+      "back": "Gioachino Rossini"
+    },
+    {
+      "front": "Rossini's comic opera about the clever barber Figaro helping Count Almaviva win Rosina's love",
+      "back": "The Barber of Seville"
+    },
+    {
+      "front": "Aida (opera)",
+      "back": "Giuseppe Verdi"
+    },
+    {
+      "front": "Verdi's grand opera set in ancient Egypt, premiered in Cairo in 1871",
+      "back": "Aida"
+    },
+    {
+      "front": "La traviata (opera)",
+      "back": "Giuseppe Verdi"
+    },
+    {
+      "front": "Verdi's opera about a Parisian courtesan who sacrifices her love; its title means 'The Fallen Woman'",
+      "back": "La traviata"
+    },
+    {
+      "front": "Toccata and Fugue in D Minor (organ)",
+      "back": "Johann Sebastian Bach"
+    },
+    {
+      "front": "Bach's dramatic organ work often associated with haunted houses and horror films",
+      "back": "Toccata and Fugue in D Minor"
+    },
+    {
+      "front": "Hungarian Rhapsody No. 2",
+      "back": "Franz Liszt"
+    },
+    {
+      "front": "Liszt's virtuosic piano showpiece inspired by Hungarian folk music, famously used in Tom and Jerry cartoons",
+      "back": "Hungarian Rhapsody No. 2"
+    },
+    {
+      "front": "Symphony No. 94 ('Surprise Symphony')",
+      "back": "Joseph Haydn"
+    },
+    {
+      "front": "Haydn's symphony nicknamed 'Surprise' because of a sudden loud chord meant to wake up dozing audience members",
+      "back": "Symphony No. 94 (Surprise Symphony)"
+    },
+    {
+      "front": "Ave Maria (adapted from Bach's Prelude in C)",
+      "back": "Charles Gounod"
+    },
+    {
+      "front": "Gounod's vocal setting of a prayer layered over a Bach prelude, often performed at weddings",
+      "back": "Ave Maria"
+    },
+    {
+      "front": "The Firebird (ballet)",
+      "back": "Igor Stravinsky"
+    },
+    {
+      "front": "Stravinsky's first major ballet, based on a Russian fairy tale about a magical glowing bird",
+      "back": "The Firebird"
+    },
+    {
+      "front": "Sleeping Beauty (ballet)",
+      "back": "Pyotr Ilyich Tchaikovsky"
+    },
+    {
+      "front": "Tchaikovsky's ballet based on the Charles Perrault fairy tale about a princess cursed to sleep for 100 years",
+      "back": "Sleeping Beauty"
+    },
+    {
+      "front": "Peer Gynt Suite (incidental music)",
+      "back": "Edvard Grieg"
+    },
+    {
+      "front": "Grieg's orchestral suites featuring 'Morning Mood' and 'In the Hall of the Mountain King'",
+      "back": "Peer Gynt Suite"
+    },
+    {
+      "front": "Nocturnes (set of lyrical piano pieces)",
+      "back": "Frédéric Chopin"
+    },
+    {
+      "front": "Chopin's genre of lyrical, dreamy piano pieces meant to evoke the night",
+      "back": "Nocturnes"
+    },
+    {
+      "front": "Minute Waltz (Waltz in D-flat Major, Op. 64 No. 1)",
+      "back": "Frédéric Chopin"
+    },
+    {
+      "front": "Chopin's famous short waltz nicknamed for being playable in about one minute",
+      "back": "Minute Waltz"
+    },
+    {
+      "front": "Lullaby (Wiegenlied, Op. 49 No. 4)",
+      "back": "Johannes Brahms"
+    },
+    {
+      "front": "Brahms's gentle song that became one of the world's most famous lullabies",
+      "back": "Brahms's Lullaby (Wiegenlied)"
+    },
+    {
+      "front": "Symphony No. 40 in G Minor",
+      "back": "Wolfgang Amadeus Mozart"
+    },
+    {
+      "front": "Mozart's dramatic symphony in G minor, one of only two he wrote in a minor key",
+      "back": "Symphony No. 40"
+    },
+    {
+      "front": "Trout Quintet (Piano Quintet in A Major)",
+      "back": "Franz Schubert"
+    },
+    {
+      "front": "Schubert's chamber work nicknamed for its fourth movement based on his song 'The Trout'",
+      "back": "Trout Quintet"
+    },
+    {
+      "front": "Ave Maria (D. 839)",
+      "back": "Franz Schubert"
+    },
+    {
+      "front": "Schubert's setting of a prayer from Walter Scott's 'The Lady of the Lake,' one of the most beloved sacred songs",
+      "back": "Schubert's Ave Maria"
+    },
+    {
+      "front": "Requiem in D Minor (K. 626)",
+      "back": "Wolfgang Amadeus Mozart"
+    },
+    {
+      "front": "Mozart's final composition, left unfinished at his death in 1791",
+      "back": "Requiem in D Minor"
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "id": "astronomy",
+  "title": "Astronomy & Space",
+  "description": "Planets, space missions, constellations, and famous astronomers",
+  "levels": ["3/4", "5/6", "7-9", "9-12"],
+  "cards": [
+    {
+      "front": "What is the 1st planet from the Sun?",
+      "back": "Mercury"
+    },
+    {
+      "front": "What is the 2nd planet from the Sun?",
+      "back": "Venus"
+    },
+    {
+      "front": "What is the 3rd planet from the Sun?",
+      "back": "Earth"
+    },
+    {
+      "front": "What is the 4th planet from the Sun?",
+      "back": "Mars"
+    },
+    {
+      "front": "What is the 5th planet from the Sun?",
+      "back": "Jupiter"
+    },
+    {
+      "front": "What is the 6th planet from the Sun?",
+      "back": "Saturn"
+    },
+    {
+      "front": "What is the 7th planet from the Sun?",
+      "back": "Uranus"
+    },
+    {
+      "front": "What is the 8th planet from the Sun?",
+      "back": "Neptune"
+    },
+    {
+      "front": "Which planet is the largest in our solar system?",
+      "back": "Jupiter"
+    },
+    {
+      "front": "Which planet is known for its Great Red Spot?",
+      "back": "Jupiter"
+    },
+    {
+      "front": "Which planet is known for its prominent ring system?",
+      "back": "Saturn"
+    },
+    {
+      "front": "Which planet rotates on its side?",
+      "back": "Uranus"
+    },
+    {
+      "front": "Europa is a moon of which planet?",
+      "back": "Jupiter — Europa has a subsurface ocean that may support life"
+    },
+    {
+      "front": "Titan is a moon of which planet?",
+      "back": "Saturn — Titan has a thick atmosphere and liquid methane lakes"
+    },
+    {
+      "front": "The largest moon in the solar system",
+      "back": "Ganymede (moon of Jupiter)"
+    },
+    {
+      "front": "The most volcanically active body in the solar system",
+      "back": "Io (moon of Jupiter)"
+    },
+    {
+      "front": "In what year was Pluto reclassified from planet to dwarf planet?",
+      "back": "2006"
+    },
+    {
+      "front": "Which dwarf planet is located in the asteroid belt between Mars and Jupiter?",
+      "back": "Ceres"
+    },
+    {
+      "front": "Apollo 11",
+      "back": "First crewed mission to land on the Moon (July 20, 1969)"
+    },
+    {
+      "front": "Apollo 13",
+      "back": "1970 Moon mission that suffered an oxygen tank explosion; crew returned safely (called a 'successful failure')"
+    },
+    {
+      "front": "NASA's first human spaceflight program (1958–1963), all single-astronaut missions",
+      "back": "Project Mercury"
+    },
+    {
+      "front": "NASA program between Mercury and Apollo that practiced spacewalks and orbital rendezvous",
+      "back": "Project Gemini"
+    },
+    {
+      "front": "Space shuttle that broke apart 73 seconds after launch on January 28, 1986",
+      "back": "Challenger"
+    },
+    {
+      "front": "Space shuttle that disintegrated during reentry on February 1, 2003",
+      "back": "Columbia"
+    },
+    {
+      "front": "The farthest human-made object from Earth",
+      "back": "Voyager 1 (launched 1977, now in interstellar space)"
+    },
+    {
+      "front": "Hubble Space Telescope",
+      "back": "Space telescope launched in 1990 that orbits Earth and has provided iconic deep-space images"
+    },
+    {
+      "front": "James Webb Space Telescope",
+      "back": "Infrared space telescope launched in 2021; successor to Hubble, orbits the Sun near the L2 point"
+    },
+    {
+      "front": "NASA Mars rover that landed in 2012 in Gale Crater",
+      "back": "Curiosity"
+    },
+    {
+      "front": "NASA Mars rover that landed in 2021 and carried the Ingenuity helicopter",
+      "back": "Perseverance"
+    },
+    {
+      "front": "The first artificial satellite ever launched into orbit",
+      "back": "Sputnik (Soviet Union, 1957)"
+    },
+    {
+      "front": "First person to walk on the Moon",
+      "back": "Neil Armstrong"
+    },
+    {
+      "front": "Neil Armstrong",
+      "back": "First person to walk on the Moon (Apollo 11, 1969)"
+    },
+    {
+      "front": "Second person to walk on the Moon, alongside Neil Armstrong on Apollo 11",
+      "back": "Buzz Aldrin"
+    },
+    {
+      "front": "First American to orbit the Earth (1962)",
+      "back": "John Glenn"
+    },
+    {
+      "front": "First American woman in space (1983)",
+      "back": "Sally Ride"
+    },
+    {
+      "front": "First human in space (1961)",
+      "back": "Yuri Gagarin (Soviet Union)"
+    },
+    {
+      "front": "First American in space (1961)",
+      "back": "Alan Shepard"
+    },
+    {
+      "front": "First African American woman in space (1992)",
+      "back": "Mae Jemison"
+    },
+    {
+      "front": "Galileo Galilei",
+      "back": "Italian astronomer who used a telescope to observe Jupiter's moons, Saturn's rings, and phases of Venus; supported heliocentrism"
+    },
+    {
+      "front": "Italian astronomer who used a telescope to discover Jupiter's four largest moons",
+      "back": "Galileo Galilei"
+    },
+    {
+      "front": "Nicolaus Copernicus",
+      "back": "Polish astronomer who proposed the heliocentric model — that Earth and planets revolve around the Sun"
+    },
+    {
+      "front": "Astronomer who proposed the heliocentric (Sun-centered) model of the solar system",
+      "back": "Nicolaus Copernicus"
+    },
+    {
+      "front": "Johannes Kepler",
+      "back": "German astronomer who discovered three laws of planetary motion, including that orbits are ellipses"
+    },
+    {
+      "front": "Edwin Hubble",
+      "back": "American astronomer who proved galaxies exist beyond the Milky Way and that the universe is expanding"
+    },
+    {
+      "front": "Danish astronomer known for precise pre-telescope observations; his data helped Kepler",
+      "back": "Tycho Brahe"
+    },
+    {
+      "front": "Carl Sagan",
+      "back": "Astronomer and science communicator; hosted Cosmos; worked on the Voyager Golden Record"
+    },
+    {
+      "front": "A light year is a measure of what?",
+      "back": "Distance — the distance light travels in one year (about 5.88 trillion miles)"
+    },
+    {
+      "front": "The average distance from the Earth to the Sun (about 93 million miles)",
+      "back": "Astronomical Unit (AU)"
+    },
+    {
+      "front": "A region of space where gravity is so strong that nothing, not even light, can escape",
+      "back": "Black hole"
+    },
+    {
+      "front": "A large cloud of gas and dust in space, often a birthplace of new stars",
+      "back": "Nebula"
+    },
+    {
+      "front": "The explosion of a massive star at the end of its life, briefly outshining an entire galaxy",
+      "back": "Supernova"
+    },
+    {
+      "front": "A large, cool star near the end of its life; the Sun will become one in about 5 billion years",
+      "back": "Red giant"
+    },
+    {
+      "front": "The small, dense remnant of a low-mass star after it sheds its outer layers",
+      "back": "White dwarf"
+    },
+    {
+      "front": "The stage of a star's life in which it fuses hydrogen into helium; our Sun is in this stage",
+      "back": "Main sequence"
+    },
+    {
+      "front": "The prevailing theory for the origin of the universe, approximately 13.8 billion years ago",
+      "back": "Big Bang"
+    },
+    {
+      "front": "The constellation known as 'The Hunter,' featuring Betelgeuse and Rigel",
+      "back": "Orion"
+    },
+    {
+      "front": "The constellation that contains the Big Dipper asterism",
+      "back": "Ursa Major (the Great Bear)"
+    },
+    {
+      "front": "The constellation that contains the Little Dipper and Polaris",
+      "back": "Ursa Minor (the Little Bear)"
+    },
+    {
+      "front": "A W-shaped constellation in the northern sky named after a queen in Greek mythology",
+      "back": "Cassiopeia"
+    },
+    {
+      "front": "Polaris",
+      "back": "The North Star; located at the tip of the Little Dipper (Ursa Minor); used for celestial navigation"
+    },
+    {
+      "front": "The current North Star",
+      "back": "Polaris"
+    }
+  ]
+}

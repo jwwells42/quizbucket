@@ -19,6 +19,14 @@ import grammarLiteraryDevices from './flashcards/grammar-literary-devices.json'
 import geographyPhysical from './flashcards/geography-physical.json'
 import economics from './flashcards/economics.json'
 import musicTheory from './flashcards/music-theory.json'
+import famousPaintings from './flashcards/famous-paintings.json'
+import americanLiterature from './flashcards/american-literature.json'
+import supremeCourt from './flashcards/supreme-court.json'
+import famousBattles from './flashcards/famous-battles.json'
+import worldReligions from './flashcards/world-religions.json'
+import astronomy from './flashcards/astronomy.json'
+import norseMythology from './flashcards/norse-mythology.json'
+import classicalComposers from './flashcards/classical-composers.json'
 import tossups from './tossups.json'
 import lightning from './lightning.json'
 
@@ -44,6 +52,14 @@ export const flashcardDecks = [
   geographyPhysical,
   economics,
   musicTheory,
+  famousPaintings,
+  americanLiterature,
+  supremeCourt,
+  famousBattles,
+  worldReligions,
+  astronomy,
+  norseMythology,
+  classicalComposers,
 ]
 
 export function getDeck(id) {

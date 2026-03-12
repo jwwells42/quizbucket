@@ -1,0 +1,224 @@
+{
+  "id": "supreme-court",
+  "title": "Supreme Court Cases",
+  "description": "Landmark Supreme Court decisions and their significance",
+  "levels": ["5/6", "7-9", "9-12"],
+  "cards": [
+    {
+      "front": "Marbury v. Madison (1803)",
+      "back": "Established judicial review — the power of the Supreme Court to declare laws unconstitutional"
+    },
+    {
+      "front": "Which landmark case established judicial review?",
+      "back": "Marbury v. Madison (1803)"
+    },
+    {
+      "front": "McCulloch v. Maryland (1819)",
+      "back": "Established that Congress has implied powers under the Necessary and Proper Clause; states cannot tax the federal government"
+    },
+    {
+      "front": "Which case ruled that states cannot tax the federal government and upheld implied powers of Congress?",
+      "back": "McCulloch v. Maryland (1819)"
+    },
+    {
+      "front": "Gibbons v. Ogden (1824)",
+      "back": "Established that Congress has broad power to regulate interstate commerce under the Commerce Clause"
+    },
+    {
+      "front": "Which case broadly defined Congress's power to regulate interstate commerce?",
+      "back": "Gibbons v. Ogden (1824)"
+    },
+    {
+      "front": "Worcester v. Georgia (1832)",
+      "back": "Ruled that states have no authority over Native American lands; only the federal government can deal with Native nations"
+    },
+    {
+      "front": "Which case ruled that states have no authority over Native American lands?",
+      "back": "Worcester v. Georgia (1832)"
+    },
+    {
+      "front": "Dred Scott v. Sandford (1857)",
+      "back": "Ruled that enslaved people were not citizens and had no right to sue; declared the Missouri Compromise unconstitutional"
+    },
+    {
+      "front": "Which case ruled that enslaved people were not citizens and could not sue in federal court?",
+      "back": "Dred Scott v. Sandford (1857)"
+    },
+    {
+      "front": "Plessy v. Ferguson (1896)",
+      "back": "Upheld racial segregation under the 'separate but equal' doctrine"
+    },
+    {
+      "front": "Which case established the 'separate but equal' doctrine allowing racial segregation?",
+      "back": "Plessy v. Ferguson (1896)"
+    },
+    {
+      "front": "Schenck v. United States (1919)",
+      "back": "Established the 'clear and present danger' test for limiting free speech; upheld the Espionage Act"
+    },
+    {
+      "front": "Which case established the 'clear and present danger' test for free speech?",
+      "back": "Schenck v. United States (1919)"
+    },
+    {
+      "front": "Korematsu v. United States (1944)",
+      "back": "Upheld the internment of Japanese Americans during World War II; widely regarded as a grave injustice"
+    },
+    {
+      "front": "Which case upheld the internment of Japanese Americans during World War II?",
+      "back": "Korematsu v. United States (1944)"
+    },
+    {
+      "front": "Brown v. Board of Education (1954)",
+      "back": "Declared racial segregation in public schools unconstitutional, overturning Plessy v. Ferguson's 'separate but equal' doctrine"
+    },
+    {
+      "front": "Which case declared racial segregation in public schools unconstitutional?",
+      "back": "Brown v. Board of Education (1954)"
+    },
+    {
+      "front": "Mapp v. Ohio (1961)",
+      "back": "Applied the exclusionary rule to states — illegally obtained evidence cannot be used in state courts (4th Amendment)"
+    },
+    {
+      "front": "Which case ruled that illegally obtained evidence cannot be used in state courts?",
+      "back": "Mapp v. Ohio (1961)"
+    },
+    {
+      "front": "Engel v. Vitale (1962)",
+      "back": "Ruled that government-directed prayer in public schools violates the Establishment Clause of the 1st Amendment"
+    },
+    {
+      "front": "Which case banned government-directed prayer in public schools?",
+      "back": "Engel v. Vitale (1962)"
+    },
+    {
+      "front": "Gideon v. Wainwright (1963)",
+      "back": "Ruled that states must provide attorneys to criminal defendants who cannot afford one (6th Amendment right to counsel)"
+    },
+    {
+      "front": "Which case established the right to a court-appointed attorney for those who cannot afford one?",
+      "back": "Gideon v. Wainwright (1963)"
+    },
+    {
+      "front": "Miranda v. Arizona (1966)",
+      "back": "Required police to inform suspects of their rights (right to remain silent, right to an attorney) before interrogation"
+    },
+    {
+      "front": "Which case required police to read suspects their rights before interrogation?",
+      "back": "Miranda v. Arizona (1966)"
+    },
+    {
+      "front": "Tinker v. Des Moines (1969)",
+      "back": "Ruled that students do not lose their 1st Amendment rights at school; protected student symbolic speech (wearing armbands)"
+    },
+    {
+      "front": "Which case ruled that students retain free speech rights in school, including symbolic speech?",
+      "back": "Tinker v. Des Moines (1969)"
+    },
+    {
+      "front": "New York Times Co. v. Sullivan (1964)",
+      "back": "Set the 'actual malice' standard for libel suits by public officials, strengthening freedom of the press"
+    },
+    {
+      "front": "Which case established the 'actual malice' standard for defamation of public officials?",
+      "back": "New York Times Co. v. Sullivan (1964)"
+    },
+    {
+      "front": "New York Times Co. v. United States (1971)",
+      "back": "Ruled against prior restraint, allowing the New York Times to publish the Pentagon Papers (1st Amendment)"
+    },
+    {
+      "front": "Which case allowed publication of the Pentagon Papers, ruling against prior restraint?",
+      "back": "New York Times Co. v. United States (1971)"
+    },
+    {
+      "front": "Roe v. Wade (1973)",
+      "back": "Ruled that the Constitution protects a right to abortion under the right to privacy; later overturned by Dobbs v. Jackson (2022)"
+    },
+    {
+      "front": "Which case ruled that the Constitution protects a right to abortion, later overturned in 2022?",
+      "back": "Roe v. Wade (1973)"
+    },
+    {
+      "front": "United States v. Nixon (1974)",
+      "back": "Ruled that executive privilege is not absolute; the president must comply with subpoenas for evidence in criminal trials"
+    },
+    {
+      "front": "Which case ruled that executive privilege is not absolute and required the president to turn over White House tapes?",
+      "back": "United States v. Nixon (1974)"
+    },
+    {
+      "front": "Regents of the University of California v. Bakke (1978)",
+      "back": "Ruled that racial quotas in college admissions are unconstitutional, but race can be one factor in admissions decisions"
+    },
+    {
+      "front": "Which case ruled that racial quotas in college admissions are unconstitutional but race may be considered as one factor?",
+      "back": "Regents of the University of California v. Bakke (1978)"
+    },
+    {
+      "front": "New Jersey v. T.L.O. (1985)",
+      "back": "Ruled that school officials can search students with 'reasonable suspicion' rather than 'probable cause' (4th Amendment)"
+    },
+    {
+      "front": "Which case established that school officials need only 'reasonable suspicion' to search students?",
+      "back": "New Jersey v. T.L.O. (1985)"
+    },
+    {
+      "front": "Texas v. Johnson (1989)",
+      "back": "Ruled that flag burning is protected symbolic speech under the 1st Amendment"
+    },
+    {
+      "front": "Which case ruled that flag burning is protected speech under the 1st Amendment?",
+      "back": "Texas v. Johnson (1989)"
+    },
+    {
+      "front": "Citizens United v. FEC (2010)",
+      "back": "Ruled that political spending by corporations and unions is protected free speech; struck down limits on independent campaign expenditures"
+    },
+    {
+      "front": "Which case ruled that corporate political spending is protected free speech?",
+      "back": "Citizens United v. FEC (2010)"
+    },
+    {
+      "front": "Obergefell v. Hodges (2015)",
+      "back": "Ruled that same-sex marriage is a constitutional right under the 14th Amendment's Due Process and Equal Protection Clauses"
+    },
+    {
+      "front": "Which case established same-sex marriage as a constitutional right nationwide?",
+      "back": "Obergefell v. Hodges (2015)"
+    },
+    {
+      "front": "Dobbs v. Jackson Women's Health Organization (2022)",
+      "back": "Overturned Roe v. Wade, ruling that the Constitution does not confer a right to abortion; returned the issue to the states"
+    },
+    {
+      "front": "Which 2022 case overturned Roe v. Wade?",
+      "back": "Dobbs v. Jackson Women's Health Organization"
+    },
+    {
+      "front": "What amendment is central to Mapp v. Ohio (search and seizure)?",
+      "back": "4th Amendment"
+    },
+    {
+      "front": "What amendment is central to Gideon v. Wainwright (right to counsel)?",
+      "back": "6th Amendment"
+    },
+    {
+      "front": "What amendment is central to Miranda v. Arizona (rights during interrogation)?",
+      "back": "5th Amendment (self-incrimination) and 6th Amendment (right to counsel)"
+    },
+    {
+      "front": "What amendment is central to Engel v. Vitale (school prayer)?",
+      "back": "1st Amendment (Establishment Clause)"
+    },
+    {
+      "front": "What amendment is central to Tinker v. Des Moines (student speech)?",
+      "back": "1st Amendment (Free Speech)"
+    },
+    {
+      "front": "What case overturned Plessy v. Ferguson?",
+      "back": "Brown v. Board of Education (1954)"
+    }
+  ]
+}
