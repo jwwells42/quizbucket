@@ -1,0 +1,272 @@
+{
+  "id": "philosophy",
+  "title": "Philosophy: Thinkers & Schools",
+  "description": "Major philosophers and philosophical schools of thought",
+  "levels": [
+    "5/6",
+    "7-9",
+    "9-12"
+  ],
+  "cards": [
+    {
+      "front": "Socrates — known for?",
+      "back": "Greek philosopher known for the Socratic method of questioning"
+    },
+    {
+      "front": "Which philosopher was sentenced to death by drinking hemlock in Athens?",
+      "back": "Socrates"
+    },
+    {
+      "front": "Plato — known for?",
+      "back": "Greek philosopher, student of Socrates, founded the Academy in Athens"
+    },
+    {
+      "front": "Which philosopher wrote The Republic and founded the Academy?",
+      "back": "Plato"
+    },
+    {
+      "front": "Aristotle — known for?",
+      "back": "Greek philosopher, student of Plato, tutored Alexander the Great, wrote on logic, ethics, and science"
+    },
+    {
+      "front": "Which philosopher tutored Alexander the Great and wrote Nicomachean Ethics?",
+      "back": "Aristotle"
+    },
+    {
+      "front": "Immanuel Kant — known for?",
+      "back": "German philosopher who wrote the Critique of Pure Reason and developed the categorical imperative"
+    },
+    {
+      "front": "Which philosopher developed the categorical imperative as a test for moral actions?",
+      "back": "Immanuel Kant"
+    },
+    {
+      "front": "René Descartes — known for?",
+      "back": "French philosopher and mathematician known for \"I think, therefore I am\" (Cogito, ergo sum)"
+    },
+    {
+      "front": "Which philosopher said \"I think, therefore I am\"?",
+      "back": "René Descartes"
+    },
+    {
+      "front": "Friedrich Nietzsche — known for?",
+      "back": "German philosopher who wrote Thus Spoke Zarathustra and declared \"God is dead\""
+    },
+    {
+      "front": "Which philosopher wrote Thus Spoke Zarathustra and coined the concept of the Übermensch?",
+      "back": "Friedrich Nietzsche"
+    },
+    {
+      "front": "John Locke — known for?",
+      "back": "English philosopher who argued the mind is a tabula rasa (blank slate) and championed natural rights"
+    },
+    {
+      "front": "Which philosopher described the mind as a tabula rasa (blank slate)?",
+      "back": "John Locke"
+    },
+    {
+      "front": "Thomas Hobbes — known for?",
+      "back": "English philosopher who wrote Leviathan and described life without government as \"solitary, poor, nasty, brutish, and short\""
+    },
+    {
+      "front": "Which philosopher wrote Leviathan and argued for a strong central authority?",
+      "back": "Thomas Hobbes"
+    },
+    {
+      "front": "Jean-Jacques Rousseau — known for?",
+      "back": "Genevan philosopher who wrote The Social Contract and argued people are naturally good but corrupted by society"
+    },
+    {
+      "front": "Which philosopher wrote The Social Contract and believed humans are born free but \"everywhere in chains\"?",
+      "back": "Jean-Jacques Rousseau"
+    },
+    {
+      "front": "Voltaire — known for?",
+      "back": "French Enlightenment writer and philosopher who championed freedom of speech, religion, and separation of church and state"
+    },
+    {
+      "front": "Which Enlightenment philosopher wrote Candide and championed freedom of speech?",
+      "back": "Voltaire"
+    },
+    {
+      "front": "Confucius — known for?",
+      "back": "Chinese philosopher who emphasized filial piety, ritual, and moral virtue in the Analects"
+    },
+    {
+      "front": "Which Chinese philosopher taught about filial piety and proper conduct in the Analects?",
+      "back": "Confucius"
+    },
+    {
+      "front": "Laozi (Lao Tzu) — known for?",
+      "back": "Chinese philosopher traditionally credited as the founder of Taoism and author of the Tao Te Ching"
+    },
+    {
+      "front": "Which philosopher is credited as the founder of Taoism?",
+      "back": "Laozi (Lao Tzu)"
+    },
+    {
+      "front": "Karl Marx — known for?",
+      "back": "German philosopher who co-wrote The Communist Manifesto and developed theories of class struggle and historical materialism"
+    },
+    {
+      "front": "Which philosopher co-wrote The Communist Manifesto with Friedrich Engels?",
+      "back": "Karl Marx"
+    },
+    {
+      "front": "John Stuart Mill — known for?",
+      "back": "English philosopher who developed utilitarianism and wrote On Liberty"
+    },
+    {
+      "front": "Which philosopher wrote On Liberty and is the leading figure of utilitarianism?",
+      "back": "John Stuart Mill"
+    },
+    {
+      "front": "David Hume — known for?",
+      "back": "Scottish philosopher and key figure of empiricism who argued knowledge comes from sensory experience"
+    },
+    {
+      "front": "Which Scottish philosopher was a leading figure of empiricism and skepticism?",
+      "back": "David Hume"
+    },
+    {
+      "front": "Søren Kierkegaard — known for?",
+      "back": "Danish philosopher considered the father of existentialism"
+    },
+    {
+      "front": "Which philosopher is considered the father of existentialism?",
+      "back": "Søren Kierkegaard"
+    },
+    {
+      "front": "Jean-Paul Sartre — known for?",
+      "back": "French existentialist philosopher who wrote Being and Nothingness and argued \"existence precedes essence\""
+    },
+    {
+      "front": "Which philosopher wrote Being and Nothingness and argued \"existence precedes essence\"?",
+      "back": "Jean-Paul Sartre"
+    },
+    {
+      "front": "Simone de Beauvoir — known for?",
+      "back": "French existentialist philosopher and feminist who wrote The Second Sex"
+    },
+    {
+      "front": "Which philosopher wrote The Second Sex, a foundational text of modern feminism?",
+      "back": "Simone de Beauvoir"
+    },
+    {
+      "front": "Stoicism — what is it?",
+      "back": "Ancient Greek school teaching virtue, self-control, and acceptance of what one cannot change; founded by Zeno of Citium"
+    },
+    {
+      "front": "Which school of philosophy teaches virtue through self-control and acceptance of fate?",
+      "back": "Stoicism"
+    },
+    {
+      "front": "Epicureanism — what is it?",
+      "back": "Ancient Greek school teaching that pleasure (especially tranquility) is the highest good; founded by Epicurus"
+    },
+    {
+      "front": "Which school of philosophy teaches that pleasure and the absence of pain are the highest good?",
+      "back": "Epicureanism"
+    },
+    {
+      "front": "Existentialism — what is it?",
+      "back": "Philosophical movement emphasizing individual freedom, choice, and the search for meaning in an indifferent universe"
+    },
+    {
+      "front": "Which philosophical movement holds that existence precedes essence and emphasizes individual freedom?",
+      "back": "Existentialism"
+    },
+    {
+      "front": "Utilitarianism — what is it?",
+      "back": "Ethical theory that the best action is the one producing the greatest good for the greatest number; developed by Jeremy Bentham and John Stuart Mill"
+    },
+    {
+      "front": "Which ethical theory judges actions by whether they produce the greatest good for the greatest number?",
+      "back": "Utilitarianism"
+    },
+    {
+      "front": "Rationalism — what is it?",
+      "back": "Philosophical view that reason, rather than sensory experience, is the primary source of knowledge; associated with Descartes, Spinoza, and Leibniz"
+    },
+    {
+      "front": "Which philosophical view holds that reason is the primary source of knowledge?",
+      "back": "Rationalism"
+    },
+    {
+      "front": "Empiricism — what is it?",
+      "back": "Philosophical view that knowledge comes primarily from sensory experience; associated with Locke, Hume, and Berkeley"
+    },
+    {
+      "front": "Which philosophical view holds that knowledge comes primarily from sensory experience?",
+      "back": "Empiricism"
+    },
+    {
+      "front": "Nihilism — what is it?",
+      "back": "Philosophical view that life lacks objective meaning, purpose, or intrinsic value; often associated with Nietzsche"
+    },
+    {
+      "front": "Which philosophical view holds that life lacks objective meaning or purpose?",
+      "back": "Nihilism"
+    },
+    {
+      "front": "Pragmatism — what is it?",
+      "back": "American philosophical tradition that evaluates ideas by their practical consequences; developed by William James and Charles Sanders Peirce"
+    },
+    {
+      "front": "Which American philosophical tradition judges ideas by their practical consequences?",
+      "back": "Pragmatism"
+    },
+    {
+      "front": "Social Contract theory — what is it?",
+      "back": "Theory that people agree to give up some freedoms to a government in exchange for protection of their remaining rights; associated with Hobbes, Locke, and Rousseau"
+    },
+    {
+      "front": "Who wrote The Republic?",
+      "back": "Plato"
+    },
+    {
+      "front": "Who wrote Nicomachean Ethics?",
+      "back": "Aristotle"
+    },
+    {
+      "front": "Who wrote Critique of Pure Reason?",
+      "back": "Immanuel Kant"
+    },
+    {
+      "front": "Who wrote Meditations on First Philosophy?",
+      "back": "René Descartes"
+    },
+    {
+      "front": "Who wrote Leviathan?",
+      "back": "Thomas Hobbes"
+    },
+    {
+      "front": "Who wrote The Communist Manifesto?",
+      "back": "Karl Marx (with Friedrich Engels)"
+    },
+    {
+      "front": "Who wrote Thus Spoke Zarathustra?",
+      "back": "Friedrich Nietzsche"
+    },
+    {
+      "front": "Who wrote Being and Nothingness?",
+      "back": "Jean-Paul Sartre"
+    },
+    {
+      "front": "What is Plato's Allegory of the Cave?",
+      "back": "A thought experiment in The Republic illustrating how people mistake shadows for reality until they see the true world outside the cave"
+    },
+    {
+      "front": "What is the Socratic method?",
+      "back": "A form of inquiry using a series of questions to stimulate critical thinking and draw out underlying assumptions"
+    },
+    {
+      "front": "What is Kant's categorical imperative?",
+      "back": "A moral principle stating you should act only according to rules you could will to be universal laws for everyone"
+    },
+    {
+      "front": "\"Cogito, ergo sum\" — what does it mean and who said it?",
+      "back": "\"I think, therefore I am\" — René Descartes, establishing that the act of thinking proves one's existence"
+    }
+  ]
+}

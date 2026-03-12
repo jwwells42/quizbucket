@@ -193,7 +193,8 @@
         "question": "Who was the 46th president?",
         "answer": "Joe Biden"
       }
-    ]
+    ],
+    "category": "History"
   },
   {
     "id": "element-symbols",
@@ -677,7 +678,8 @@
         "question": "What element has the symbol Og?",
         "answer": "Oganesson"
       }
-    ]
+    ],
+    "category": "Science"
   },
   {
     "id": "state-capitals",
@@ -889,7 +891,8 @@
         "question": "Capital of Wyoming?",
         "answer": "Cheyenne"
       }
-    ]
+    ],
+    "category": "Geography"
   },
   {
     "id": "greek-roman-gods",
@@ -1081,7 +1084,8 @@
         "question": "Who is the hero of Homer's Odyssey?",
         "answer": "Odysseus"
       }
-    ]
+    ],
+    "category": "Mythology"
   },
   {
     "id": "authors-works",
@@ -1293,7 +1297,8 @@
         "question": "Who wrote Invisible Man?",
         "answer": "Ralph Ellison"
       }
-    ]
+    ],
+    "category": "Literature"
   },
   {
     "id": "math-vocabulary",
@@ -1445,7 +1450,8 @@
         "question": "What is the distance of a number from zero on a number line?",
         "answer": "Absolute value"
       }
-    ]
+    ],
+    "category": "Math"
   },
   {
     "id": "world-capitals",
@@ -1749,7 +1755,8 @@
         "question": "Capital of Vietnam?",
         "answer": "Hanoi"
       }
-    ]
+    ],
+    "category": "Geography"
   },
   {
     "id": "science-terms",
@@ -1881,7 +1888,8 @@
         "question": "The genetic makeup of an organism?",
         "answer": "Genotype"
       }
-    ]
+    ],
+    "category": "Science"
   },
   {
     "id": "world-history",
@@ -2005,7 +2013,8 @@
         "question": "What year was JFK assassinated?",
         "answer": "1963"
       }
-    ]
+    ],
+    "category": "History"
   },
   {
     "id": "art-music",
@@ -2137,7 +2146,8 @@
         "question": "What art movement used geometric shapes (Picasso, Braque)?",
         "answer": "Cubism"
       }
-    ]
+    ],
+    "category": "Fine Arts"
   },
   {
     "id": "word-roots",
@@ -2289,7 +2299,8 @@
         "question": "What does the root 'graph' mean?",
         "answer": "Write or record"
       }
-    ]
+    ],
+    "category": "Vocabulary"
   },
   {
     "id": "civics",
@@ -2401,7 +2412,8 @@
         "question": "What year was the Constitution written?",
         "answer": "1787"
       }
-    ]
+    ],
+    "category": "Social Science"
   },
   {
     "id": "shakespeare",
@@ -2513,7 +2525,8 @@
         "question": "Who is Hamlet's loyal best friend?",
         "answer": "Horatio"
       }
-    ]
+    ],
+    "category": "Literature"
   },
   {
     "id": "human-body",
@@ -2625,7 +2638,8 @@
         "question": "What is a nerve cell called?",
         "answer": "Neuron"
       }
-    ]
+    ],
+    "category": "Science"
   },
   {
     "id": "grammar-literary-devices",
@@ -2737,7 +2751,8 @@
         "question": "What is a mild word used in place of something harsh or blunt?",
         "answer": "Euphemism"
       }
-    ]
+    ],
+    "category": "Literature"
   },
   {
     "id": "geography-physical",
@@ -2849,7 +2864,8 @@
         "question": "What is the world's largest coral reef system?",
         "answer": "Great Barrier Reef"
       }
-    ]
+    ],
+    "category": "Geography"
   },
   {
     "id": "economics",
@@ -2961,7 +2977,8 @@
         "question": "What is trade between countries without tariffs or restrictions?",
         "answer": "Free trade"
       }
-    ]
+    ],
+    "category": "Social Science"
   },
   {
     "id": "music-theory",
@@ -3073,7 +3090,8 @@
         "question": "What does legato mean?",
         "answer": "Notes played smoothly and connected"
       }
-    ]
+    ],
+    "category": "Fine Arts"
   },
   {
     "id": "supreme-court",
@@ -3184,7 +3202,8 @@
         "question": "Brown v. Board of Education overturned what earlier Supreme Court decision?",
         "answer": "Plessy v. Ferguson"
       }
-    ]
+    ],
+    "category": "History"
   },
   {
     "id": "american-literature",
@@ -3296,7 +3315,8 @@
         "question": "Who wrote East of Eden?",
         "answer": "John Steinbeck"
       }
-    ]
+    ],
+    "category": "Literature"
   },
   {
     "id": "famous-paintings",
@@ -3408,7 +3428,8 @@
         "question": "Who painted The Two Fridas?",
         "answer": "Frida Kahlo"
       }
-    ]
+    ],
+    "category": "Fine Arts"
   },
   {
     "id": "classical-composers",
@@ -3520,7 +3541,8 @@
         "question": "Name the orchestral suites Handel composed for a royal party on the River Thames.",
         "answer": "Water Music"
       }
-    ]
+    ],
+    "category": "Fine Arts"
   },
   {
     "id": "norse-mythology",
@@ -3632,7 +3654,8 @@
         "question": "Which Norse figure is the goddess of skiing, winter, and mountains?",
         "answer": "Skadi"
       }
-    ]
+    ],
+    "category": "Mythology"
   },
   {
     "id": "famous-battles",
@@ -3744,7 +3767,8 @@
         "question": "What 1916 battle was the longest single battle of World War I, lasting ten months?",
         "answer": "Battle of Verdun"
       }
-    ]
+    ],
+    "category": "History"
   },
   {
     "id": "astronomy",
@@ -3856,7 +3880,8 @@
         "question": "What is the prevailing theory for the origin of the universe?",
         "answer": "Big Bang"
       }
-    ]
+    ],
+    "category": "Science"
   },
   {
     "id": "world-religions",
@@ -3967,6 +3992,907 @@
       {
         "question": "What eight-day Jewish festival commemorates the rededication of the Second Temple?",
         "answer": "Hanukkah"
+      }
+    ],
+    "category": "Religion"
+  },
+  {
+    "id": "philosophy",
+    "title": "Philosophy: Thinkers & Schools",
+    "levels": [
+      "5/6",
+      "7-9",
+      "9-12"
+    ],
+    "category": "Social Science",
+    "questions": [
+      {
+        "question": "Which Greek philosopher is known for the Socratic method?",
+        "answer": "Socrates"
+      },
+      {
+        "question": "Who was Plato's teacher?",
+        "answer": "Socrates"
+      },
+      {
+        "question": "Who wrote The Republic?",
+        "answer": "Plato"
+      },
+      {
+        "question": "Which philosopher tutored Alexander the Great?",
+        "answer": "Aristotle"
+      },
+      {
+        "question": "Who wrote Nicomachean Ethics?",
+        "answer": "Aristotle"
+      },
+      {
+        "question": "Which philosopher said 'I think, therefore I am'?",
+        "answer": "Rene Descartes"
+      },
+      {
+        "question": "Who wrote the Critique of Pure Reason?",
+        "answer": "Immanuel Kant"
+      },
+      {
+        "question": "Which philosopher wrote Leviathan?",
+        "answer": "Thomas Hobbes"
+      },
+      {
+        "question": "Who described the mind as a 'blank slate' or tabula rasa?",
+        "answer": "John Locke"
+      },
+      {
+        "question": "Which philosopher wrote The Social Contract?",
+        "answer": "Jean-Jacques Rousseau"
+      },
+      {
+        "question": "Who wrote Thus Spoke Zarathustra?",
+        "answer": "Friedrich Nietzsche"
+      },
+      {
+        "question": "Which Chinese philosopher is credited as the founder of Taoism?",
+        "answer": "Laozi"
+      },
+      {
+        "question": "Who co-wrote The Communist Manifesto with Friedrich Engels?",
+        "answer": "Karl Marx"
+      },
+      {
+        "question": "Which philosopher wrote On Liberty and championed utilitarianism?",
+        "answer": "John Stuart Mill"
+      },
+      {
+        "question": "Who is considered the father of existentialism?",
+        "answer": "Soren Kierkegaard"
+      },
+      {
+        "question": "Which philosopher wrote Being and Nothingness?",
+        "answer": "Jean-Paul Sartre"
+      },
+      {
+        "question": "Who wrote The Second Sex?",
+        "answer": "Simone de Beauvoir"
+      },
+      {
+        "question": "Which Chinese philosopher wrote the Analects?",
+        "answer": "Confucius"
+      },
+      {
+        "question": "What school of philosophy was founded by Zeno of Citium?",
+        "answer": "Stoicism"
+      },
+      {
+        "question": "Which philosophical school was founded by Epicurus?",
+        "answer": "Epicureanism"
+      },
+      {
+        "question": "What ethical theory seeks the greatest good for the greatest number?",
+        "answer": "Utilitarianism"
+      },
+      {
+        "question": "What is the philosophical view that reason is the primary source of knowledge?",
+        "answer": "Rationalism"
+      },
+      {
+        "question": "What is the philosophical view that knowledge comes from sensory experience?",
+        "answer": "Empiricism"
+      },
+      {
+        "question": "Which Enlightenment philosopher wrote Candide?",
+        "answer": "Voltaire"
+      },
+      {
+        "question": "What is the Latin phrase for Descartes' 'I think, therefore I am'?",
+        "answer": "Cogito, ergo sum"
+      }
+    ]
+  },
+  {
+    "id": "psychology",
+    "title": "Psychology: Key Experiments & Figures",
+    "levels": [
+      "7-9",
+      "9-12"
+    ],
+    "category": "Social Science",
+    "questions": [
+      {
+        "question": "What Russian physiologist trained dogs to salivate at the sound of a bell?",
+        "answer": "Ivan Pavlov"
+      },
+      {
+        "question": "What type of conditioning did Pavlov discover through his experiments with dogs?",
+        "answer": "Classical conditioning"
+      },
+      {
+        "question": "What psychologist invented the operant conditioning chamber?",
+        "answer": "B.F. Skinner"
+      },
+      {
+        "question": "Who founded psychoanalysis and proposed the id, ego, and superego?",
+        "answer": "Sigmund Freud"
+      },
+      {
+        "question": "In Freud's model, what part of the psyche represents primal desires?",
+        "answer": "The id"
+      },
+      {
+        "question": "What psychologist proposed the collective unconscious and archetypes?",
+        "answer": "Carl Jung"
+      },
+      {
+        "question": "What 1961 experiment tested whether people would obey authority figures?",
+        "answer": "The Milgram experiment"
+      },
+      {
+        "question": "Who conducted the Stanford prison experiment in 1971?",
+        "answer": "Philip Zimbardo"
+      },
+      {
+        "question": "What psychologist proposed four stages of cognitive development?",
+        "answer": "Jean Piaget"
+      },
+      {
+        "question": "What is the name of Abraham Maslow's famous pyramid model?",
+        "answer": "Hierarchy of needs"
+      },
+      {
+        "question": "What is the highest level of Maslow's hierarchy of needs?",
+        "answer": "Self-actualization"
+      },
+      {
+        "question": "Who proposed eight psychosocial stages of development?",
+        "answer": "Erik Erikson"
+      },
+      {
+        "question": "What psychologist is considered the father of behaviorism?",
+        "answer": "John B. Watson"
+      },
+      {
+        "question": "What experiment conditioned a baby to fear a white rat?",
+        "answer": "The Little Albert experiment"
+      },
+      {
+        "question": "What psychologist conducted the Bobo doll experiment?",
+        "answer": "Albert Bandura"
+      },
+      {
+        "question": "What theory states that people learn behaviors by observing others?",
+        "answer": "Social learning theory"
+      },
+      {
+        "question": "What psychologist studied attachment using infant monkeys?",
+        "answer": "Harry Harlow"
+      },
+      {
+        "question": "What psychologist studied conformity using line-length comparisons?",
+        "answer": "Solomon Asch"
+      },
+      {
+        "question": "What projective personality test uses inkblot images?",
+        "answer": "The Rorschach test"
+      },
+      {
+        "question": "Who established the first psychology laboratory in 1879?",
+        "answer": "Wilhelm Wundt"
+      },
+      {
+        "question": "What American psychologist founded the school of functionalism?",
+        "answer": "William James"
+      },
+      {
+        "question": "What term describes mental discomfort from holding contradictory beliefs?",
+        "answer": "Cognitive dissonance"
+      },
+      {
+        "question": "What bias is the tendency to seek information confirming preexisting beliefs?",
+        "answer": "Confirmation bias"
+      },
+      {
+        "question": "What effect describes people changing behavior because they know they are observed?",
+        "answer": "The Hawthorne effect"
+      },
+      {
+        "question": "How many days did the Stanford prison experiment last?",
+        "answer": "Six days"
+      }
+    ]
+  },
+  {
+    "id": "british-monarchs",
+    "title": "British Monarchs",
+    "levels": [
+      "5/6",
+      "7-9",
+      "9-12"
+    ],
+    "category": "History",
+    "questions": [
+      {
+        "question": "Who won the Battle of Hastings in 1066?",
+        "answer": "William the Conqueror"
+      },
+      {
+        "question": "Which king was forced to sign the Magna Carta in 1215?",
+        "answer": "King John"
+      },
+      {
+        "question": "Which English king won the Battle of Agincourt in 1415?",
+        "answer": "Henry V"
+      },
+      {
+        "question": "How many wives did Henry VIII have?",
+        "answer": "Six"
+      },
+      {
+        "question": "Who was Henry VIII's first wife?",
+        "answer": "Catherine of Aragon"
+      },
+      {
+        "question": "Which wife of Henry VIII was the mother of Elizabeth I?",
+        "answer": "Anne Boleyn"
+      },
+      {
+        "question": "Which king established the Church of England?",
+        "answer": "Henry VIII"
+      },
+      {
+        "question": "Which English queen was nicknamed 'Bloody Mary'?",
+        "answer": "Mary I"
+      },
+      {
+        "question": "Which monarch defeated the Spanish Armada in 1588?",
+        "answer": "Elizabeth I"
+      },
+      {
+        "question": "Which king authorized the King James Bible in 1611?",
+        "answer": "James I"
+      },
+      {
+        "question": "What was the 1605 plot to blow up Parliament called?",
+        "answer": "The Gunpowder Plot"
+      },
+      {
+        "question": "Which king was executed after the English Civil War in 1649?",
+        "answer": "Charles I"
+      },
+      {
+        "question": "Who led the Parliamentary forces against Charles I?",
+        "answer": "Oliver Cromwell"
+      },
+      {
+        "question": "Which king was restored to the throne in 1660?",
+        "answer": "Charles II"
+      },
+      {
+        "question": "What was the bloodless overthrow of James II in 1688 called?",
+        "answer": "The Glorious Revolution"
+      },
+      {
+        "question": "Which queen was the last Stuart monarch?",
+        "answer": "Queen Anne"
+      },
+      {
+        "question": "Which British king ruled during the American Revolution?",
+        "answer": "George III"
+      },
+      {
+        "question": "Which queen reigned from 1837 to 1901?",
+        "answer": "Queen Victoria"
+      },
+      {
+        "question": "Which king changed the royal family's name to Windsor during WWI?",
+        "answer": "George V"
+      },
+      {
+        "question": "Why did Edward VIII abdicate in 1936?",
+        "answer": "To marry Wallis Simpson"
+      },
+      {
+        "question": "Which king led Britain through World War II?",
+        "answer": "George VI"
+      },
+      {
+        "question": "Who is the longest-reigning British monarch at 70 years?",
+        "answer": "Elizabeth II"
+      },
+      {
+        "question": "Who became king of the United Kingdom in 2022?",
+        "answer": "Charles III"
+      },
+      {
+        "question": "Which wife of Henry VIII was the mother of Edward VI?",
+        "answer": "Jane Seymour"
+      },
+      {
+        "question": "Which two monarchs came to power in the Glorious Revolution?",
+        "answer": "William III and Mary II"
+      }
+    ]
+  },
+  {
+    "id": "explorers",
+    "title": "Explorers & Their Voyages",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ],
+    "category": "History",
+    "questions": [
+      {
+        "question": "Who sailed for Spain in 1492 and reached the Americas?",
+        "answer": "Christopher Columbus"
+      },
+      {
+        "question": "Who led the first expedition to circumnavigate the globe?",
+        "answer": "Ferdinand Magellan"
+      },
+      {
+        "question": "Which Spanish conquistador conquered the Aztec Empire?",
+        "answer": "Hernan Cortes"
+      },
+      {
+        "question": "Which Spanish conquistador conquered the Inca Empire?",
+        "answer": "Francisco Pizarro"
+      },
+      {
+        "question": "Who led the Corps of Discovery expedition from 1804 to 1806?",
+        "answer": "Lewis and Clark"
+      },
+      {
+        "question": "Who was the Shoshone woman who guided Lewis and Clark?",
+        "answer": "Sacagawea"
+      },
+      {
+        "question": "Who was the first Englishman to circumnavigate the globe?",
+        "answer": "Sir Francis Drake"
+      },
+      {
+        "question": "Which Portuguese explorer found the first sea route to India?",
+        "answer": "Vasco da Gama"
+      },
+      {
+        "question": "Which Chinese admiral commanded treasure fleet voyages in the 1400s?",
+        "answer": "Zheng He"
+      },
+      {
+        "question": "Which Venetian merchant traveled the Silk Road and wrote about China?",
+        "answer": "Marco Polo"
+      },
+      {
+        "question": "Which explorer gave his name to a river and bay in New York?",
+        "answer": "Henry Hudson"
+      },
+      {
+        "question": "Who was the first European to explore Florida in 1513?",
+        "answer": "Juan Ponce de Leon"
+      },
+      {
+        "question": "Which Spanish explorer first documented the Mississippi River?",
+        "answer": "Hernando de Soto"
+      },
+      {
+        "question": "Who explored Newfoundland for England in 1497?",
+        "answer": "John Cabot"
+      },
+      {
+        "question": "Which explorer are the Americas named after?",
+        "answer": "Amerigo Vespucci"
+      },
+      {
+        "question": "Who was the first European to see the Pacific Ocean from the Americas?",
+        "answer": "Vasco Nunez de Balboa"
+      },
+      {
+        "question": "Which British explorer mapped Australia, New Zealand, and Hawaii?",
+        "answer": "Captain James Cook"
+      },
+      {
+        "question": "Which Norse explorer reached North America around 1000 AD?",
+        "answer": "Leif Erikson"
+      },
+      {
+        "question": "Who was the first person to reach the South Pole in 1911?",
+        "answer": "Roald Amundsen"
+      },
+      {
+        "question": "Which American explorer is credited with reaching the North Pole in 1909?",
+        "answer": "Robert Peary"
+      },
+      {
+        "question": "Who were the first two people to summit Mount Everest in 1953?",
+        "answer": "Sir Edmund Hillary and Tenzing Norgay"
+      },
+      {
+        "question": "Which country sponsored Columbus's voyage in 1492?",
+        "answer": "Spain"
+      },
+      {
+        "question": "What name did Leif Erikson give to the land he found in North America?",
+        "answer": "Vinland"
+      },
+      {
+        "question": "Which president commissioned the Lewis and Clark expedition?",
+        "answer": "Thomas Jefferson"
+      },
+      {
+        "question": "What body of water did Magellan name, meaning 'peaceful sea'?",
+        "answer": "The Pacific Ocean"
+      }
+    ]
+  },
+  {
+    "id": "egyptian-mythology",
+    "title": "Egyptian Mythology",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ],
+    "category": "Mythology",
+    "questions": [
+      {
+        "question": "What is the name of the Egyptian sun god and king of the gods?",
+        "answer": "Ra"
+      },
+      {
+        "question": "Which Egyptian god rules the underworld and judges the dead?",
+        "answer": "Osiris"
+      },
+      {
+        "question": "Which Egyptian goddess of magic reassembled her husband Osiris?",
+        "answer": "Isis"
+      },
+      {
+        "question": "Which falcon-headed Egyptian god is the son of Osiris and Isis?",
+        "answer": "Horus"
+      },
+      {
+        "question": "Which jackal-headed god oversaw mummification?",
+        "answer": "Anubis"
+      },
+      {
+        "question": "Which ibis-headed Egyptian god is credited with inventing writing?",
+        "answer": "Thoth"
+      },
+      {
+        "question": "Which Egyptian god of chaos murdered his brother Osiris?",
+        "answer": "Set"
+      },
+      {
+        "question": "Which Egyptian goddess is depicted as a cat?",
+        "answer": "Bastet"
+      },
+      {
+        "question": "Which Egyptian goddess of love is shown with cow horns and a sun disk?",
+        "answer": "Hathor"
+      },
+      {
+        "question": "Which crocodile-headed Egyptian god is associated with the Nile?",
+        "answer": "Sobek"
+      },
+      {
+        "question": "Which lion-headed Egyptian goddess represents war?",
+        "answer": "Sekhmet"
+      },
+      {
+        "question": "Whose feather was used to weigh the hearts of the dead?",
+        "answer": "Ma'at"
+      },
+      {
+        "question": "What ancient Egyptian text contains spells to guide the dead?",
+        "answer": "The Book of the Dead"
+      },
+      {
+        "question": "What creature devoured the hearts of the unworthy dead?",
+        "answer": "Ammit"
+      },
+      {
+        "question": "What cross-shaped Egyptian symbol with a loop represents eternal life?",
+        "answer": "The ankh"
+      },
+      {
+        "question": "What Egyptian symbol represents protection and is named for a falcon-headed god?",
+        "answer": "The Eye of Horus"
+      },
+      {
+        "question": "What beetle symbolizes rebirth and the rising sun in Egyptian mythology?",
+        "answer": "The scarab beetle"
+      },
+      {
+        "question": "What jars stored organs during mummification?",
+        "answer": "Canopic jars"
+      },
+      {
+        "question": "Which Egyptian goddess personifies the sky?",
+        "answer": "Nut"
+      },
+      {
+        "question": "Which Egyptian god personifies the earth?",
+        "answer": "Geb"
+      },
+      {
+        "question": "Which ram-headed Egyptian god shaped humans on a potter's wheel?",
+        "answer": "Khnum"
+      },
+      {
+        "question": "What monument has the body of a lion and the head of a human?",
+        "answer": "The Great Sphinx of Giza"
+      },
+      {
+        "question": "What is the name of the Egyptian underworld?",
+        "answer": "Duat"
+      },
+      {
+        "question": "Which Egyptian god of creation was the patron deity of Memphis?",
+        "answer": "Ptah"
+      },
+      {
+        "question": "Which god was the pharaoh considered the living embodiment of?",
+        "answer": "Horus"
+      }
+    ]
+  },
+  {
+    "id": "geology",
+    "title": "Geology & Earth Science",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ],
+    "category": "Science",
+    "questions": [
+      {
+        "question": "What are the three main types of rock?",
+        "answer": "Igneous, sedimentary, and metamorphic"
+      },
+      {
+        "question": "What type of rock is formed from cooled magma or lava?",
+        "answer": "Igneous"
+      },
+      {
+        "question": "What type of rock is formed from compressed layers of sediment?",
+        "answer": "Sedimentary"
+      },
+      {
+        "question": "What type of rock is changed by heat and pressure?",
+        "answer": "Metamorphic"
+      },
+      {
+        "question": "What metamorphic rock is formed from limestone?",
+        "answer": "Marble"
+      },
+      {
+        "question": "What metamorphic rock is formed from shale?",
+        "answer": "Slate"
+      },
+      {
+        "question": "What igneous rock is known as volcanic glass?",
+        "answer": "Obsidian"
+      },
+      {
+        "question": "What igneous rock is light enough to float on water?",
+        "answer": "Pumice"
+      },
+      {
+        "question": "What mineral is number 1 on the Mohs hardness scale?",
+        "answer": "Talc"
+      },
+      {
+        "question": "What mineral is number 10 on the Mohs hardness scale?",
+        "answer": "Diamond"
+      },
+      {
+        "question": "What mineral is known as fool's gold?",
+        "answer": "Pyrite"
+      },
+      {
+        "question": "What is the mineral name for rock salt?",
+        "answer": "Halite"
+      },
+      {
+        "question": "What is the most abundant mineral group in Earth's crust?",
+        "answer": "Feldspar"
+      },
+      {
+        "question": "What are Earth's four layers from surface to center?",
+        "answer": "Crust, mantle, outer core, inner core"
+      },
+      {
+        "question": "What is Earth's thickest layer?",
+        "answer": "The mantle"
+      },
+      {
+        "question": "What supercontinent existed about 250 million years ago?",
+        "answer": "Pangaea"
+      },
+      {
+        "question": "What type of plate boundary occurs when plates move toward each other?",
+        "answer": "Convergent boundary"
+      },
+      {
+        "question": "What is the Ring of Fire?",
+        "answer": "A horseshoe-shaped zone of volcanoes around the Pacific Ocean"
+      },
+      {
+        "question": "What is the process when one plate slides beneath another?",
+        "answer": "Subduction"
+      },
+      {
+        "question": "What is magma called after it reaches the surface?",
+        "answer": "Lava"
+      },
+      {
+        "question": "What rapid diversification occurred about 541 million years ago?",
+        "answer": "Cambrian Explosion"
+      },
+      {
+        "question": "What extinction 66 million years ago killed the non-avian dinosaurs?",
+        "answer": "Cretaceous-Paleogene extinction"
+      },
+      {
+        "question": "What scale measures earthquake magnitude?",
+        "answer": "Richter scale"
+      },
+      {
+        "question": "What metamorphic rock is formed from sandstone?",
+        "answer": "Quartzite"
+      },
+      {
+        "question": "Which layer of the Earth generates its magnetic field?",
+        "answer": "The outer core"
+      }
+    ]
+  },
+  {
+    "id": "civil-rights",
+    "title": "Civil Rights Movement",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ],
+    "category": "History",
+    "questions": [
+      {
+        "question": "Who delivered the 'I Have a Dream' speech?",
+        "answer": "Martin Luther King Jr."
+      },
+      {
+        "question": "Who refused to give up her bus seat in Montgomery in 1955?",
+        "answer": "Rosa Parks"
+      },
+      {
+        "question": "What Supreme Court case declared school segregation unconstitutional?",
+        "answer": "Brown v. Board of Education"
+      },
+      {
+        "question": "Who was the first Black justice on the Supreme Court?",
+        "answer": "Thurgood Marshall"
+      },
+      {
+        "question": "What year was the Civil Rights Act signed?",
+        "answer": "1964"
+      },
+      {
+        "question": "What year was the Voting Rights Act signed?",
+        "answer": "1965"
+      },
+      {
+        "question": "Which amendment abolished slavery?",
+        "answer": "13th Amendment"
+      },
+      {
+        "question": "Which amendment guarantees equal protection under the law?",
+        "answer": "14th Amendment"
+      },
+      {
+        "question": "Which amendment prohibited denying the vote based on race?",
+        "answer": "15th Amendment"
+      },
+      {
+        "question": "What organization did W.E.B. Du Bois co-found in 1909?",
+        "answer": "NAACP"
+      },
+      {
+        "question": "What does SCLC stand for?",
+        "answer": "Southern Christian Leadership Conference"
+      },
+      {
+        "question": "What does SNCC stand for?",
+        "answer": "Student Nonviolent Coordinating Committee"
+      },
+      {
+        "question": "What organization organized the Freedom Rides in 1961?",
+        "answer": "CORE"
+      },
+      {
+        "question": "What was the 381-day bus protest in Alabama called?",
+        "answer": "Montgomery Bus Boycott"
+      },
+      {
+        "question": "What were the nine Black students who integrated Central High called?",
+        "answer": "Little Rock Nine"
+      },
+      {
+        "question": "In what city did students stage a sit-in at Woolworth's in 1960?",
+        "answer": "Greensboro, North Carolina"
+      },
+      {
+        "question": "What were state and local segregation laws in the South called?",
+        "answer": "Jim Crow laws"
+      },
+      {
+        "question": "Who wrote the Letter from Birmingham Jail?",
+        "answer": "Martin Luther King Jr."
+      },
+      {
+        "question": "Who popularized the phrase 'Black Power'?",
+        "answer": "Stokely Carmichael"
+      },
+      {
+        "question": "Who was known as the Moses of her people for the Underground Railroad?",
+        "answer": "Harriet Tubman"
+      },
+      {
+        "question": "Who founded the Tuskegee Institute?",
+        "answer": "Booker T. Washington"
+      },
+      {
+        "question": "In what city was MLK assassinated in 1968?",
+        "answer": "Memphis, Tennessee"
+      },
+      {
+        "question": "What 1963 bombing killed four young girls in a Birmingham church?",
+        "answer": "16th Street Baptist Church bombing"
+      },
+      {
+        "question": "What is the name for the Selma march where marchers were attacked on the bridge?",
+        "answer": "Bloody Sunday"
+      },
+      {
+        "question": "Which civil rights leader led Bloody Sunday and became a U.S. congressman?",
+        "answer": "John Lewis"
+      }
+    ]
+  },
+  {
+    "id": "math-formulas",
+    "title": "Math Formulas & Computation",
+    "levels": [
+      "3/4",
+      "5/6",
+      "7-9",
+      "9-12"
+    ],
+    "category": "Math",
+    "questions": [
+      {
+        "question": "What is the formula for the area of a triangle?",
+        "answer": "A = 1/2 x base x height"
+      },
+      {
+        "question": "What is the formula for the area of a circle?",
+        "answer": "A = pi x r squared"
+      },
+      {
+        "question": "What is the formula for the volume of a sphere?",
+        "answer": "V = 4/3 x pi x r cubed"
+      },
+      {
+        "question": "What is the formula for the circumference of a circle?",
+        "answer": "C = 2 x pi x r"
+      },
+      {
+        "question": "In the Pythagorean theorem, a squared plus b squared equals what?",
+        "answer": "c squared"
+      },
+      {
+        "question": "What is the missing number in the Pythagorean triple 5, 12, ___?",
+        "answer": "13"
+      },
+      {
+        "question": "What is sin(30 degrees)?",
+        "answer": "1/2"
+      },
+      {
+        "question": "What is cos(60 degrees)?",
+        "answer": "1/2"
+      },
+      {
+        "question": "What is tan(45 degrees)?",
+        "answer": "1"
+      },
+      {
+        "question": "What does PEMDAS stand for?",
+        "answer": "Parentheses, Exponents, Multiplication, Division, Addition, Subtraction"
+      },
+      {
+        "question": "How many feet are in a mile?",
+        "answer": "5,280"
+      },
+      {
+        "question": "How many cups are in a gallon?",
+        "answer": "16"
+      },
+      {
+        "question": "What is 15 squared?",
+        "answer": "225"
+      },
+      {
+        "question": "What is 7 cubed?",
+        "answer": "343"
+      },
+      {
+        "question": "What is the slope formula given two points?",
+        "answer": "m = (y2 - y1) / (x2 - x1)"
+      },
+      {
+        "question": "What is the quadratic formula?",
+        "answer": "x = (-b +/- sqrt(b^2 - 4ac)) / 2a"
+      },
+      {
+        "question": "How many prime numbers are there under 100?",
+        "answer": "25"
+      },
+      {
+        "question": "What is any nonzero number raised to the power of 0?",
+        "answer": "1"
+      },
+      {
+        "question": "What is the metric prefix for 1,000?",
+        "answer": "Kilo"
+      },
+      {
+        "question": "What is the formula for the volume of a cylinder?",
+        "answer": "V = pi x r squared x height"
+      },
+      {
+        "question": "What is pi to two decimal places?",
+        "answer": "3.14"
+      },
+      {
+        "question": "What is Euler's number e to two decimal places?",
+        "answer": "2.72"
+      },
+      {
+        "question": "When multiplying powers with the same base, what do you do with exponents?",
+        "answer": "Add them"
+      },
+      {
+        "question": "What is the formula for the area of a trapezoid?",
+        "answer": "A = 1/2 x (base1 + base2) x height"
+      },
+      {
+        "question": "What is the combinations formula nCr?",
+        "answer": "n! / (r! x (n - r)!)"
       }
     ]
   }

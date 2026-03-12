@@ -1,0 +1,309 @@
+{
+  "id": "geology",
+  "title": "Geology & Earth Science",
+  "description": "Rocks, minerals, geologic time, and Earth processes",
+  "levels": [
+    "3/4",
+    "5/6",
+    "7-9",
+    "9-12"
+  ],
+  "cards": [
+    {
+      "front": "What are the three main types of rock?",
+      "back": "Igneous, sedimentary, and metamorphic"
+    },
+    {
+      "front": "Igneous rock",
+      "back": "Rock formed from cooled and solidified magma or lava"
+    },
+    {
+      "front": "Rock formed from cooled magma or lava",
+      "back": "Igneous rock"
+    },
+    {
+      "front": "Sedimentary rock",
+      "back": "Rock formed from compressed and cemented layers of sediment"
+    },
+    {
+      "front": "Rock formed from layers of compressed sediment",
+      "back": "Sedimentary rock"
+    },
+    {
+      "front": "Metamorphic rock",
+      "back": "Rock that has been changed by heat and pressure from a pre-existing rock"
+    },
+    {
+      "front": "Rock changed by heat and pressure",
+      "back": "Metamorphic rock"
+    },
+    {
+      "front": "Granite",
+      "back": "A coarse-grained intrusive igneous rock (cooled slowly underground)"
+    },
+    {
+      "front": "Basalt",
+      "back": "A fine-grained extrusive igneous rock — the most common rock on Earth's surface"
+    },
+    {
+      "front": "Obsidian",
+      "back": "Volcanic glass formed when lava cools very rapidly"
+    },
+    {
+      "front": "Volcanic glass formed from rapidly cooled lava",
+      "back": "Obsidian"
+    },
+    {
+      "front": "Pumice",
+      "back": "A light, porous igneous rock that can float on water"
+    },
+    {
+      "front": "Igneous rock light enough to float on water",
+      "back": "Pumice"
+    },
+    {
+      "front": "Limestone",
+      "back": "A sedimentary rock made mainly of calcium carbonate, often from marine organisms"
+    },
+    {
+      "front": "Sandstone",
+      "back": "A sedimentary rock formed from cemented sand-sized grains"
+    },
+    {
+      "front": "Marble",
+      "back": "A metamorphic rock formed from limestone subjected to heat and pressure"
+    },
+    {
+      "front": "Metamorphic rock formed from limestone",
+      "back": "Marble"
+    },
+    {
+      "front": "Slate",
+      "back": "A metamorphic rock formed from shale subjected to heat and pressure"
+    },
+    {
+      "front": "Metamorphic rock formed from shale",
+      "back": "Slate"
+    },
+    {
+      "front": "Quartzite",
+      "back": "A hard metamorphic rock formed from sandstone subjected to heat and pressure"
+    },
+    {
+      "front": "Metamorphic rock formed from sandstone",
+      "back": "Quartzite"
+    },
+    {
+      "front": "Mohs hardness scale — 1 (softest)",
+      "back": "Talc"
+    },
+    {
+      "front": "Mohs hardness scale — 2",
+      "back": "Gypsum"
+    },
+    {
+      "front": "Mohs hardness scale — 3",
+      "back": "Calcite"
+    },
+    {
+      "front": "Mohs hardness scale — 4",
+      "back": "Fluorite"
+    },
+    {
+      "front": "Mohs hardness scale — 5",
+      "back": "Apatite"
+    },
+    {
+      "front": "Mohs hardness scale — 6",
+      "back": "Orthoclase (feldspar)"
+    },
+    {
+      "front": "Mohs hardness scale — 7",
+      "back": "Quartz"
+    },
+    {
+      "front": "Mohs hardness scale — 8",
+      "back": "Topaz"
+    },
+    {
+      "front": "Mohs hardness scale — 9",
+      "back": "Corundum"
+    },
+    {
+      "front": "Mohs hardness scale — 10 (hardest)",
+      "back": "Diamond"
+    },
+    {
+      "front": "The four eons of geologic time (oldest to newest)",
+      "back": "Hadean, Archean, Proterozoic, Phanerozoic"
+    },
+    {
+      "front": "The three eras of the Phanerozoic Eon (oldest to newest)",
+      "back": "Paleozoic, Mesozoic, Cenozoic"
+    },
+    {
+      "front": "Cambrian Explosion",
+      "back": "A rapid diversification of animal life about 541 million years ago, early in the Paleozoic Era"
+    },
+    {
+      "front": "Rapid diversification of animal life ~541 million years ago",
+      "back": "Cambrian Explosion"
+    },
+    {
+      "front": "Jurassic Period",
+      "back": "A period of the Mesozoic Era (~201–145 million years ago) known for the dominance of dinosaurs"
+    },
+    {
+      "front": "Cretaceous–Paleogene extinction event",
+      "back": "Mass extinction ~66 million years ago that wiped out non-avian dinosaurs, likely caused by an asteroid impact"
+    },
+    {
+      "front": "Mass extinction ~66 million years ago that killed the dinosaurs",
+      "back": "Cretaceous–Paleogene (K–Pg) extinction event"
+    },
+    {
+      "front": "Pangaea",
+      "back": "The supercontinent that existed about 335–175 million years ago before breaking apart"
+    },
+    {
+      "front": "Supercontinent that included all major landmasses ~250 million years ago",
+      "back": "Pangaea"
+    },
+    {
+      "front": "Convergent boundary",
+      "back": "A plate boundary where two tectonic plates move toward each other"
+    },
+    {
+      "front": "Divergent boundary",
+      "back": "A plate boundary where two tectonic plates move apart from each other"
+    },
+    {
+      "front": "Transform boundary",
+      "back": "A plate boundary where two tectonic plates slide horizontally past each other"
+    },
+    {
+      "front": "Subduction",
+      "back": "The process where one tectonic plate slides beneath another at a convergent boundary"
+    },
+    {
+      "front": "One tectonic plate sliding beneath another",
+      "back": "Subduction"
+    },
+    {
+      "front": "Mid-ocean ridge",
+      "back": "An underwater mountain range formed by divergent tectonic plates on the ocean floor"
+    },
+    {
+      "front": "Ring of Fire",
+      "back": "A horseshoe-shaped zone of frequent earthquakes and volcanic eruptions around the Pacific Ocean"
+    },
+    {
+      "front": "Zone of volcanoes and earthquakes ringing the Pacific Ocean",
+      "back": "Ring of Fire"
+    },
+    {
+      "front": "Quartz",
+      "back": "The second most abundant mineral in Earth's crust; hardness 7 on Mohs scale; made of silicon dioxide"
+    },
+    {
+      "front": "Feldspar",
+      "back": "The most abundant mineral group in Earth's crust; a key component of granite"
+    },
+    {
+      "front": "Mica",
+      "back": "A mineral group known for splitting into thin, flexible, shiny sheets"
+    },
+    {
+      "front": "Mineral that splits into thin, shiny, flexible sheets",
+      "back": "Mica"
+    },
+    {
+      "front": "Calcite",
+      "back": "The main mineral in limestone and marble; hardness 3; fizzes with acid"
+    },
+    {
+      "front": "Halite",
+      "back": "The mineral name for rock salt (sodium chloride)"
+    },
+    {
+      "front": "Mineral name for rock salt (NaCl)",
+      "back": "Halite"
+    },
+    {
+      "front": "Pyrite",
+      "back": "An iron sulfide mineral known as 'fool's gold' for its metallic yellow appearance"
+    },
+    {
+      "front": "Mineral known as 'fool's gold'",
+      "back": "Pyrite"
+    },
+    {
+      "front": "Earth's four main layers (surface to center)",
+      "back": "Crust, mantle, outer core, inner core"
+    },
+    {
+      "front": "Crust",
+      "back": "Earth's thin, solid outermost layer (5–70 km thick)"
+    },
+    {
+      "front": "Mantle",
+      "back": "Earth's thickest layer, made of hot semi-solid rock between the crust and outer core"
+    },
+    {
+      "front": "Earth's thickest layer",
+      "back": "Mantle"
+    },
+    {
+      "front": "Outer core",
+      "back": "The liquid layer of iron and nickel that surrounds Earth's inner core and generates the magnetic field"
+    },
+    {
+      "front": "Inner core",
+      "back": "The solid, extremely hot center of the Earth, made mostly of iron and nickel"
+    },
+    {
+      "front": "Fossil",
+      "back": "The preserved remains or traces of ancient organisms found in rock"
+    },
+    {
+      "front": "Preserved remains or traces of ancient organisms in rock",
+      "back": "Fossil"
+    },
+    {
+      "front": "Weathering",
+      "back": "The breakdown of rocks and minerals at Earth's surface by water, wind, ice, or living organisms"
+    },
+    {
+      "front": "Breaking down of rocks at Earth's surface",
+      "back": "Weathering"
+    },
+    {
+      "front": "Erosion",
+      "back": "The transport of weathered rock and soil by water, wind, ice, or gravity"
+    },
+    {
+      "front": "Transport of rock and soil by water, wind, or ice",
+      "back": "Erosion"
+    },
+    {
+      "front": "Richter scale",
+      "back": "A logarithmic scale used to measure the magnitude of earthquakes"
+    },
+    {
+      "front": "Logarithmic scale for measuring earthquake magnitude",
+      "back": "Richter scale"
+    },
+    {
+      "front": "What is magma called after it reaches Earth's surface?",
+      "back": "Lava"
+    },
+    {
+      "front": "Permian–Triassic extinction event",
+      "back": "The largest mass extinction in Earth's history (~252 million years ago), killing ~96% of marine species — called 'The Great Dying'"
+    },
+    {
+      "front": "Largest mass extinction in Earth's history, called 'The Great Dying'",
+      "back": "Permian–Triassic extinction event (~252 million years ago)"
+    }
+  ]
+}

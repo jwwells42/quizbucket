@@ -1,0 +1,236 @@
+{
+  "id": "british-monarchs",
+  "title": "British Monarchs",
+  "description": "Kings and queens of England and Great Britain",
+  "levels": ["5/6", "7-9", "9-12"],
+  "cards": [
+    {
+      "front": "William the Conqueror (1066–1087)",
+      "back": "First Norman king of England; won the Battle of Hastings in 1066 and commissioned the Domesday Book"
+    },
+    {
+      "front": "Who won the Battle of Hastings in 1066 and became the first Norman king of England?",
+      "back": "William the Conqueror"
+    },
+    {
+      "front": "Henry II (1154–1189)",
+      "back": "First Plantagenet king; expanded royal courts and clashed with Thomas Becket, Archbishop of Canterbury, who was murdered in Canterbury Cathedral"
+    },
+    {
+      "front": "Which English king's conflict with Thomas Becket led to Becket's murder in Canterbury Cathedral?",
+      "back": "Henry II"
+    },
+    {
+      "front": "Richard I, \"the Lionheart\" (1189–1199)",
+      "back": "Famous warrior king who led the Third Crusade; spent most of his reign abroad fighting and was later held for ransom in Austria"
+    },
+    {
+      "front": "Which English king led the Third Crusade and was known as \"the Lionheart\"?",
+      "back": "Richard I"
+    },
+    {
+      "front": "King John (1199–1216)",
+      "back": "Forced by rebel barons to sign the Magna Carta in 1215, limiting royal power and establishing the principle that the king is subject to law"
+    },
+    {
+      "front": "Which English king was forced to sign the Magna Carta in 1215?",
+      "back": "King John"
+    },
+    {
+      "front": "What document was signed in 1215, limiting the power of the English monarch?",
+      "back": "Magna Carta (signed by King John)"
+    },
+    {
+      "front": "Henry V (1413–1422)",
+      "back": "Led England to a famous victory at the Battle of Agincourt (1415) during the Hundred Years' War; subject of a Shakespeare play"
+    },
+    {
+      "front": "Which English king won the Battle of Agincourt in 1415?",
+      "back": "Henry V"
+    },
+    {
+      "front": "Henry VIII (1509–1547)",
+      "back": "Had six wives; broke with the Catholic Church and established the Church of England (Anglican Church) so he could annul his marriage to Catherine of Aragon"
+    },
+    {
+      "front": "Which English king established the Church of England after breaking with the Pope?",
+      "back": "Henry VIII"
+    },
+    {
+      "front": "How many wives did Henry VIII have?",
+      "back": "Six: Catherine of Aragon, Anne Boleyn, Jane Seymour, Anne of Cleves, Catherine Howard, Catherine Parr"
+    },
+    {
+      "front": "Henry VIII's 1st wife",
+      "back": "Catherine of Aragon (divorced; mother of Mary I)"
+    },
+    {
+      "front": "Henry VIII's 2nd wife",
+      "back": "Anne Boleyn (beheaded; mother of Elizabeth I)"
+    },
+    {
+      "front": "Henry VIII's 3rd wife",
+      "back": "Jane Seymour (died after childbirth; mother of Edward VI)"
+    },
+    {
+      "front": "Henry VIII's 4th wife",
+      "back": "Anne of Cleves (divorced; marriage annulled after six months)"
+    },
+    {
+      "front": "Henry VIII's 5th wife",
+      "back": "Catherine Howard (beheaded for alleged adultery)"
+    },
+    {
+      "front": "Henry VIII's 6th wife",
+      "back": "Catherine Parr (survived Henry VIII; helped reconcile him with his daughters)"
+    },
+    {
+      "front": "Which wife of Henry VIII was the mother of Elizabeth I?",
+      "back": "Anne Boleyn (2nd wife; beheaded in 1536)"
+    },
+    {
+      "front": "Which wife of Henry VIII was the mother of Edward VI?",
+      "back": "Jane Seymour (3rd wife; died shortly after childbirth)"
+    },
+    {
+      "front": "Mnemonic for the fates of Henry VIII's six wives",
+      "back": "Divorced, beheaded, died, divorced, beheaded, survived"
+    },
+    {
+      "front": "Edward VI (1547–1553)",
+      "back": "Son of Henry VIII and Jane Seymour; became king at age 9 and strengthened Protestantism in England; died at 15"
+    },
+    {
+      "front": "Which son of Henry VIII became king at age 9 and promoted Protestantism?",
+      "back": "Edward VI"
+    },
+    {
+      "front": "Mary I (1553–1558)",
+      "back": "Daughter of Henry VIII and Catherine of Aragon; restored Catholicism and earned the nickname \"Bloody Mary\" for burning Protestant heretics"
+    },
+    {
+      "front": "Which English queen was nicknamed \"Bloody Mary\"?",
+      "back": "Mary I (daughter of Henry VIII and Catherine of Aragon)"
+    },
+    {
+      "front": "Elizabeth I (1558–1603)",
+      "back": "The \"Virgin Queen\"; defeated the Spanish Armada in 1588, presided over the Elizabethan era of exploration and Shakespeare, and never married"
+    },
+    {
+      "front": "Which English monarch defeated the Spanish Armada in 1588?",
+      "back": "Elizabeth I"
+    },
+    {
+      "front": "Why is Elizabeth I called the \"Virgin Queen\"?",
+      "back": "She never married and had no children; the colony of Virginia was named in her honor"
+    },
+    {
+      "front": "James I of England / James VI of Scotland (1603–1625)",
+      "back": "First Stuart king of England; united the English and Scottish crowns, authorized the King James Bible (1611), and survived the Gunpowder Plot (1605)"
+    },
+    {
+      "front": "Which English king authorized the King James Bible in 1611?",
+      "back": "James I (James VI of Scotland)"
+    },
+    {
+      "front": "What was the Gunpowder Plot of 1605?",
+      "back": "A failed Catholic conspiracy led by Guy Fawkes to blow up Parliament and kill King James I"
+    },
+    {
+      "front": "Charles I (1625–1649)",
+      "back": "His conflicts with Parliament led to the English Civil War; he was defeated by Oliver Cromwell's forces and beheaded in 1649"
+    },
+    {
+      "front": "Which English king was executed (beheaded) in 1649 after the English Civil War?",
+      "back": "Charles I"
+    },
+    {
+      "front": "Who led the Parliamentary forces that defeated Charles I in the English Civil War?",
+      "back": "Oliver Cromwell"
+    },
+    {
+      "front": "Charles II (1660–1685)",
+      "back": "Known as the \"Merry Monarch\"; restored the monarchy in 1660 after the Commonwealth period (the Restoration)"
+    },
+    {
+      "front": "Which English king was restored to the throne in 1660, ending the Commonwealth?",
+      "back": "Charles II (the Restoration)"
+    },
+    {
+      "front": "William III & Mary II (1689–1702/1694)",
+      "back": "Came to power in the Glorious Revolution of 1688; signed the English Bill of Rights (1689), establishing constitutional monarchy"
+    },
+    {
+      "front": "What was the Glorious Revolution of 1688?",
+      "back": "The bloodless overthrow of James II, replaced by William III and Mary II, who accepted the English Bill of Rights"
+    },
+    {
+      "front": "Queen Anne (1702–1714)",
+      "back": "Last Stuart monarch; oversaw the Acts of Union (1707) that united England and Scotland into the Kingdom of Great Britain"
+    },
+    {
+      "front": "Which queen was the last Stuart monarch and oversaw the union of England and Scotland in 1707?",
+      "back": "Queen Anne"
+    },
+    {
+      "front": "George III (1760–1820)",
+      "back": "King during the American Revolution; lost the American colonies; later suffered from periods of mental illness"
+    },
+    {
+      "front": "Which British king ruled during the American Revolution and lost the American colonies?",
+      "back": "George III"
+    },
+    {
+      "front": "Queen Victoria (1837–1901)",
+      "back": "Reigned for 63 years during the height of the British Empire; the Victorian era saw industrialization, expansion, and cultural change; longest-reigning monarch until Elizabeth II"
+    },
+    {
+      "front": "Which British monarch gives her name to the era of industrialization and imperial expansion in the 1800s?",
+      "back": "Queen Victoria (reigned 1837–1901)"
+    },
+    {
+      "front": "Edward VII (1901–1910)",
+      "back": "Son of Queen Victoria; his reign is called the Edwardian era; helped modernize the British military and improve relations with France"
+    },
+    {
+      "front": "Which British king's short reign (1901–1910) is known as the Edwardian era?",
+      "back": "Edward VII (son of Queen Victoria)"
+    },
+    {
+      "front": "George V (1910–1936)",
+      "back": "Reigned during World War I; changed the royal family's name from Saxe-Coburg-Gotha to Windsor in 1917 due to anti-German sentiment"
+    },
+    {
+      "front": "Which British king changed the royal family's name to Windsor during World War I?",
+      "back": "George V (in 1917, from Saxe-Coburg-Gotha)"
+    },
+    {
+      "front": "George VI (1936–1952)",
+      "back": "Became king after his brother Edward VIII abdicated; led Britain through World War II alongside Winston Churchill; father of Elizabeth II"
+    },
+    {
+      "front": "Which British king led the country through World War II and was the father of Elizabeth II?",
+      "back": "George VI"
+    },
+    {
+      "front": "Why did Edward VIII abdicate in 1936?",
+      "back": "He chose to marry Wallis Simpson, an American divorcee, which was unacceptable to the Church of England and the government"
+    },
+    {
+      "front": "Elizabeth II (1952–2022)",
+      "back": "Longest-reigning British monarch at 70 years; oversaw decolonization, the end of the Cold War, and the modernization of the monarchy"
+    },
+    {
+      "front": "Who is the longest-reigning British monarch, serving for 70 years?",
+      "back": "Elizabeth II (1952–2022)"
+    },
+    {
+      "front": "Charles III (2022–present)",
+      "back": "Became king at age 73 upon the death of his mother, Elizabeth II; previously the longest-serving Prince of Wales"
+    },
+    {
+      "front": "Who became king of the United Kingdom in 2022?",
+      "back": "Charles III"
+    }
+  ]
+}

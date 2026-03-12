@@ -21,6 +21,33 @@ function checkAnswer(correctAnswer, givenAnswer) {
   return c === g || c.includes(g) || g.includes(c)
 }
 
+// AGQBA category weights for bonus topic selection (approximate competition frequency)
+const AGQBA_WEIGHTS = {
+  'History': 19, 'Science': 16, 'Literature': 16, 'Fine Arts': 8,
+  'Geography': 8, 'Math': 7, 'Vocabulary': 5, 'Social Science': 4,
+  'Religion': 4, 'Mythology': 3,
+}
+
+function pickWeightedTopic(topics) {
+  const byCategory = {}
+  for (const t of topics) {
+    const cat = t.category || 'Miscellaneous'
+    if (!byCategory[cat]) byCategory[cat] = []
+    byCategory[cat].push(t)
+  }
+  const categories = Object.keys(byCategory)
+  const weights = categories.map(c => AGQBA_WEIGHTS[c] || 3)
+  const total = weights.reduce((s, w) => s + w, 0)
+  let r = Math.random() * total
+  let picked = categories[0]
+  for (let i = 0; i < weights.length; i++) {
+    r -= weights[i]
+    if (r <= 0) { picked = categories[i]; break }
+  }
+  const pool = byCategory[picked]
+  return pool[Math.floor(Math.random() * pool.length)]
+}
+
 export default function Tossup() {
   const { recordTossup, getTossupStats } = useProgress()
   const { filterByLevel } = useLevel()
@@ -132,7 +159,7 @@ export default function Tossup() {
 
   const startBonus = useCallback(() => {
     if (filteredLightning.length === 0) return
-    const topic = filteredLightning[Math.floor(Math.random() * filteredLightning.length)]
+    const topic = pickWeightedTopic(filteredLightning)
     const shuffledQs = shuffle(topic.questions)
     setBonusData({
       topic: topic.title,

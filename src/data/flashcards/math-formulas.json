@@ -1,0 +1,345 @@
+{
+  "id": "math-formulas",
+  "title": "Math Formulas & Computation",
+  "description": "Essential math formulas, identities, and computation facts",
+  "levels": [
+    "3/4",
+    "5/6",
+    "7-9",
+    "9-12"
+  ],
+  "cards": [
+    {
+      "front": "Area of a rectangle",
+      "back": "A = length x width"
+    },
+    {
+      "front": "A = length x width",
+      "back": "Area of a rectangle"
+    },
+    {
+      "front": "Area of a triangle",
+      "back": "A = 1/2 x base x height"
+    },
+    {
+      "front": "A = 1/2 x base x height",
+      "back": "Area of a triangle"
+    },
+    {
+      "front": "Area of a circle",
+      "back": "A = pi x r squared"
+    },
+    {
+      "front": "A = pi x r squared",
+      "back": "Area of a circle"
+    },
+    {
+      "front": "Area of a trapezoid",
+      "back": "A = 1/2 x (base1 + base2) x height"
+    },
+    {
+      "front": "A = 1/2 x (b1 + b2) x h",
+      "back": "Area of a trapezoid"
+    },
+    {
+      "front": "Area of a parallelogram",
+      "back": "A = base x height"
+    },
+    {
+      "front": "A = base x height (not a rectangle)",
+      "back": "Area of a parallelogram"
+    },
+    {
+      "front": "Circumference of a circle",
+      "back": "C = 2 x pi x r (or C = pi x d)"
+    },
+    {
+      "front": "C = 2 x pi x r",
+      "back": "Circumference of a circle"
+    },
+    {
+      "front": "Volume of a cube",
+      "back": "V = s cubed (side x side x side)"
+    },
+    {
+      "front": "Volume of a rectangular prism",
+      "back": "V = length x width x height"
+    },
+    {
+      "front": "Volume of a cylinder",
+      "back": "V = pi x r squared x height"
+    },
+    {
+      "front": "V = pi x r squared x h",
+      "back": "Volume of a cylinder"
+    },
+    {
+      "front": "Volume of a cone",
+      "back": "V = 1/3 x pi x r squared x height"
+    },
+    {
+      "front": "V = 1/3 x pi x r squared x h",
+      "back": "Volume of a cone"
+    },
+    {
+      "front": "Volume of a sphere",
+      "back": "V = 4/3 x pi x r cubed"
+    },
+    {
+      "front": "V = 4/3 x pi x r cubed",
+      "back": "Volume of a sphere"
+    },
+    {
+      "front": "Pythagorean theorem",
+      "back": "a squared + b squared = c squared"
+    },
+    {
+      "front": "a squared + b squared = c squared",
+      "back": "Pythagorean theorem"
+    },
+    {
+      "front": "Pythagorean triple: 3, 4, ___",
+      "back": "5"
+    },
+    {
+      "front": "Pythagorean triple: 5, 12, ___",
+      "back": "13"
+    },
+    {
+      "front": "Pythagorean triple: 7, 24, ___",
+      "back": "25"
+    },
+    {
+      "front": "Pythagorean triple: 8, 15, ___",
+      "back": "17"
+    },
+    {
+      "front": "sin(0 degrees)",
+      "back": "0"
+    },
+    {
+      "front": "sin(30 degrees)",
+      "back": "1/2"
+    },
+    {
+      "front": "sin(45 degrees)",
+      "back": "square root of 2 / 2"
+    },
+    {
+      "front": "sin(60 degrees)",
+      "back": "square root of 3 / 2"
+    },
+    {
+      "front": "sin(90 degrees)",
+      "back": "1"
+    },
+    {
+      "front": "cos(0 degrees)",
+      "back": "1"
+    },
+    {
+      "front": "cos(30 degrees)",
+      "back": "square root of 3 / 2"
+    },
+    {
+      "front": "cos(45 degrees)",
+      "back": "square root of 2 / 2"
+    },
+    {
+      "front": "cos(60 degrees)",
+      "back": "1/2"
+    },
+    {
+      "front": "cos(90 degrees)",
+      "back": "0"
+    },
+    {
+      "front": "tan(0 degrees)",
+      "back": "0"
+    },
+    {
+      "front": "tan(30 degrees)",
+      "back": "square root of 3 / 3"
+    },
+    {
+      "front": "tan(45 degrees)",
+      "back": "1"
+    },
+    {
+      "front": "tan(60 degrees)",
+      "back": "square root of 3"
+    },
+    {
+      "front": "tan(90 degrees)",
+      "back": "Undefined"
+    },
+    {
+      "front": "Quadratic formula",
+      "back": "x = (-b +/- square root of (b squared - 4ac)) / 2a"
+    },
+    {
+      "front": "Slope formula (given two points)",
+      "back": "m = (y2 - y1) / (x2 - x1)"
+    },
+    {
+      "front": "m = (y2 - y1) / (x2 - x1)",
+      "back": "Slope formula"
+    },
+    {
+      "front": "Distance formula (between two points)",
+      "back": "d = square root of ((x2 - x1) squared + (y2 - y1) squared)"
+    },
+    {
+      "front": "Midpoint formula",
+      "back": "((x1 + x2) / 2, (y1 + y2) / 2)"
+    },
+    {
+      "front": "How many cups in a pint?",
+      "back": "2 cups"
+    },
+    {
+      "front": "How many pints in a quart?",
+      "back": "2 pints"
+    },
+    {
+      "front": "How many quarts in a gallon?",
+      "back": "4 quarts"
+    },
+    {
+      "front": "How many cups in a gallon?",
+      "back": "16 cups"
+    },
+    {
+      "front": "How many feet in a mile?",
+      "back": "5,280 feet"
+    },
+    {
+      "front": "5,280 feet equals what unit?",
+      "back": "1 mile"
+    },
+    {
+      "front": "Metric prefix: kilo-",
+      "back": "1,000 (10 cubed)"
+    },
+    {
+      "front": "Metric prefix: centi-",
+      "back": "1/100 (10 to the negative 2)"
+    },
+    {
+      "front": "Metric prefix: milli-",
+      "back": "1/1,000 (10 to the negative 3)"
+    },
+    {
+      "front": "Metric prefix: mega-",
+      "back": "1,000,000 (10 to the 6th)"
+    },
+    {
+      "front": "Perfect squares: 1 through 5",
+      "back": "1, 4, 9, 16, 25"
+    },
+    {
+      "front": "Perfect squares: 6 through 10",
+      "back": "36, 49, 64, 81, 100"
+    },
+    {
+      "front": "Perfect squares: 11 through 15",
+      "back": "121, 144, 169, 196, 225"
+    },
+    {
+      "front": "Perfect squares: 16 through 20",
+      "back": "256, 289, 324, 361, 400"
+    },
+    {
+      "front": "Perfect squares: 21 through 25",
+      "back": "441, 484, 529, 576, 625"
+    },
+    {
+      "front": "12 squared",
+      "back": "144"
+    },
+    {
+      "front": "144 is the square of what number?",
+      "back": "12"
+    },
+    {
+      "front": "15 squared",
+      "back": "225"
+    },
+    {
+      "front": "225 is the square of what number?",
+      "back": "15"
+    },
+    {
+      "front": "Perfect cubes: 1 through 5",
+      "back": "1, 8, 27, 64, 125"
+    },
+    {
+      "front": "Perfect cubes: 6 through 10",
+      "back": "216, 343, 512, 729, 1000"
+    },
+    {
+      "front": "List all prime numbers under 30",
+      "back": "2, 3, 5, 7, 11, 13, 17, 19, 23, 29"
+    },
+    {
+      "front": "List all prime numbers from 30 to 60",
+      "back": "31, 37, 41, 43, 47, 53, 59"
+    },
+    {
+      "front": "List all prime numbers from 60 to 100",
+      "back": "61, 67, 71, 73, 79, 83, 89, 97"
+    },
+    {
+      "front": "How many prime numbers are there under 100?",
+      "back": "25"
+    },
+    {
+      "front": "Pi approximation (to 4 decimal places)",
+      "back": "3.1416"
+    },
+    {
+      "front": "e (Euler's number) approximation (to 4 decimal places)",
+      "back": "2.7183"
+    },
+    {
+      "front": "Permutations formula: nPr",
+      "back": "n! / (n - r)!"
+    },
+    {
+      "front": "n! / (n - r)!",
+      "back": "Permutations formula (nPr)"
+    },
+    {
+      "front": "Combinations formula: nCr",
+      "back": "n! / (r! x (n - r)!)"
+    },
+    {
+      "front": "n! / (r! x (n - r)!)",
+      "back": "Combinations formula (nCr)"
+    },
+    {
+      "front": "Exponent rule: x^a times x^b",
+      "back": "x^(a + b) — add the exponents"
+    },
+    {
+      "front": "Exponent rule: x^a divided by x^b",
+      "back": "x^(a - b) — subtract the exponents"
+    },
+    {
+      "front": "Exponent rule: (x^a)^b",
+      "back": "x^(a x b) — multiply the exponents"
+    },
+    {
+      "front": "Any nonzero number raised to the power of 0",
+      "back": "1"
+    },
+    {
+      "front": "PEMDAS stands for",
+      "back": "Parentheses, Exponents, Multiplication, Division, Addition, Subtraction"
+    },
+    {
+      "front": "Order of operations mnemonic",
+      "back": "PEMDAS (Please Excuse My Dear Aunt Sally)"
+    }
+  ]
+}

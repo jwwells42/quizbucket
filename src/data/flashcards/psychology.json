@@ -1,0 +1,235 @@
+{
+  "id": "psychology",
+  "title": "Psychology: Key Experiments & Figures",
+  "description": "Famous psychologists, experiments, and psychological concepts",
+  "levels": [
+    "7-9",
+    "9-12"
+  ],
+  "cards": [
+    {
+      "front": "Ivan Pavlov — what is he known for?",
+      "back": "Classical conditioning (training dogs to salivate at the sound of a bell)"
+    },
+    {
+      "front": "Who discovered classical conditioning by experimenting with dogs and bells?",
+      "back": "Ivan Pavlov"
+    },
+    {
+      "front": "What is classical conditioning?",
+      "back": "A learning process in which a neutral stimulus becomes associated with a meaningful stimulus, eventually triggering the same response"
+    },
+    {
+      "front": "B.F. Skinner — what is he known for?",
+      "back": "Operant conditioning and the Skinner box (reinforcement and punishment shape behavior)"
+    },
+    {
+      "front": "Who developed the theory of operant conditioning and invented the 'Skinner box'?",
+      "back": "B.F. Skinner"
+    },
+    {
+      "front": "What is operant conditioning?",
+      "back": "A learning process in which behavior is strengthened or weakened by reinforcement or punishment"
+    },
+    {
+      "front": "What is a Skinner box?",
+      "back": "An operant conditioning chamber used to study animal behavior through reinforcement and punishment"
+    },
+    {
+      "front": "Sigmund Freud — what is he known for?",
+      "back": "Psychoanalysis and the theory of id, ego, and superego"
+    },
+    {
+      "front": "Who founded psychoanalysis and proposed the id, ego, and superego?",
+      "back": "Sigmund Freud"
+    },
+    {
+      "front": "What are Freud's three parts of the psyche?",
+      "back": "Id (primal desires), ego (rational mediator), and superego (moral conscience)"
+    },
+    {
+      "front": "What is psychoanalysis?",
+      "back": "A therapeutic approach founded by Freud that explores unconscious thoughts and childhood experiences to understand behavior"
+    },
+    {
+      "front": "Carl Jung — what is he known for?",
+      "back": "Archetypes, the collective unconscious, and analytical psychology"
+    },
+    {
+      "front": "Who proposed the theory of the collective unconscious and archetypes?",
+      "back": "Carl Jung"
+    },
+    {
+      "front": "What is the collective unconscious?",
+      "back": "Jung's idea that all humans share a set of inherited memories and universal symbols (archetypes)"
+    },
+    {
+      "front": "Stanley Milgram — what is he known for?",
+      "back": "The Milgram obedience experiment (1961), which showed people would administer what they believed were dangerous electric shocks when ordered by an authority figure"
+    },
+    {
+      "front": "Who conducted the famous 1961 experiment on obedience to authority using fake electric shocks?",
+      "back": "Stanley Milgram"
+    },
+    {
+      "front": "What did the Milgram experiment demonstrate?",
+      "back": "That ordinary people will obey authority figures even when asked to do things that conflict with their personal morals"
+    },
+    {
+      "front": "Philip Zimbardo — what is he known for?",
+      "back": "The Stanford prison experiment (1971), which studied how assigned roles affect behavior"
+    },
+    {
+      "front": "Who conducted the Stanford prison experiment in 1971?",
+      "back": "Philip Zimbardo"
+    },
+    {
+      "front": "What happened in the Stanford prison experiment?",
+      "back": "College students assigned as 'guards' became abusive and 'prisoners' became submissive; the study was ended early after only 6 days"
+    },
+    {
+      "front": "Jean Piaget — what is he known for?",
+      "back": "The four stages of cognitive development in children"
+    },
+    {
+      "front": "Who proposed four stages of cognitive development in children?",
+      "back": "Jean Piaget"
+    },
+    {
+      "front": "What are Piaget's four stages of cognitive development (in order)?",
+      "back": "Sensorimotor (0–2), Preoperational (2–7), Concrete Operational (7–11), Formal Operational (11+)"
+    },
+    {
+      "front": "Abraham Maslow — what is he known for?",
+      "back": "The hierarchy of needs (a five-level pyramid of human motivation)"
+    },
+    {
+      "front": "Who created the hierarchy of needs?",
+      "back": "Abraham Maslow"
+    },
+    {
+      "front": "What are the five levels of Maslow's hierarchy of needs (bottom to top)?",
+      "back": "Physiological, Safety, Love/Belonging, Esteem, Self-Actualization"
+    },
+    {
+      "front": "Erik Erikson — what is he known for?",
+      "back": "Eight psychosocial stages of development spanning the entire lifespan"
+    },
+    {
+      "front": "Who proposed eight psychosocial stages of development from infancy to old age?",
+      "back": "Erik Erikson"
+    },
+    {
+      "front": "John B. Watson — what is he known for?",
+      "back": "Founding behaviorism and the Little Albert experiment"
+    },
+    {
+      "front": "Who is considered the father of behaviorism and conducted the Little Albert experiment?",
+      "back": "John B. Watson"
+    },
+    {
+      "front": "What was the Little Albert experiment?",
+      "back": "Watson conditioned a baby ('Little Albert') to fear a white rat by pairing it with a loud noise, demonstrating learned fear responses"
+    },
+    {
+      "front": "Albert Bandura — what is he known for?",
+      "back": "The Bobo doll experiment and social learning theory"
+    },
+    {
+      "front": "Who conducted the Bobo doll experiment on observational learning?",
+      "back": "Albert Bandura"
+    },
+    {
+      "front": "What did the Bobo doll experiment demonstrate?",
+      "back": "Children who watched adults act aggressively toward a Bobo doll imitated the aggressive behavior, supporting social learning theory"
+    },
+    {
+      "front": "What is social learning theory?",
+      "back": "Bandura's theory that people learn behaviors by observing and imitating others (modeling)"
+    },
+    {
+      "front": "Harry Harlow — what is he known for?",
+      "back": "Monkey attachment experiments showing that infant monkeys preferred a soft 'cloth mother' over a wire mother with food"
+    },
+    {
+      "front": "Who conducted experiments with infant monkeys and surrogate mothers to study attachment?",
+      "back": "Harry Harlow"
+    },
+    {
+      "front": "What did Harlow's monkey experiments demonstrate?",
+      "back": "That comfort and contact (attachment) are more important to infant development than food alone"
+    },
+    {
+      "front": "Solomon Asch — what is he known for?",
+      "back": "The Asch conformity experiments (line-length studies showing people conform to group pressure)"
+    },
+    {
+      "front": "Who conducted the famous conformity experiments using line-length comparisons?",
+      "back": "Solomon Asch"
+    },
+    {
+      "front": "What did the Asch conformity experiments demonstrate?",
+      "back": "That individuals will conform to an obviously incorrect group answer about one-third of the time due to social pressure"
+    },
+    {
+      "front": "Hermann Rorschach — what is he known for?",
+      "back": "The Rorschach inkblot test, a projective personality assessment"
+    },
+    {
+      "front": "Who created the inkblot test used in personality assessment?",
+      "back": "Hermann Rorschach"
+    },
+    {
+      "front": "Wilhelm Wundt — what is he known for?",
+      "back": "Establishing the first psychology laboratory in Leipzig, Germany (1879), earning him the title 'father of experimental psychology'"
+    },
+    {
+      "front": "Who established the first psychology laboratory in 1879?",
+      "back": "Wilhelm Wundt"
+    },
+    {
+      "front": "William James — what is he known for?",
+      "back": "Functionalism and writing 'The Principles of Psychology' (1890); often called the father of American psychology"
+    },
+    {
+      "front": "Who is considered the father of American psychology and founded the school of functionalism?",
+      "back": "William James"
+    },
+    {
+      "front": "What is the nature vs. nurture debate?",
+      "back": "The ongoing discussion of whether human behavior is determined more by genetics (nature) or environment and experience (nurture)"
+    },
+    {
+      "front": "What is cognitive dissonance?",
+      "back": "The mental discomfort experienced when holding two contradictory beliefs or when behavior conflicts with beliefs"
+    },
+    {
+      "front": "Who introduced the theory of cognitive dissonance in 1957?",
+      "back": "Leon Festinger"
+    },
+    {
+      "front": "What is confirmation bias?",
+      "back": "The tendency to search for, interpret, and remember information that confirms one's preexisting beliefs"
+    },
+    {
+      "front": "What is the placebo effect?",
+      "back": "A phenomenon in which a patient experiences real improvement after receiving an inactive treatment, due to their expectation of benefit"
+    },
+    {
+      "front": "What is the Hawthorne effect?",
+      "back": "The tendency for people to change their behavior when they know they are being observed or studied"
+    },
+    {
+      "front": "What school of psychology did John B. Watson found?",
+      "back": "Behaviorism — the view that psychology should study only observable behavior, not internal mental states"
+    },
+    {
+      "front": "What school of psychology did Wilhelm Wundt pioneer?",
+      "back": "Structuralism — using introspection to analyze the basic elements of conscious experience"
+    },
+    {
+      "front": "What school of psychology did William James pioneer?",
+      "back": "Functionalism — studying the purpose and function of mental processes rather than their structure"
+    }
+  ]
+}

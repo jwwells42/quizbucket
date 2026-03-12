@@ -1,0 +1,288 @@
+{
+  "id": "civil-rights",
+  "title": "Civil Rights Movement",
+  "description": "Leaders, events, and legislation of the Civil Rights Movement",
+  "levels": ["3/4", "5/6", "7-9", "9-12"],
+  "cards": [
+    {
+      "front": "Martin Luther King Jr.",
+      "back": "Baptist minister and leader of the Civil Rights Movement; advocated nonviolent protest; delivered the \"I Have a Dream\" speech; assassinated in 1968"
+    },
+    {
+      "front": "Who delivered the \"I Have a Dream\" speech at the March on Washington in 1963?",
+      "back": "Martin Luther King Jr."
+    },
+    {
+      "front": "Letter from Birmingham Jail (1963)",
+      "back": "Open letter written by Martin Luther King Jr. while imprisoned; defended nonviolent civil disobedience and argued that people have a moral duty to disobey unjust laws"
+    },
+    {
+      "front": "Who wrote the Letter from Birmingham Jail?",
+      "back": "Martin Luther King Jr."
+    },
+    {
+      "front": "Rosa Parks",
+      "back": "Civil rights activist who refused to give up her bus seat to a white passenger in Montgomery, Alabama, in 1955; her arrest sparked the Montgomery Bus Boycott"
+    },
+    {
+      "front": "Whose arrest for refusing to give up her bus seat sparked the Montgomery Bus Boycott?",
+      "back": "Rosa Parks"
+    },
+    {
+      "front": "Malcolm X",
+      "back": "Civil rights leader and Nation of Islam spokesman who advocated Black self-determination and self-defense; later embraced a more inclusive vision after his pilgrimage to Mecca; assassinated in 1965"
+    },
+    {
+      "front": "Which civil rights leader was a spokesman for the Nation of Islam before later embracing a more inclusive vision of racial equality?",
+      "back": "Malcolm X"
+    },
+    {
+      "front": "John Lewis",
+      "back": "Civil rights leader, chairman of SNCC, and longtime U.S. congressman; led marchers across the Edmund Pettus Bridge on Bloody Sunday in Selma (1965)"
+    },
+    {
+      "front": "Which civil rights leader led marchers across the Edmund Pettus Bridge on Bloody Sunday?",
+      "back": "John Lewis"
+    },
+    {
+      "front": "Thurgood Marshall",
+      "back": "First Black justice on the U.S. Supreme Court (1967); as an NAACP lawyer, he argued and won Brown v. Board of Education (1954)"
+    },
+    {
+      "front": "Who was the first Black justice on the U.S. Supreme Court?",
+      "back": "Thurgood Marshall"
+    },
+    {
+      "front": "Medgar Evers",
+      "back": "NAACP field secretary in Mississippi who worked to overturn segregation; assassinated outside his home in 1963"
+    },
+    {
+      "front": "Which NAACP field secretary in Mississippi was assassinated outside his home in 1963?",
+      "back": "Medgar Evers"
+    },
+    {
+      "front": "Emmett Till",
+      "back": "14-year-old African American boy from Chicago who was lynched in Mississippi in 1955; his mother's decision to hold an open-casket funeral helped galvanize the Civil Rights Movement"
+    },
+    {
+      "front": "Whose 1955 murder in Mississippi and open-casket funeral helped galvanize the Civil Rights Movement?",
+      "back": "Emmett Till"
+    },
+    {
+      "front": "W.E.B. Du Bois",
+      "back": "Scholar, activist, and co-founder of the NAACP (1909); wrote The Souls of Black Folk; advocated for full political and civil rights for African Americans"
+    },
+    {
+      "front": "Who co-founded the NAACP and wrote The Souls of Black Folk?",
+      "back": "W.E.B. Du Bois"
+    },
+    {
+      "front": "Booker T. Washington",
+      "back": "Educator and leader who founded the Tuskegee Institute; advocated for Black economic self-reliance and vocational education; delivered the Atlanta Compromise speech (1895)"
+    },
+    {
+      "front": "Who founded the Tuskegee Institute and advocated for vocational education as the path to Black advancement?",
+      "back": "Booker T. Washington"
+    },
+    {
+      "front": "Frederick Douglass",
+      "back": "Escaped slave who became a leading abolitionist, orator, and author; wrote Narrative of the Life of Frederick Douglass; advised President Lincoln during the Civil War"
+    },
+    {
+      "front": "Which escaped slave became a famous abolitionist orator and wrote a celebrated autobiography?",
+      "back": "Frederick Douglass"
+    },
+    {
+      "front": "Harriet Tubman",
+      "back": "Escaped slave who led approximately 70 people to freedom via the Underground Railroad; known as the \"Moses of her people\"; also served as a Union spy during the Civil War"
+    },
+    {
+      "front": "Who was known as the \"Moses of her people\" for leading enslaved people to freedom on the Underground Railroad?",
+      "back": "Harriet Tubman"
+    },
+    {
+      "front": "Sojourner Truth",
+      "back": "Abolitionist and women's rights activist born into slavery; famous for her \"Ain't I a Woman?\" speech delivered at a women's convention in 1851"
+    },
+    {
+      "front": "Who delivered the famous \"Ain't I a Woman?\" speech?",
+      "back": "Sojourner Truth"
+    },
+    {
+      "front": "A. Philip Randolph",
+      "back": "Labor and civil rights leader who organized the Brotherhood of Sleeping Car Porters; his threat of a march on Washington in 1941 led FDR to ban racial discrimination in defense industries"
+    },
+    {
+      "front": "Which labor leader organized the Brotherhood of Sleeping Car Porters and pressured FDR to ban discrimination in defense industries?",
+      "back": "A. Philip Randolph"
+    },
+    {
+      "front": "Stokely Carmichael",
+      "back": "SNCC chairman who popularized the phrase \"Black Power\" during a 1966 march in Mississippi; later changed his name to Kwame Ture"
+    },
+    {
+      "front": "Who popularized the phrase \"Black Power\" during a 1966 march?",
+      "back": "Stokely Carmichael"
+    },
+    {
+      "front": "Fannie Lou Hamer",
+      "back": "Voting rights activist from Mississippi; co-founded the Mississippi Freedom Democratic Party; testified before the 1964 Democratic National Convention about voter suppression"
+    },
+    {
+      "front": "Which Mississippi activist co-founded the Mississippi Freedom Democratic Party and testified at the 1964 Democratic National Convention?",
+      "back": "Fannie Lou Hamer"
+    },
+    {
+      "front": "Montgomery Bus Boycott (1955–1956)",
+      "back": "381-day boycott of city buses in Montgomery, Alabama, sparked by Rosa Parks's arrest; ended when the Supreme Court ruled bus segregation unconstitutional; launched MLK to national prominence"
+    },
+    {
+      "front": "What was the 381-day protest in Montgomery, Alabama, that ended bus segregation and launched MLK to national prominence?",
+      "back": "Montgomery Bus Boycott (1955–1956)"
+    },
+    {
+      "front": "Little Rock Nine (1957)",
+      "back": "Nine Black students who integrated Central High School in Little Rock, Arkansas; President Eisenhower sent federal troops to enforce their enrollment"
+    },
+    {
+      "front": "Which president sent federal troops to Little Rock, Arkansas, to protect students integrating Central High School?",
+      "back": "Dwight D. Eisenhower"
+    },
+    {
+      "front": "Greensboro sit-ins (1960)",
+      "back": "Four Black college students sat at a whites-only Woolworth's lunch counter in Greensboro, North Carolina; their peaceful protest inspired sit-ins across the South"
+    },
+    {
+      "front": "In which city did four college students stage a sit-in at a Woolworth's lunch counter in 1960, inspiring similar protests across the South?",
+      "back": "Greensboro, North Carolina"
+    },
+    {
+      "front": "Freedom Rides (1961)",
+      "back": "Interracial groups organized by CORE rode interstate buses into the segregated South to test Supreme Court rulings banning segregation in interstate travel; riders were met with violent resistance"
+    },
+    {
+      "front": "What were the 1961 interracial bus trips through the South that tested desegregation rulings called?",
+      "back": "Freedom Rides"
+    },
+    {
+      "front": "March on Washington (1963)",
+      "back": "Massive civil rights rally in Washington, D.C., where over 250,000 people gathered; Martin Luther King Jr. delivered his \"I Have a Dream\" speech at the Lincoln Memorial"
+    },
+    {
+      "front": "At which 1963 event did Martin Luther King Jr. deliver his \"I Have a Dream\" speech?",
+      "back": "March on Washington"
+    },
+    {
+      "front": "16th Street Baptist Church bombing (1963)",
+      "back": "Ku Klux Klan bombing of a Black church in Birmingham, Alabama, that killed four young girls: Addie Mae Collins, Cynthia Wesley, Carole Robertson, and Carol Denise McNair"
+    },
+    {
+      "front": "What was the 1963 KKK attack in Birmingham, Alabama, that killed four young girls in a church?",
+      "back": "16th Street Baptist Church bombing"
+    },
+    {
+      "front": "Selma to Montgomery marches (1965)",
+      "back": "Three marches for voting rights from Selma to Montgomery, Alabama; the first march on \"Bloody Sunday\" was met with police violence on the Edmund Pettus Bridge; helped lead to the Voting Rights Act of 1965"
+    },
+    {
+      "front": "What were the 1965 voting rights marches in Alabama that included \"Bloody Sunday\"?",
+      "back": "Selma to Montgomery marches"
+    },
+    {
+      "front": "Civil Rights Act of 1964",
+      "back": "Federal law that banned discrimination based on race, color, religion, sex, or national origin; outlawed segregation in public places and employment discrimination; signed by President Lyndon B. Johnson"
+    },
+    {
+      "front": "Which federal law banned racial discrimination in public places and employment, signed by LBJ in 1964?",
+      "back": "Civil Rights Act of 1964"
+    },
+    {
+      "front": "Voting Rights Act of 1965",
+      "back": "Federal law that prohibited racial discrimination in voting; banned literacy tests and provided federal oversight of voter registration in areas with histories of discrimination"
+    },
+    {
+      "front": "Which 1965 law banned literacy tests and other barriers used to prevent African Americans from voting?",
+      "back": "Voting Rights Act of 1965"
+    },
+    {
+      "front": "13th Amendment (1865)",
+      "back": "Abolished slavery and involuntary servitude in the United States"
+    },
+    {
+      "front": "Which amendment abolished slavery in the United States?",
+      "back": "13th Amendment"
+    },
+    {
+      "front": "14th Amendment (1868)",
+      "back": "Granted citizenship to all persons born in the United States and guaranteed equal protection under the law"
+    },
+    {
+      "front": "Which amendment guarantees equal protection under the law and granted citizenship to all persons born in the U.S.?",
+      "back": "14th Amendment"
+    },
+    {
+      "front": "15th Amendment (1870)",
+      "back": "Prohibited denying the right to vote based on race, color, or previous condition of servitude"
+    },
+    {
+      "front": "Which amendment prohibited denying the right to vote based on race?",
+      "back": "15th Amendment"
+    },
+    {
+      "front": "Brown v. Board of Education (1954)",
+      "back": "Supreme Court ruling that declared racial segregation in public schools unconstitutional, overturning Plessy v. Ferguson (1896); argued by Thurgood Marshall for the NAACP"
+    },
+    {
+      "front": "Which 1954 Supreme Court case declared school segregation unconstitutional?",
+      "back": "Brown v. Board of Education"
+    },
+    {
+      "front": "Jim Crow laws",
+      "back": "State and local laws enacted after Reconstruction that enforced racial segregation in the South; named after a minstrel show character; lasted from the 1870s until the mid-1960s"
+    },
+    {
+      "front": "What were the state and local laws that enforced racial segregation in the South from the 1870s to the 1960s called?",
+      "back": "Jim Crow laws"
+    },
+    {
+      "front": "NAACP",
+      "back": "National Association for the Advancement of Colored People; founded in 1909 by W.E.B. Du Bois and others; oldest and largest civil rights organization in the U.S."
+    },
+    {
+      "front": "What does NAACP stand for?",
+      "back": "National Association for the Advancement of Colored People"
+    },
+    {
+      "front": "SCLC",
+      "back": "Southern Christian Leadership Conference; founded in 1957 by Martin Luther King Jr. and other ministers; organized nonviolent protests across the South"
+    },
+    {
+      "front": "What does SCLC stand for?",
+      "back": "Southern Christian Leadership Conference"
+    },
+    {
+      "front": "SNCC",
+      "back": "Student Nonviolent Coordinating Committee; founded in 1960; organized sit-ins, Freedom Rides, and voter registration drives; leaders included John Lewis and Stokely Carmichael"
+    },
+    {
+      "front": "What does SNCC stand for?",
+      "back": "Student Nonviolent Coordinating Committee"
+    },
+    {
+      "front": "CORE",
+      "back": "Congress of Racial Equality; founded in 1942; organized the Freedom Rides in 1961 and used nonviolent direct action to fight segregation"
+    },
+    {
+      "front": "What does CORE stand for?",
+      "back": "Congress of Racial Equality"
+    },
+    {
+      "front": "When was Martin Luther King Jr. assassinated?",
+      "back": "April 4, 1968, in Memphis, Tennessee"
+    },
+    {
+      "front": "In which city was Martin Luther King Jr. assassinated?",
+      "back": "Memphis, Tennessee"
+    }
+  ]
+}

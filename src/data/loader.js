@@ -27,6 +27,14 @@ import worldReligions from './flashcards/world-religions.json'
 import astronomy from './flashcards/astronomy.json'
 import norseMythology from './flashcards/norse-mythology.json'
 import classicalComposers from './flashcards/classical-composers.json'
+import psychology from './flashcards/psychology.json'
+import explorers from './flashcards/explorers.json'
+import britishMonarchs from './flashcards/british-monarchs.json'
+import geology from './flashcards/geology.json'
+import mathFormulas from './flashcards/math-formulas.json'
+import civilRights from './flashcards/civil-rights.json'
+import philosophy from './flashcards/philosophy.json'
+import egyptianMythology from './flashcards/egyptian-mythology.json'
 import tossups from './tossups.json'
 import lightning from './lightning.json'
 
@@ -60,6 +68,14 @@ export const flashcardDecks = [
   astronomy,
   norseMythology,
   classicalComposers,
+  psychology,
+  explorers,
+  britishMonarchs,
+  geology,
+  mathFormulas,
+  civilRights,
+  philosophy,
+  egyptianMythology,
 ]
 
 export function getDeck(id) {

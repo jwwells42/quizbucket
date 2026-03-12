@@ -1,0 +1,208 @@
+{
+  "id": "explorers",
+  "title": "Explorers & Their Voyages",
+  "description": "Famous explorers and their discoveries",
+  "levels": ["3/4", "5/6", "7-9", "9-12"],
+  "cards": [
+    {
+      "front": "Who sailed for Spain in 1492 and reached the Americas?",
+      "back": "Christopher Columbus"
+    },
+    {
+      "front": "Christopher Columbus (year & achievement)",
+      "back": "1492 — sailed for Spain, reached the Americas (landed in the Bahamas)"
+    },
+    {
+      "front": "Who led the first expedition to circumnavigate the globe (1519–1522)?",
+      "back": "Ferdinand Magellan (killed in the Philippines; his crew completed the voyage)"
+    },
+    {
+      "front": "Ferdinand Magellan (year & achievement)",
+      "back": "1519–1522 — led the first circumnavigation of the globe (sailed for Spain)"
+    },
+    {
+      "front": "Who conquered the Aztec Empire in 1521?",
+      "back": "Hernán Cortés"
+    },
+    {
+      "front": "Hernán Cortés (achievement)",
+      "back": "Conquered the Aztec Empire in Mexico (1519–1521), sailing for Spain"
+    },
+    {
+      "front": "Who conquered the Inca Empire in 1533?",
+      "back": "Francisco Pizarro"
+    },
+    {
+      "front": "Francisco Pizarro (achievement)",
+      "back": "Conquered the Inca Empire in Peru (1532–1533), sailing for Spain"
+    },
+    {
+      "front": "Who led the Corps of Discovery expedition (1804–1806)?",
+      "back": "Meriwether Lewis and William Clark"
+    },
+    {
+      "front": "Lewis & Clark (achievement)",
+      "back": "Led the Corps of Discovery (1804–1806) to explore the Louisiana Purchase and reach the Pacific Ocean"
+    },
+    {
+      "front": "Who served as guide and interpreter for Lewis & Clark?",
+      "back": "Sacagawea (a Lemhi Shoshone woman)"
+    },
+    {
+      "front": "Who was the first Englishman to circumnavigate the globe (1577–1580)?",
+      "back": "Sir Francis Drake"
+    },
+    {
+      "front": "Sir Francis Drake (achievement)",
+      "back": "Second circumnavigation of the globe and first by an Englishman (1577–1580), sailing for England"
+    },
+    {
+      "front": "Who found the first sea route from Europe to India (1498)?",
+      "back": "Vasco da Gama"
+    },
+    {
+      "front": "Vasco da Gama (achievement)",
+      "back": "First European to reach India by sea (1498), sailing around Africa for Portugal"
+    },
+    {
+      "front": "Who commanded the Chinese treasure fleet in the early 1400s?",
+      "back": "Zheng He"
+    },
+    {
+      "front": "Zheng He (achievement)",
+      "back": "Led seven massive voyages (1405–1433) across the Indian Ocean for Ming Dynasty China"
+    },
+    {
+      "front": "Who traveled the Silk Road to China and wrote about his journey?",
+      "back": "Marco Polo"
+    },
+    {
+      "front": "Marco Polo (achievement)",
+      "back": "Venetian merchant who traveled the Silk Road to China (1271–1295) and served at the court of Kublai Khan"
+    },
+    {
+      "front": "Who explored the river and bay that bear his name in present-day New York?",
+      "back": "Henry Hudson"
+    },
+    {
+      "front": "Henry Hudson (achievement)",
+      "back": "Explored the Hudson River (1609, for the Dutch) and Hudson Bay (1610, for England) while seeking a Northwest Passage"
+    },
+    {
+      "front": "Who was the first European to explore Florida (1513)?",
+      "back": "Juan Ponce de León"
+    },
+    {
+      "front": "Juan Ponce de León (achievement)",
+      "back": "First European to reach Florida (1513), sailing for Spain; legend says he sought the Fountain of Youth"
+    },
+    {
+      "front": "Who was the first European to explore the Mississippi River (1541)?",
+      "back": "Hernando de Soto"
+    },
+    {
+      "front": "Hernando de Soto (achievement)",
+      "back": "Spanish explorer who was the first European to document the Mississippi River (1541)"
+    },
+    {
+      "front": "Who explored Newfoundland for England in 1497?",
+      "back": "John Cabot (Giovanni Caboto)"
+    },
+    {
+      "front": "John Cabot (achievement)",
+      "back": "Italian sailing for England who reached Newfoundland in 1497, establishing England's claim to North America"
+    },
+    {
+      "front": "Which explorer are the Americas named after?",
+      "back": "Amerigo Vespucci"
+    },
+    {
+      "front": "Amerigo Vespucci (achievement)",
+      "back": "Italian explorer who recognized the Americas as separate continents (early 1500s); the Americas are named after him"
+    },
+    {
+      "front": "Who was the first European to see the Pacific Ocean from the Americas (1513)?",
+      "back": "Vasco Núñez de Balboa"
+    },
+    {
+      "front": "Vasco Núñez de Balboa (achievement)",
+      "back": "First European to see the Pacific Ocean from the New World (1513), crossing the Isthmus of Panama for Spain"
+    },
+    {
+      "front": "Who explored Australia and Hawaii and mapped much of the Pacific?",
+      "back": "Captain James Cook"
+    },
+    {
+      "front": "Captain James Cook (achievement)",
+      "back": "British explorer who mapped Australia, New Zealand, and Hawaii during three Pacific voyages (1768–1779)"
+    },
+    {
+      "front": "Which Norse explorer reached North America around 1000 AD?",
+      "back": "Leif Erikson"
+    },
+    {
+      "front": "Leif Erikson (achievement)",
+      "back": "Norse explorer who reached North America (Vinland) around 1000 AD, roughly 500 years before Columbus"
+    },
+    {
+      "front": "Who was the first person to reach the South Pole (1911)?",
+      "back": "Roald Amundsen"
+    },
+    {
+      "front": "Roald Amundsen (achievement)",
+      "back": "Norwegian explorer who was the first to reach the South Pole (December 14, 1911)"
+    },
+    {
+      "front": "Who is traditionally credited as the first person to reach the North Pole (1909)?",
+      "back": "Robert Peary"
+    },
+    {
+      "front": "Robert Peary (achievement)",
+      "back": "American explorer traditionally credited as the first to reach the North Pole (April 6, 1909)"
+    },
+    {
+      "front": "Who were the first to summit Mount Everest (1953)?",
+      "back": "Sir Edmund Hillary and Tenzing Norgay"
+    },
+    {
+      "front": "Sir Edmund Hillary & Tenzing Norgay (achievement)",
+      "back": "First confirmed summit of Mount Everest (May 29, 1953)"
+    },
+    {
+      "front": "Which country sponsored Columbus's 1492 voyage?",
+      "back": "Spain (Queen Isabella and King Ferdinand)"
+    },
+    {
+      "front": "Which country sponsored Vasco da Gama's voyage to India?",
+      "back": "Portugal"
+    },
+    {
+      "front": "Which country sponsored Magellan's circumnavigation?",
+      "back": "Spain"
+    },
+    {
+      "front": "Which country sponsored John Cabot's 1497 voyage?",
+      "back": "England"
+    },
+    {
+      "front": "What was the name of the land Leif Erikson reached in North America?",
+      "back": "Vinland"
+    },
+    {
+      "front": "Who lost the race to the South Pole and perished on the return trip?",
+      "back": "Robert Falcon Scott (reached the pole in January 1912, a month after Amundsen)"
+    },
+    {
+      "front": "What body of water did Magellan name during his voyage?",
+      "back": "The Pacific Ocean (meaning \"peaceful sea\")"
+    },
+    {
+      "front": "What strait at the southern tip of South America is named after Magellan?",
+      "back": "The Strait of Magellan"
+    },
+    {
+      "front": "Who commissioned the Lewis & Clark expedition?",
+      "back": "President Thomas Jefferson"
+    }
+  ]
+}

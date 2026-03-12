@@ -1,0 +1,273 @@
+{
+  "id": "egyptian-mythology",
+  "title": "Egyptian Mythology",
+  "description": "Gods, pharaohs, and legends of ancient Egypt",
+  "levels": [
+    "3/4",
+    "5/6",
+    "7-9",
+    "9-12"
+  ],
+  "cards": [
+    {
+      "front": "Ra — what is he known for?",
+      "back": "Egyptian sun god and king of the gods; sailed across the sky each day in a solar barque"
+    },
+    {
+      "front": "Which Egyptian god is the sun god and king of the gods?",
+      "back": "Ra"
+    },
+    {
+      "front": "Osiris — what is he known for?",
+      "back": "Egyptian god of the dead, the afterlife, and resurrection; ruler of the underworld"
+    },
+    {
+      "front": "Which Egyptian god rules the underworld and judges the dead?",
+      "back": "Osiris"
+    },
+    {
+      "front": "Isis — what is she known for?",
+      "back": "Egyptian goddess of magic, motherhood, and healing; wife of Osiris and mother of Horus"
+    },
+    {
+      "front": "Which Egyptian goddess is associated with magic and motherhood, and reassembled her husband's body?",
+      "back": "Isis"
+    },
+    {
+      "front": "Horus — what is he known for?",
+      "back": "Egyptian sky god depicted with a falcon head; son of Osiris and Isis, protector of the pharaoh"
+    },
+    {
+      "front": "Which falcon-headed Egyptian god is the protector of the pharaoh?",
+      "back": "Horus"
+    },
+    {
+      "front": "Anubis — what is he known for?",
+      "back": "Jackal-headed Egyptian god of embalming and mummification; guided souls to the afterlife"
+    },
+    {
+      "front": "Which jackal-headed Egyptian god oversaw mummification and guided souls to the afterlife?",
+      "back": "Anubis"
+    },
+    {
+      "front": "Thoth — what is he known for?",
+      "back": "Ibis-headed Egyptian god of wisdom, writing, and knowledge; inventor of hieroglyphics"
+    },
+    {
+      "front": "Which ibis-headed Egyptian god invented writing and hieroglyphics?",
+      "back": "Thoth"
+    },
+    {
+      "front": "Set (Seth) — what is he known for?",
+      "back": "Egyptian god of chaos, storms, and the desert; murdered his brother Osiris"
+    },
+    {
+      "front": "Which Egyptian god of chaos murdered his brother Osiris?",
+      "back": "Set (Seth)"
+    },
+    {
+      "front": "Bastet — what is she known for?",
+      "back": "Egyptian cat goddess of home, fertility, and protection"
+    },
+    {
+      "front": "Which Egyptian goddess is depicted as a cat and associated with home and protection?",
+      "back": "Bastet"
+    },
+    {
+      "front": "Hathor — what is she known for?",
+      "back": "Egyptian goddess of love, beauty, music, and joy; often depicted with cow horns and a sun disk"
+    },
+    {
+      "front": "Which Egyptian goddess of love and music is depicted with cow horns and a sun disk?",
+      "back": "Hathor"
+    },
+    {
+      "front": "Sobek — what is he known for?",
+      "back": "Egyptian crocodile-headed god of the Nile, water, and military power"
+    },
+    {
+      "front": "Which crocodile-headed Egyptian god was associated with the Nile?",
+      "back": "Sobek"
+    },
+    {
+      "front": "Sekhmet — what is she known for?",
+      "back": "Lion-headed Egyptian goddess of war, destruction, and healing"
+    },
+    {
+      "front": "Which lion-headed Egyptian goddess represented war and destruction?",
+      "back": "Sekhmet"
+    },
+    {
+      "front": "Ma'at — what is she known for?",
+      "back": "Egyptian goddess of truth, justice, and cosmic order; her feather was used to weigh the heart of the dead"
+    },
+    {
+      "front": "Whose feather was used to weigh the hearts of the dead in Egyptian mythology?",
+      "back": "Ma'at"
+    },
+    {
+      "front": "Ptah — what is he known for?",
+      "back": "Egyptian god of creation, craftsmen, and architects; patron of Memphis"
+    },
+    {
+      "front": "Which Egyptian god of creation and craftsmen was the patron deity of Memphis?",
+      "back": "Ptah"
+    },
+    {
+      "front": "Nut — what is she known for?",
+      "back": "Egyptian goddess of the sky; depicted arching over the earth with stars on her body"
+    },
+    {
+      "front": "Which Egyptian goddess personifies the sky and is shown arching over the earth?",
+      "back": "Nut"
+    },
+    {
+      "front": "Geb — what is he known for?",
+      "back": "Egyptian god of the earth; husband of Nut and father of Osiris, Isis, Set, and Nephthys"
+    },
+    {
+      "front": "Which Egyptian god personifies the earth and is the husband of Nut?",
+      "back": "Geb"
+    },
+    {
+      "front": "Tefnut — what is she known for?",
+      "back": "Egyptian goddess of moisture, rain, and dew; twin sister and wife of Shu"
+    },
+    {
+      "front": "Which Egyptian goddess represents moisture and rain?",
+      "back": "Tefnut"
+    },
+    {
+      "front": "Shu — what is he known for?",
+      "back": "Egyptian god of air and sunlight; holds up the sky goddess Nut, separating her from Geb"
+    },
+    {
+      "front": "Which Egyptian god of air separates the sky (Nut) from the earth (Geb)?",
+      "back": "Shu"
+    },
+    {
+      "front": "Khnum — what is he known for?",
+      "back": "Ram-headed Egyptian god who molded humans from clay on his potter's wheel"
+    },
+    {
+      "front": "Which ram-headed Egyptian god shaped humans on a potter's wheel?",
+      "back": "Khnum"
+    },
+    {
+      "front": "Nephthys — what is she known for?",
+      "back": "Egyptian goddess of mourning, the night, and protection of the dead; sister of Isis and wife of Set"
+    },
+    {
+      "front": "Which Egyptian goddess of mourning is the sister of Isis and wife of Set?",
+      "back": "Nephthys"
+    },
+    {
+      "front": "Ammit — what is she known for?",
+      "back": "Egyptian demon with the head of a crocodile, torso of a lion, and hindquarters of a hippo; devoured the hearts of the unworthy dead"
+    },
+    {
+      "front": "Which Egyptian creature devoured the hearts of those who failed the weighing of the heart?",
+      "back": "Ammit"
+    },
+    {
+      "front": "What is the Book of the Dead?",
+      "back": "A collection of ancient Egyptian spells and instructions to help the deceased navigate the afterlife"
+    },
+    {
+      "front": "Ancient Egyptian spells and instructions to guide the dead through the afterlife",
+      "back": "The Book of the Dead"
+    },
+    {
+      "front": "What is the weighing of the heart ceremony?",
+      "back": "A judgment in which the dead person's heart was weighed against Ma'at's feather of truth; a lighter heart meant a worthy soul"
+    },
+    {
+      "front": "In the weighing of the heart, what happened if the heart was heavier than Ma'at's feather?",
+      "back": "Ammit devoured the heart, and the soul ceased to exist"
+    },
+    {
+      "front": "What is the ankh?",
+      "back": "An ancient Egyptian cross-shaped symbol representing eternal life"
+    },
+    {
+      "front": "Which ancient Egyptian symbol shaped like a cross with a loop at the top represents eternal life?",
+      "back": "The ankh"
+    },
+    {
+      "front": "What is the Eye of Horus?",
+      "back": "An ancient Egyptian symbol of protection, royal power, and good health"
+    },
+    {
+      "front": "Which ancient Egyptian symbol of protection is associated with a falcon-headed god's restored eye?",
+      "back": "The Eye of Horus"
+    },
+    {
+      "front": "What does the scarab beetle symbolize in Egyptian mythology?",
+      "back": "Rebirth, transformation, and the rising sun — linked to the god Khepri"
+    },
+    {
+      "front": "Which Egyptian god is represented by a scarab beetle and associated with the rising sun?",
+      "back": "Khepri"
+    },
+    {
+      "front": "What are canopic jars?",
+      "back": "Four jars used during mummification to store and protect the deceased's lungs, liver, stomach, and intestines"
+    },
+    {
+      "front": "Which four organs were stored in canopic jars during Egyptian mummification?",
+      "back": "Lungs, liver, stomach, and intestines"
+    },
+    {
+      "front": "What is the Great Sphinx of Giza?",
+      "back": "A limestone statue with the body of a lion and the head of a human (likely Pharaoh Khafre), guarding the Giza pyramid complex"
+    },
+    {
+      "front": "Which ancient Egyptian monument has the body of a lion and the head of a human?",
+      "back": "The Great Sphinx of Giza"
+    },
+    {
+      "front": "Why were pharaohs mummified?",
+      "back": "Egyptians believed preserving the body was necessary for the soul (ka and ba) to survive in the afterlife"
+    },
+    {
+      "front": "What are 'ka' and 'ba' in Egyptian belief?",
+      "back": "Ka is the life force or spirit; ba is the personality or soul — both needed the preserved body to survive after death"
+    },
+    {
+      "front": "Why were Egyptian pharaohs considered gods?",
+      "back": "Pharaohs were believed to be the living embodiment of Horus and became Osiris after death"
+    },
+    {
+      "front": "Which god was the pharaoh believed to embody during his lifetime?",
+      "back": "Horus"
+    },
+    {
+      "front": "What is hieroglyphics?",
+      "back": "The ancient Egyptian writing system using pictorial symbols; used on temples, tombs, and papyrus"
+    },
+    {
+      "front": "Ancient Egyptian writing system using pictorial symbols on temples and tombs",
+      "back": "Hieroglyphics"
+    },
+    {
+      "front": "Who murdered Osiris in Egyptian mythology?",
+      "back": "His brother Set (Seth), who trapped him in a coffin and scattered his body parts"
+    },
+    {
+      "front": "What did Isis do after Set murdered Osiris?",
+      "back": "She gathered and reassembled Osiris's scattered body parts, then used magic to resurrect him"
+    },
+    {
+      "front": "Who fought Set to avenge his father Osiris and claim the throne of Egypt?",
+      "back": "Horus"
+    },
+    {
+      "front": "What is Duat in Egyptian mythology?",
+      "back": "The Egyptian underworld — the realm of the dead where souls were judged"
+    },
+    {
+      "front": "The Egyptian underworld where souls traveled to be judged",
+      "back": "Duat"
+    }
+  ]
+}
