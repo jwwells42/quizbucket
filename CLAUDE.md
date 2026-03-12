@@ -15,7 +15,7 @@ QuizBucket is a study/preparation website for AGQBA-style quiz bowl. It helps st
 
 ### Study Modes
 - **Flashcards**: Flip cards with progressive batch learning (5 at a time, drill to zero, then next batch). Progress tracked in LocalStorage.
-- **Tossup Practice**: Question text reveals word-by-word, student types answer to buzz in. Randomized order.
+- **Tossup Practice**: Question text reveals word-by-word, student types answer to buzz in. Randomized rounds of 20. Toggle between "Tossup Only" (Rounds 1 & 4) and "Tossup + Bonus" (Round 2) — bonus pulls 4 questions from a random lightning topic, 5 pts each + 20 pt sweep bonus.
 - **Lightning Round Practice**: Single topic per round, 10 questions pulled randomly from a larger bank, 60-second timer
 - **Text Memorizer**: 5-level progressive memorization (full text → first-letter hints → blanks → mostly blank → recite from memory). Inline fill-in-the-blank with peek-to-reveal eye icon. Supports line breaks for poetry.
 - **Math Computation**: Procedurally generated math problems with 20-second timer (AGQBA-style). Grade-appropriate difficulty. 10 problems per round.
