@@ -1356,7 +1356,7 @@
       },
       {
         "question": "What acronym represents the order of operations?",
-        "answer": "PEMDAS"
+        "answer": "PEMDAS/GEMS"
       },
       {
         "question": "Two angles that add up to 90 degrees are called?",
@@ -4799,16 +4799,16 @@
         "answer": "A = 1/2 x base x height"
       },
       {
-        "question": "What is the formula for the area of a circle?",
-        "answer": "A = pi x r squared"
+        "question": "What shape uses the formula A = πr²?",
+        "answer": "Circle"
       },
       {
-        "question": "What is the formula for the volume of a sphere?",
-        "answer": "V = 4/3 x pi x r cubed"
+        "question": "What shape uses the formula V = 4/3πr³?",
+        "answer": "Sphere"
       },
       {
-        "question": "What is the formula for the circumference of a circle?",
-        "answer": "C = 2 x pi x r"
+        "question": "What does the formula C = 2πr calculate?",
+        "answer": "Circumference"
       },
       {
         "question": "In the Pythagorean theorem, a squared plus b squared equals what?",
@@ -4831,8 +4831,8 @@
         "answer": "1"
       },
       {
-        "question": "What formula gives the area of a circle?",
-        "answer": "πr²"
+        "question": "What is the name for the longest side of a right triangle?",
+        "answer": "Hypotenuse"
       },
       {
         "question": "How many feet are in a mile?",
@@ -4851,12 +4851,12 @@
         "answer": "343"
       },
       {
-        "question": "What is the slope formula given two points?",
-        "answer": "m = (y2 - y1) / (x2 - x1)"
+        "question": "What does the formula (y₂ − y₁)/(x₂ − x₁) calculate?",
+        "answer": "Slope"
       },
       {
-        "question": "What is the quadratic formula?",
-        "answer": "x = (-b +/- sqrt(b^2 - 4ac)) / 2a"
+        "question": "What formula solves equations in the form ax² + bx + c = 0?",
+        "answer": "Quadratic formula"
       },
       {
         "question": "How many prime numbers are there under 100?",
@@ -4871,8 +4871,8 @@
         "answer": "Kilo"
       },
       {
-        "question": "What is the formula for the volume of a cylinder?",
-        "answer": "V = pi x r squared x height"
+        "question": "What shape uses the formula V = πr²h?",
+        "answer": "Cylinder"
       },
       {
         "question": "What is pi to two decimal places?",
