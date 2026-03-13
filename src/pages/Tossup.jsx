@@ -321,18 +321,29 @@ export default function Tossup() {
     resetQuestion()
   }, [questionIndex, roundQuestions.length, resetQuestion])
 
-  // Keyboard: Enter to buzz (only when not in bonus flow)
+  // Keyboard: Enter to proceed through all non-input states
   useEffect(() => {
     function handleKey(e) {
-      if (phase !== 'playing') return
-      if (e.key === 'Enter' && !buzzed && !paused && !result && !bonusData) {
-        e.preventDefault()
+      if (phase !== 'playing' || e.key !== 'Enter') return
+      // Don't intercept when user is typing in an input
+      if (document.activeElement?.tagName === 'INPUT') return
+
+      e.preventDefault()
+      if (paused && !result) {
+        startReveal()
+      } else if (!buzzed && !paused && !result && !bonusData) {
         buzz()
+      } else if (result === 'correct' && bonusMode && !bonusData) {
+        startBonus()
+      } else if (bonusData?.phase === 'result') {
+        nextBonusPart()
+      } else if (result && (!bonusMode || result === 'incorrect' || bonusData?.phase === 'summary')) {
+        nextQuestion()
       }
     }
     window.addEventListener('keydown', handleKey)
     return () => window.removeEventListener('keydown', handleKey)
-  }, [buzz, buzzed, paused, result, phase, bonusData])
+  }, [buzz, buzzed, paused, result, phase, bonusData, bonusMode, startReveal, startBonus, nextBonusPart, nextQuestion])
 
   const revealedText = words.slice(0, revealedWords).join(' ')
 
