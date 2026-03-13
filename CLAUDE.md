@@ -72,6 +72,7 @@ After making changes, always follow this sequence:
 - Tossup format: `{ "question": "...", "answer": "...", "category": "...", "levels": ["3/4", "5/6", "7-9", "9-12"] }` — no "For ten points" phrasing
 - **Grade levels**: Every content item has a `levels` array with one or more of: `"3/4"`, `"5/6"`, `"7-9"`, `"9-12"`. Content is filtered by the selected level in the nav dropdown. Use all four levels for content appropriate to all grades.
 - Bidirectional flashcards are preferred (e.g. "Gold → Au" and "Au → Gold" as separate cards)
+- **Lightning question rules**: Every answer must be a single word or short phrase — never a list or multi-part answer. Questions must not contain or directly hint at the answer (e.g., don't ask about "sediment" when the answer is "sedimentary"). Questions should be tightly focused on the topic with clear, unambiguous answers.
 
 ## Current Content (37 decks, 34 lightning topics, 120 tossups, 4 texts)
 

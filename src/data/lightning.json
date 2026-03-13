@@ -1355,8 +1355,8 @@
         "answer": "Mode"
       },
       {
-        "question": "What does PEMDAS stand for?",
-        "answer": "Parentheses, Exponents, Multiplication, Division, Addition, Subtraction"
+        "question": "What acronym represents the order of operations?",
+        "answer": "PEMDAS"
       },
       {
         "question": "Two angles that add up to 90 degrees are called?",
@@ -1982,8 +1982,8 @@
         "answer": "1929"
       },
       {
-        "question": "What event happened on September 11, 2001?",
-        "answer": "Terrorist attacks on the World Trade Center and Pentagon"
+        "question": "In what year did terrorist attacks destroy the World Trade Center?",
+        "answer": "2001"
       },
       {
         "question": "What year was the Russian Revolution?",
@@ -2313,8 +2313,8 @@
     ],
     "questions": [
       {
-        "question": "What are the three branches of U.S. government?",
-        "answer": "Legislative, Executive, Judicial"
+        "question": "Which branch of U.S. government includes Congress?",
+        "answer": "Legislative"
       },
       {
         "question": "Which branch makes laws?",
@@ -2393,12 +2393,12 @@
         "answer": "Two-thirds vote in both chambers"
       },
       {
-        "question": "Who wrote The Federalist Papers?",
-        "answer": "Hamilton, Madison, and Jay"
+        "question": "Which founding father wrote the majority of The Federalist Papers?",
+        "answer": "Alexander Hamilton"
       },
       {
-        "question": "What is habeas corpus?",
-        "answer": "Right not to be imprisoned without cause"
+        "question": "What legal principle protects against imprisonment without trial?",
+        "answer": "Habeas corpus"
       },
       {
         "question": "Who has the power to impeach?",
@@ -2438,7 +2438,7 @@
         "answer": "Macbeth"
       },
       {
-        "question": "'Wherefore art thou Romeo?' — which play?",
+        "question": "Which Shakespeare play is set in Verona and features feuding families?",
         "answer": "Romeo and Juliet"
       },
       {
@@ -2470,8 +2470,8 @@
         "answer": "Puck"
       },
       {
-        "question": "What are Shakespeare's four great tragedies?",
-        "answer": "Hamlet, Othello, King Lear, Macbeth"
+        "question": "Which Shakespeare tragedy features a prince who feigns madness to avenge his father?",
+        "answer": "Hamlet"
       },
       {
         "question": "In which play does a Scottish general murder King Duncan?",
@@ -2514,8 +2514,8 @@
         "answer": "Stratford-upon-Avon, England"
       },
       {
-        "question": "Who leads the assassination in Julius Caesar?",
-        "answer": "Brutus and Cassius"
+        "question": "Who delivers the final stab and prompts Caesar's 'Et tu' in Julius Caesar?",
+        "answer": "Brutus"
       },
       {
         "question": "In Twelfth Night, who disguises herself as a man?",
@@ -2833,8 +2833,8 @@
         "answer": "Lake Baikal"
       },
       {
-        "question": "Name the five Great Lakes.",
-        "answer": "Superior, Michigan, Huron, Erie, Ontario"
+        "question": "Which Great Lake is the largest by surface area?",
+        "answer": "Superior"
       },
       {
         "question": "What zone of earthquakes and volcanoes surrounds the Pacific?",
@@ -2934,8 +2934,8 @@
         "answer": "Invisible hand"
       },
       {
-        "question": "What are the four factors of production?",
-        "answer": "Land, labor, capital, entrepreneurship"
+        "question": "What factor of production refers to natural resources?",
+        "answer": "Land"
       },
       {
         "question": "What measures changes in consumer prices to track inflation?",
@@ -3019,16 +3019,16 @@
         "answer": "Octave"
       },
       {
-        "question": "What is the pattern of a major scale?",
-        "answer": "Whole-whole-half-whole-whole-whole-half"
+        "question": "What type of scale uses the pattern W-W-H-W-W-W-H?",
+        "answer": "Major scale"
       },
       {
         "question": "What scale uses all 12 half steps in an octave?",
         "answer": "Chromatic scale"
       },
       {
-        "question": "What does 4/4 time mean?",
-        "answer": "4 beats per measure, quarter note gets one beat"
+        "question": "How many beats per measure in 4/4 time?",
+        "answer": "4"
       },
       {
         "question": "What tempo marking means fast?",
@@ -3603,8 +3603,8 @@
         "answer": "Tyr"
       },
       {
-        "question": "What are the names of Odin's two ravens?",
-        "answer": "Huginn and Muninn"
+        "question": "What is the name of Odin's raven whose name means 'thought'?",
+        "answer": "Huginn"
       },
       {
         "question": "Who guards the Bifrost bridge?",
@@ -3647,8 +3647,8 @@
         "answer": "Nine"
       },
       {
-        "question": "Which dwarf brothers forged Mjolnir?",
-        "answer": "Brokk and Sindri"
+        "question": "What weapon did the dwarves forge for Thor?",
+        "answer": "Mjolnir"
       },
       {
         "question": "Which Norse figure is the goddess of skiing, winter, and mountains?",
@@ -3930,12 +3930,12 @@
         "answer": "Diwali"
       },
       {
-        "question": "Name the three gods of the Hindu Trimurti.",
-        "answer": "Brahma, Vishnu, and Shiva"
+        "question": "Which Hindu god is known as the Preserver?",
+        "answer": "Vishnu"
       },
       {
-        "question": "What are the Five Pillars of Islam?",
-        "answer": "Shahada, Salat, Zakat, Sawm, and Hajj"
+        "question": "What is the Islamic practice of fasting during Ramadan called?",
+        "answer": "Sawm"
       },
       {
         "question": "Who founded Sikhism?",
@@ -4326,8 +4326,8 @@
         "answer": "Jane Seymour"
       },
       {
-        "question": "Which two monarchs came to power in the Glorious Revolution?",
-        "answer": "William III and Mary II"
+        "question": "Which Dutch prince became King of England after the Glorious Revolution?",
+        "answer": "William III"
       }
     ]
   },
@@ -4423,8 +4423,8 @@
         "answer": "Robert Peary"
       },
       {
-        "question": "Who were the first two people to summit Mount Everest in 1953?",
-        "answer": "Sir Edmund Hillary and Tenzing Norgay"
+        "question": "Which New Zealand mountaineer was the first to summit Mount Everest?",
+        "answer": "Sir Edmund Hillary"
       },
       {
         "question": "Which country sponsored Columbus's voyage in 1492?",
@@ -4569,19 +4569,19 @@
     "category": "Science",
     "questions": [
       {
-        "question": "What are the three main types of rock?",
-        "answer": "Igneous, sedimentary, and metamorphic"
+        "question": "What type of rock forms when magma or lava cools and solidifies?",
+        "answer": "Igneous"
       },
       {
         "question": "What type of rock is formed from cooled magma or lava?",
         "answer": "Igneous"
       },
       {
-        "question": "What type of rock is formed from compressed layers of sediment?",
+        "question": "What type of rock is limestone, sandstone, and shale?",
         "answer": "Sedimentary"
       },
       {
-        "question": "What type of rock is changed by heat and pressure?",
+        "question": "What type of rock is marble, slate, and quartzite?",
         "answer": "Metamorphic"
       },
       {
@@ -4621,8 +4621,8 @@
         "answer": "Feldspar"
       },
       {
-        "question": "What are Earth's four layers from surface to center?",
-        "answer": "Crust, mantle, outer core, inner core"
+        "question": "What is the outermost layer of the Earth called?",
+        "answer": "Crust"
       },
       {
         "question": "What is Earth's thickest layer?",
@@ -4637,8 +4637,8 @@
         "answer": "Convergent boundary"
       },
       {
-        "question": "What is the Ring of Fire?",
-        "answer": "A horseshoe-shaped zone of volcanoes around the Pacific Ocean"
+        "question": "In which ocean is the Ring of Fire located?",
+        "answer": "Pacific"
       },
       {
         "question": "What is the process when one plate slides beneath another?",
@@ -4831,8 +4831,8 @@
         "answer": "1"
       },
       {
-        "question": "What does PEMDAS stand for?",
-        "answer": "Parentheses, Exponents, Multiplication, Division, Addition, Subtraction"
+        "question": "What formula gives the area of a circle?",
+        "answer": "πr²"
       },
       {
         "question": "How many feet are in a mile?",
