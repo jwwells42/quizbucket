@@ -18,6 +18,14 @@ function getAcceptables(correctAnswer) {
   return results
 }
 
+function isOrderedSubsequence(shorter, longer) {
+  let si = 0
+  for (let i = 0; i < longer.length && si < shorter.length; i++) {
+    if (shorter[si] === longer[i]) si++
+  }
+  return si === shorter.length
+}
+
 export function checkAnswer(correctAnswer, givenAnswer) {
   const g = stripArticles(normalize(givenAnswer))
   if (!g || g.length < 2) return false
@@ -26,12 +34,21 @@ export function checkAnswer(correctAnswer, givenAnswer) {
 
   for (const a of acceptables) {
     if (a === g) return true
-    // Last-word matching: "Washington" matches "George Washington"
     if (g.length >= 3) {
       const aWords = a.split(' ')
       const gWords = g.split(' ')
-      if (gWords.length < aWords.length && aWords.slice(-gWords.length).join(' ') === g) return true
-      if (aWords.length < gWords.length && gWords.slice(-aWords.length).join(' ') === a) return true
+      // Last-word matching: "Washington" matches "George Washington"
+      // Must cover at least half the words to avoid matching just a name fragment
+      if (gWords.length < aWords.length && gWords.length >= Math.ceil(aWords.length / 2)
+        && aWords.slice(-gWords.length).join(' ') === g) return true
+      if (aWords.length < gWords.length && aWords.length >= Math.ceil(gWords.length / 2)
+        && gWords.slice(-aWords.length).join(' ') === a) return true
+      // Subsequence matching: accept dropped middle names, prepositions, etc.
+      // Student's words must appear in order, covering at least 60% of the answer
+      if (aWords.length >= 3 && gWords.length >= 2 && gWords.length >= Math.ceil(aWords.length * 0.6)
+        && isOrderedSubsequence(gWords, aWords)) return true
+      if (gWords.length >= 3 && aWords.length >= 2 && aWords.length >= Math.ceil(gWords.length * 0.6)
+        && isOrderedSubsequence(aWords, gWords)) return true
     }
   }
 
