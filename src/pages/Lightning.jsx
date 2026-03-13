@@ -256,6 +256,11 @@ export default function Lightning() {
     )
   }
 
+  const stallRound = useCallback(() => {
+    clearInterval(timerRef.current)
+    setPhase('done')
+  }, [])
+
   const q = questions[currentIndex]
   return (
     <div>
@@ -264,10 +269,20 @@ export default function Lightning() {
           <h1 className="text-2xl font-bold">Lightning Round</h1>
           <p className="text-sm text-gray-500">{activeSet.title}</p>
         </div>
-        <div
-          className={`text-2xl font-mono font-bold ${timeLeft <= 10 ? 'text-red-400' : 'text-gray-300'}`}
-        >
-          {timeLeft}s
+        <div className="flex items-center gap-3">
+          <div
+            className={`text-2xl font-mono font-bold ${timeLeft <= 10 ? 'text-red-400' : 'text-gray-300'}`}
+          >
+            {timeLeft}s
+          </div>
+          {results.length > 0 && (
+            <button
+              onClick={stallRound}
+              className="px-3 py-1 text-xs bg-gray-700 text-gray-400 rounded font-medium hover:bg-gray-600 transition-colors"
+            >
+              Stall
+            </button>
+          )}
         </div>
       </div>
 

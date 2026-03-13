@@ -1,11 +1,38 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
-import { tossups, lightning } from '../data/loader'
+import { Link } from 'react-router-dom'
+import { tossups, lightning, flashcardDecks } from '../data/loader'
 import { useProgress } from '../hooks/useProgress'
 import { useLevel } from '../context/LevelContext'
 import { checkAnswer, isCloseAnswer } from '../utils/answerCheck'
 
-const ROUND_SIZE = 20
+const TOSSUP_ROUND_SIZE = 20
+const BONUS_ROUND_SIZE = 4
 const ANSWER_TIME = 10
+
+// Map tossup categories to relevant flashcard deck IDs
+const CATEGORY_DECKS = {
+  'Science': ['biology-terms', 'chemistry-terms', 'physics-terms'],
+  'History': ['world-history', 'famous-battles', 'civil-rights'],
+  'Literature': ['authors-works', 'american-literature', 'shakespeare'],
+  'Geography': ['state-capitals', 'world-capitals', 'geography-physical'],
+  'Fine Arts': ['art-music', 'famous-paintings', 'classical-composers'],
+  'Math': ['math-vocabulary', 'math-formulas'],
+  'Mythology': ['greek-roman-mythology', 'norse-mythology', 'egyptian-mythology'],
+  'Social Studies': ['civics', 'economics', 'presidents', 'supreme-court'],
+}
+
+function getStudyDecks(roundResults) {
+  const missedCategories = new Set(roundResults.filter(r => !r.correct).map(r => r.category))
+  const decks = []
+  for (const cat of missedCategories) {
+    const deckIds = CATEGORY_DECKS[cat] || []
+    for (const id of deckIds) {
+      const deck = flashcardDecks.find(d => d.id === id)
+      if (deck && !decks.some(d => d.id === id)) decks.push(deck)
+    }
+  }
+  return decks
+}
 
 function shuffle(arr) {
   const a = [...arr]
@@ -92,7 +119,8 @@ export default function Tossup() {
     setTimedOut(false)
   }, [filteredKey])
 
-  const roundQuestions = shuffled.slice(0, ROUND_SIZE)
+  const roundSize = bonusMode ? BONUS_ROUND_SIZE : TOSSUP_ROUND_SIZE
+  const roundQuestions = shuffled.slice(0, roundSize)
   const question = roundQuestions[questionIndex]
   const words = question ? question.question.split(' ') : []
 
@@ -321,6 +349,11 @@ export default function Tossup() {
     resetQuestion()
   }, [questionIndex, roundQuestions.length, resetQuestion])
 
+  const finishRound = useCallback(() => {
+    clearInterval(timerRef.current)
+    setPhase('done')
+  }, [])
+
   // Keyboard: Enter to proceed through all non-input states
   useEffect(() => {
     function handleKey(e) {
@@ -362,8 +395,8 @@ export default function Tossup() {
           <h2 className="font-semibold mb-1">How it works:</h2>
           <p className="text-sm text-gray-400 mb-4">
             {bonusMode
-              ? `A round of ${ROUND_SIZE} tossup questions with 4-part bonus sets — just like AGQBA Round 2. Get the tossup right to earn bonus points!`
-              : `A round of ${ROUND_SIZE} tossup questions — just like AGQBA Rounds 1 and 4. Each question reveals word by word. Buzz in when you know the answer.`}
+              ? `${BONUS_ROUND_SIZE} tossup questions with 4-part bonus sets — just like AGQBA Round 2. Get the tossup right to earn bonus points!`
+              : `A round of ${TOSSUP_ROUND_SIZE} tossup questions — just like AGQBA Rounds 1 and 4. Each question reveals word by word. Buzz in when you know the answer.`}
           </p>
           <p className="text-sm text-gray-500 mb-4">
             You have {ANSWER_TIME} seconds to type your answer after buzzing.
@@ -404,7 +437,7 @@ export default function Tossup() {
             onClick={startRound}
             className="px-8 py-3 bg-emerald-600 text-white rounded-lg font-bold text-lg hover:bg-emerald-500 transition-colors"
           >
-            Start Round ({ROUND_SIZE} questions)
+            Start Round ({bonusMode ? BONUS_ROUND_SIZE : TOSSUP_ROUND_SIZE} questions)
           </button>
         </div>
       </div>
@@ -492,6 +525,27 @@ export default function Tossup() {
           </div>
         </div>
 
+        {(() => {
+          const studyDecks = getStudyDecks(roundResults)
+          if (studyDecks.length === 0) return null
+          return (
+            <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 mb-6">
+              <h2 className="font-semibold mb-3">Study these topics</h2>
+              <div className="flex flex-wrap gap-2">
+                {studyDecks.map(d => (
+                  <Link
+                    key={d.id}
+                    to={`/flashcards/${d.id}`}
+                    className="px-3 py-1.5 bg-indigo-600/20 text-indigo-400 border border-indigo-500/30 rounded-lg text-sm font-medium hover:bg-indigo-600/30 transition-colors"
+                  >
+                    {d.title}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )
+        })()}
+
         <div className="flex justify-center gap-4">
           <button
             onClick={startRound}
@@ -511,8 +565,16 @@ export default function Tossup() {
         <h1 className="text-2xl font-bold">
           {bonusMode ? 'Tossup + Bonus' : 'Tossup Practice'}
         </h1>
-        <div className="text-sm text-gray-500">
-          {runningTotal} pts
+        <div className="flex items-center gap-3">
+          <span className="text-sm text-gray-500">{runningTotal} pts</span>
+          {roundResults.length > 0 && (
+            <button
+              onClick={finishRound}
+              className="px-3 py-1 text-xs bg-gray-700 text-gray-400 rounded font-medium hover:bg-gray-600 transition-colors"
+            >
+              Finish Round
+            </button>
+          )}
         </div>
       </div>
 
