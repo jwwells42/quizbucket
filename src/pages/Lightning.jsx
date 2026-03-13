@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import { lightning } from '../data/loader'
 import { useProgress } from '../hooks/useProgress'
 import { useLevel } from '../context/LevelContext'
+import { checkAnswer, isCloseAnswer } from '../utils/answerCheck'
 
 const ROUND_SIZE = 10
 
@@ -86,13 +87,11 @@ export default function Lightning() {
     const q = questions[currentIndex]
     if (!q) return
 
-    const normalize = s => s.toLowerCase().replace(/[^a-z0-9\s]/g, '').trim()
-    const correct = normalize(q.answer)
-    const given = normalize(answer)
-    const isCorrect = correct === given || correct.includes(given) || given.includes(correct)
+    const isCorrect = checkAnswer(q.answer, answer)
+    const isClose = !isCorrect && isCloseAnswer(q.answer, answer)
 
-    setResults(prev => [...prev, { ...q, given: answer, correct: isCorrect }])
-    setFeedback(isCorrect ? 'correct' : 'incorrect')
+    setResults(prev => [...prev, { ...q, given: answer, correct: isCorrect, close: isClose }])
+    setFeedback(isCorrect ? 'correct' : isClose ? 'close' : 'incorrect')
 
     setTimeout(() => {
       setFeedback(null)
@@ -196,13 +195,15 @@ export default function Lightning() {
               <div
                 key={i}
                 className={`flex justify-between items-start p-2 rounded text-sm ${
-                  r.correct ? 'bg-emerald-500/10' : 'bg-red-500/10'
+                  r.correct ? 'bg-emerald-500/10' : r.close ? 'bg-amber-500/10' : 'bg-red-500/10'
                 }`}
               >
                 <div>
                   <span className="font-medium">{r.question}</span>
                   {!r.correct && r.given && (
-                    <span className="text-red-400 ml-2">You said: {r.given}</span>
+                    <span className={`ml-2 ${r.close ? 'text-amber-400' : 'text-red-400'}`}>
+                      {r.close ? 'Close! ' : ''}You said: {r.given}
+                    </span>
                   )}
                 </div>
                 <span className={`font-medium shrink-0 ml-4 ${r.correct ? 'text-emerald-400' : 'text-red-400'}`}>
@@ -260,9 +261,11 @@ export default function Lightning() {
         className={`bg-gray-900 border rounded-lg p-6 mb-4 transition-colors ${
           feedback === 'correct'
             ? 'border-emerald-500'
-            : feedback === 'incorrect'
-              ? 'border-red-500'
-              : 'border-gray-800'
+            : feedback === 'close'
+              ? 'border-amber-500'
+              : feedback === 'incorrect'
+                ? 'border-red-500'
+                : 'border-gray-800'
         }`}
       >
         <p className="text-lg font-medium">{q.question}</p>

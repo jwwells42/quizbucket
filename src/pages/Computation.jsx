@@ -5,7 +5,7 @@ import { useProgress } from '../hooks/useProgress'
 import { ALL_LEVELS, LEVEL_LABELS } from '../context/LevelContext'
 
 const ROUND_SIZE = 10
-const TIME_LIMIT = 20
+const TIME_LIMIT = 30
 
 function normalizeAnswer(str) {
   return str.toLowerCase().replace(/\s+/g, ' ').trim()
@@ -131,7 +131,7 @@ export default function Computation() {
         <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 mb-6">
           <h2 className="font-semibold mb-1">How it works:</h2>
           <p className="text-sm text-gray-400 mb-4">
-            You'll get {ROUND_SIZE} math problems. Each has a {TIME_LIMIT}-second timer — work it out on scratch paper and type your answer. Just like AGQBA computation questions.
+            You'll get {ROUND_SIZE} math problems. Each has a {TIME_LIMIT}-second timer (AGQBA gives 20s, plus extra for reading and typing) — work it out on scratch paper and type your answer.
           </p>
           <h2 className="font-semibold mb-2">Select difficulty:</h2>
           <div className="flex flex-wrap gap-2 mb-4">

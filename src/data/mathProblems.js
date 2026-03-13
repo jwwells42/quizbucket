@@ -217,21 +217,22 @@ function integerOps79() {
 
 function proportions79() {
   const a = randInt(2, 10), b = randInt(2, 10), c = randInt(2, 10)
+  if (a === c || a === b) return proportions79() // avoid trivial cases like a/b = a/x
   const d = (b * c) / a
-  if (!Number.isInteger(d)) return proportions79()
+  if (!Number.isInteger(d) || d === c) return proportions79() // avoid x = c (same denominators)
   return { question: `Solve: ${a}/${b} = ${c}/x`, answer: d }
 }
 
 function exponentRules79() {
   const type = randInt(0, 2)
   if (type === 0) {
-    const base = randInt(2, 5), exp = randInt(2, 4)
+    const base = randInt(2, 7), exp = randInt(2, 4)
     return { question: `${base}${exp === 2 ? '²' : exp === 3 ? '³' : '⁴'} = ?`, answer: Math.pow(base, exp) }
   } else if (type === 1) {
-    const b = randInt(2, 10)
+    const b = randInt(8, 18) // √64 to √324 — smaller squares are 5/6 level
     return { question: `√${b * b} = ?`, answer: b }
   }
-  const b = randInt(2, 5)
+  const b = randInt(3, 8) // ∛27 to ∛512
   return { question: `∛${b * b * b} = ?`, answer: b }
 }
 

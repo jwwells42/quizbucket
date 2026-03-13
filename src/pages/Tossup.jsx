@@ -2,8 +2,10 @@ import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { tossups, lightning } from '../data/loader'
 import { useProgress } from '../hooks/useProgress'
 import { useLevel } from '../context/LevelContext'
+import { checkAnswer, isCloseAnswer } from '../utils/answerCheck'
 
 const ROUND_SIZE = 20
+const ANSWER_TIME = 10
 
 function shuffle(arr) {
   const a = [...arr]
@@ -12,13 +14,6 @@ function shuffle(arr) {
     [a[i], a[j]] = [a[j], a[i]]
   }
   return a
-}
-
-const normalize = s => s.toLowerCase().replace(/[^a-z0-9\s]/g, '').trim()
-function checkAnswer(correctAnswer, givenAnswer) {
-  const c = normalize(correctAnswer)
-  const g = normalize(givenAnswer)
-  return c === g || c.includes(g) || g.includes(c)
 }
 
 // AGQBA category weights for bonus topic selection (approximate competition frequency)
@@ -67,10 +62,15 @@ export default function Tossup() {
   const [bonusMode, setBonusMode] = useState(false)
   const [bonusData, setBonusData] = useState(null)
   const [bonusAnswer, setBonusAnswer] = useState('')
+  const [buzzTimeLeft, setBuzzTimeLeft] = useState(null)
+  const [closeAnswer, setCloseAnswer] = useState(false)
+  const [bonusTimeLeft, setBonusTimeLeft] = useState(null)
+  const [timedOut, setTimedOut] = useState(false)
 
   const inputRef = useRef(null)
   const bonusInputRef = useRef(null)
   const timerRef = useRef(null)
+  const questionRef = useRef(null)
 
   // Reshuffle when the filtered set changes (level switch)
   const filteredKey = useMemo(() => filteredTossups.map(t => t.question).join('|'), [filteredTossups])
@@ -86,11 +86,18 @@ export default function Tossup() {
     setRoundResults([])
     setBonusData(null)
     setBonusAnswer('')
+    setBuzzTimeLeft(null)
+    setCloseAnswer(false)
+    setBonusTimeLeft(null)
+    setTimedOut(false)
   }, [filteredKey])
 
   const roundQuestions = shuffled.slice(0, ROUND_SIZE)
   const question = roundQuestions[questionIndex]
   const words = question ? question.question.split(' ') : []
+
+  // Keep ref current for timeout handlers
+  questionRef.current = question
 
   const resetQuestion = useCallback(() => {
     setRevealedWords(0)
@@ -100,6 +107,10 @@ export default function Tossup() {
     setPaused(true)
     setBonusData(null)
     setBonusAnswer('')
+    setBuzzTimeLeft(null)
+    setCloseAnswer(false)
+    setBonusTimeLeft(null)
+    setTimedOut(false)
   }, [])
 
   const startRound = useCallback(() => {
@@ -130,6 +141,33 @@ export default function Tossup() {
     return () => clearInterval(timerRef.current)
   }, [phase, paused, buzzed, result, words.length])
 
+  // Buzz answer timer countdown
+  useEffect(() => {
+    if (!buzzed || result) return
+    setBuzzTimeLeft(ANSWER_TIME)
+    const id = setInterval(() => setBuzzTimeLeft(p => (p > 0 ? p - 1 : p)), 1000)
+    return () => clearInterval(id)
+  }, [buzzed, result])
+
+  // Auto-fail when buzz timer expires
+  useEffect(() => {
+    if (buzzTimeLeft !== 0 || !buzzed || result) return
+    const q = questionRef.current
+    if (!q) return
+    setResult('incorrect')
+    setTimedOut(true)
+    setRoundResults(prev => [...prev, {
+      question: q.question,
+      answer: q.answer,
+      category: q.category,
+      given: '',
+      correct: false,
+      tossupPoints: 0,
+      bonus: null,
+    }])
+    recordTossup(false)
+  }, [buzzTimeLeft, buzzed, result, recordTossup])
+
   const buzz = useCallback(() => {
     if (buzzed || result) return
     clearInterval(timerRef.current)
@@ -140,7 +178,10 @@ export default function Tossup() {
   const submitAnswer = useCallback(() => {
     if (!answer.trim()) return
     const isCorrect = checkAnswer(question.answer, answer)
+    const isClose = !isCorrect && isCloseAnswer(question.answer, answer)
     setResult(isCorrect ? 'correct' : 'incorrect')
+    setCloseAnswer(isClose)
+    setTimedOut(false)
 
     // Record immediately unless bonus mode with a correct answer (deferred until bonus completes)
     if (!bonusMode || !isCorrect) {
@@ -176,6 +217,7 @@ export default function Tossup() {
     if (!bonusAnswer.trim() || !bonusData) return
     const bq = bonusData.questions[bonusData.index]
     const isCorrect = checkAnswer(bq.answer, bonusAnswer)
+    const isClose = !isCorrect && isCloseAnswer(bq.answer, bonusAnswer)
     setBonusData(prev => ({
       ...prev,
       phase: 'result',
@@ -184,9 +226,42 @@ export default function Tossup() {
         answer: bq.answer,
         given: bonusAnswer,
         correct: isCorrect,
+        close: isClose,
       }],
     }))
   }, [bonusAnswer, bonusData])
+
+  // Bonus answer timer countdown
+  const bonusPhase = bonusData?.phase
+  const bonusIdx = bonusData?.index ?? -1
+  const bonusDataRef = useRef(bonusData)
+  bonusDataRef.current = bonusData
+
+  useEffect(() => {
+    if (bonusPhase !== 'answering') return
+    setBonusTimeLeft(ANSWER_TIME)
+    const id = setInterval(() => setBonusTimeLeft(p => (p > 0 ? p - 1 : p)), 1000)
+    return () => clearInterval(id)
+  }, [bonusPhase, bonusIdx])
+
+  // Auto-fail when bonus timer expires
+  useEffect(() => {
+    if (bonusTimeLeft !== 0 || bonusPhase !== 'answering') return
+    const bd = bonusDataRef.current
+    if (!bd) return
+    const bq = bd.questions[bd.index]
+    setBonusData(prev => ({
+      ...prev,
+      phase: 'result',
+      results: [...prev.results, {
+        question: bq.question,
+        answer: bq.answer,
+        given: '',
+        correct: false,
+        close: false,
+      }],
+    }))
+  }, [bonusTimeLeft, bonusPhase])
 
   const nextBonusPart = useCallback(() => {
     if (!bonusData) return
@@ -279,11 +354,10 @@ export default function Tossup() {
               ? `A round of ${ROUND_SIZE} tossup questions with 4-part bonus sets — just like AGQBA Round 2. Get the tossup right to earn bonus points!`
               : `A round of ${ROUND_SIZE} tossup questions — just like AGQBA Rounds 1 and 4. Each question reveals word by word. Buzz in when you know the answer.`}
           </p>
-          {bonusMode && (
-            <p className="text-sm text-gray-500 mb-4">
-              Bonus scoring: 5 pts per correct part, +20 pt sweep bonus for all 4.
-            </p>
-          )}
+          <p className="text-sm text-gray-500 mb-4">
+            You have {ANSWER_TIME} seconds to type your answer after buzzing.
+            {bonusMode && ' Bonus scoring: 5 pts per correct part, +20 pt sweep bonus for all 4.'}
+          </p>
           {hasBonusData && (
             <div className="flex gap-2 mb-4">
               <button
@@ -377,6 +451,9 @@ export default function Tossup() {
                 {!r.correct && r.given && (
                   <p className="text-red-400 text-xs mt-1 ml-5">You said: {r.given}</p>
                 )}
+                {!r.correct && !r.given && (
+                  <p className="text-red-400 text-xs mt-1 ml-5">Time&apos;s up</p>
+                )}
                 {r.bonus && (
                   <div className="mt-2 ml-5 border-l-2 border-gray-700 pl-3">
                     <p className="text-xs text-gray-500 mb-1">Bonus: {r.bonus.topic}</p>
@@ -388,6 +465,9 @@ export default function Tossup() {
                         <span className="text-gray-400">{br.answer}</span>
                         {!br.correct && br.given && (
                           <span className="text-red-400/70">(you said: {br.given})</span>
+                        )}
+                        {!br.correct && !br.given && (
+                          <span className="text-red-400/70">(time&apos;s up)</span>
                         )}
                       </div>
                     ))}
@@ -486,6 +566,13 @@ export default function Tossup() {
               >
                 Submit
               </button>
+              {buzzTimeLeft !== null && (
+                <div className={`flex items-center justify-center w-12 text-lg font-mono font-bold ${
+                  buzzTimeLeft <= 3 ? 'text-red-400 animate-pulse' : 'text-gray-400'
+                }`}>
+                  {buzzTimeLeft}s
+                </div>
+              )}
             </form>
           )}
         </div>
@@ -499,18 +586,32 @@ export default function Tossup() {
             className={`rounded-lg p-4 mb-4 border ${
               result === 'correct'
                 ? 'bg-emerald-500/10 border-emerald-500/30'
-                : 'bg-red-500/10 border-red-500/30'
+                : closeAnswer
+                  ? 'bg-amber-500/10 border-amber-500/30'
+                  : 'bg-red-500/10 border-red-500/30'
             }`}
           >
-            <p className={`font-semibold ${result === 'correct' ? 'text-emerald-400' : 'text-red-400'}`}>
-              {result === 'correct' ? 'Correct! +10 points' : 'Incorrect'}
+            <p className={`font-semibold ${
+              result === 'correct'
+                ? 'text-emerald-400'
+                : closeAnswer
+                  ? 'text-amber-400'
+                  : 'text-red-400'
+            }`}>
+              {result === 'correct'
+                ? 'Correct! +10 points'
+                : timedOut
+                  ? "Time's up!"
+                  : closeAnswer
+                    ? 'Close! Check your spelling'
+                    : 'Incorrect'}
             </p>
             <p className="text-sm mt-1">
               <span className="text-gray-500">Answer: </span>
               <span className="font-medium">{question.answer}</span>
               <span className="text-xs text-gray-600 ml-2">{question.category}</span>
             </p>
-            {result === 'incorrect' && (
+            {result === 'incorrect' && answer.trim() && (
               <p className="text-sm mt-1">
                 <span className="text-gray-500">You said: </span>
                 <span className="text-gray-400">{answer}</span>
@@ -583,6 +684,13 @@ export default function Tossup() {
                 >
                   Submit
                 </button>
+                {bonusTimeLeft !== null && (
+                  <div className={`flex items-center justify-center w-12 text-lg font-mono font-bold ${
+                    bonusTimeLeft <= 3 ? 'text-red-400 animate-pulse' : 'text-gray-400'
+                  }`}>
+                    {bonusTimeLeft}s
+                  </div>
+                )}
               </form>
             </div>
           )}
@@ -599,14 +707,19 @@ export default function Tossup() {
                   const isCurrent = bi === bonusData.results.length - 1
                   return (
                     <div key={bi} className={`flex items-center gap-2 ${isCurrent ? 'text-sm' : 'text-xs'}`}>
-                      <span className={br.correct ? 'text-emerald-400' : 'text-red-400'}>
+                      <span className={br.correct ? 'text-emerald-400' : br.close ? 'text-amber-400' : 'text-red-400'}>
                         {br.correct ? '+5' : '0'}
                       </span>
                       <span className={isCurrent ? 'text-gray-200' : 'text-gray-500'}>
                         {br.answer}
                       </span>
                       {!br.correct && isCurrent && br.given && (
-                        <span className="text-red-400/70 text-xs">(you said: {br.given})</span>
+                        <span className={`text-xs ${br.close ? 'text-amber-400/70' : 'text-red-400/70'}`}>
+                          ({br.close ? 'close! ' : ''}you said: {br.given})
+                        </span>
+                      )}
+                      {!br.correct && isCurrent && !br.given && (
+                        <span className="text-red-400/70 text-xs">(time&apos;s up)</span>
                       )}
                     </div>
                   )
@@ -640,7 +753,12 @@ export default function Tossup() {
                       </span>
                       <span className="text-gray-300">{br.answer}</span>
                       {!br.correct && br.given && (
-                        <span className="text-red-400/70 text-xs">(you said: {br.given})</span>
+                        <span className={`text-xs ${br.close ? 'text-amber-400/70' : 'text-red-400/70'}`}>
+                          ({br.close ? 'close! ' : ''}you said: {br.given})
+                        </span>
+                      )}
+                      {!br.correct && !br.given && (
+                        <span className="text-red-400/70 text-xs">(time&apos;s up)</span>
                       )}
                     </div>
                   ))}

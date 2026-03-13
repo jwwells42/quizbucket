@@ -18,7 +18,7 @@ QuizBucket is a study/preparation website for AGQBA-style quiz bowl. It helps st
 - **Tossup Practice**: Question text reveals word-by-word, student types answer to buzz in. Randomized rounds of 20. Toggle between "Tossup Only" (Rounds 1 & 4) and "Tossup + Bonus" (Round 2) — bonus pulls 4 questions from a random lightning topic, 5 pts each + 20 pt sweep bonus.
 - **Lightning Round Practice**: Single topic per round, 10 questions pulled randomly from a larger bank, 60-second timer
 - **Text Memorizer**: 5-level progressive memorization (full text → first-letter hints → blanks → mostly blank → recite from memory). Inline fill-in-the-blank with peek-to-reveal eye icon. Supports line breaks for poetry.
-- **Math Computation**: Procedurally generated math problems with 20-second timer (AGQBA-style). Grade-appropriate difficulty. 10 problems per round.
+- **Math Computation**: Procedurally generated math problems with 30-second timer (AGQBA gives 20s, extra time for reading and typing). Grade-appropriate difficulty. 10 problems per round.
 
 ## Tech Stack
 
@@ -36,6 +36,17 @@ npm run dev          # start dev server
 npm run build        # production build
 npm run preview      # preview production build
 ```
+
+## Workflow
+
+After making changes, always follow this sequence:
+
+1. `npm run build` — verify the production build succeeds before committing
+2. Commit and `git push`
+3. Update documentation where relevant:
+   - `CLAUDE.md` — if architecture, content counts, study modes, or guidelines changed
+   - `README.md` — if user-facing features or content changed
+   - Memory files (`~/.claude/projects/.../memory/`) — if roadmap status, user preferences, or project context changed
 
 ## Architecture
 
