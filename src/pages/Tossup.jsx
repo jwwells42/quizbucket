@@ -8,6 +8,7 @@ import { checkAnswer, isCloseAnswer } from '../utils/answerCheck'
 const TOSSUP_ROUND_SIZE = 20
 const BONUS_ROUND_SIZE = 4
 const ANSWER_TIME = 10
+const BUZZ_WINDOW = 5
 
 // Map tossup categories to relevant flashcard deck IDs
 const CATEGORY_DECKS = {
@@ -93,6 +94,7 @@ export default function Tossup() {
   const [closeAnswer, setCloseAnswer] = useState(false)
   const [bonusTimeLeft, setBonusTimeLeft] = useState(null)
   const [timedOut, setTimedOut] = useState(false)
+  const [buzzWindowLeft, setBuzzWindowLeft] = useState(null)
 
   const inputRef = useRef(null)
   const bonusInputRef = useRef(null)
@@ -117,6 +119,7 @@ export default function Tossup() {
     setCloseAnswer(false)
     setBonusTimeLeft(null)
     setTimedOut(false)
+    setBuzzWindowLeft(null)
   }, [filteredKey])
 
   const roundSize = bonusMode ? BONUS_ROUND_SIZE : TOSSUP_ROUND_SIZE
@@ -139,6 +142,7 @@ export default function Tossup() {
     setCloseAnswer(false)
     setBonusTimeLeft(null)
     setTimedOut(false)
+    setBuzzWindowLeft(null)
   }, [])
 
   const startRound = useCallback(() => {
@@ -168,6 +172,39 @@ export default function Tossup() {
     }, 300)
     return () => clearInterval(timerRef.current)
   }, [phase, paused, buzzed, result, words.length])
+
+  // Buzz window timer — starts when question finishes revealing
+  const questionFullyRevealed = !paused && !buzzed && !result && revealedWords >= words.length && words.length > 0
+  useEffect(() => {
+    if (!questionFullyRevealed) return
+    setBuzzWindowLeft(BUZZ_WINDOW)
+    const id = setInterval(() => setBuzzWindowLeft(p => (p > 0 ? p - 1 : p)), 1000)
+    return () => clearInterval(id)
+  }, [questionFullyRevealed])
+
+  // Auto-skip when buzz window expires (didn't buzz in time)
+  const showAnswer = useCallback(() => {
+    const q = questionRef.current
+    if (!q) return
+    setResult('incorrect')
+    setTimedOut(true)
+    setBuzzWindowLeft(null)
+    setRoundResults(prev => [...prev, {
+      question: q.question,
+      answer: q.answer,
+      category: q.category,
+      given: '',
+      correct: false,
+      tossupPoints: 0,
+      bonus: null,
+    }])
+    recordTossup(false)
+  }, [recordTossup])
+
+  useEffect(() => {
+    if (buzzWindowLeft !== 0 || !questionFullyRevealed) return
+    showAnswer()
+  }, [buzzWindowLeft, questionFullyRevealed, showAnswer])
 
   // Buzz answer timer countdown
   useEffect(() => {
@@ -200,6 +237,7 @@ export default function Tossup() {
     if (buzzed || result) return
     clearInterval(timerRef.current)
     setBuzzed(true)
+    setBuzzWindowLeft(null)
     setTimeout(() => inputRef.current?.focus(), 0)
   }, [buzzed, result])
 
@@ -399,7 +437,7 @@ export default function Tossup() {
               : `A round of ${TOSSUP_ROUND_SIZE} tossup questions — just like AGQBA Rounds 1 and 4. Each question reveals word by word. Buzz in when you know the answer.`}
           </p>
           <p className="text-sm text-gray-500 mb-4">
-            You have {ANSWER_TIME} seconds to type your answer after buzzing.
+            {BUZZ_WINDOW}s to buzz after the question finishes, then {ANSWER_TIME}s to type your answer.
             {bonusMode && ' Bonus scoring: 5 pts per correct part, +20 pt sweep bonus for all 4.'}
           </p>
           {hasBonusData && (
@@ -611,13 +649,28 @@ export default function Tossup() {
       {!paused && !result && (
         <div className="mb-6">
           {!buzzed ? (
-            <div className="text-center">
+            <div className="flex justify-center items-center gap-4">
               <button
                 onClick={buzz}
                 className="px-8 py-3 bg-red-600 text-white rounded-lg font-bold text-lg hover:bg-red-500 transition-colors"
               >
                 BUZZ (Enter)
               </button>
+              {buzzWindowLeft !== null && (
+                <>
+                  <div className={`text-lg font-mono font-bold ${
+                    buzzWindowLeft <= 2 ? 'text-red-400 animate-pulse' : 'text-gray-400'
+                  }`}>
+                    {buzzWindowLeft}s
+                  </div>
+                  <button
+                    onClick={showAnswer}
+                    className="px-4 py-2 bg-gray-700 text-gray-400 rounded-lg font-medium hover:bg-gray-600 transition-colors text-sm"
+                  >
+                    Show Answer
+                  </button>
+                </>
+              )}
             </div>
           ) : (
             <form
