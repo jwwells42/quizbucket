@@ -8,7 +8,9 @@ import stateCapitals from './flashcards/state-capitals.json'
 import authorsWorks from './flashcards/authors-works.json'
 import mathVocabulary from './flashcards/math-vocabulary.json'
 import worldCapitals from './flashcards/world-capitals.json'
-import scienceTerms from './flashcards/science-terms.json'
+import biologyTerms from './flashcards/biology-terms.json'
+import chemistryTerms from './flashcards/chemistry-terms.json'
+import physicsTerms from './flashcards/physics-terms.json'
 import worldHistory from './flashcards/world-history.json'
 import artMusic from './flashcards/art-music.json'
 import wordRoots from './flashcards/word-roots.json'
@@ -49,7 +51,9 @@ export const flashcardDecks = [
   authorsWorks,
   mathVocabulary,
   worldCapitals,
-  scienceTerms,
+  biologyTerms,
+  chemistryTerms,
+  physicsTerms,
   worldHistory,
   artMusic,
   wordRoots,

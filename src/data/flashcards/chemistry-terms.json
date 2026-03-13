@@ -1,0 +1,31 @@
+{
+  "id": "chemistry-terms",
+  "title": "Chemistry Terms",
+  "description": "Atoms, elements, bonding, reactions, and acids/bases vocabulary",
+  "levels": ["3/4", "5/6", "7-9", "9-12"],
+  "cards": [
+    { "front": "Atom", "back": "The smallest unit of an element that retains its chemical properties" },
+    { "front": "Smallest unit of an element", "back": "Atom" },
+    { "front": "Proton", "back": "Positively charged particle in the nucleus of an atom" },
+    { "front": "Neutron", "back": "Neutral (no charge) particle in the nucleus of an atom" },
+    { "front": "Electron", "back": "Negatively charged particle orbiting the nucleus of an atom" },
+    { "front": "Atomic number", "back": "The number of protons in an atom's nucleus — defines the element" },
+    { "front": "What defines which element an atom is?", "back": "Its atomic number (number of protons)" },
+    { "front": "Ion", "back": "An atom with a net electric charge due to gaining or losing electrons" },
+    { "front": "Isotope", "back": "Atoms of the same element with different numbers of neutrons" },
+    { "front": "Molecule", "back": "Two or more atoms bonded together" },
+    { "front": "Compound", "back": "A substance made of two or more different elements chemically bonded" },
+    { "front": "Covalent bond", "back": "A chemical bond formed by sharing electrons between atoms" },
+    { "front": "Bond formed by sharing electrons", "back": "Covalent bond" },
+    { "front": "Ionic bond", "back": "A chemical bond formed by transferring electrons from one atom to another" },
+    { "front": "Bond formed by transferring electrons", "back": "Ionic bond" },
+    { "front": "pH scale", "back": "Measures acidity/alkalinity from 0 (most acidic) to 14 (most basic); 7 is neutral" },
+    { "front": "pH of 7", "back": "Neutral (neither acid nor base)" },
+    { "front": "Acid", "back": "A substance with pH below 7 that donates hydrogen ions (H⁺)" },
+    { "front": "Base", "back": "A substance with pH above 7 that accepts hydrogen ions" },
+    { "front": "Chemical reaction", "back": "A process in which substances (reactants) are transformed into new substances (products)" },
+    { "front": "Catalyst", "back": "A substance that speeds up a chemical reaction without being consumed" },
+    { "front": "Enzyme", "back": "A biological catalyst (protein) that speeds up reactions in living things" },
+    { "front": "States of matter", "back": "Solid, liquid, gas, and plasma" }
+  ]
+}

@@ -1759,135 +1759,101 @@
     "category": "Geography"
   },
   {
-    "id": "science-terms",
-    "title": "Science Terms",
-    "levels": [
-      "3/4",
-      "5/6",
-      "7-9",
-      "9-12"
-    ],
+    "id": "biology-terms",
+    "title": "Biology Terms",
+    "levels": ["3/4", "5/6", "7-9", "9-12"],
     "questions": [
-      {
-        "question": "What organelle is the 'powerhouse of the cell'?",
-        "answer": "Mitochondria"
-      },
-      {
-        "question": "What organelle contains DNA and controls cell activities?",
-        "answer": "Nucleus"
-      },
-      {
-        "question": "What process do plants use to convert sunlight into food?",
-        "answer": "Photosynthesis"
-      },
-      {
-        "question": "Cell division that produces two identical cells?",
-        "answer": "Mitosis"
-      },
-      {
-        "question": "Cell division that produces four gametes?",
-        "answer": "Meiosis"
-      },
-      {
-        "question": "What molecule carries genetic instructions?",
-        "answer": "DNA"
-      },
-      {
-        "question": "How many chromosomes do humans have?",
-        "answer": "46"
-      },
-      {
-        "question": "Process where organisms with favorable traits survive more?",
-        "answer": "Natural selection"
-      },
-      {
-        "question": "The science of classifying organisms?",
-        "answer": "Taxonomy"
-      },
-      {
-        "question": "An organism that makes its own food?",
-        "answer": "Producer"
-      },
-      {
-        "question": "An organism that breaks down dead matter?",
-        "answer": "Decomposer"
-      },
-      {
-        "question": "The smallest unit of an element?",
-        "answer": "Atom"
-      },
-      {
-        "question": "Positively charged particle in an atom's nucleus?",
-        "answer": "Proton"
-      },
-      {
-        "question": "Negatively charged particle orbiting the nucleus?",
-        "answer": "Electron"
-      },
-      {
-        "question": "Neutral particle in the nucleus?",
-        "answer": "Neutron"
-      },
-      {
-        "question": "What defines which element an atom is?",
-        "answer": "Atomic number"
-      },
-      {
-        "question": "A bond formed by sharing electrons?",
-        "answer": "Covalent bond"
-      },
-      {
-        "question": "A bond formed by transferring electrons?",
-        "answer": "Ionic bond"
-      },
-      {
-        "question": "What pH is neutral?",
-        "answer": "7"
-      },
-      {
-        "question": "A biological catalyst that speeds up reactions?",
-        "answer": "Enzyme"
-      },
-      {
-        "question": "What does F = ma represent?",
-        "answer": "Newton's Second Law"
-      },
-      {
-        "question": "What law says 'for every action there is an equal and opposite reaction'?",
-        "answer": "Newton's Third Law"
-      },
-      {
-        "question": "What law describes inertia?",
-        "answer": "Newton's First Law"
-      },
-      {
-        "question": "Energy of motion is called?",
-        "answer": "Kinetic energy"
-      },
-      {
-        "question": "Stored energy due to position is called?",
-        "answer": "Potential energy"
-      },
-      {
-        "question": "Energy cannot be created or destroyed — what law?",
-        "answer": "Conservation of energy"
-      },
-      {
-        "question": "What is the speed of light (approximately)?",
-        "answer": "300,000 km/s"
-      },
-      {
-        "question": "What is the formula for density?",
-        "answer": "Mass divided by volume"
-      },
-      {
-        "question": "The observable characteristics of an organism?",
-        "answer": "Phenotype"
-      },
-      {
-        "question": "The genetic makeup of an organism?",
-        "answer": "Genotype"
-      }
+      { "question": "What organelle is the 'powerhouse of the cell'?", "answer": "Mitochondria" },
+      { "question": "What organelle contains DNA and controls cell activities?", "answer": "Nucleus" },
+      { "question": "What process do plants use to convert sunlight into food?", "answer": "Photosynthesis" },
+      { "question": "Cell division that produces two identical cells?", "answer": "Mitosis" },
+      { "question": "Cell division that produces four gametes?", "answer": "Meiosis" },
+      { "question": "What molecule carries genetic instructions?", "answer": "DNA" },
+      { "question": "How many chromosomes do humans have?", "answer": "46" },
+      { "question": "Process where organisms with favorable traits survive more?", "answer": "Natural selection" },
+      { "question": "The science of classifying organisms?", "answer": "Taxonomy" },
+      { "question": "An organism that makes its own food?", "answer": "Producer" },
+      { "question": "An organism that breaks down dead matter?", "answer": "Decomposer" },
+      { "question": "The observable characteristics of an organism?", "answer": "Phenotype" },
+      { "question": "The genetic makeup of an organism?", "answer": "Genotype" },
+      { "question": "What molecule helps translate DNA into proteins?", "answer": "RNA" },
+      { "question": "A segment of DNA that codes for a specific trait?", "answer": "Gene" },
+      { "question": "What structures are made of coiled DNA and protein?", "answer": "Chromosomes" },
+      { "question": "What organelle in plant cells captures sunlight?", "answer": "Chloroplast" },
+      { "question": "Process that breaks down glucose to produce ATP?", "answer": "Cellular respiration" },
+      { "question": "A community of organisms and their physical environment?", "answer": "Ecosystem" },
+      { "question": "What shows how energy transfers between organisms?", "answer": "Food chain" },
+      { "question": "An organism that eats other organisms for energy?", "answer": "Consumer" },
+      { "question": "A trait expressed when at least one dominant allele is present?", "answer": "Dominant" },
+      { "question": "A trait only expressed with two recessive alleles?", "answer": "Recessive" },
+      { "question": "Change in a population's traits over generations?", "answer": "Evolution" },
+      { "question": "What kingdom includes mushrooms and yeast?", "answer": "Fungi" }
+    ],
+    "category": "Science"
+  },
+  {
+    "id": "chemistry-terms",
+    "title": "Chemistry Terms",
+    "levels": ["3/4", "5/6", "7-9", "9-12"],
+    "questions": [
+      { "question": "The smallest unit of an element?", "answer": "Atom" },
+      { "question": "Positively charged particle in an atom's nucleus?", "answer": "Proton" },
+      { "question": "Negatively charged particle orbiting the nucleus?", "answer": "Electron" },
+      { "question": "Neutral particle in the nucleus?", "answer": "Neutron" },
+      { "question": "What defines which element an atom is?", "answer": "Atomic number" },
+      { "question": "A bond formed by sharing electrons?", "answer": "Covalent bond" },
+      { "question": "A bond formed by transferring electrons?", "answer": "Ionic bond" },
+      { "question": "What pH is neutral?", "answer": "7" },
+      { "question": "A biological catalyst that speeds up reactions?", "answer": "Enzyme" },
+      { "question": "An atom with a net electric charge?", "answer": "Ion" },
+      { "question": "Atoms of the same element with different neutron counts?", "answer": "Isotopes" },
+      { "question": "Two or more atoms bonded together?", "answer": "Molecule" },
+      { "question": "A substance made of two or more different elements chemically bonded?", "answer": "Compound" },
+      { "question": "A substance with pH below 7?", "answer": "Acid" },
+      { "question": "A substance with pH above 7?", "answer": "Base" },
+      { "question": "A substance that speeds up a reaction without being consumed?", "answer": "Catalyst" },
+      { "question": "Solid, liquid, gas, and what fourth state of matter?", "answer": "Plasma" },
+      { "question": "What process changes a liquid to a gas?", "answer": "Evaporation" },
+      { "question": "What process changes a gas to a liquid?", "answer": "Condensation" },
+      { "question": "What process changes a solid to a liquid?", "answer": "Melting" },
+      { "question": "What is the chemical formula for water?", "answer": "H₂O" },
+      { "question": "What is the chemical formula for table salt?", "answer": "NaCl" },
+      { "question": "What is the chemical formula for carbon dioxide?", "answer": "CO₂" },
+      { "question": "What type of reaction releases heat?", "answer": "Exothermic" },
+      { "question": "What type of reaction absorbs heat?", "answer": "Endothermic" }
+    ],
+    "category": "Science"
+  },
+  {
+    "id": "physics-terms",
+    "title": "Physics Terms",
+    "levels": ["3/4", "5/6", "7-9", "9-12"],
+    "questions": [
+      { "question": "What does F = ma represent?", "answer": "Newton's Second Law" },
+      { "question": "What law says 'for every action there is an equal and opposite reaction'?", "answer": "Newton's Third Law" },
+      { "question": "What law describes inertia?", "answer": "Newton's First Law" },
+      { "question": "Energy of motion is called?", "answer": "Kinetic energy" },
+      { "question": "Stored energy due to position is called?", "answer": "Potential energy" },
+      { "question": "Energy cannot be created or destroyed — what law?", "answer": "Conservation of energy" },
+      { "question": "What is the speed of light (approximately)?", "answer": "300,000 km/s" },
+      { "question": "What does D = m/v calculate?", "answer": "Density" },
+      { "question": "The force of attraction between objects with mass?", "answer": "Gravity" },
+      { "question": "A force that opposes motion between surfaces?", "answer": "Friction" },
+      { "question": "The ability to do work?", "answer": "Energy" },
+      { "question": "The rate of change of velocity?", "answer": "Acceleration" },
+      { "question": "A push or pull measured in Newtons?", "answer": "Force" },
+      { "question": "Speed in a given direction?", "answer": "Velocity" },
+      { "question": "Distance between successive wave crests?", "answer": "Wavelength" },
+      { "question": "Number of wave cycles per second?", "answer": "Frequency" },
+      { "question": "What is the SI unit of frequency?", "answer": "Hertz" },
+      { "question": "What is the SI unit of force?", "answer": "Newton" },
+      { "question": "What type of wave includes radio, visible light, and X-rays?", "answer": "Electromagnetic" },
+      { "question": "What is the SI unit of energy?", "answer": "Joule" },
+      { "question": "What is the SI unit of power?", "answer": "Watt" },
+      { "question": "What type of energy is stored in chemical bonds?", "answer": "Chemical energy" },
+      { "question": "What phenomenon causes a pencil to look bent in water?", "answer": "Refraction" },
+      { "question": "What is the bending of light around an obstacle called?", "answer": "Diffraction" },
+      { "question": "What type of energy does a moving car have?", "answer": "Kinetic energy" }
     ],
     "category": "Science"
   },

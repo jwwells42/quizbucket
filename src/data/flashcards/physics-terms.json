@@ -1,0 +1,31 @@
+{
+  "id": "physics-terms",
+  "title": "Physics Terms",
+  "description": "Forces, motion, energy, waves, and Newton's laws vocabulary",
+  "levels": ["3/4", "5/6", "7-9", "9-12"],
+  "cards": [
+    { "front": "Velocity", "back": "Speed in a given direction (a vector quantity)" },
+    { "front": "Speed in a given direction", "back": "Velocity" },
+    { "front": "Acceleration", "back": "The rate of change of velocity over time" },
+    { "front": "Force", "back": "A push or pull on an object (measured in Newtons)" },
+    { "front": "Newton's First Law", "back": "An object at rest stays at rest, and a moving object stays in motion, unless acted on by a force (inertia)" },
+    { "front": "Law of inertia", "back": "Newton's First Law" },
+    { "front": "Newton's Second Law", "back": "Force equals mass times acceleration (F = ma)" },
+    { "front": "F = ma", "back": "Newton's Second Law of Motion" },
+    { "front": "Newton's Third Law", "back": "For every action, there is an equal and opposite reaction" },
+    { "front": "Gravity", "back": "The force of attraction between objects with mass" },
+    { "front": "Friction", "back": "A force that opposes motion between two surfaces in contact" },
+    { "front": "Energy", "back": "The ability to do work; exists in forms like kinetic, potential, thermal, etc." },
+    { "front": "Kinetic energy", "back": "Energy of motion" },
+    { "front": "Energy of motion", "back": "Kinetic energy" },
+    { "front": "Potential energy", "back": "Stored energy due to position or condition" },
+    { "front": "Stored energy", "back": "Potential energy" },
+    { "front": "Law of conservation of energy", "back": "Energy cannot be created or destroyed, only transformed" },
+    { "front": "Wavelength", "back": "The distance between successive crests of a wave" },
+    { "front": "Frequency", "back": "The number of wave cycles per second (measured in Hertz)" },
+    { "front": "Electromagnetic spectrum (order)", "back": "Radio, microwave, infrared, visible light, ultraviolet, X-ray, gamma ray" },
+    { "front": "Speed of light", "back": "Approximately 300,000 km/s (3 × 10⁸ m/s)" },
+    { "front": "Density formula", "back": "Mass divided by volume (D = m/v)" },
+    { "front": "D = m/v", "back": "Density formula" }
+  ]
+}
