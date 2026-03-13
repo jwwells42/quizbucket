@@ -188,7 +188,7 @@
   },
   {
     "question": "This Greek god ruled over the underworld and the dead. He kidnapped Persephone to be his queen. His brothers were Zeus and Poseidon, with whom he divided the cosmos. Name this god whose Roman equivalent is Pluto.",
-    "answer": "Hades",
+    "answer": "Hades/Pluto",
     "category": "Mythology",
     "levels": [
       "3/4",
@@ -287,7 +287,7 @@
   },
   {
     "question": "This Greek hero was known for his twelve labors, which included slaying the Nemean Lion and capturing Cerberus. He was the son of Zeus and was known for his incredible strength. Name this hero whose Roman name is Hercules.",
-    "answer": "Heracles",
+    "answer": "Heracles/Hercules",
     "category": "Mythology",
     "levels": [
       "3/4",
@@ -624,7 +624,7 @@
   },
   {
     "question": "This mathematical sequence begins 0, 1, 1, 2, 3, 5, 8, 13, where each number is the sum of the two preceding ones. It appears frequently in nature, including in the spirals of sunflower seeds and pinecones. Name this sequence named after an Italian mathematician.",
-    "answer": "Fibonacci sequence",
+    "answer": "Fibonacci sequence/Fibonacci",
     "category": "Math",
     "levels": [
       "5/6",
@@ -997,7 +997,7 @@
   },
   {
     "question": "This term in economics describes the total value of all goods and services produced within a country in one year. It is one of the primary indicators used to measure a nation's economic health. Name this economic measurement abbreviated GDP.",
-    "answer": "Gross Domestic Product",
+    "answer": "Gross Domestic Product/GDP",
     "category": "Social Studies",
     "levels": [
       "5/6",
@@ -1102,7 +1102,7 @@
   },
   {
     "question": "This branch of the U.S. government includes the Senate and the House of Representatives. Its primary role is to make laws. Name this branch of government outlined in Article I of the Constitution.",
-    "answer": "Legislative branch",
+    "answer": "Legislative branch/Congress",
     "category": "Social Studies",
     "levels": [
       "3/4",
