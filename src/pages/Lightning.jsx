@@ -1,8 +1,20 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
-import { lightning } from '../data/loader'
+import { Link } from 'react-router-dom'
+import { lightning, flashcardDecks } from '../data/loader'
 import { useProgress } from '../hooks/useProgress'
 import { useLevel } from '../context/LevelContext'
 import { checkAnswer, isCloseAnswer } from '../utils/answerCheck'
+
+// Map lightning IDs to flashcard deck IDs where they differ
+const DECK_ID_MAP = {
+  'element-symbols': 'elements',
+  'greek-roman-gods': 'greek-roman-mythology',
+}
+
+function getMatchingDeck(lightningId) {
+  const deckId = DECK_ID_MAP[lightningId] || lightningId
+  return flashcardDecks.find(d => d.id === deckId)
+}
 
 const ROUND_SIZE = 10
 
@@ -214,13 +226,25 @@ export default function Lightning() {
           </div>
         </div>
 
-        <div className="flex justify-center gap-4">
+        <div className="flex flex-wrap justify-center gap-4">
           <button
             onClick={startRound}
             className="px-6 py-2 bg-amber-600 text-white rounded-lg font-medium hover:bg-amber-500 transition-colors"
           >
             Play Again
           </button>
+          {(() => {
+            const deck = getMatchingDeck(activeSet.id)
+            if (!deck) return null
+            return (
+              <Link
+                to={`/flashcards/${deck.id}`}
+                className="px-6 py-2 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-500 transition-colors"
+              >
+                Study Flashcards
+              </Link>
+            )
+          })()}
           <button
             onClick={() => setPhase('setup')}
             className="px-6 py-2 bg-gray-700 text-gray-300 rounded-lg font-medium hover:bg-gray-600 transition-colors"

@@ -1830,7 +1830,7 @@
       },
       {
         "question": "What defines which element an atom is?",
-        "answer": "Atomic number (number of protons)"
+        "answer": "Atomic number"
       },
       {
         "question": "A bond formed by sharing electrons?",
@@ -1990,8 +1990,8 @@
         "answer": "1917"
       },
       {
-        "question": "What triggered World War I in 1914?",
-        "answer": "Assassination of Archduke Franz Ferdinand"
+        "question": "In what year did the assassination of Archduke Franz Ferdinand trigger World War I?",
+        "answer": "1914"
       },
       {
         "question": "What year did the Western Roman Empire fall?",
@@ -2318,15 +2318,15 @@
       },
       {
         "question": "Which branch makes laws?",
-        "answer": "Legislative (Congress)"
+        "answer": "Legislative"
       },
       {
         "question": "Which branch enforces laws?",
-        "answer": "Executive (President)"
+        "answer": "Executive"
       },
       {
         "question": "Which branch interprets laws?",
-        "answer": "Judicial (Supreme Court)"
+        "answer": "Judicial"
       },
       {
         "question": "How many U.S. Senators are there?",
@@ -2389,8 +2389,8 @@
         "answer": "The Vice President"
       },
       {
-        "question": "How can Congress override a presidential veto?",
-        "answer": "Two-thirds vote in both chambers"
+        "question": "What fraction of Congress must vote to override a presidential veto?",
+        "answer": "Two-thirds"
       },
       {
         "question": "Which founding father wrote the majority of The Federalist Papers?",
@@ -2576,7 +2576,7 @@
       },
       {
         "question": "What is the smallest bone in the body?",
-        "answer": "Stapes (in the ear)"
+        "answer": "Stapes"
       },
       {
         "question": "What organ pumps blood?",
@@ -2744,7 +2744,7 @@
         "answer": "Adjective"
       },
       {
-        "question": "What part of speech modifies a verb, adjective, or other adverb?",
+        "question": "What part of speech modifies a verb, adjective, or adverb?",
         "answer": "Adverb"
       },
       {
@@ -3011,8 +3011,8 @@
         "answer": "A half step"
       },
       {
-        "question": "A flat does what to a note?",
-        "answer": "Lowers it by a half step"
+        "question": "A flat lowers a note by how much?",
+        "answer": "Half step"
       },
       {
         "question": "What is the interval between a note and the next note with the same name?",
@@ -3079,16 +3079,16 @@
         "answer": "Rhythm"
       },
       {
-        "question": "What does 'D.C.' (da capo) mean?",
-        "answer": "Go back to the beginning"
+        "question": "What Italian musical term means 'from the beginning'?",
+        "answer": "Da capo"
       },
       {
-        "question": "What does staccato mean?",
-        "answer": "Notes played short and detached"
+        "question": "What musical term means notes played short and detached?",
+        "answer": "Staccato"
       },
       {
-        "question": "What does legato mean?",
-        "answer": "Notes played smoothly and connected"
+        "question": "What musical term means notes played smoothly and connected?",
+        "answer": "Legato"
       }
     ],
     "category": "Fine Arts"
@@ -4306,8 +4306,8 @@
         "answer": "George V"
       },
       {
-        "question": "Why did Edward VIII abdicate in 1936?",
-        "answer": "To marry Wallis Simpson"
+        "question": "Who did Edward VIII abdicate to marry in 1936?",
+        "answer": "Wallis Simpson"
       },
       {
         "question": "Which king led Britain through World War II?",
@@ -4573,7 +4573,7 @@
         "answer": "Igneous"
       },
       {
-        "question": "What type of rock is formed from cooled magma or lava?",
+        "question": "What type of rock is granite, basalt, and obsidian?",
         "answer": "Igneous"
       },
       {
@@ -4795,8 +4795,8 @@
     "category": "Math",
     "questions": [
       {
-        "question": "What is the formula for the area of a triangle?",
-        "answer": "A = 1/2 x base x height"
+        "question": "What shape uses the formula A = ½bh?",
+        "answer": "Triangle"
       },
       {
         "question": "What shape uses the formula A = πr²?",
@@ -4887,12 +4887,12 @@
         "answer": "Add them"
       },
       {
-        "question": "What is the formula for the area of a trapezoid?",
-        "answer": "A = 1/2 x (base1 + base2) x height"
+        "question": "What shape uses the area formula A = ½(b₁ + b₂)h?",
+        "answer": "Trapezoid"
       },
       {
-        "question": "What is the combinations formula nCr?",
-        "answer": "n! / (r! x (n - r)!)"
+        "question": "What counting method uses the formula n! / (r!(n−r)!)?",
+        "answer": "Combinations"
       }
     ]
   }
