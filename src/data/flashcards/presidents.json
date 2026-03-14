@@ -1,7 +1,7 @@
 {
   "id": "presidents",
   "title": "U.S. Presidents in Order",
-  "description": "All 46 presidents — number to name and name to number",
+  "description": "All 46 presidents — number to name and name to number, with memory hooks",
   "levels": [
     "3/4",
     "5/6",
@@ -11,363 +11,363 @@
   "cards": [
     {
       "front": "1st President",
-      "back": "George Washington"
+      "back": "George Washington — Father of His Country, led the Continental Army"
     },
     {
       "front": "George Washington",
-      "back": "1st President"
+      "back": "1st President — the one and only first; set the two-term precedent"
     },
     {
       "front": "2nd President",
-      "back": "John Adams"
+      "back": "John Adams — First VP to become president; father of #6"
     },
     {
       "front": "John Adams",
-      "back": "2nd President"
+      "back": "2nd President — the Adams father (son is #6, John Quincy)"
     },
     {
       "front": "3rd President",
-      "back": "Thomas Jefferson"
+      "back": "Thomas Jefferson — Declaration of Independence author, Louisiana Purchase"
     },
     {
       "front": "Thomas Jefferson",
-      "back": "3rd President"
+      "back": "3rd President — 3 key roles: author, diplomat, president"
     },
     {
       "front": "4th President",
-      "back": "James Madison"
+      "back": "James Madison — Father of the Constitution, War of 1812"
     },
     {
       "front": "James Madison",
-      "back": "4th President"
+      "back": "4th President — 4th of the Virginia dynasty (Washington, Jefferson, Madison, Monroe)"
     },
     {
       "front": "5th President",
-      "back": "James Monroe"
+      "back": "James Monroe — Monroe Doctrine, Era of Good Feelings"
     },
     {
       "front": "James Monroe",
-      "back": "5th President"
+      "back": "5th President — last of the 5 Founding-era presidents"
     },
     {
       "front": "6th President",
-      "back": "John Quincy Adams"
+      "back": "John Quincy Adams — Son of #2; lost popular vote but won in the House"
     },
     {
       "front": "John Quincy Adams",
-      "back": "6th President"
+      "back": "6th President — the Adams son (#2 was the father)"
     },
     {
       "front": "7th President",
-      "back": "Andrew Jackson"
+      "back": "Andrew Jackson — Old Hickory, founded the Democratic Party"
     },
     {
       "front": "Andrew Jackson",
-      "back": "7th President"
+      "back": "7th President — 'lucky 7' populist hero; face on the $20 bill"
     },
     {
       "front": "8th President",
-      "back": "Martin Van Buren"
+      "back": "Martin Van Buren — Jackson's VP, Panic of 1837"
     },
     {
       "front": "Martin Van Buren",
-      "back": "8th President"
+      "back": "8th President — 'Van 8uren' (8 in the name); first born a U.S. citizen"
     },
     {
       "front": "9th President",
-      "back": "William Henry Harrison"
+      "back": "William Henry Harrison — Died after 31 days, shortest presidency ever"
     },
     {
       "front": "William Henry Harrison",
-      "back": "9th President"
+      "back": "9th President — 'Tippecanoe'; grandfather of #23 (Benjamin Harrison)"
     },
     {
       "front": "10th President",
-      "back": "John Tyler"
+      "back": "John Tyler — 'Tippecanoe and Tyler Too'; first VP to succeed a dead president"
     },
     {
       "front": "John Tyler",
-      "back": "10th President"
+      "back": "10th President — #9 died, Tyler took over at #10"
     },
     {
       "front": "11th President",
-      "back": "James K. Polk"
+      "back": "James K. Polk — Mexican-American War, expanded U.S. to the Pacific"
     },
     {
       "front": "James K. Polk",
-      "back": "11th President"
+      "back": "11th President — dark-horse candidate; served exactly one term by choice"
     },
     {
       "front": "12th President",
-      "back": "Zachary Taylor"
+      "back": "Zachary Taylor — Mexican War hero, 'Old Rough and Ready'; died in office"
     },
     {
       "front": "Zachary Taylor",
-      "back": "12th President"
+      "back": "12th President — second president to die in office (after #9 Harrison)"
     },
     {
       "front": "13th President",
-      "back": "Millard Fillmore"
+      "back": "Millard Fillmore — Signed the Compromise of 1850"
     },
     {
       "front": "Millard Fillmore",
-      "back": "13th President"
+      "back": "13th President — unlucky 13; succeeded Taylor after his death"
     },
     {
       "front": "14th President",
-      "back": "Franklin Pierce"
+      "back": "Franklin Pierce — Kansas-Nebraska Act, 'Bleeding Kansas'"
     },
     {
       "front": "Franklin Pierce",
-      "back": "14th President"
+      "back": "14th President — Pierce before Buchanan before Lincoln (14, 15, 16)"
     },
     {
       "front": "15th President",
-      "back": "James Buchanan"
+      "back": "James Buchanan — Only bachelor president; last before the Civil War"
     },
     {
       "front": "James Buchanan",
-      "back": "15th President"
+      "back": "15th President — right before Lincoln (#16); often ranked worst"
     },
     {
       "front": "16th President",
-      "back": "Abraham Lincoln"
+      "back": "Abraham Lincoln — Civil War, Emancipation Proclamation, assassinated"
     },
     {
       "front": "Abraham Lincoln",
-      "back": "16th President"
+      "back": "16th President — 'sweet 16' who preserved the Union; face on the penny and $5"
     },
     {
       "front": "17th President",
-      "back": "Andrew Johnson"
+      "back": "Andrew Johnson — Lincoln's successor; first president impeached"
     },
     {
       "front": "Andrew Johnson",
-      "back": "17th President"
+      "back": "17th President — succeeded #16 Lincoln; impeached during Reconstruction"
     },
     {
       "front": "18th President",
-      "back": "Ulysses S. Grant"
+      "back": "Ulysses S. Grant — Civil War commanding general, Reconstruction era"
     },
     {
       "front": "Ulysses S. Grant",
-      "back": "18th President"
+      "back": "18th President — Grant won the war, then won the White House; face on the $50"
     },
     {
       "front": "19th President",
-      "back": "Rutherford B. Hayes"
+      "back": "Rutherford B. Hayes — Won disputed 1876 election, ended Reconstruction"
     },
     {
       "front": "Rutherford B. Hayes",
-      "back": "19th President"
+      "back": "19th President — the Compromise of 1877 put Hayes in office"
     },
     {
       "front": "20th President",
-      "back": "James A. Garfield"
+      "back": "James A. Garfield — Assassinated after ~200 days in office"
     },
     {
       "front": "James A. Garfield",
-      "back": "20th President"
+      "back": "20th President — 20th president, ~200 days; second president assassinated"
     },
     {
       "front": "21st President",
-      "back": "Chester A. Arthur"
+      "back": "Chester A. Arthur — Garfield's VP; championed civil service reform"
     },
     {
       "front": "Chester A. Arthur",
-      "back": "21st President"
+      "back": "21st President — succeeded assassinated Garfield (#20)"
     },
     {
       "front": "22nd & 24th President",
-      "back": "Grover Cleveland"
+      "back": "Grover Cleveland — Only president to serve two non-consecutive terms"
     },
     {
       "front": "Grover Cleveland",
-      "back": "22nd & 24th President"
+      "back": "22nd & 24th President — the 'sandwich president' (Cleveland-Harrison-Cleveland)"
     },
     {
       "front": "23rd President",
-      "back": "Benjamin Harrison"
+      "back": "Benjamin Harrison — Grandson of #9 (William Henry Harrison)"
     },
     {
       "front": "Benjamin Harrison",
-      "back": "23rd President"
+      "back": "23rd President — the Harrison grandson; sandwiched between Cleveland's two terms"
     },
     {
       "front": "25th President",
-      "back": "William McKinley"
+      "back": "William McKinley — Spanish-American War; assassinated in 1901"
     },
     {
       "front": "William McKinley",
-      "back": "25th President"
+      "back": "25th President — his assassination made Teddy Roosevelt (#26) president"
     },
     {
       "front": "26th President",
-      "back": "Theodore Roosevelt"
+      "back": "Theodore Roosevelt — Youngest president (42), Rough Riders, trust-buster"
     },
     {
       "front": "Theodore Roosevelt",
-      "back": "26th President"
+      "back": "26th President — 'T.R. at 26'; face on Mount Rushmore"
     },
     {
       "front": "27th President",
-      "back": "William Howard Taft"
+      "back": "William Howard Taft — Later became Chief Justice (only president to do both)"
     },
     {
       "front": "William Howard Taft",
-      "back": "27th President"
+      "back": "27th President — between the two Roosevelts (TR #26, FDR #32)"
     },
     {
       "front": "28th President",
-      "back": "Woodrow Wilson"
+      "back": "Woodrow Wilson — Led U.S. through World War I, proposed League of Nations"
     },
     {
       "front": "Woodrow Wilson",
-      "back": "28th President"
+      "back": "28th President — 'W.W. = World War' (led during WWI)"
     },
     {
       "front": "29th President",
-      "back": "Warren G. Harding"
+      "back": "Warren G. Harding — Teapot Dome scandal; died in office 1923"
     },
     {
       "front": "Warren G. Harding",
-      "back": "29th President"
+      "back": "29th President — Harding, Coolidge, Hoover = the 3 Republican '20s presidents (29-30-31)"
     },
     {
       "front": "30th President",
-      "back": "Calvin Coolidge"
+      "back": "Calvin Coolidge — 'Silent Cal'; presided over the Roaring Twenties"
     },
     {
       "front": "Calvin Coolidge",
-      "back": "30th President"
+      "back": "30th President — 'Cool 30'; middle of the 1920s trio (29-30-31)"
     },
     {
       "front": "31st President",
-      "back": "Herbert Hoover"
+      "back": "Herbert Hoover — Great Depression began on his watch (1929 crash)"
     },
     {
       "front": "Herbert Hoover",
-      "back": "31st President"
+      "back": "31st President — right before FDR (#32); 'Hoovervilles' named for him"
     },
     {
       "front": "32nd President",
-      "back": "Franklin D. Roosevelt"
+      "back": "Franklin D. Roosevelt — WWII, New Deal; only president to serve 4 terms"
     },
     {
       "front": "Franklin D. Roosevelt",
-      "back": "32nd President"
+      "back": "32nd President — 32 = longest-serving (4 terms, 12 years)"
     },
     {
       "front": "33rd President",
-      "back": "Harry S. Truman"
+      "back": "Harry S. Truman — Atomic bombs, Korean War, 'The Buck Stops Here'"
     },
     {
       "front": "Harry S. Truman",
-      "back": "33rd President"
+      "back": "33rd President — 'Give 'em hell, Harry'; succeeded FDR (#32)"
     },
     {
       "front": "34th President",
-      "back": "Dwight D. Eisenhower"
+      "back": "Dwight D. Eisenhower — WWII Supreme Commander (D-Day), Interstate Highways"
     },
     {
       "front": "Dwight D. Eisenhower",
-      "back": "34th President"
+      "back": "34th President — 'I like Ike'; general turned president in the 1950s"
     },
     {
       "front": "35th President",
-      "back": "John F. Kennedy"
+      "back": "John F. Kennedy — Youngest elected president, Cuban Missile Crisis, assassinated 1963"
     },
     {
       "front": "John F. Kennedy",
-      "back": "35th President"
+      "back": "35th President — JFK at 35; Camelot era"
     },
     {
       "front": "36th President",
-      "back": "Lyndon B. Johnson"
+      "back": "Lyndon B. Johnson — Great Society, Civil Rights Act, Vietnam escalation"
     },
     {
       "front": "Lyndon B. Johnson",
-      "back": "36th President"
+      "back": "36th President — 'LBJ'; succeeded assassinated JFK (#35)"
     },
     {
       "front": "37th President",
-      "back": "Richard Nixon"
+      "back": "Richard Nixon — Watergate scandal; only president to resign"
     },
     {
       "front": "Richard Nixon",
-      "back": "37th President"
+      "back": "37th President — 'Tricky Dick'; opened relations with China"
     },
     {
       "front": "38th President",
-      "back": "Gerald Ford"
+      "back": "Gerald Ford — Only president never elected president or VP"
     },
     {
       "front": "Gerald Ford",
-      "back": "38th President"
+      "back": "38th President — pardoned Nixon (#37); appointed, not elected"
     },
     {
       "front": "39th President",
-      "back": "Jimmy Carter"
+      "back": "Jimmy Carter — Camp David Accords, Iran hostage crisis"
     },
     {
       "front": "Jimmy Carter",
-      "back": "39th President"
+      "back": "39th President — peanut farmer from Georgia; won Nobel Peace Prize after office"
     },
     {
       "front": "40th President",
-      "back": "Ronald Reagan"
+      "back": "Ronald Reagan — Ended Cold War, 'Tear down this wall'"
     },
     {
       "front": "Ronald Reagan",
-      "back": "40th President"
+      "back": "40th President — 'the round number'; actor turned president"
     },
     {
       "front": "41st President",
-      "back": "George H. W. Bush"
+      "back": "George H. W. Bush — Gulf War, former CIA director; father of #43"
     },
     {
       "front": "George H. W. Bush",
-      "back": "41st President"
+      "back": "41st President — the Bush father (son is #43, George W.)"
     },
     {
       "front": "42nd President",
-      "back": "Bill Clinton"
+      "back": "Bill Clinton — Balanced the budget; second president impeached"
     },
     {
       "front": "Bill Clinton",
-      "back": "42nd President"
+      "back": "42nd President — between the two Bushes (41 and 43)"
     },
     {
       "front": "43rd President",
-      "back": "George W. Bush"
+      "back": "George W. Bush — 9/11, War on Terror; son of #41"
     },
     {
       "front": "George W. Bush",
-      "back": "43rd President"
+      "back": "43rd President — the Bush son (#41 was the father); second father-son pair after Adams"
     },
     {
       "front": "44th President",
-      "back": "Barack Obama"
+      "back": "Barack Obama — First African American president, Affordable Care Act"
     },
     {
       "front": "Barack Obama",
-      "back": "44th President"
+      "back": "44th President — '44 = first'; first African American president"
     },
     {
       "front": "45th President",
-      "back": "Donald Trump"
+      "back": "Donald Trump — First president with no prior political or military service"
     },
     {
       "front": "Donald Trump",
-      "back": "45th President"
+      "back": "45th President — businessman turned president"
     },
     {
       "front": "46th President",
-      "back": "Joe Biden"
+      "back": "Joe Biden — Oldest person inaugurated as president"
     },
     {
       "front": "Joe Biden",
-      "back": "46th President"
+      "back": "46th President — Obama's VP (#44) became #46"
     }
   ]
 }
