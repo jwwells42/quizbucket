@@ -187,7 +187,7 @@
     ]
   },
   {
-    "question": "This Greek god ruled over the underworld and the dead. He kidnapped Persephone to be his queen. His brothers were Zeus and Poseidon, with whom he divided the cosmos. Name this god whose Roman equivalent is Pluto.",
+    "question": "This Greek god ruled over the underworld and the dead. He kidnapped Persephone to be his queen. His brothers were Zeus and Poseidon, with whom he divided the cosmos. Name this god of the underworld.",
     "answer": "Hades/Pluto",
     "category": "Mythology",
     "levels": [
@@ -286,7 +286,7 @@
     ]
   },
   {
-    "question": "This Greek hero was known for his twelve labors, which included slaying the Nemean Lion and capturing Cerberus. He was the son of Zeus and was known for his incredible strength. Name this hero whose Roman name is Hercules.",
+    "question": "This Greek hero was known for his twelve labors, which included slaying the Nemean Lion and capturing Cerberus. He was the son of Zeus and was known for his incredible strength. Name this legendary strongman of Greek mythology.",
     "answer": "Heracles/Hercules",
     "category": "Mythology",
     "levels": [
@@ -297,7 +297,7 @@
     ]
   },
   {
-    "question": "This law of physics states that for every action there is an equal and opposite reaction. It is one of three fundamental laws of motion published in 1687. Name this third law formulated by Isaac Newton.",
+    "question": "This law of physics states that for every action there is an equal and opposite reaction. It is one of three fundamental laws of motion published in the Principia in 1687. Name this physical law.",
     "answer": "Newton's Third Law",
     "category": "Science",
     "levels": [
@@ -784,7 +784,7 @@
     ]
   },
   {
-    "question": "This property of a triangle states that the sum of its interior angles always equals 180 degrees. It applies to all triangles in Euclidean geometry, regardless of their shape or size. Name this fundamental fact about angles in a triangle.",
+    "question": "This property states that the interior angles of a certain polygon always add up to 180 degrees in Euclidean geometry, regardless of shape or size. Name this geometric theorem.",
     "answer": "Triangle Angle Sum",
     "category": "Math",
     "levels": [
@@ -828,7 +828,7 @@
     ]
   },
   {
-    "question": "This process describes the continuous movement of water through evaporation, condensation, precipitation, and collection. It is driven by solar energy and gravity. Name this cycle that distributes fresh water around the planet.",
+    "question": "This process describes the continuous movement of H-two-O through evaporation, condensation, precipitation, and collection. It is driven by solar energy and gravity. Name this natural cycle.",
     "answer": "Water cycle",
     "category": "Science",
     "levels": [
@@ -1027,7 +1027,7 @@
     ]
   },
   {
-    "question": "This novel by Mark Twain follows a boy who fakes his own death and rafts down the Mississippi River with an escaped slave named Jim. It is considered one of the great American novels. Name this sequel to The Adventures of Tom Sawyer.",
+    "question": "This novel by Mark Twain follows a boy who fakes his own death and rafts down the Mississippi River with an escaped slave named Jim. It is considered one of the great American novels and a sequel to an earlier Twain work. Name this novel.",
     "answer": "Adventures of Huckleberry Finn",
     "category": "Literature",
     "levels": [
