@@ -1,0 +1,186 @@
+[
+  {
+    "id": "presidents",
+    "title": "U.S. Presidents in Order",
+    "description": "All 46 presidents from Washington to Biden",
+    "levels": ["3/4", "5/6", "7-9", "9-12"],
+    "chunks": [
+      {
+        "label": "The Founders (1–6)",
+        "items": ["George Washington", "John Adams", "Thomas Jefferson", "James Madison", "James Monroe", "John Quincy Adams"]
+      },
+      {
+        "label": "Jacksonian Era (7–11)",
+        "items": ["Andrew Jackson", "Martin Van Buren", "William Henry Harrison", "John Tyler", "James K. Polk"]
+      },
+      {
+        "label": "Pre–Civil War (12–16)",
+        "items": ["Zachary Taylor", "Millard Fillmore", "Franklin Pierce", "James Buchanan", "Abraham Lincoln"]
+      },
+      {
+        "label": "Reconstruction (17–21)",
+        "items": ["Andrew Johnson", "Ulysses S. Grant", "Rutherford B. Hayes", "James A. Garfield", "Chester A. Arthur"]
+      },
+      {
+        "label": "Gilded Age (22–26)",
+        "items": ["Grover Cleveland", "Benjamin Harrison", "Grover Cleveland", "William McKinley", "Theodore Roosevelt"]
+      },
+      {
+        "label": "Early 20th Century (27–32)",
+        "items": ["William Howard Taft", "Woodrow Wilson", "Warren G. Harding", "Calvin Coolidge", "Herbert Hoover", "Franklin D. Roosevelt"]
+      },
+      {
+        "label": "Mid-Century (33–37)",
+        "items": ["Harry S. Truman", "Dwight D. Eisenhower", "John F. Kennedy", "Lyndon B. Johnson", "Richard Nixon"]
+      },
+      {
+        "label": "Late 20th Century (38–42)",
+        "items": ["Gerald Ford", "Jimmy Carter", "Ronald Reagan", "George H. W. Bush", "Bill Clinton"]
+      },
+      {
+        "label": "21st Century (43–46)",
+        "items": ["George W. Bush", "Barack Obama", "Donald Trump", "Joe Biden"]
+      }
+    ]
+  },
+  {
+    "id": "amendments",
+    "title": "Constitutional Amendments in Order",
+    "description": "All 27 amendments to the U.S. Constitution",
+    "levels": ["5/6", "7-9", "9-12"],
+    "chunks": [
+      {
+        "label": "Bill of Rights (1–5)",
+        "items": ["Freedom of religion, speech, press, assembly, petition", "Right to bear arms", "No quartering of soldiers", "No unreasonable search and seizure", "Due process, double jeopardy, self-incrimination"]
+      },
+      {
+        "label": "Bill of Rights (6–10)",
+        "items": ["Right to speedy trial, jury, counsel", "Right to jury trial in civil cases", "No excessive bail or cruel punishment", "Rights retained by the people", "Powers reserved to states or people"]
+      },
+      {
+        "label": "Civil War Amendments (11–15)",
+        "items": ["State sovereign immunity", "Separate Electoral College ballots for President/VP", "Abolition of slavery", "Equal protection and due process", "Voting rights regardless of race"]
+      },
+      {
+        "label": "Progressive Era (16–19)",
+        "items": ["Federal income tax", "Direct election of senators", "Prohibition of alcohol", "Women's suffrage"]
+      },
+      {
+        "label": "Modern Amendments (20–23)",
+        "items": ["Presidential term begins January 20", "Repeal of Prohibition", "Presidential term limits (two terms)", "D.C. gets electoral votes"]
+      },
+      {
+        "label": "Recent Amendments (24–27)",
+        "items": ["No poll taxes", "Presidential succession and disability", "Voting age lowered to 18", "Congressional pay changes delayed"]
+      }
+    ]
+  },
+  {
+    "id": "british-monarchs",
+    "title": "English & British Monarchs",
+    "description": "Monarchs from William the Conqueror to Charles III",
+    "levels": ["7-9", "9-12"],
+    "chunks": [
+      {
+        "label": "House of Normandy (1066–1154)",
+        "items": ["William I (the Conqueror)", "William II", "Henry I", "Stephen"]
+      },
+      {
+        "label": "House of Plantagenet (1154–1399)",
+        "items": ["Henry II", "Richard I (the Lionheart)", "John", "Henry III", "Edward I", "Edward II", "Edward III", "Richard II"]
+      },
+      {
+        "label": "Lancaster & York (1399–1485)",
+        "items": ["Henry IV", "Henry V", "Henry VI", "Edward IV", "Edward V", "Richard III"]
+      },
+      {
+        "label": "House of Tudor (1485–1603)",
+        "items": ["Henry VII", "Henry VIII", "Edward VI", "Lady Jane Grey", "Mary I", "Elizabeth I"]
+      },
+      {
+        "label": "House of Stuart (1603–1714)",
+        "items": ["James I", "Charles I", "Charles II", "James II", "William III & Mary II", "Anne"]
+      },
+      {
+        "label": "House of Hanover (1714–1901)",
+        "items": ["George I", "George II", "George III", "George IV", "William IV", "Victoria"]
+      },
+      {
+        "label": "Modern Era (1901–present)",
+        "items": ["Edward VII", "George V", "Edward VIII", "George VI", "Elizabeth II", "Charles III"]
+      }
+    ]
+  },
+  {
+    "id": "elements-order",
+    "title": "Elements by Atomic Number",
+    "description": "First 36 elements (Hydrogen through Krypton)",
+    "levels": ["5/6", "7-9", "9-12"],
+    "chunks": [
+      {
+        "label": "Period 1–2 (1–10)",
+        "items": ["Hydrogen", "Helium", "Lithium", "Beryllium", "Boron", "Carbon", "Nitrogen", "Oxygen", "Fluorine", "Neon"]
+      },
+      {
+        "label": "Period 3 (11–18)",
+        "items": ["Sodium", "Magnesium", "Aluminum", "Silicon", "Phosphorus", "Sulfur", "Chlorine", "Argon"]
+      },
+      {
+        "label": "Period 4a (19–27)",
+        "items": ["Potassium", "Calcium", "Scandium", "Titanium", "Vanadium", "Chromium", "Manganese", "Iron", "Cobalt"]
+      },
+      {
+        "label": "Period 4b (28–36)",
+        "items": ["Nickel", "Copper", "Zinc", "Gallium", "Germanium", "Arsenic", "Selenium", "Bromine", "Krypton"]
+      }
+    ]
+  },
+  {
+    "id": "planets",
+    "title": "Planets of the Solar System",
+    "description": "The 8 planets from nearest to farthest from the Sun",
+    "levels": ["3/4", "5/6", "7-9", "9-12"],
+    "chunks": [
+      {
+        "label": "Inner Planets (Rocky)",
+        "items": ["Mercury", "Venus", "Earth", "Mars"]
+      },
+      {
+        "label": "Outer Planets (Gas & Ice Giants)",
+        "items": ["Jupiter", "Saturn", "Uranus", "Neptune"]
+      }
+    ]
+  },
+  {
+    "id": "books-bible",
+    "title": "Books of the Bible (Old Testament)",
+    "description": "The 39 books of the Old Testament in order",
+    "levels": ["5/6", "7-9", "9-12"],
+    "chunks": [
+      {
+        "label": "Pentateuch / Torah",
+        "items": ["Genesis", "Exodus", "Leviticus", "Numbers", "Deuteronomy"]
+      },
+      {
+        "label": "Historical Books (Part 1)",
+        "items": ["Joshua", "Judges", "Ruth", "1 Samuel", "2 Samuel", "1 Kings", "2 Kings"]
+      },
+      {
+        "label": "Historical Books (Part 2)",
+        "items": ["1 Chronicles", "2 Chronicles", "Ezra", "Nehemiah", "Esther"]
+      },
+      {
+        "label": "Poetry & Wisdom",
+        "items": ["Job", "Psalms", "Proverbs", "Ecclesiastes", "Song of Solomon"]
+      },
+      {
+        "label": "Major Prophets",
+        "items": ["Isaiah", "Jeremiah", "Lamentations", "Ezekiel", "Daniel"]
+      },
+      {
+        "label": "Minor Prophets",
+        "items": ["Hosea", "Joel", "Amos", "Obadiah", "Jonah", "Micah", "Nahum", "Habakkuk", "Zephaniah", "Haggai", "Zechariah", "Malachi"]
+      }
+    ]
+  }
+]

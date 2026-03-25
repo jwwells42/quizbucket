@@ -39,6 +39,7 @@ import philosophy from './flashcards/philosophy.json'
 import egyptianMythology from './flashcards/egyptian-mythology.json'
 import tossups from './tossups.json'
 import lightning from './lightning.json'
+import sequences from './sequences.json'
 
 export const flashcardDecks = [
   amendments,
@@ -86,4 +87,4 @@ export function getDeck(id) {
   return flashcardDecks.find(deck => deck.id === id)
 }
 
-export { tossups, lightning }
+export { tossups, lightning, sequences }

@@ -101,6 +101,28 @@ export function useProgress() {
     return progress._computation || { correct: 0, total: 0, rounds: 0 }
   }, [progress])
 
+  const recordSequence = useCallback((seqId, drillType, correct, total) => {
+    setProgress(prev => {
+      const next = { ...prev }
+      if (!next._sequences) next._sequences = {}
+      if (!next._sequences[seqId]) next._sequences[seqId] = {}
+      const existing = next._sequences[seqId][drillType]
+      next._sequences[seqId][drillType] = {
+        lastScore: correct,
+        lastTotal: total,
+        bestScore: Math.max(correct, existing?.bestScore || 0),
+        bestTotal: total,
+        timesPlayed: (existing?.timesPlayed || 0) + 1,
+      }
+      saveProgress(next)
+      return next
+    })
+  }, [])
+
+  const getSequenceStats = useCallback(() => {
+    return progress._sequences || {}
+  }, [progress])
+
   const getRecentActivity = useCallback(() => {
     const activity = []
 
@@ -138,6 +160,8 @@ export function useProgress() {
     getLightningStats,
     recordComputation,
     getComputationStats,
+    recordSequence,
+    getSequenceStats,
     getRecentActivity,
   }
 }
