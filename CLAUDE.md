@@ -19,6 +19,7 @@ QuizBucket is a study/preparation website for AGQBA-style quiz bowl. It helps st
 - **Lightning Round Practice**: Single topic per round, 10 questions pulled randomly from a larger bank, 60-second timer
 - **Text Memorizer**: 5-level progressive memorization (full text → first-letter hints → blanks → mostly blank → recite from memory). Inline fill-in-the-blank with peek-to-reveal eye icon. Supports line breaks for poetry.
 - **Math Computation**: Procedurally generated math problems with 30-second timer (AGQBA gives 20s, extra time for reading and typing). Grade-appropriate difficulty. 10 problems per round.
+- **Sequence Memorizer**: Learn ordered lists (presidents, monarchs, elements, etc.) through 5 progressive drill types: Learn (chunk build-up), Fill the Gap, Next & Before, Position Quiz, Full Recitation. Collapsible full list reference panel.
 
 ## Tech Stack
 
@@ -54,11 +55,12 @@ After making changes, always follow this sequence:
 - `src/data/tossups.json` — Tossup questions (120 across 8 categories)
 - `src/data/lightning.json` — Lightning round question banks (all topics, 25 Qs each)
 - `src/data/texts.json` — Texts for the memorizer (supports `\n` for line breaks; 5-level system with first-letter hints and peek)
+- `src/data/sequences.json` — Sequence data for ordered list memorization (6 sequences)
 - `src/data/loader.js` — Imports and exports all data; add new decks here
 - `src/context/LevelContext.jsx` — Grade-level filter context (LevelProvider, useLevel hook)
 - `src/components/` — React components (Layout with nav + level picker)
 - `src/data/mathProblems.js` — Procedural math problem generator (grade-leveled, infinite problems)
-- `src/pages/` — Page components (Home, FlashcardList, FlashcardStudy, Tossup, Lightning, Memorize, Computation)
+- `src/pages/` — Page components (Home, FlashcardList, FlashcardStudy, Tossup, Lightning, Memorize, Computation, Sequence)
 - `src/hooks/` — Custom hooks (useProgress for LocalStorage tracking)
 
 ## Content Guidelines
@@ -70,14 +72,17 @@ After making changes, always follow this sequence:
 - Flashcard format: `{ "id": "...", "title": "...", "description": "...", "levels": ["3/4", "5/6", "7-9", "9-12"], "cards": [{ "front": "...", "back": "..." }] }`
 - Lightning format: `{ "id": "...", "title": "...", "levels": ["3/4", "5/6", "7-9", "9-12"], "questions": [{ "question": "...", "answer": "..." }] }` — bank should have 20+ questions (10 are pulled randomly per round)
 - Tossup format: `{ "question": "...", "answer": "...", "category": "...", "levels": ["3/4", "5/6", "7-9", "9-12"] }` — no "For ten points" phrasing
+- Sequence format: `{ "id": "...", "title": "...", "description": "...", "levels": [...], "chunks": [{ "label": "...", "items": ["..."] }] }` — items are ordered, chunks group items by era/category
 - **Grade levels**: Every content item has a `levels` array with one or more of: `"3/4"`, `"5/6"`, `"7-9"`, `"9-12"`. Content is filtered by the selected level in the nav dropdown. Use all four levels for content appropriate to all grades.
 - Bidirectional flashcards are preferred (e.g. "Gold → Au" and "Au → Gold" as separate cards)
 - **Lightning question rules**: Every answer must be a single word or short phrase — never a list or multi-part answer. Questions must not contain or directly hint at the answer (e.g., don't ask about "sediment" when the answer is "sedimentary"). Questions should be tightly focused on the topic with clear, unambiguous answers.
 
-## Current Content (39 decks, 36 lightning topics, 120 tossups, 4 texts)
+## Current Content (39 decks, 36 lightning topics, 120 tossups, 4 texts, 6 sequences)
 
 Flashcard decks: Amendments, Musical Families, State Nicknames, Elements, Presidents, Greek/Roman Mythology, State Capitals, Authors & Works, Math Vocabulary, World Capitals, Biology Terms, Chemistry Terms, Physics Terms, World History, Art & Music, Word Roots, U.S. Civics, Shakespeare, Human Body, Grammar & Literary Devices, Physical Geography, Economics, Music Theory, Supreme Court Cases, American Literature, Famous Paintings, Classical Composers, Norse Mythology, Famous Battles, Astronomy & Space, World Religions, Philosophy, Psychology, British Monarchs, Explorers, Egyptian Mythology, Geology, Math Formulas, Civil Rights
 
 Lightning topics: Presidents, Elements, State Capitals, Greek/Roman Gods, Authors, Math Vocabulary, World Capitals, Biology Terms, Chemistry Terms, Physics Terms, World History, Art & Music, Word Roots, Civics, Shakespeare, Human Body, Grammar & Literary Devices, Physical Geography, Economics, Music Theory, Supreme Court Cases, American Literature, Famous Paintings, Classical Composers, Norse Mythology, Famous Battles, Astronomy & Space, World Religions, Philosophy, Psychology, British Monarchs, Explorers, Egyptian Mythology, Geology, Math Formulas, Civil Rights (36 topics, 25 Qs each)
 
 Memorizer texts: Preamble, Gettysburg Address, Declaration of Independence (opening), Shakespeare's Sonnet 29
+
+Sequences: U.S. Presidents in Order, Constitutional Amendments in Order, English & British Monarchs, Elements by Atomic Number (1–36), Planets of the Solar System, Books of the Bible (Old Testament)
