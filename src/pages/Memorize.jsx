@@ -1,4 +1,5 @@
 import { useState, useRef, useMemo, useCallback, useEffect } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import texts from '../data/texts.json'
 import { useLevel } from '../context/LevelContext'
 import { useCustomContent } from '../hooks/useCustomContent'
@@ -59,11 +60,14 @@ export default function Memorize() {
   const filteredTexts = filterByLevel(texts)
   const allTexts = [...texts, ...customTexts]
 
-  const [phase, setPhase] = useState('select') // select | study | check
-  const [selectedText, setSelectedText] = useState(null)
+  const [searchParams, setSearchParams] = useSearchParams()
+  const selectedText = searchParams.get('id')
+  const phase = selectedText ? 'study' : 'select'
+
   const [showCreateForm, setShowCreateForm] = useState(false)
   const [newTitle, setNewTitle] = useState('')
   const [newText, setNewText] = useState('')
+  const [studyPhase, setStudyPhase] = useState('study') // study | check (within a selected text)
   const [level, setLevel] = useState(0)
   const [seed] = useState(() => Math.floor(Math.random() * 100000) + 1)
   const [blankValues, setBlankValues] = useState({})
@@ -91,12 +95,26 @@ export default function Memorize() {
 
   // Auto-focus first blank on level change (blank levels)
   useEffect(() => {
-    if (phase === 'study' && level >= 1 && level <= 3 && blankIndices.length > 0) {
+    if (selectedText && studyPhase === 'study' && level >= 1 && level <= 3 && blankIndices.length > 0) {
       setTimeout(() => {
         blankRefs.current[blankIndices[0]]?.focus()
       }, 50)
     }
-  }, [phase, level, blankIndices])
+  }, [selectedText, studyPhase, level, blankIndices])
+
+  // Reset study state when navigating back via browser
+  useEffect(() => {
+    if (!selectedText) {
+      setLevel(0)
+      setBlankValues({})
+      setUserInput('')
+      setCheckResult(null)
+      setStudyPhase('study')
+      setPeekedBlanks({})
+      Object.values(peekTimers.current).forEach(clearTimeout)
+      peekTimers.current = {}
+    }
+  }, [selectedText])
 
   // Clean up peek timers on unmount
   useEffect(() => {
@@ -106,21 +124,21 @@ export default function Memorize() {
   }, [])
 
   const handleSelectText = useCallback((id) => {
-    setSelectedText(id)
+    setSearchParams({ id })
     setLevel(0)
-    setPhase('study')
+    setStudyPhase('study')
     setBlankValues({})
     setUserInput('')
     setCheckResult(null)
     setPeekedBlanks({})
-  }, [])
+  }, [setSearchParams])
 
   const handleLevelChange = useCallback((newLevel) => {
     setLevel(newLevel)
     setBlankValues({})
     setUserInput('')
     setCheckResult(null)
-    setPhase('study')
+    setStudyPhase('study')
     setPeekedBlanks({})
     Object.values(peekTimers.current).forEach(clearTimeout)
     peekTimers.current = {}
@@ -182,7 +200,7 @@ export default function Memorize() {
       return { word: item.word, hidden: true, got, match }
     })
     setCheckResult({ results, correctCount, totalBlanks: hiddenWords.length })
-    setPhase('check')
+    setStudyPhase('check')
   }, [maskedWords, blankValues])
 
   const handleCheckFull = useCallback(() => {
@@ -201,20 +219,20 @@ export default function Memorize() {
       results.push({ expected, got, match })
     }
     setCheckResult({ results, correctCount, totalWords: original.length, fullText: true })
-    setPhase('check')
+    setStudyPhase('check')
   }, [textData, userInput])
 
   const handleReset = useCallback(() => {
-    setPhase('select')
-    setSelectedText(null)
+    setSearchParams({})
     setLevel(0)
     setBlankValues({})
     setUserInput('')
     setCheckResult(null)
+    setStudyPhase('study')
     setPeekedBlanks({})
     Object.values(peekTimers.current).forEach(clearTimeout)
     peekTimers.current = {}
-  }, [])
+  }, [setSearchParams])
 
   const hasAnyBlankFilled = Object.values(blankValues).some(v => v.trim())
 
@@ -416,7 +434,7 @@ export default function Memorize() {
       )}
 
       {/* Levels 2-4: inline blanks */}
-      {isBlankLevel && phase === 'study' && (
+      {isBlankLevel && studyPhase === 'study' && (
         <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 mb-6">
           <p className="text-lg leading-loose">
             {maskedWords.map((item, i) => {
@@ -438,7 +456,7 @@ export default function Memorize() {
       )}
 
       {/* Levels 2-4: check results (inline) */}
-      {isBlankLevel && phase === 'check' && checkResult && !checkResult.fullText && (
+      {isBlankLevel && studyPhase === 'check' && checkResult && !checkResult.fullText && (
         <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 mb-6">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-lg font-semibold">
@@ -472,7 +490,7 @@ export default function Memorize() {
           </p>
           <div className="flex justify-end mt-4">
             <button
-              onClick={() => { setPhase('study'); setBlankValues({}); setCheckResult(null); setPeekedBlanks({}) }}
+              onClick={() => { setStudyPhase('study'); setBlankValues({}); setCheckResult(null); setPeekedBlanks({}) }}
               className="px-5 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-medium transition-colors"
             >
               Try Again
@@ -482,7 +500,7 @@ export default function Memorize() {
       )}
 
       {/* Level 5: full textarea */}
-      {level === 4 && phase === 'study' && (
+      {level === 4 && studyPhase === 'study' && (
         <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 mb-6">
           <p className="text-gray-500 italic mb-4">
             Recite the full text from memory.
@@ -509,7 +527,7 @@ export default function Memorize() {
       )}
 
       {/* Level 5: check results (full text) */}
-      {level === 4 && phase === 'check' && checkResult && checkResult.fullText && (
+      {level === 4 && studyPhase === 'check' && checkResult && checkResult.fullText && (
         <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 mb-6">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-lg font-semibold">
@@ -543,7 +561,7 @@ export default function Memorize() {
           </div>
           <div className="flex justify-end mt-4">
             <button
-              onClick={() => { setPhase('study'); setUserInput(''); setCheckResult(null) }}
+              onClick={() => { setStudyPhase('study'); setUserInput(''); setCheckResult(null) }}
               className="px-5 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-medium transition-colors"
             >
               Try Again

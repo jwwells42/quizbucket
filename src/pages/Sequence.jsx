@@ -1,4 +1,5 @@
 import { useState, useRef, useCallback, useMemo, useEffect } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import { sequences } from '../data/loader'
 import { useProgress } from '../hooks/useProgress'
 import { useLevel } from '../context/LevelContext'
@@ -765,8 +766,10 @@ export default function Sequence() {
   const allSequences = [...sequences, ...customSequences]
   const sequenceStats = getSequenceStats()
 
-  const [selectedId, setSelectedId] = useState(null)
-  const [drillType, setDrillType] = useState(null)
+  const [searchParams, setSearchParams] = useSearchParams()
+  const selectedId = searchParams.get('id')
+  const drillType = searchParams.get('drill')
+
   const [drillKey, setDrillKey] = useState(0) // force remount on retry
   const [lastResult, setLastResult] = useState(null)
   const [showFullList, setShowFullList] = useState(false)
@@ -778,14 +781,13 @@ export default function Sequence() {
   const selectedSeq = allSequences.find(s => s.id === selectedId)
 
   const handleSelect = (id) => {
-    setSelectedId(id)
-    setDrillType(null)
+    setSearchParams({ id })
     setLastResult(null)
     setShowFullList(false)
   }
 
   const handleStartDrill = (type) => {
-    setDrillType(type)
+    setSearchParams({ id: selectedId, drill: type })
     setLastResult(null)
     setDrillKey(k => k + 1)
   }
@@ -799,12 +801,17 @@ export default function Sequence() {
 
   const handleBack = () => {
     if (lastResult || drillType) {
-      setDrillType(null)
+      setSearchParams({ id: selectedId })
       setLastResult(null)
     } else {
-      setSelectedId(null)
+      setSearchParams({})
     }
   }
+
+  // Clear drill result when navigating back via browser
+  useEffect(() => {
+    if (!drillType) setLastResult(null)
+  }, [drillType])
 
   const handleCreateSequence = (e) => {
     e.preventDefault()
