@@ -1,6 +1,7 @@
 import { useState, useRef, useMemo, useCallback, useEffect } from 'react'
 import texts from '../data/texts.json'
 import { useLevel } from '../context/LevelContext'
+import { useCustomContent } from '../hooks/useCustomContent'
 
 const LEVELS = [
   { label: 'Level 1 — Full Text', removePct: 0, hints: false },
@@ -54,10 +55,15 @@ const EyeIcon = () => (
 
 export default function Memorize() {
   const { filterByLevel } = useLevel()
+  const { customTexts, addText, deleteText } = useCustomContent()
   const filteredTexts = filterByLevel(texts)
+  const allTexts = [...texts, ...customTexts]
 
   const [phase, setPhase] = useState('select') // select | study | check
   const [selectedText, setSelectedText] = useState(null)
+  const [showCreateForm, setShowCreateForm] = useState(false)
+  const [newTitle, setNewTitle] = useState('')
+  const [newText, setNewText] = useState('')
   const [level, setLevel] = useState(0)
   const [seed] = useState(() => Math.floor(Math.random() * 100000) + 1)
   const [blankValues, setBlankValues] = useState({})
@@ -68,7 +74,7 @@ export default function Memorize() {
   const peekTimers = useRef({})
   const textareaRef = useRef(null)
 
-  const textData = texts.find(t => t.id === selectedText)
+  const textData = allTexts.find(t => t.id === selectedText)
   const currentLevel = LEVELS[level]
 
   const maskedWords = useMemo(() => {
@@ -215,6 +221,15 @@ export default function Memorize() {
   // Is this a level with inline blanks?
   const isBlankLevel = level >= 1 && level <= 3
 
+  const handleCreateText = (e) => {
+    e.preventDefault()
+    if (!newTitle.trim() || !newText.trim()) return
+    addText(newTitle.trim(), newText.trim())
+    setNewTitle('')
+    setNewText('')
+    setShowCreateForm(false)
+  }
+
   // --- SELECT PHASE ---
   if (phase === 'select') {
     return (
@@ -236,6 +251,85 @@ export default function Memorize() {
               </p>
             </button>
           ))}
+          {customTexts.map(t => (
+            <div key={t.id} className="relative group">
+              <button
+                onClick={() => handleSelectText(t.id)}
+                className="w-full text-left rounded-lg bg-gray-900 border border-gray-800 hover:border-purple-500 transition-colors p-5"
+              >
+                <h2 className="text-lg font-semibold mb-1">{t.title}</h2>
+                <div className="flex gap-3 text-sm text-gray-500">
+                  <span>{t.text.split(/\s+/).length} words</span>
+                  <span className="text-purple-400/60">Custom</span>
+                </div>
+              </button>
+              <button
+                onClick={() => deleteText(t.id)}
+                className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 text-gray-600 hover:text-red-400 transition-all p-1"
+                title="Delete custom text"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          ))}
+        </div>
+
+        {/* Create custom text */}
+        <div className="mt-6">
+          {!showCreateForm ? (
+            <button
+              onClick={() => setShowCreateForm(true)}
+              className="flex items-center gap-2 text-sm text-gray-400 hover:text-purple-400 transition-colors"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+              </svg>
+              Add your own text
+            </button>
+          ) : (
+            <form onSubmit={handleCreateText} className="bg-gray-900 border border-gray-800 rounded-lg p-6">
+              <h3 className="text-lg font-semibold mb-4">Add Custom Text</h3>
+              <div className="mb-4">
+                <label className="block text-sm text-gray-400 mb-1">Title</label>
+                <input
+                  type="text"
+                  value={newTitle}
+                  onChange={e => setNewTitle(e.target.value)}
+                  placeholder="e.g., Hamlet's Soliloquy"
+                  className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 placeholder-gray-600 focus:outline-none focus:border-purple-500"
+                  autoFocus
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-sm text-gray-400 mb-1">Text (use blank lines for paragraph breaks)</label>
+                <textarea
+                  value={newText}
+                  onChange={e => setNewText(e.target.value)}
+                  rows={10}
+                  placeholder="Paste or type the text you want to memorize..."
+                  className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 placeholder-gray-600 focus:outline-none focus:border-purple-500 resize-y"
+                />
+              </div>
+              <div className="flex gap-3">
+                <button
+                  type="submit"
+                  disabled={!newTitle.trim() || !newText.trim()}
+                  className="px-5 py-2 bg-purple-600 hover:bg-purple-700 disabled:bg-gray-700 disabled:text-gray-500 text-white rounded-lg font-medium transition-colors"
+                >
+                  Add Text
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setShowCreateForm(false)}
+                  className="px-5 py-2 bg-gray-700 hover:bg-gray-600 text-gray-300 rounded-lg font-medium transition-colors"
+                >
+                  Cancel
+                </button>
+              </div>
+            </form>
+          )}
         </div>
       </div>
     )

@@ -2,6 +2,7 @@ import { useState, useRef, useCallback, useMemo, useEffect } from 'react'
 import { sequences } from '../data/loader'
 import { useProgress } from '../hooks/useProgress'
 import { useLevel } from '../context/LevelContext'
+import { useCustomContent } from '../hooks/useCustomContent'
 import { checkAnswer } from '../utils/answerCheck'
 
 const DRILL_TYPES = [
@@ -759,7 +760,9 @@ function FullListPanel({ sequence, open, onToggle }) {
 export default function Sequence() {
   const { filterByLevel } = useLevel()
   const { recordSequence, getSequenceStats } = useProgress()
+  const { customSequences, addSequence, deleteSequence } = useCustomContent()
   const filteredSequences = filterByLevel(sequences)
+  const allSequences = [...sequences, ...customSequences]
   const sequenceStats = getSequenceStats()
 
   const [selectedId, setSelectedId] = useState(null)
@@ -767,8 +770,12 @@ export default function Sequence() {
   const [drillKey, setDrillKey] = useState(0) // force remount on retry
   const [lastResult, setLastResult] = useState(null)
   const [showFullList, setShowFullList] = useState(false)
+  const [showCreateForm, setShowCreateForm] = useState(false)
+  const [newTitle, setNewTitle] = useState('')
+  const [newItems, setNewItems] = useState('')
+  const [newChunkSize, setNewChunkSize] = useState('5')
 
-  const selectedSeq = sequences.find(s => s.id === selectedId)
+  const selectedSeq = allSequences.find(s => s.id === selectedId)
 
   const handleSelect = (id) => {
     setSelectedId(id)
@@ -797,6 +804,17 @@ export default function Sequence() {
     } else {
       setSelectedId(null)
     }
+  }
+
+  const handleCreateSequence = (e) => {
+    e.preventDefault()
+    const items = newItems.split('\n').map(l => l.replace(/^\d+[\.\)\-\s]+/, '').trim()).filter(Boolean)
+    if (!newTitle.trim() || items.length < 2) return
+    addSequence(newTitle.trim(), items, parseInt(newChunkSize) || 5)
+    setNewTitle('')
+    setNewItems('')
+    setNewChunkSize('5')
+    setShowCreateForm(false)
   }
 
   // --- SELECT SEQUENCE ---
@@ -828,6 +846,104 @@ export default function Sequence() {
               </button>
             )
           })}
+          {customSequences.map(seq => {
+            const totalItems = flatItems(seq).length
+            const stats = sequenceStats[seq.id]
+            const drillsDone = stats ? Object.keys(stats).length : 0
+            return (
+              <div key={seq.id} className="relative group">
+                <button
+                  onClick={() => handleSelect(seq.id)}
+                  className="w-full text-left rounded-lg bg-gray-900 border border-gray-800 hover:border-rose-500 transition-colors p-5"
+                >
+                  <h2 className="text-lg font-semibold mb-1">{seq.title}</h2>
+                  <p className="text-sm text-gray-500 mb-1">{seq.description}</p>
+                  <div className="flex gap-3 text-xs text-gray-600">
+                    <span>{totalItems} items</span>
+                    <span>{seq.chunks.length} chunks</span>
+                    <span className="text-rose-400/60">Custom</span>
+                    {drillsDone > 0 && <span className="text-rose-400">{drillsDone}/5 drills tried</span>}
+                  </div>
+                </button>
+                <button
+                  onClick={() => deleteSequence(seq.id)}
+                  className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 text-gray-600 hover:text-red-400 transition-all p-1"
+                  title="Delete custom sequence"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            )
+          })}
+        </div>
+
+        {/* Create custom sequence */}
+        <div className="mt-6">
+          {!showCreateForm ? (
+            <button
+              onClick={() => setShowCreateForm(true)}
+              className="flex items-center gap-2 text-sm text-gray-400 hover:text-rose-400 transition-colors"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+              </svg>
+              Create your own sequence
+            </button>
+          ) : (
+            <form onSubmit={handleCreateSequence} className="bg-gray-900 border border-gray-800 rounded-lg p-6">
+              <h3 className="text-lg font-semibold mb-4">Create Custom Sequence</h3>
+              <div className="mb-4">
+                <label className="block text-sm text-gray-400 mb-1">Title</label>
+                <input
+                  type="text"
+                  value={newTitle}
+                  onChange={e => setNewTitle(e.target.value)}
+                  placeholder="e.g., Roman Emperors"
+                  className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 placeholder-gray-600 focus:outline-none focus:border-rose-500"
+                  autoFocus
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-sm text-gray-400 mb-1">Items (one per line, in order)</label>
+                <textarea
+                  value={newItems}
+                  onChange={e => setNewItems(e.target.value)}
+                  rows={10}
+                  placeholder={"Augustus\nTiberius\nCaligula\nClaudius\nNero\n..."}
+                  className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 placeholder-gray-600 focus:outline-none focus:border-rose-500 resize-y font-mono"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-sm text-gray-400 mb-1">Chunk size (items per group)</label>
+                <input
+                  type="number"
+                  min="2"
+                  max="20"
+                  value={newChunkSize}
+                  onChange={e => setNewChunkSize(e.target.value)}
+                  className="w-24 px-3 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 focus:outline-none focus:border-rose-500"
+                />
+              </div>
+              <div className="flex gap-3">
+                <button
+                  type="submit"
+                  disabled={!newTitle.trim() || newItems.split('\n').filter(l => l.trim()).length < 2}
+                  className="px-5 py-2 bg-rose-600 hover:bg-rose-700 disabled:bg-gray-700 disabled:text-gray-500 text-white rounded-lg font-medium transition-colors"
+                >
+                  Create
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setShowCreateForm(false)}
+                  className="px-5 py-2 bg-gray-700 hover:bg-gray-600 text-gray-300 rounded-lg font-medium transition-colors"
+                >
+                  Cancel
+                </button>
+              </div>
+            </form>
+          )}
         </div>
       </div>
     )
