@@ -27,6 +27,8 @@ QuizBucket is a study/preparation website for AGQBA-style quiz bowl. It helps st
 - **Styling**: Tailwind CSS v4 (dark mode theme)
 - **Data**: Static JSON files in `src/data/`
 - **State/Progress**: LocalStorage (no backend, no auth)
+- **Navigation**: Sequence and Memorize pages use URL search params (`?id=`, `?drill=`) so browser back/forward works within multi-step flows
+- **Custom Content**: Users can create their own texts and sequences in-app (stored in LocalStorage via `useCustomContent` hook)
 - **Deployment**: Static site on Vercel (rewrites configured in `vercel.json`)
 
 ## Commands
@@ -61,7 +63,8 @@ After making changes, always follow this sequence:
 - `src/components/` — React components (Layout with nav + level picker)
 - `src/data/mathProblems.js` — Procedural math problem generator (grade-leveled, infinite problems)
 - `src/pages/` — Page components (Home, FlashcardList, FlashcardStudy, Tossup, Lightning, Memorize, Computation, Sequence)
-- `src/hooks/` — Custom hooks (useProgress for LocalStorage tracking)
+- `src/hooks/useProgress.js` — LocalStorage progress tracking (flashcards, tossups, lightning, computation, sequences)
+- `src/hooks/useCustomContent.js` — LocalStorage for user-created custom texts and sequences
 
 ## Content Guidelines
 
