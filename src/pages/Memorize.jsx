@@ -1,8 +1,11 @@
 import { useState, useRef, useMemo, useCallback, useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import texts from '../data/texts.json'
+import { sequences } from '../data/loader'
 import { useLevel } from '../context/LevelContext'
+import { useProgress } from '../hooks/useProgress'
 import { useCustomContent } from '../hooks/useCustomContent'
+import { SequenceDrillView, flatItems } from './Sequence'
 
 const LEVELS = [
   { label: 'Level 1 — Full Text', removePct: 0, hints: false },
@@ -56,29 +59,44 @@ const EyeIcon = () => (
 
 export default function Memorize() {
   const { filterByLevel } = useLevel()
-  const { customTexts, addText, deleteText } = useCustomContent()
+  const { customTexts, addText, deleteText, customSequences, addSequence, deleteSequence } = useCustomContent()
+  const { recordSequence, getSequenceStats } = useProgress()
   const filteredTexts = filterByLevel(texts)
+  const filteredSequences = filterByLevel(sequences)
   const allTexts = [...texts, ...customTexts]
+  const allSequences = [...sequences, ...customSequences]
+  const sequenceStats = getSequenceStats()
 
   const [searchParams, setSearchParams] = useSearchParams()
   const selectedText = searchParams.get('id')
-  const phase = selectedText ? 'study' : 'select'
+  const selectedSeqId = searchParams.get('seq')
+  const drillType = searchParams.get('drill')
 
-  const [showCreateForm, setShowCreateForm] = useState(false)
-  const [newTitle, setNewTitle] = useState('')
-  const [newText, setNewText] = useState('')
-  const [studyPhase, setStudyPhase] = useState('study') // study | check (within a selected text)
+  // Determine which view we're in
+  const isSelectPhase = !selectedText && !selectedSeqId
+
+  // Text study state
+  const [studyPhase, setStudyPhase] = useState('study') // study | check
   const [level, setLevel] = useState(0)
   const [seed] = useState(() => Math.floor(Math.random() * 100000) + 1)
   const [blankValues, setBlankValues] = useState({})
   const [userInput, setUserInput] = useState('')
   const [checkResult, setCheckResult] = useState(null)
-  const [peekedBlanks, setPeekedBlanks] = useState({}) // index -> true while peeking
+  const [peekedBlanks, setPeekedBlanks] = useState({})
   const blankRefs = useRef({})
   const peekTimers = useRef({})
   const textareaRef = useRef(null)
 
+  // Create form state
+  const [showTextForm, setShowTextForm] = useState(false)
+  const [showSeqForm, setShowSeqForm] = useState(false)
+  const [newTitle, setNewTitle] = useState('')
+  const [newText, setNewText] = useState('')
+  const [newItems, setNewItems] = useState('')
+  const [newChunkSize, setNewChunkSize] = useState('5')
+
   const textData = allTexts.find(t => t.id === selectedText)
+  const selectedSeq = allSequences.find(s => s.id === selectedSeqId)
   const currentLevel = LEVELS[level]
 
   const maskedWords = useMemo(() => {
@@ -93,7 +111,7 @@ export default function Memorize() {
     }, [])
   }, [maskedWords])
 
-  // Auto-focus first blank on level change (blank levels)
+  // Auto-focus first blank on level change
   useEffect(() => {
     if (selectedText && studyPhase === 'study' && level >= 1 && level <= 3 && blankIndices.length > 0) {
       setTimeout(() => {
@@ -102,7 +120,7 @@ export default function Memorize() {
     }
   }, [selectedText, studyPhase, level, blankIndices])
 
-  // Reset study state when navigating back via browser
+  // Reset text study state when navigating back via browser
   useEffect(() => {
     if (!selectedText) {
       setLevel(0)
@@ -123,6 +141,7 @@ export default function Memorize() {
     }
   }, [])
 
+  // --- Text handlers ---
   const handleSelectText = useCallback((id) => {
     setSearchParams({ id })
     setLevel(0)
@@ -145,7 +164,6 @@ export default function Memorize() {
   }, [])
 
   const handleBlankFocus = useCallback(() => {
-    // Clear all peeks when user clicks back into any blank
     if (Object.keys(peekedBlanks).length > 0) {
       setPeekedBlanks({})
       Object.values(peekTimers.current).forEach(clearTimeout)
@@ -173,7 +191,6 @@ export default function Memorize() {
   }, [blankIndices])
 
   const handlePeek = useCallback((index) => {
-    // Clear any existing timer for this blank
     if (peekTimers.current[index]) {
       clearTimeout(peekTimers.current[index])
     }
@@ -235,28 +252,82 @@ export default function Memorize() {
   }, [setSearchParams])
 
   const hasAnyBlankFilled = Object.values(blankValues).some(v => v.trim())
-
-  // Is this a level with inline blanks?
   const isBlankLevel = level >= 1 && level <= 3
 
+  // --- Sequence handlers ---
+  const handleSelectSeq = (id) => {
+    setSearchParams({ seq: id })
+  }
+
+  const handleSeqStartDrill = (type) => {
+    setSearchParams({ seq: selectedSeqId, drill: type })
+  }
+
+  const handleSeqBack = () => {
+    if (drillType) {
+      setSearchParams({ seq: selectedSeqId })
+    } else {
+      setSearchParams({})
+    }
+  }
+
+  const handleSeqComplete = useCallback((correct, total) => {
+    if (selectedSeqId && drillType) {
+      recordSequence(selectedSeqId, drillType, correct, total)
+    }
+  }, [selectedSeqId, drillType, recordSequence])
+
+  // --- Create form handlers ---
   const handleCreateText = (e) => {
     e.preventDefault()
     if (!newTitle.trim() || !newText.trim()) return
     addText(newTitle.trim(), newText.trim())
     setNewTitle('')
     setNewText('')
-    setShowCreateForm(false)
+    setShowTextForm(false)
   }
 
-  // --- SELECT PHASE ---
-  if (phase === 'select') {
+  const handleCreateSequence = (e) => {
+    e.preventDefault()
+    const items = newItems.split('\n').map(l => l.replace(/^\d+[\.\)\-\s]+/, '').trim()).filter(Boolean)
+    if (!newTitle.trim() || items.length < 2) return
+    addSequence(newTitle.trim(), items, parseInt(newChunkSize) || 5)
+    setNewTitle('')
+    setNewItems('')
+    setNewChunkSize('5')
+    setShowSeqForm(false)
+  }
+
+  // ===========================================
+  // SEQUENCE DRILL VIEW
+  // ===========================================
+  if (selectedSeqId && selectedSeq) {
+    return (
+      <SequenceDrillView
+        sequence={selectedSeq}
+        drillType={drillType}
+        onStartDrill={handleSeqStartDrill}
+        onBack={handleSeqBack}
+        onComplete={handleSeqComplete}
+        sequenceStats={sequenceStats[selectedSeqId]}
+      />
+    )
+  }
+
+  // ===========================================
+  // SELECT PHASE — texts + sequences
+  // ===========================================
+  if (isSelectPhase) {
     return (
       <div>
-        <h1 className="text-2xl font-bold mb-6">Text Memorizer</h1>
+        <h1 className="text-2xl font-bold mb-2">Memorize</h1>
         <p className="text-gray-400 mb-6">
-          Choose a text to memorize. Words are progressively removed across five levels until you can recite it from memory.
+          Memorize texts word-by-word or learn ordered sequences through chunked drills.
         </p>
-        <div className="grid sm:grid-cols-2 gap-4">
+
+        {/* --- TEXTS SECTION --- */}
+        <h2 className="text-lg font-semibold mb-3 text-purple-400">Texts</h2>
+        <div className="grid sm:grid-cols-2 gap-4 mb-4">
           {filteredTexts.map(t => (
             <button
               key={t.id}
@@ -294,11 +365,11 @@ export default function Memorize() {
           ))}
         </div>
 
-        {/* Create custom text */}
-        <div className="mt-6">
-          {!showCreateForm ? (
+        {/* Add custom text */}
+        <div className="mb-8">
+          {!showTextForm ? (
             <button
-              onClick={() => setShowCreateForm(true)}
+              onClick={() => { setShowTextForm(true); setShowSeqForm(false) }}
               className="flex items-center gap-2 text-sm text-gray-400 hover:text-purple-400 transition-colors"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -340,7 +411,130 @@ export default function Memorize() {
                 </button>
                 <button
                   type="button"
-                  onClick={() => setShowCreateForm(false)}
+                  onClick={() => setShowTextForm(false)}
+                  className="px-5 py-2 bg-gray-700 hover:bg-gray-600 text-gray-300 rounded-lg font-medium transition-colors"
+                >
+                  Cancel
+                </button>
+              </div>
+            </form>
+          )}
+        </div>
+
+        {/* --- SEQUENCES SECTION --- */}
+        <h2 className="text-lg font-semibold mb-3 text-rose-400">Sequences</h2>
+        <div className="grid sm:grid-cols-2 gap-4 mb-4">
+          {filteredSequences.map(seq => {
+            const totalItems = flatItems(seq).length
+            const stats = sequenceStats[seq.id]
+            const drillsDone = stats ? Object.keys(stats).length : 0
+            return (
+              <button
+                key={seq.id}
+                onClick={() => handleSelectSeq(seq.id)}
+                className="text-left rounded-lg bg-gray-900 border border-gray-800 hover:border-rose-500 transition-colors p-5"
+              >
+                <h2 className="text-lg font-semibold mb-1">{seq.title}</h2>
+                <p className="text-sm text-gray-500 mb-1">{seq.description}</p>
+                <div className="flex gap-3 text-xs text-gray-600">
+                  <span>{totalItems} items</span>
+                  <span>{seq.chunks.length} chunks</span>
+                  {drillsDone > 0 && <span className="text-rose-400">{drillsDone}/5 drills tried</span>}
+                </div>
+              </button>
+            )
+          })}
+          {customSequences.map(seq => {
+            const totalItems = flatItems(seq).length
+            const stats = sequenceStats[seq.id]
+            const drillsDone = stats ? Object.keys(stats).length : 0
+            return (
+              <div key={seq.id} className="relative group">
+                <button
+                  onClick={() => handleSelectSeq(seq.id)}
+                  className="w-full text-left rounded-lg bg-gray-900 border border-gray-800 hover:border-rose-500 transition-colors p-5"
+                >
+                  <h2 className="text-lg font-semibold mb-1">{seq.title}</h2>
+                  <p className="text-sm text-gray-500 mb-1">{seq.description}</p>
+                  <div className="flex gap-3 text-xs text-gray-600">
+                    <span>{totalItems} items</span>
+                    <span>{seq.chunks.length} chunks</span>
+                    <span className="text-rose-400/60">Custom</span>
+                    {drillsDone > 0 && <span className="text-rose-400">{drillsDone}/5 drills tried</span>}
+                  </div>
+                </button>
+                <button
+                  onClick={() => deleteSequence(seq.id)}
+                  className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 text-gray-600 hover:text-red-400 transition-all p-1"
+                  title="Delete custom sequence"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            )
+          })}
+        </div>
+
+        {/* Add custom sequence */}
+        <div>
+          {!showSeqForm ? (
+            <button
+              onClick={() => { setShowSeqForm(true); setShowTextForm(false) }}
+              className="flex items-center gap-2 text-sm text-gray-400 hover:text-rose-400 transition-colors"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+              </svg>
+              Create your own sequence
+            </button>
+          ) : (
+            <form onSubmit={handleCreateSequence} className="bg-gray-900 border border-gray-800 rounded-lg p-6">
+              <h3 className="text-lg font-semibold mb-4">Create Custom Sequence</h3>
+              <div className="mb-4">
+                <label className="block text-sm text-gray-400 mb-1">Title</label>
+                <input
+                  type="text"
+                  value={newTitle}
+                  onChange={e => setNewTitle(e.target.value)}
+                  placeholder="e.g., Roman Emperors"
+                  className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 placeholder-gray-600 focus:outline-none focus:border-rose-500"
+                  autoFocus
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-sm text-gray-400 mb-1">Items (one per line, in order)</label>
+                <textarea
+                  value={newItems}
+                  onChange={e => setNewItems(e.target.value)}
+                  rows={10}
+                  placeholder={"Augustus\nTiberius\nCaligula\nClaudius\nNero\n..."}
+                  className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 placeholder-gray-600 focus:outline-none focus:border-rose-500 resize-y font-mono"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-sm text-gray-400 mb-1">Chunk size (items per group)</label>
+                <input
+                  type="number"
+                  min="2"
+                  max="20"
+                  value={newChunkSize}
+                  onChange={e => setNewChunkSize(e.target.value)}
+                  className="w-24 px-3 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 focus:outline-none focus:border-rose-500"
+                />
+              </div>
+              <div className="flex gap-3">
+                <button
+                  type="submit"
+                  disabled={!newTitle.trim() || newItems.split('\n').filter(l => l.trim()).length < 2}
+                  className="px-5 py-2 bg-rose-600 hover:bg-rose-700 disabled:bg-gray-700 disabled:text-gray-500 text-white rounded-lg font-medium transition-colors"
+                >
+                  Create
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setShowSeqForm(false)}
                   className="px-5 py-2 bg-gray-700 hover:bg-gray-600 text-gray-300 rounded-lg font-medium transition-colors"
                 >
                   Cancel
@@ -353,7 +547,11 @@ export default function Memorize() {
     )
   }
 
-  // --- Render a blank input with optional first-letter hint and peek button ---
+  // ===========================================
+  // TEXT STUDY & CHECK PHASES
+  // ===========================================
+
+  // Render a blank input with optional first-letter hint and peek button
   function renderBlank(item, i) {
     const isPeeking = peekedBlanks[i]
 
@@ -393,7 +591,6 @@ export default function Memorize() {
     )
   }
 
-  // --- STUDY & CHECK PHASES ---
   return (
     <div>
       <div className="flex items-center justify-between mb-6">

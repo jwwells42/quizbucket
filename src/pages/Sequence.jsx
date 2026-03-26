@@ -1,9 +1,4 @@
 import { useState, useRef, useCallback, useMemo, useEffect } from 'react'
-import { useSearchParams } from 'react-router-dom'
-import { sequences } from '../data/loader'
-import { useProgress } from '../hooks/useProgress'
-import { useLevel } from '../context/LevelContext'
-import { useCustomContent } from '../hooks/useCustomContent'
 import { checkAnswer } from '../utils/answerCheck'
 
 const DRILL_TYPES = [
@@ -757,215 +752,45 @@ function FullListPanel({ sequence, open, onToggle }) {
   )
 }
 
-// --- MAIN SEQUENCE PAGE ---
-export default function Sequence() {
-  const { filterByLevel } = useLevel()
-  const { recordSequence, getSequenceStats } = useProgress()
-  const { customSequences, addSequence, deleteSequence } = useCustomContent()
-  const filteredSequences = filterByLevel(sequences)
-  const allSequences = [...sequences, ...customSequences]
-  const sequenceStats = getSequenceStats()
+// --- SEQUENCE DRILL VIEW (used by Memorize page) ---
+export { DRILL_TYPES, flatItems, FullListPanel }
 
-  const [searchParams, setSearchParams] = useSearchParams()
-  const selectedId = searchParams.get('id')
-  const drillType = searchParams.get('drill')
-
-  const [drillKey, setDrillKey] = useState(0) // force remount on retry
+export function SequenceDrillView({ sequence, drillType, onStartDrill, onBack, onComplete, sequenceStats }) {
+  const [drillKey, setDrillKey] = useState(0)
   const [lastResult, setLastResult] = useState(null)
   const [showFullList, setShowFullList] = useState(false)
-  const [showCreateForm, setShowCreateForm] = useState(false)
-  const [newTitle, setNewTitle] = useState('')
-  const [newItems, setNewItems] = useState('')
-  const [newChunkSize, setNewChunkSize] = useState('5')
-
-  const selectedSeq = allSequences.find(s => s.id === selectedId)
-
-  const handleSelect = (id) => {
-    setSearchParams({ id })
-    setLastResult(null)
-    setShowFullList(false)
-  }
-
-  const handleStartDrill = (type) => {
-    setSearchParams({ id: selectedId, drill: type })
-    setLastResult(null)
-    setDrillKey(k => k + 1)
-  }
 
   const handleComplete = useCallback((correct, total) => {
     setLastResult({ correct, total })
-    if (selectedId && drillType) {
-      recordSequence(selectedId, drillType, correct, total)
-    }
-  }, [selectedId, drillType, recordSequence])
+    onComplete(correct, total)
+  }, [onComplete])
 
-  const handleBack = () => {
-    if (lastResult || drillType) {
-      setSearchParams({ id: selectedId })
-      setLastResult(null)
-    } else {
-      setSearchParams({})
-    }
+  const handleStartDrill = (type) => {
+    setLastResult(null)
+    setDrillKey(k => k + 1)
+    onStartDrill(type)
   }
 
-  // Clear drill result when navigating back via browser
+  const handleBack = () => {
+    setLastResult(null)
+    onBack()
+  }
+
+  // Clear result when drill type changes (e.g. browser back)
   useEffect(() => {
     if (!drillType) setLastResult(null)
   }, [drillType])
 
-  const handleCreateSequence = (e) => {
-    e.preventDefault()
-    const items = newItems.split('\n').map(l => l.replace(/^\d+[\.\)\-\s]+/, '').trim()).filter(Boolean)
-    if (!newTitle.trim() || items.length < 2) return
-    addSequence(newTitle.trim(), items, parseInt(newChunkSize) || 5)
-    setNewTitle('')
-    setNewItems('')
-    setNewChunkSize('5')
-    setShowCreateForm(false)
-  }
-
-  // --- SELECT SEQUENCE ---
-  if (!selectedId) {
-    return (
-      <div>
-        <h1 className="text-2xl font-bold mb-2">Sequence Memorizer</h1>
-        <p className="text-gray-400 mb-6">
-          Learn ordered lists through chunked build-up, gap-fill, neighbor drills, position quizzes, and full recitation.
-        </p>
-        <div className="grid sm:grid-cols-2 gap-4">
-          {filteredSequences.map(seq => {
-            const totalItems = flatItems(seq).length
-            const stats = sequenceStats[seq.id]
-            const drillsDone = stats ? Object.keys(stats).length : 0
-            return (
-              <button
-                key={seq.id}
-                onClick={() => handleSelect(seq.id)}
-                className="text-left rounded-lg bg-gray-900 border border-gray-800 hover:border-rose-500 transition-colors p-5"
-              >
-                <h2 className="text-lg font-semibold mb-1">{seq.title}</h2>
-                <p className="text-sm text-gray-500 mb-1">{seq.description}</p>
-                <div className="flex gap-3 text-xs text-gray-600">
-                  <span>{totalItems} items</span>
-                  <span>{seq.chunks.length} chunks</span>
-                  {drillsDone > 0 && <span className="text-rose-400">{drillsDone}/5 drills tried</span>}
-                </div>
-              </button>
-            )
-          })}
-          {customSequences.map(seq => {
-            const totalItems = flatItems(seq).length
-            const stats = sequenceStats[seq.id]
-            const drillsDone = stats ? Object.keys(stats).length : 0
-            return (
-              <div key={seq.id} className="relative group">
-                <button
-                  onClick={() => handleSelect(seq.id)}
-                  className="w-full text-left rounded-lg bg-gray-900 border border-gray-800 hover:border-rose-500 transition-colors p-5"
-                >
-                  <h2 className="text-lg font-semibold mb-1">{seq.title}</h2>
-                  <p className="text-sm text-gray-500 mb-1">{seq.description}</p>
-                  <div className="flex gap-3 text-xs text-gray-600">
-                    <span>{totalItems} items</span>
-                    <span>{seq.chunks.length} chunks</span>
-                    <span className="text-rose-400/60">Custom</span>
-                    {drillsDone > 0 && <span className="text-rose-400">{drillsDone}/5 drills tried</span>}
-                  </div>
-                </button>
-                <button
-                  onClick={() => deleteSequence(seq.id)}
-                  className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 text-gray-600 hover:text-red-400 transition-all p-1"
-                  title="Delete custom sequence"
-                >
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-            )
-          })}
-        </div>
-
-        {/* Create custom sequence */}
-        <div className="mt-6">
-          {!showCreateForm ? (
-            <button
-              onClick={() => setShowCreateForm(true)}
-              className="flex items-center gap-2 text-sm text-gray-400 hover:text-rose-400 transition-colors"
-            >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-              </svg>
-              Create your own sequence
-            </button>
-          ) : (
-            <form onSubmit={handleCreateSequence} className="bg-gray-900 border border-gray-800 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-4">Create Custom Sequence</h3>
-              <div className="mb-4">
-                <label className="block text-sm text-gray-400 mb-1">Title</label>
-                <input
-                  type="text"
-                  value={newTitle}
-                  onChange={e => setNewTitle(e.target.value)}
-                  placeholder="e.g., Roman Emperors"
-                  className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 placeholder-gray-600 focus:outline-none focus:border-rose-500"
-                  autoFocus
-                />
-              </div>
-              <div className="mb-4">
-                <label className="block text-sm text-gray-400 mb-1">Items (one per line, in order)</label>
-                <textarea
-                  value={newItems}
-                  onChange={e => setNewItems(e.target.value)}
-                  rows={10}
-                  placeholder={"Augustus\nTiberius\nCaligula\nClaudius\nNero\n..."}
-                  className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 placeholder-gray-600 focus:outline-none focus:border-rose-500 resize-y font-mono"
-                />
-              </div>
-              <div className="mb-4">
-                <label className="block text-sm text-gray-400 mb-1">Chunk size (items per group)</label>
-                <input
-                  type="number"
-                  min="2"
-                  max="20"
-                  value={newChunkSize}
-                  onChange={e => setNewChunkSize(e.target.value)}
-                  className="w-24 px-3 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 focus:outline-none focus:border-rose-500"
-                />
-              </div>
-              <div className="flex gap-3">
-                <button
-                  type="submit"
-                  disabled={!newTitle.trim() || newItems.split('\n').filter(l => l.trim()).length < 2}
-                  className="px-5 py-2 bg-rose-600 hover:bg-rose-700 disabled:bg-gray-700 disabled:text-gray-500 text-white rounded-lg font-medium transition-colors"
-                >
-                  Create
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setShowCreateForm(false)}
-                  className="px-5 py-2 bg-gray-700 hover:bg-gray-600 text-gray-300 rounded-lg font-medium transition-colors"
-                >
-                  Cancel
-                </button>
-              </div>
-            </form>
-          )}
-        </div>
-      </div>
-    )
-  }
-
   // --- SELECT DRILL TYPE ---
   if (!drillType) {
-    const stats = sequenceStats[selectedId] || {}
+    const stats = sequenceStats || {}
     return (
       <div>
         <div className="flex items-center justify-between mb-6">
           <div>
-            <h1 className="text-2xl font-bold">{selectedSeq.title}</h1>
+            <h1 className="text-2xl font-bold">{sequence.title}</h1>
             <p className="text-sm text-gray-500 mt-1">
-              {flatItems(selectedSeq).length} items in {selectedSeq.chunks.length} chunks
+              {flatItems(sequence).length} items in {sequence.chunks.length} chunks
             </p>
           </div>
           <button
@@ -1002,7 +827,7 @@ export default function Sequence() {
           })}
         </div>
 
-        <FullListPanel sequence={selectedSeq} open={showFullList} onToggle={() => setShowFullList(v => !v)} />
+        <FullListPanel sequence={sequence} open={showFullList} onToggle={() => setShowFullList(v => !v)} />
       </div>
     )
   }
@@ -1014,7 +839,7 @@ export default function Sequence() {
     <div>
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h1 className="text-2xl font-bold">{selectedSeq.title}</h1>
+          <h1 className="text-2xl font-bold">{sequence.title}</h1>
           <p className="text-sm text-gray-500 mt-1">{drillLabel}</p>
         </div>
         <button
@@ -1025,11 +850,11 @@ export default function Sequence() {
         </button>
       </div>
 
-      {drillType === 'learn' && <LearnDrill key={drillKey} sequence={selectedSeq} onComplete={handleComplete} />}
-      {drillType === 'fill' && <FillDrill key={drillKey} sequence={selectedSeq} onComplete={handleComplete} />}
-      {drillType === 'neighbor' && <NeighborDrill key={drillKey} sequence={selectedSeq} onComplete={handleComplete} />}
-      {drillType === 'position' && <PositionDrill key={drillKey} sequence={selectedSeq} onComplete={handleComplete} />}
-      {drillType === 'recite' && <ReciteDrill key={drillKey} sequence={selectedSeq} onComplete={handleComplete} />}
+      {drillType === 'learn' && <LearnDrill key={drillKey} sequence={sequence} onComplete={handleComplete} />}
+      {drillType === 'fill' && <FillDrill key={drillKey} sequence={sequence} onComplete={handleComplete} />}
+      {drillType === 'neighbor' && <NeighborDrill key={drillKey} sequence={sequence} onComplete={handleComplete} />}
+      {drillType === 'position' && <PositionDrill key={drillKey} sequence={sequence} onComplete={handleComplete} />}
+      {drillType === 'recite' && <ReciteDrill key={drillKey} sequence={sequence} onComplete={handleComplete} />}
 
       {lastResult && (
         <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 text-center">
@@ -1056,7 +881,7 @@ export default function Sequence() {
         </div>
       )}
 
-      <FullListPanel sequence={selectedSeq} open={showFullList} onToggle={() => setShowFullList(v => !v)} />
+      <FullListPanel sequence={sequence} open={showFullList} onToggle={() => setShowFullList(v => !v)} />
     </div>
   )
 }

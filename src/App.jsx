@@ -7,7 +7,6 @@ import Tossup from './pages/Tossup'
 import Lightning from './pages/Lightning'
 import Memorize from './pages/Memorize'
 import Computation from './pages/Computation'
-import Sequence from './pages/Sequence'
 
 export default function App() {
   return (
@@ -20,7 +19,6 @@ export default function App() {
         <Route path="/lightning" element={<Lightning />} />
         <Route path="/memorize" element={<Memorize />} />
         <Route path="/computation" element={<Computation />} />
-        <Route path="/sequence" element={<Sequence />} />
       </Routes>
     </Layout>
   )

@@ -9,7 +9,6 @@ const navLinks = [
   { to: '/lightning', label: 'Lightning' },
   { to: '/memorize', label: 'Memorize' },
   { to: '/computation', label: 'Computation' },
-  { to: '/sequence', label: 'Sequences' },
 ]
 
 export default function Layout({ children }) {

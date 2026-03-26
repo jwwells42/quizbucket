@@ -24,8 +24,8 @@ const modes = [
   },
   {
     to: '/memorize',
-    title: 'Text Memorizer',
-    description: 'Progressively memorize famous texts and speeches',
+    title: 'Memorize',
+    description: 'Memorize texts and ordered sequences',
     accent: 'bg-purple-500',
   },
   {
@@ -33,12 +33,6 @@ const modes = [
     title: 'Math Computation',
     description: 'Solve problems with a 20-second timer',
     accent: 'bg-cyan-500',
-  },
-  {
-    to: '/sequence',
-    title: 'Sequence Memorizer',
-    description: 'Learn ordered lists with chunked drills',
-    accent: 'bg-rose-500',
   },
 ]
 
@@ -83,6 +77,7 @@ export default function Home() {
       <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
         <h2 className="text-lg font-semibold mb-4">Your Progress</h2>
         <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 text-center">
+
           <div>
             <div className="text-2xl font-bold text-blue-400">{totalCardsStudied}</div>
             <div className="text-xs text-gray-500">Cards Studied</div>

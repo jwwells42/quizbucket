@@ -17,9 +17,11 @@ QuizBucket is a study/preparation website for AGQBA-style quiz bowl. It helps st
 - **Flashcards**: Flip cards with progressive batch learning (5 at a time, drill to zero, then next batch). Progress tracked in LocalStorage.
 - **Tossup Practice**: Question text reveals word-by-word, student types answer to buzz in. Randomized rounds of 20. Toggle between "Tossup Only" (Rounds 1 & 4) and "Tossup + Bonus" (Round 2) — bonus pulls 4 questions from a random lightning topic, 5 pts each + 20 pt sweep bonus.
 - **Lightning Round Practice**: Single topic per round, 10 questions pulled randomly from a larger bank, 60-second timer
-- **Text Memorizer**: 5-level progressive memorization (full text → first-letter hints → blanks → mostly blank → recite from memory). Inline fill-in-the-blank with peek-to-reveal eye icon. Supports line breaks for poetry.
+- **Memorize** (unified page at `/memorize`):
+  - *Texts*: 5-level progressive memorization (full text → first-letter hints → blanks → mostly blank → recite from memory). Inline fill-in-the-blank with peek-to-reveal eye icon. Supports line breaks for poetry.
+  - *Sequences*: Learn ordered lists (presidents, monarchs, elements, etc.) through 5 progressive drill types: Learn (chunk build-up), Fill the Gap, Next & Before, Position Quiz, Full Recitation. Collapsible full list reference panel.
+  - Users can add custom texts and sequences (stored in LocalStorage).
 - **Math Computation**: Procedurally generated math problems with 30-second timer (AGQBA gives 20s, extra time for reading and typing). Grade-appropriate difficulty. 10 problems per round.
-- **Sequence Memorizer**: Learn ordered lists (presidents, monarchs, elements, etc.) through 5 progressive drill types: Learn (chunk build-up), Fill the Gap, Next & Before, Position Quiz, Full Recitation. Collapsible full list reference panel.
 
 ## Tech Stack
 
@@ -27,7 +29,7 @@ QuizBucket is a study/preparation website for AGQBA-style quiz bowl. It helps st
 - **Styling**: Tailwind CSS v4 (dark mode theme)
 - **Data**: Static JSON files in `src/data/`
 - **State/Progress**: LocalStorage (no backend, no auth)
-- **Navigation**: Sequence and Memorize pages use URL search params (`?id=`, `?drill=`) so browser back/forward works within multi-step flows
+- **Navigation**: Memorize page uses URL search params (`?id=` for texts, `?seq=`/`?drill=` for sequences) so browser back/forward works within multi-step flows
 - **Custom Content**: Users can create their own texts and sequences in-app (stored in LocalStorage via `useCustomContent` hook)
 - **Deployment**: Static site on Vercel (rewrites configured in `vercel.json`)
 
@@ -62,7 +64,8 @@ After making changes, always follow this sequence:
 - `src/context/LevelContext.jsx` — Grade-level filter context (LevelProvider, useLevel hook)
 - `src/components/` — React components (Layout with nav + level picker)
 - `src/data/mathProblems.js` — Procedural math problem generator (grade-leveled, infinite problems)
-- `src/pages/` — Page components (Home, FlashcardList, FlashcardStudy, Tossup, Lightning, Memorize, Computation, Sequence)
+- `src/pages/Sequence.jsx` — Sequence drill components (imported by Memorize page, not a standalone route)
+- `src/pages/` — Page components (Home, FlashcardList, FlashcardStudy, Tossup, Lightning, Memorize, Computation)
 - `src/hooks/useProgress.js` — LocalStorage progress tracking (flashcards, tossups, lightning, computation, sequences)
 - `src/hooks/useCustomContent.js` — LocalStorage for user-created custom texts and sequences
 
