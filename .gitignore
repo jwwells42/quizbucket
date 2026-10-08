@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Private JH practice packets (licensed, team-only). Only the encrypted bank is committed.
+1JH - Practice Qs - 2026-27/
+*.jh-plain.json

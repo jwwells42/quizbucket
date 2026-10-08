@@ -69,6 +69,17 @@ After making changes, always follow this sequence:
 - `src/hooks/useProgress.js` — LocalStorage progress tracking (flashcards, tossups, lightning, computation, sequences)
 - `src/hooks/useCustomContent.js` — LocalStorage for user-created custom texts and sequences
 
+## Private JH Team Practice (`/jh`)
+
+Password-gated team page for the licensed AGQBA JH 2026-27 practice packets (15 packets: 750 tossups, 60 bonus sets, 45 lightning categories). It is **not linked** from Home, the nav, or the README. Keep it that way.
+
+- **The repo is public and the packets are licensed, team-only.** Never commit the packet folder (`1JH - Practice Qs - 2026-27/`, gitignored) or any plaintext question data. Only the encrypted bank `src/data/jh.enc.json` is committed. Never write the team password into the repo; ask the user for it.
+- `scripts/build-jh.mjs` parses the .docx packets (via `unzip`) into tossups, bonuses, and lightning sets. It reads underlined answer text as the required portion and parses `[accept/prompt/reject]` clauses. It then encrypts the bank: gzip, then AES-GCM with a PBKDF2 key from the password. Rebuild with `JH_PASSWORD=... node scripts/build-jh.mjs` (add `--dump out.jh-plain.json` to inspect the plaintext; that pattern is gitignored). It warns if a packet doesn't parse to 20/10/20 tossups, 4×4 bonus parts, and 3×10 lightning questions.
+- `src/utils/jhBank.js` decrypts in the browser with WebCrypto; a wrong password fails to decrypt. The password is remembered per tab in sessionStorage.
+- `src/utils/jhAnswerCheck.js` judges answers against `{ display, accept, prompt, reject }` (correct / prompt / close / incorrect). It handles numbers, fractions, and π/√ notation.
+- `src/pages/jh/` holds the page, lazy-loaded so the main bundle stays small. `JH.jsx` covers the gate, menu, and views. `TossupRound.jsx` handles word-by-word tossups, bonuses, and leftover bonuses. `LightningRound.jsx` runs the 60s lightning round. Views use URL params: `?packet=N&q=1..4[&set=i]` and `?mode=tossups|bonus|lightning[&set=N-i]`.
+- Scores go to LocalStorage under `quizbucket-jh-progress` (`src/hooks/useJhProgress.js`).
+
 ## Content Guidelines
 
 - All quiz content lives in JSON files under `src/data/`

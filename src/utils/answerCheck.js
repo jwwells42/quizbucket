@@ -1,5 +1,5 @@
-const normalize = s => s.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim()
-const stripArticles = s => s.replace(/^(the|a|an) /, '')
+export const normalize = s => s.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim()
+export const stripArticles = s => s.replace(/^(the|a|an) /, '')
 
 function getAcceptables(correctAnswer) {
   const results = new Set()
